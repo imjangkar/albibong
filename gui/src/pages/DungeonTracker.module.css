@@ -1,0 +1,18 @@
+.dungeonContainer {
+  /* border: 2px solid #64d3ff; */
+  border-radius: 1rem;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* background-color: #152d36; */
+}
+
+.tag {
+  background-color: #64d3ff;
+  padding: 0 1rem;
+  border-radius: 1rem;
+  color: #0f3c4e;
+  font-weight: bold;
+}

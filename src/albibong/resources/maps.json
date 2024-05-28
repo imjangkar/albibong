@@ -1,0 +1,3565 @@
+{
+  "0": {
+    "id": "None",
+    "name": "None",
+    "type": "None"
+  },
+  "ISLAND-GUILD-0001a": {
+    "id": "ISLAND-GUILD-0001a",
+    "name": "Guild Island",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-0001a": {
+    "id": "ISLAND-PLAYER-0001a",
+    "name": "ISLAND-PLAYER-0001a_ISL_DL_T1_NON",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-0001f": {
+    "id": "ISLAND-PLAYER-0001f",
+    "name": "ISLAND-PLAYER-0001f_ISL_DL_T1_NON",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-0001e": {
+    "id": "ISLAND-PLAYER-0001e",
+    "name": "ISLAND-PLAYER-0001e_ISL_DL_T1_NON",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-0001d": {
+    "id": "ISLAND-PLAYER-0001d",
+    "name": "ISLAND-PLAYER-0001d_ISL_DL_T1_NON",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-0001c": {
+    "id": "ISLAND-PLAYER-0001c",
+    "name": "ISLAND-PLAYER-0001c_ISL_DL_T1_NON",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-0001b": {
+    "id": "ISLAND-PLAYER-0001b",
+    "name": "ISLAND-PLAYER-0001b_ISL_DL_T1_NON",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-0001b": {
+    "id": "ISLAND-GUILD-0001b",
+    "name": "Guild Island",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-0001c": {
+    "id": "ISLAND-GUILD-0001c",
+    "name": "Guild Island",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-0001d": {
+    "id": "ISLAND-GUILD-0001d",
+    "name": "Guild Island",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-0001e": {
+    "id": "ISLAND-GUILD-0001e",
+    "name": "Guild Island",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-0001f": {
+    "id": "ISLAND-GUILD-0001f",
+    "name": "Guild Island",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-FOREST-0001a": {
+    "id": "ISLAND-PLAYER-FOREST-0001a",
+    "name": "Island at Lymhurst",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-FOREST-0001b": {
+    "id": "ISLAND-PLAYER-FOREST-0001b",
+    "name": "Island at Lymhurst",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-FOREST-0001c": {
+    "id": "ISLAND-PLAYER-FOREST-0001c",
+    "name": "Island at Lymhurst",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-FOREST-0001d": {
+    "id": "ISLAND-PLAYER-FOREST-0001d",
+    "name": "Island at Lymhurst",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-FOREST-0001e": {
+    "id": "ISLAND-PLAYER-FOREST-0001e",
+    "name": "Island at Lymhurst",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-FOREST-0001f": {
+    "id": "ISLAND-PLAYER-FOREST-0001f",
+    "name": "Island at Lymhurst",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-HIGHLAND-0001a": {
+    "id": "ISLAND-PLAYER-HIGHLAND-0001a",
+    "name": "Island at Martlock",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-HIGHLAND-0001b": {
+    "id": "ISLAND-PLAYER-HIGHLAND-0001b",
+    "name": "Island at Martlock",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-HIGHLAND-0001c": {
+    "id": "ISLAND-PLAYER-HIGHLAND-0001c",
+    "name": "Island at Martlock",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-HIGHLAND-0001d": {
+    "id": "ISLAND-PLAYER-HIGHLAND-0001d",
+    "name": "Island at Martlock",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-HIGHLAND-0001e": {
+    "id": "ISLAND-PLAYER-HIGHLAND-0001e",
+    "name": "Island at Martlock",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-HIGHLAND-0001f": {
+    "id": "ISLAND-PLAYER-HIGHLAND-0001f",
+    "name": "Island at Martlock",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-MOUNTAIN-0001a": {
+    "id": "ISLAND-PLAYER-MOUNTAIN-0001a",
+    "name": "Island at Fort Sterling",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-MOUNTAIN-0001b": {
+    "id": "ISLAND-PLAYER-MOUNTAIN-0001b",
+    "name": "Island at Fort Sterling",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-MOUNTAIN-0001c": {
+    "id": "ISLAND-PLAYER-MOUNTAIN-0001c",
+    "name": "Island at Fort Sterling",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-MOUNTAIN-0001d": {
+    "id": "ISLAND-PLAYER-MOUNTAIN-0001d",
+    "name": "Island at Fort Sterling",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-MOUNTAIN-0001e": {
+    "id": "ISLAND-PLAYER-MOUNTAIN-0001e",
+    "name": "Island at Fort Sterling",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-MOUNTAIN-0001f": {
+    "id": "ISLAND-PLAYER-MOUNTAIN-0001f",
+    "name": "Island at Fort Sterling",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-STEPPE-0001a": {
+    "id": "ISLAND-PLAYER-STEPPE-0001a",
+    "name": "Island at Bridgewatch",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-STEPPE-0001b": {
+    "id": "ISLAND-PLAYER-STEPPE-0001b",
+    "name": "Island at Bridgewatch",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-STEPPE-0001c": {
+    "id": "ISLAND-PLAYER-STEPPE-0001c",
+    "name": "Island at Bridgewatch",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-STEPPE-0001d": {
+    "id": "ISLAND-PLAYER-STEPPE-0001d",
+    "name": "Island at Bridgewatch",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-STEPPE-0001e": {
+    "id": "ISLAND-PLAYER-STEPPE-0001e",
+    "name": "Island at Bridgewatch",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-STEPPE-0001f": {
+    "id": "ISLAND-PLAYER-STEPPE-0001f",
+    "name": "Island at Bridgewatch",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-SWAMP-0001a": {
+    "id": "ISLAND-PLAYER-SWAMP-0001a",
+    "name": "Island at Thetford",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-SWAMP-0001b": {
+    "id": "ISLAND-PLAYER-SWAMP-0001b",
+    "name": "Island at Thetford",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-SWAMP-0001c": {
+    "id": "ISLAND-PLAYER-SWAMP-0001c",
+    "name": "Island at Thetford",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-SWAMP-0001d": {
+    "id": "ISLAND-PLAYER-SWAMP-0001d",
+    "name": "Island at Thetford",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-SWAMP-0001e": {
+    "id": "ISLAND-PLAYER-SWAMP-0001e",
+    "name": "Island at Thetford",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-SWAMP-0001f": {
+    "id": "ISLAND-PLAYER-SWAMP-0001f",
+    "name": "Island at Thetford",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-MISTS-0001a": {
+    "id": "ISLAND-PLAYER-MISTS-0001a",
+    "name": "Island at Brecilien",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-MISTS-0001b": {
+    "id": "ISLAND-PLAYER-MISTS-0001b",
+    "name": "Island at Brecilien",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-MISTS-0001c": {
+    "id": "ISLAND-PLAYER-MISTS-0001c",
+    "name": "Island at Brecilien",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-MISTS-0001d": {
+    "id": "ISLAND-PLAYER-MISTS-0001d",
+    "name": "Island at Brecilien",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-MISTS-0001e": {
+    "id": "ISLAND-PLAYER-MISTS-0001e",
+    "name": "Island at Brecilien",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-MISTS-0001f": {
+    "id": "ISLAND-PLAYER-MISTS-0001f",
+    "name": "Island at Brecilien",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-CAERLEON-0001a": {
+    "id": "ISLAND-PLAYER-CAERLEON-0001a",
+    "name": "Island at Caerleon",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-CAERLEON-0001b": {
+    "id": "ISLAND-PLAYER-CAERLEON-0001b",
+    "name": "Island at Caerleon",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-CAERLEON-0001c": {
+    "id": "ISLAND-PLAYER-CAERLEON-0001c",
+    "name": "Island at Caerleon",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-CAERLEON-0001d": {
+    "id": "ISLAND-PLAYER-CAERLEON-0001d",
+    "name": "Island at Caerleon",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-CAERLEON-0001e": {
+    "id": "ISLAND-PLAYER-CAERLEON-0001e",
+    "name": "Island at Caerleon",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-CAERLEON-0001f": {
+    "id": "ISLAND-PLAYER-CAERLEON-0001f",
+    "name": "Island at Caerleon",
+    "type": "ISLAND"
+  },
+  "0004": { "id": "0004", "name": "Swamp Cross", "type": "STARTINGCITY" },
+  "4206": { "id": "4206", "name": "Tharcal Fissure", "type": "OPENPVP_YELLOW" },
+  "MushroomCave-GROUP": {
+    "id": "MushroomCave-GROUP",
+    "name": "Mushroom Cave",
+    "type": "GROUP_EXPEDITION"
+  },
+  "MushroomCave-SOLO": {
+    "id": "MushroomCave-SOLO",
+    "name": "Mushroom Cave",
+    "type": "SOLO_EXPEDITION"
+  },
+  "FishyBusiness-GROUP": {
+    "id": "FishyBusiness-GROUP",
+    "name": "Fishy Business",
+    "type": "GROUP_EXPEDITION"
+  },
+  "FishyBusiness-SOLO": {
+    "id": "FishyBusiness-SOLO",
+    "name": "Fishy Business",
+    "type": "SOLO_EXPEDITION"
+  },
+  "StoneWars-GROUP": {
+    "id": "StoneWars-GROUP",
+    "name": "Stone Wars",
+    "type": "GROUP_EXPEDITION"
+  },
+  "StoneWars-SOLO": {
+    "id": "StoneWars-SOLO",
+    "name": "Stone Wars",
+    "type": "SOLO_EXPEDITION"
+  },
+  "4209": { "id": "4209", "name": "Cairn Darg", "type": "OPENPVP_YELLOW" },
+  "4210": { "id": "4210", "name": "Gwan Gorge", "type": "SAFEAREA" },
+  "4215": { "id": "4215", "name": "Malag Crevasse", "type": "OPENPVP_RED" },
+  "4216": { "id": "4216", "name": "Creag Morr", "type": "OPENPVP_RED" },
+  "4213": { "id": "4213", "name": "Cairn Camain", "type": "OPENPVP_YELLOW" },
+  "4212": { "id": "4212", "name": "Cairn Glascore", "type": "OPENPVP_YELLOW" },
+  "4207": { "id": "4207", "name": "Pen Gent", "type": "SAFEAREA" },
+  "4201": { "id": "4201", "name": "Pen Garn", "type": "SAFEAREA" },
+  "4203": { "id": "4203", "name": "Crose Gorge", "type": "SAFEAREA" },
+  "3201": { "id": "3201", "name": "Birken Fell", "type": "OPENPVP_RED" },
+  "3204": { "id": "3204", "name": "Eldon Hill", "type": "OPENPVP_YELLOW" },
+  "3203": { "id": "3203", "name": "Lewsdon Hill", "type": "OPENPVP_YELLOW" },
+  "3207": { "id": "3207", "name": "Blackthorn Quarry", "type": "SAFEAREA" },
+  "3206": { "id": "3206", "name": "Haytor", "type": "SAFEAREA" },
+  "3209": { "id": "3209", "name": "Brent Knoll", "type": "SAFEAREA" },
+  "3210": { "id": "3210", "name": "Mase Knoll", "type": "SAFEAREA" },
+  "3212": { "id": "3212", "name": "Croker Hill", "type": "OPENPVP_YELLOW" },
+  "3215": { "id": "3215", "name": "Goffers Knoll", "type": "SAFEAREA" },
+  "3213": { "id": "3213", "name": "Vixen Tor", "type": "SAFEAREA" },
+  "2215": { "id": "2215", "name": "Prospector's Hope", "type": "SAFEAREA" },
+  "2213": { "id": "2213", "name": "Steelhide Meadow", "type": "SAFEAREA" },
+  "2212": { "id": "2212", "name": "Longmarch Meadow", "type": "SAFEAREA" },
+  "2209": { "id": "2209", "name": "Lazygrass Plain", "type": "OPENPVP_YELLOW" },
+  "2210": {
+    "id": "2210",
+    "name": "Snapshaft Trough",
+    "type": "OPENPVP_YELLOW"
+  },
+  "2207": { "id": "2207", "name": "Drywater Meadow", "type": "SAFEAREA" },
+  "2206": {
+    "id": "2206",
+    "name": "Parchthroat Plain",
+    "type": "OPENPVP_YELLOW"
+  },
+  "2204": { "id": "2204", "name": "Deadvein Gully", "type": "OPENPVP_RED" },
+  "2203": { "id": "2203", "name": "Roastcorpse Steppe", "type": "OPENPVP_RED" },
+  "2201": { "id": "2201", "name": "Kindlegrass Steppe", "type": "OPENPVP_RED" },
+  "1215": { "id": "1215", "name": "Ferndell", "type": "SAFEAREA" },
+  "1213": { "id": "1213", "name": "Wyre Forest", "type": "OPENPVP_RED" },
+  "1212": { "id": "1212", "name": "Stagbourne", "type": "SAFEAREA" },
+  "1210": { "id": "1210", "name": "Murkweald", "type": "OPENPVP_RED" },
+  "1209": { "id": "1209", "name": "Longtimber Glen", "type": "OPENPVP_RED" },
+  "1207": { "id": "1207", "name": "Birchcopse", "type": "SAFEAREA" },
+  "1206": { "id": "1206", "name": "Willow Wood", "type": "OPENPVP_YELLOW" },
+  "1204": { "id": "1204", "name": "Oakcopse", "type": "SAFEAREA" },
+  "1203": { "id": "1203", "name": "Rowanwood", "type": "OPENPVP_YELLOW" },
+  "1201": { "id": "1201", "name": "Larchroad", "type": "SAFEAREA" },
+  "4204": { "id": "4204", "name": "Pen Kerrig", "type": "SAFEAREA" },
+  "0214": { "id": "0214", "name": "Slimehag", "type": "SAFEAREA" },
+  "0212": { "id": "0212", "name": "Bonepool Marsh", "type": "OPENPVP_YELLOW" },
+  "0211": { "id": "0211", "name": "Spectral Sump", "type": "OPENPVP_RED" },
+  "0203": {
+    "id": "0203",
+    "name": "Willowsigh Marsh",
+    "type": "OPENPVP_YELLOW"
+  },
+  "0208": { "id": "0208", "name": "Stumprot Swamp", "type": "OPENPVP_RED" },
+  "0206": { "id": "0206", "name": "Dusklight Fen", "type": "SAFEAREA" },
+  "0209": { "id": "0209", "name": "Dewleaf Fen", "type": "SAFEAREA" },
+  "0205": { "id": "0205", "name": "Stinkhag", "type": "SAFEAREA" },
+  "0202": { "id": "0202", "name": "Chillhag", "type": "SAFEAREA" },
+  "2208": { "id": "2208", "name": "Slowtree Plain", "type": "OPENPVP_YELLOW" },
+  "2211": { "id": "2211", "name": "Smoothfloor Cleft", "type": "SAFEAREA" },
+  "3205": { "id": "3205", "name": "Gutras Hill", "type": "OPENPVP_YELLOW" },
+  "3202": { "id": "3202", "name": "Mardale", "type": "OPENPVP_RED" },
+  "0210": {
+    "id": "0210",
+    "name": "Wispwhisper Marsh",
+    "type": "OPENPVP_YELLOW"
+  },
+  "0213": { "id": "0213", "name": "Curlew Fen", "type": "SAFEAREA" },
+  "3211": { "id": "3211", "name": "Saddle Tor", "type": "SAFEAREA" },
+  "0204": { "id": "0204", "name": "Windripple Fen", "type": "SAFEAREA" },
+  "4208": { "id": "4208", "name": "Mawar Gorge", "type": "SAFEAREA" },
+  "1202": { "id": "1202", "name": "Russerdell", "type": "SAFEAREA" },
+  "4202": { "id": "4202", "name": "Bryn Gorge", "type": "SAFEAREA" },
+  "4205": { "id": "4205", "name": "Cairn Gorm", "type": "OPENPVP_YELLOW" },
+  "LumberCampGROUP": {
+    "id": "LumberCampGROUP",
+    "name": "Lumber Lunacy",
+    "type": "GROUP_EXPEDITION"
+  },
+  "RecruitmentOfTheDead-GROUP": {
+    "id": "RecruitmentOfTheDead-GROUP",
+    "name": "Preaching to the Dead",
+    "type": "GROUP_EXPEDITION"
+  },
+  "RecruitmentOfTheDead-SOLO": {
+    "id": "RecruitmentOfTheDead-SOLO",
+    "name": "Preaching to the Dead",
+    "type": "SOLO_EXPEDITION"
+  },
+  "3208": { "id": "3208", "name": "Bowscale Fell", "type": "OPENPVP_RED" },
+  "4214": { "id": "4214", "name": "Cairn Fidair", "type": "OPENPVP_YELLOW" },
+  "4211": { "id": "4211", "name": "Creag Garr", "type": "OPENPVP_RED" },
+  "0207": {
+    "id": "0207",
+    "name": "Nightcreak Marsh",
+    "type": "OPENPVP_YELLOW"
+  },
+  "2214": { "id": "2214", "name": "Fractured Ground", "type": "SAFEAREA" },
+  "2202": { "id": "2202", "name": "Cracked Earth", "type": "SAFEAREA" },
+  "1208": { "id": "1208", "name": "Redlake", "type": "SAFEAREA" },
+  "1211": { "id": "1211", "name": "Yew Wood", "type": "OPENPVP_YELLOW" },
+  "1205": { "id": "1205", "name": "Highbole Glen", "type": "OPENPVP_RED" },
+  "1214": { "id": "1214", "name": "Hornbeam Wood", "type": "OPENPVP_YELLOW" },
+  "2002": { "id": "2002", "name": "Steppe Cross", "type": "STARTINGCITY" },
+  "3002": { "id": "3002", "name": "Highland Cross", "type": "STARTINGCITY" },
+  "3214": { "id": "3214", "name": "Haldon Tor", "type": "SAFEAREA" },
+  "LumberCampSOLO": {
+    "id": "LumberCampSOLO",
+    "name": "Lumber Lunacy",
+    "type": "SOLO_EXPEDITION"
+  },
+  "3004": {
+    "id": "3004",
+    "name": "Martlock",
+    "type": "PLAYERCITY_SAFEAREA_01"
+  },
+  "4000": {
+    "id": "4000",
+    "name": "Fort Sterling",
+    "type": "PLAYERCITY_SAFEAREA_02"
+  },
+  "1006": { "id": "1006", "name": "Forest Cross", "type": "STARTINGCITY" },
+  "4006": { "id": "4006", "name": "Mountain Cross", "type": "STARTINGCITY" },
+  "0000": {
+    "id": "0000",
+    "name": "Thetford",
+    "type": "PLAYERCITY_SAFEAREA_01"
+  },
+  "0201": {
+    "id": "0201",
+    "name": "Sleetwater Basin",
+    "type": "OPENPVP_YELLOW"
+  },
+  "1000": {
+    "id": "1000",
+    "name": "Lymhurst",
+    "type": "PLAYERCITY_SAFEAREA_02"
+  },
+  "0005": { "id": "0005", "name": "Camlann", "type": "OPENPVP_RED" },
+  "2009": { "id": "2009", "name": "Astolat", "type": "OPENPVP_RED" },
+  "Mine-SOLO": {
+    "id": "Mine-SOLO",
+    "name": "Curious Excavation",
+    "type": "SOLO_EXPEDITION"
+  },
+  "SewersMaintenance-GROUP": {
+    "id": "SewersMaintenance-GROUP",
+    "name": "Lurking Underneath",
+    "type": "GROUP_EXPEDITION"
+  },
+  "2000": {
+    "id": "2000",
+    "name": "Bridgewatch",
+    "type": "PLAYERCITY_SAFEAREA_01"
+  },
+  "PSG-0003": { "id": "PSG-0003", "name": "Rock Adit", "type": "PASSAGE_RED" },
+  "PSG-0004": {
+    "id": "PSG-0004",
+    "name": "Sabertooth Den",
+    "type": "PASSAGE_RED"
+  },
+  "PSG-0005": {
+    "id": "PSG-0005",
+    "name": "Swamp Burrow",
+    "type": "PASSAGE_RED"
+  },
+  "PSG-0006": { "id": "PSG-0006", "name": "Ore Adit", "type": "PASSAGE_RED" },
+  "PSG-0007": {
+    "id": "PSG-0007",
+    "name": "Forest Burrow",
+    "type": "PASSAGE_RED"
+  },
+  "CenterCity-DNG-01": {
+    "id": "CenterCity-DNG-01",
+    "name": "The Underway",
+    "type": "PASSAGE_RED"
+  },
+  "3003": {
+    "id": "3003",
+    "name": "Caerleon",
+    "type": "PLAYERCITY_BLACK_ROYAL"
+  },
+  "3245": { "id": "3245", "name": "Runnel Sink", "type": "OPENPVP_RED" },
+  "1007": { "id": "1007", "name": "Inis Mon", "type": "OPENPVP_YELLOW" },
+  "ThreeSisters-GROUP": {
+    "id": "ThreeSisters-GROUP",
+    "name": "Three Sisters",
+    "type": "GROUP_EXPEDITION"
+  },
+  "FistfulOfSilver-GROUP": {
+    "id": "FistfulOfSilver-GROUP",
+    "name": "A Fistful of Silver",
+    "type": "GROUP_EXPEDITION"
+  },
+  "1246": { "id": "1246", "name": "Cedarcopse", "type": "SAFEAREA" },
+  "3249": { "id": "3249", "name": "Bellever Tor", "type": "SAFEAREA" },
+  "4249": { "id": "4249", "name": "Pen Uchaf", "type": "SAFEAREA" },
+  "2205": {
+    "id": "2205",
+    "name": "Shiftshadow Expanse",
+    "type": "OPENPVP_RED"
+  },
+  "3005": {
+    "id": "3005",
+    "name": "Caerleon Market",
+    "type": "PLAYERCITY_BLACK_ROYAL_NOFURNITURE"
+  },
+  "3006": {
+    "id": "3006",
+    "name": "Bank of Caerleon",
+    "type": "PLAYERCITY_BLACK_ROYAL_NOFURNITURE"
+  },
+  "EternalBattle-GROUP": {
+    "id": "EternalBattle-GROUP",
+    "name": "Eternal Battle",
+    "type": "GROUP_EXPEDITION"
+  },
+  "SewersMaintenance-SOLO": {
+    "id": "SewersMaintenance-SOLO",
+    "name": "Lurking Underneath",
+    "type": "SOLO_EXPEDITION"
+  },
+  "ARENA-01": { "id": "ARENA-01", "name": "Arena1", "type": "ARENA_STANDARD" },
+  "ARENA-01#1": {
+    "id": "ARENA-01#1",
+    "name": "Arena2",
+    "type": "ARENA_STANDARD"
+  },
+  "ARENA-STANDARD": {
+    "id": "ARENA-STANDARD",
+    "name": "The Arena",
+    "type": "ARENA_STANDARD"
+  },
+  "RecruitmentOfTheDead-HRD": {
+    "id": "RecruitmentOfTheDead-HRD",
+    "name": "Preaching to the Dead",
+    "type": "HARDCORE_EXPEDITION"
+  },
+  "0006": {
+    "id": "0006",
+    "name": "Bank of Thetford",
+    "type": "PLAYERCITY_SAFEAREA_NOFURNITURE"
+  },
+  "0007": {
+    "id": "0007",
+    "name": "Thetford Market",
+    "type": "PLAYERCITY_SAFEAREA_NOFURNITURE"
+  },
+  "1001": {
+    "id": "1001",
+    "name": "Bank of Lymhurst",
+    "type": "PLAYERCITY_SAFEAREA_NOFURNITURE"
+  },
+  "1002": {
+    "id": "1002",
+    "name": "Lymhurst Market",
+    "type": "PLAYERCITY_SAFEAREA_NOFURNITURE"
+  },
+  "2003": {
+    "id": "2003",
+    "name": "Bank of Bridgewatch",
+    "type": "PLAYERCITY_SAFEAREA_NOFURNITURE"
+  },
+  "2004": {
+    "id": "2004",
+    "name": "Bridgewatch Market",
+    "type": "PLAYERCITY_SAFEAREA_NOFURNITURE"
+  },
+  "3007": {
+    "id": "3007",
+    "name": "Bank of Martlock",
+    "type": "PLAYERCITY_SAFEAREA_NOFURNITURE"
+  },
+  "3008": {
+    "id": "3008",
+    "name": "Martlock Market",
+    "type": "PLAYERCITY_SAFEAREA_NOFURNITURE"
+  },
+  "4001": {
+    "id": "4001",
+    "name": "Bank of Fort Sterling",
+    "type": "PLAYERCITY_SAFEAREA_NOFURNITURE"
+  },
+  "4002": {
+    "id": "4002",
+    "name": "Fort Sterling Market",
+    "type": "PLAYERCITY_SAFEAREA_NOFURNITURE"
+  },
+  "EternalBattle-HRD": {
+    "id": "EternalBattle-HRD",
+    "name": "Eternal Battle",
+    "type": "HARDCORE_EXPEDITION"
+  },
+  "FishyBusiness-HRD": {
+    "id": "FishyBusiness-HRD",
+    "name": "Fishy Business",
+    "type": "HARDCORE_EXPEDITION"
+  },
+  "LumberCamp-HRD": {
+    "id": "LumberCamp-HRD",
+    "name": "Lumber Lunacy",
+    "type": "HARDCORE_EXPEDITION"
+  },
+  "MushroomCave-HRD": {
+    "id": "MushroomCave-HRD",
+    "name": "Mushroom Cave",
+    "type": "HARDCORE_EXPEDITION"
+  },
+  "SewersMaintenance-HRD": {
+    "id": "SewersMaintenance-HRD",
+    "name": "Lurking Underneath",
+    "type": "HARDCORE_EXPEDITION"
+  },
+  "StoneWars-HRD": {
+    "id": "StoneWars-HRD",
+    "name": "Stone Wars",
+    "type": "HARDCORE_EXPEDITION"
+  },
+  "ThreeSisters-HRD": {
+    "id": "ThreeSisters-HRD",
+    "name": "Three Sisters",
+    "type": "HARDCORE_EXPEDITION"
+  },
+  "FistfulOfSilver-HRD": {
+    "id": "FistfulOfSilver-HRD",
+    "name": "A Fistful Of Silver",
+    "type": "HARDCORE_EXPEDITION"
+  },
+  "Torturer-GROUP": {
+    "id": "Torturer-GROUP",
+    "name": "In the Raven's Claws",
+    "type": "GROUP_EXPEDITION"
+  },
+  "Torturer-HRD": {
+    "id": "Torturer-HRD",
+    "name": "In the Raven's Claws",
+    "type": "HARDCORE_EXPEDITION"
+  },
+  "ARENA-FarmLand": {
+    "id": "ARENA-FarmLand",
+    "name": "Farmland Skirmish",
+    "type": "ARENA_CUSTOM"
+  },
+  "ARENA-HomeTerritory": {
+    "id": "ARENA-HomeTerritory",
+    "name": "HomeTerritory Skirmish",
+    "type": "ARENA_CUSTOM"
+  },
+  "ARENA-Resources": {
+    "id": "ARENA-Resources",
+    "name": "Resource Skirmish",
+    "type": "ARENA_CUSTOM"
+  },
+  "ARENA-Resources1": {
+    "id": "ARENA-Resources1",
+    "name": "Resource Skirmish",
+    "type": "ARENA_CUSTOM"
+  },
+  "ARENA-Resources2": {
+    "id": "ARENA-Resources2",
+    "name": "Resource Skirmish 2",
+    "type": "ARENA_CUSTOM"
+  },
+  "CrystalRealm": {
+    "id": "CrystalRealm",
+    "name": "Crystal Realm",
+    "type": "ARENA_CRYSTAL"
+  },
+  "1008": { "id": "1008", "name": "The Lighthouse", "type": "TUTORIAL" },
+  "1009": { "id": "1009", "name": "Forgotten Woods", "type": "STARTAREA" },
+  "1010": { "id": "1010", "name": "Mountain Fort", "type": "STARTAREA" },
+  "1011": { "id": "1011", "name": "The Cove", "type": "STARTAREA" },
+  "3013-Auction2": {
+    "id": "3013-Auction2",
+    "name": "Caerleon Market",
+    "type": "PLAYERCITY_BLACK_ROYAL_NOFURNITURE"
+  },
+  "ARENA-City": {
+    "id": "ARENA-City",
+    "name": "ARENA-City",
+    "type": "ARENA_CUSTOM"
+  },
+  "HIDEOUT-0001a": {
+    "id": "HIDEOUT-0001a",
+    "name": "Hideout",
+    "type": "HIDEOUT"
+  },
+  "HIDEOUT-0001b": {
+    "id": "HIDEOUT-0001b",
+    "name": "Hideout",
+    "type": "HIDEOUT"
+  },
+  "HIDEOUT-0001c": {
+    "id": "HIDEOUT-0001c",
+    "name": "Hideout",
+    "type": "HIDEOUT"
+  },
+  "RANDOMDUNGEON": {
+    "id": "RANDOMDUNGEON",
+    "name": "Dungeon",
+    "type": "RANDOMDUNGEON"
+  },
+  "2305": {
+    "id": "2305",
+    "name": "Northstrand Dunes",
+    "type": "OPENPVP_BLACK"
+  },
+  "2326": {
+    "id": "2326",
+    "name": "Northstrand Beach",
+    "type": "OPENPVP_BLACK"
+  },
+  "0324": {
+    "id": "0324",
+    "name": "Scuttlesink Mouth",
+    "type": "OPENPVP_BLACK"
+  },
+  "1306": { "id": "1306", "name": "Deepwood Dell", "type": "OPENPVP_BLACK" },
+  "4308": { "id": "4308", "name": "Whitebank Stream", "type": "OPENPVP_BLACK" },
+  "4309": { "id": "4309", "name": "Whitebank Shore", "type": "OPENPVP_BLACK" },
+  "4311": { "id": "4311", "name": "Whitebank Cross", "type": "OPENPVP_BLACK" },
+  "4326": { "id": "4326", "name": "Whitebank Wall", "type": "OPENPVP_BLACK" },
+  "0307": { "id": "0307", "name": "Meltwater Bog", "type": "OPENPVP_BLACK" },
+  "4305": {
+    "id": "4305",
+    "name": "Whitebank Descent",
+    "type": "OPENPVP_BLACK"
+  },
+  "4338": { "id": "4338", "name": "Whitebank Ridge", "type": "OPENPVP_BLACK" },
+  "1326": { "id": "1326", "name": "Timberslope Dell", "type": "OPENPVP_BLACK" },
+  "1340": { "id": "1340", "name": "Deepwood Pines", "type": "OPENPVP_BLACK" },
+  "4306": { "id": "4306", "name": "Frostpeak Vista", "type": "OPENPVP_BLACK" },
+  "4324": { "id": "4324", "name": "Frostpeak Ascent", "type": "OPENPVP_BLACK" },
+  "4327": {
+    "id": "4327",
+    "name": "Floatshoal Fissure",
+    "type": "OPENPVP_BLACK"
+  },
+  "4339": { "id": "4339", "name": "Floatshoal Bight", "type": "OPENPVP_BLACK" },
+  "PSG-0039#2": {
+    "id": "PSG-0039#2",
+    "name": "Darkseep Core",
+    "type": "PASSAGE_BLACK"
+  },
+  "0325": { "id": "0325", "name": "Meltwater Delta", "type": "OPENPVP_BLACK" },
+  "0338": { "id": "0338", "name": "Meltwater Sump", "type": "OPENPVP_BLACK" },
+  "2307": { "id": "2307", "name": "Skysand Plateau", "type": "OPENPVP_BLACK" },
+  "4307": {
+    "id": "4307",
+    "name": "Everwinter Crossing",
+    "type": "OPENPVP_BLACK"
+  },
+  "4323": { "id": "4323", "name": "Everwinter Plain", "type": "OPENPVP_BLACK" },
+  "4325": { "id": "4325", "name": "Everwinter Gorge", "type": "OPENPVP_BLACK" },
+  "0353": {
+    "id": "0353",
+    "name": "Scuttlesink Marsh",
+    "type": "OPENPVP_BLACK"
+  },
+  "1305": {
+    "id": "1305",
+    "name": "Brambleshore Hinterlands",
+    "type": "OPENPVP_BLACK"
+  },
+  "3338": { "id": "3338", "name": "Shaleheath Steep", "type": "OPENPVP_BLACK" },
+  "4321": { "id": "4321", "name": "Everwinter Reach", "type": "OPENPVP_BLACK" },
+  "4322": { "id": "4322", "name": "Everwinter Peak", "type": "OPENPVP_BLACK" },
+  "4337": {
+    "id": "4337",
+    "name": "Everwinter Passage",
+    "type": "OPENPVP_BLACK"
+  },
+  "4340": {
+    "id": "4340",
+    "name": "Everwinter Expanse",
+    "type": "OPENPVP_BLACK"
+  },
+  "4353": {
+    "id": "4353",
+    "name": "Everwinter Incline",
+    "type": "OPENPVP_BLACK"
+  },
+  "PSG-0042#1": {
+    "id": "PSG-0042#1",
+    "name": "Stoneslip Passage",
+    "type": "PASSAGE_BLACK"
+  },
+  "PSG-0049#1": {
+    "id": "PSG-0049#1",
+    "name": "Whitecap Cave",
+    "type": "PASSAGE_BLACK"
+  },
+  "0306": {
+    "id": "0306",
+    "name": "Scuttlesink Pools",
+    "type": "OPENPVP_BLACK"
+  },
+  "1325": { "id": "1325", "name": "Timbertop Dale", "type": "OPENPVP_BLACK" },
+  "1338": { "id": "1338", "name": "Timbertop Wood", "type": "OPENPVP_BLACK" },
+  "1353": { "id": "1353", "name": "Timbertop Escarp", "type": "OPENPVP_BLACK" },
+  "3326": { "id": "3326", "name": "Shaleheath Hills", "type": "OPENPVP_BLACK" },
+  "4310": {
+    "id": "4310",
+    "name": "Everwinter Shores",
+    "type": "OPENPVP_BLACK"
+  },
+  "0305": { "id": "0305", "name": "Wetgrave Bog", "type": "OPENPVP_BLACK" },
+  "0339": { "id": "0339", "name": "Wetgrave Swale", "type": "OPENPVP_BLACK" },
+  "0342": { "id": "0342", "name": "Wetgrave Marsh", "type": "OPENPVP_BLACK" },
+  "1339": {
+    "id": "1339",
+    "name": "Timberslope Grove",
+    "type": "OPENPVP_BLACK"
+  },
+  "1354": {
+    "id": "1354",
+    "name": "Timberslope Bridge",
+    "type": "OPENPVP_BLACK"
+  },
+  "2306": { "id": "2306", "name": "Swiftsands Plain", "type": "OPENPVP_BLACK" },
+  "2308": {
+    "id": "2308",
+    "name": "Drybasin Riverbed",
+    "type": "OPENPVP_BLACK"
+  },
+  "2339": { "id": "2339", "name": "Swiftsands Basin", "type": "OPENPVP_BLACK" },
+  "2354": {
+    "id": "2354",
+    "name": "Swiftsands Chaparral",
+    "type": "OPENPVP_BLACK"
+  },
+  "3327": { "id": "3327", "name": "Skylake Bridge", "type": "OPENPVP_BLACK" },
+  "1355": { "id": "1355", "name": "Greenshore Bay", "type": "OPENPVP_BLACK" },
+  "3305": { "id": "3305", "name": "Flatrock Cliffs", "type": "OPENPVP_BLACK" },
+  "0315": { "id": "0315", "name": "Skullmarsh Lower", "type": "OPENPVP_BLACK" },
+  "0343": { "id": "0343", "name": "Skullmarsh Upper", "type": "OPENPVP_BLACK" },
+  "1307": {
+    "id": "1307",
+    "name": "Greenshore Peninsula",
+    "type": "OPENPVP_BLACK"
+  },
+  "1308": { "id": "1308", "name": "Giantweald Dale", "type": "OPENPVP_BLACK" },
+  "1311": {
+    "id": "1311",
+    "name": "Watchwood Precipice",
+    "type": "OPENPVP_BLACK"
+  },
+  "1315": { "id": "1315", "name": "Watchwood Grove", "type": "OPENPVP_BLACK" },
+  "1328": { "id": "1328", "name": "Giantweald Woods", "type": "OPENPVP_BLACK" },
+  "1329": {
+    "id": "1329",
+    "name": "Watchwood Lakeside",
+    "type": "OPENPVP_BLACK"
+  },
+  "1330": { "id": "1330", "name": "Watchwood Bluffs", "type": "OPENPVP_BLACK" },
+  "1341": { "id": "1341", "name": "Giantweald Edge", "type": "OPENPVP_BLACK" },
+  "2309": {
+    "id": "2309",
+    "name": "Slakesands Canyon",
+    "type": "OPENPVP_BLACK"
+  },
+  "2341": { "id": "2341", "name": "Drybasin Oasis", "type": "OPENPVP_BLACK" },
+  "2342": { "id": "2342", "name": "Slakesands Mesa", "type": "OPENPVP_BLACK" },
+  "3328": { "id": "3328", "name": "Flatrock Plateau", "type": "OPENPVP_BLACK" },
+  "4315": { "id": "4315", "name": "Munten Rise", "type": "OPENPVP_BLACK" },
+  "4331": { "id": "4331", "name": "Munten Tundra", "type": "OPENPVP_BLACK" },
+  "4345": { "id": "4345", "name": "Munten Fell", "type": "OPENPVP_BLACK" },
+  "1313": { "id": "1313", "name": "Hightree Steep", "type": "OPENPVP_BLACK" },
+  "1316": { "id": "1316", "name": "Hightree Lake", "type": "OPENPVP_BLACK" },
+  "1317": { "id": "1317", "name": "Hightree Dale", "type": "OPENPVP_BLACK" },
+  "1319": { "id": "1319", "name": "Hightree Strand", "type": "OPENPVP_BLACK" },
+  "1320": { "id": "1320", "name": "Hightree Glade", "type": "OPENPVP_BLACK" },
+  "1322": { "id": "1322", "name": "Hightree Enclave", "type": "OPENPVP_BLACK" },
+  "1332": { "id": "1332", "name": "Hightree Pass", "type": "OPENPVP_BLACK" },
+  "1335": { "id": "1335", "name": "Hightree Levee", "type": "OPENPVP_BLACK" },
+  "1336": { "id": "1336", "name": "Hightree Cliffs", "type": "OPENPVP_BLACK" },
+  "1345": { "id": "1345", "name": "Hightree Isle", "type": "OPENPVP_BLACK" },
+  "1347": { "id": "1347", "name": "Hightree Hillock", "type": "OPENPVP_BLACK" },
+  "4332": {
+    "id": "4332",
+    "name": "Glacierbreak Summit",
+    "type": "OPENPVP_BLACK"
+  },
+  "0308": {
+    "id": "0308",
+    "name": "Drownfield Course",
+    "type": "OPENPVP_BLACK"
+  },
+  "0309": { "id": "0309", "name": "Widemoor Shore", "type": "OPENPVP_BLACK" },
+  "0312": { "id": "0312", "name": "Widemoor Pool", "type": "OPENPVP_BLACK" },
+  "0314": {
+    "id": "0314",
+    "name": "Willowshade Wetlands",
+    "type": "OPENPVP_BLACK"
+  },
+  "0316": { "id": "0316", "name": "Widemoor Estuary", "type": "OPENPVP_BLACK" },
+  "0327": { "id": "0327", "name": "Widemoor Hills", "type": "OPENPVP_BLACK" },
+  "0328": {
+    "id": "0328",
+    "name": "Drownfield Wetland",
+    "type": "OPENPVP_BLACK"
+  },
+  "0330": { "id": "0330", "name": "Widemoor End", "type": "OPENPVP_BLACK" },
+  "0331": {
+    "id": "0331",
+    "name": "Willowshade Pools",
+    "type": "OPENPVP_BLACK"
+  },
+  "0333": { "id": "0333", "name": "Widemoor Woods", "type": "OPENPVP_BLACK" },
+  "0344": {
+    "id": "0344",
+    "name": "Willowshade Hills",
+    "type": "OPENPVP_BLACK"
+  },
+  "1309": { "id": "1309", "name": "Timberscar Dell", "type": "OPENPVP_BLACK" },
+  "1342": { "id": "1342", "name": "Timberscar Copse", "type": "OPENPVP_BLACK" },
+  "2327": { "id": "2327", "name": "Drytop Riverbed", "type": "OPENPVP_BLACK" },
+  "2328": { "id": "2328", "name": "Drytop Pillars", "type": "OPENPVP_BLACK" },
+  "PSG-0044#1": {
+    "id": "PSG-0044#1",
+    "name": "Stalagmite Adit",
+    "type": "PASSAGE_BLACK"
+  },
+  "0310": { "id": "0310", "name": "Drownfield Mire", "type": "OPENPVP_BLACK" },
+  "0313": { "id": "0313", "name": "Drownfield Fen", "type": "OPENPVP_BLACK" },
+  "0329": {
+    "id": "0329",
+    "name": "Drownfield Slough",
+    "type": "OPENPVP_BLACK"
+  },
+  "0332": { "id": "0332", "name": "Drownfield Rut", "type": "OPENPVP_BLACK" },
+  "0340": { "id": "0340", "name": "Drownfield Quag", "type": "OPENPVP_BLACK" },
+  "0354": {
+    "id": "0354",
+    "name": "Meltwater Channel",
+    "type": "OPENPVP_BLACK"
+  },
+  "0355": { "id": "0355", "name": "Drownfield Sink", "type": "OPENPVP_BLACK" },
+  "1312": { "id": "1312", "name": "Deadpine Forest", "type": "OPENPVP_BLACK" },
+  "2340": { "id": "2340", "name": "Skysand Ridge", "type": "OPENPVP_BLACK" },
+  "2355": { "id": "2355", "name": "Citadel of Ash", "type": "OPENPVP_BLACK" },
+  "4312": {
+    "id": "4312",
+    "name": "Glacierfall Passage",
+    "type": "OPENPVP_BLACK"
+  },
+  "4317": { "id": "4317", "name": "Whitepeak Ascent", "type": "OPENPVP_BLACK" },
+  "4329": {
+    "id": "4329",
+    "name": "Glacierfall Canyon",
+    "type": "OPENPVP_BLACK"
+  },
+  "4341": { "id": "4341", "name": "Everwinter Gap", "type": "OPENPVP_BLACK" },
+  "4343": {
+    "id": "4343",
+    "name": "Glacierfall Cross",
+    "type": "OPENPVP_BLACK"
+  },
+  "4344": {
+    "id": "4344",
+    "name": "Glacierfall Valley",
+    "type": "OPENPVP_BLACK"
+  },
+  "4348": { "id": "4348", "name": "Whitepeak Spring", "type": "OPENPVP_BLACK" },
+  "4355": { "id": "4355", "name": "Glacierfall Pass", "type": "OPENPVP_BLACK" },
+  "4357": { "id": "4357", "name": "Whitepeak Tundra", "type": "OPENPVP_BLACK" },
+  "0321": { "id": "0321", "name": "Springsump Basin", "type": "OPENPVP_BLACK" },
+  "0335": {
+    "id": "0335",
+    "name": "Springsump Wetland",
+    "type": "OPENPVP_BLACK"
+  },
+  "0351": { "id": "0351", "name": "Springsump Melt", "type": "OPENPVP_BLACK" },
+  "1314": {
+    "id": "1314",
+    "name": "Southgrove Escarp",
+    "type": "OPENPVP_BLACK"
+  },
+  "1337": { "id": "1337", "name": "Southgrove Copse", "type": "OPENPVP_BLACK" },
+  "1350": {
+    "id": "1350",
+    "name": "Southgrove Thicket",
+    "type": "OPENPVP_BLACK"
+  },
+  "2315": { "id": "2315", "name": "Dryvein Cross", "type": "OPENPVP_BLACK" },
+  "2316": { "id": "2316", "name": "Sunstrand Shoal", "type": "OPENPVP_BLACK" },
+  "2317": { "id": "2317", "name": "Sunstrand Delta", "type": "OPENPVP_BLACK" },
+  "2319": { "id": "2319", "name": "Dryvein Plain", "type": "OPENPVP_BLACK" },
+  "2320": { "id": "2320", "name": "Farshore Esker", "type": "OPENPVP_BLACK" },
+  "2334": { "id": "2334", "name": "Dryvein Oasis", "type": "OPENPVP_BLACK" },
+  "2335": { "id": "2335", "name": "Sunstrand Dunes", "type": "OPENPVP_BLACK" },
+  "2336": { "id": "2336", "name": "Farshore Heath", "type": "OPENPVP_BLACK" },
+  "2348": {
+    "id": "2348",
+    "name": "Sunstrand Quicksands",
+    "type": "OPENPVP_BLACK"
+  },
+  "3317": { "id": "3317", "name": "Battlebrae Peaks", "type": "OPENPVP_BLACK" },
+  "3325": { "id": "3325", "name": "Stonelake Fields", "type": "OPENPVP_BLACK" },
+  "3336": {
+    "id": "3336",
+    "name": "Stonelake Hillock",
+    "type": "OPENPVP_BLACK"
+  },
+  "3358": {
+    "id": "3358",
+    "name": "Stonemouth Southbluff",
+    "type": "OPENPVP_BLACK"
+  },
+  "4336": {
+    "id": "4336",
+    "name": "Frostspring Passage",
+    "type": "OPENPVP_BLACK"
+  },
+  "4351": {
+    "id": "4351",
+    "name": "Frostspring Volcano",
+    "type": "OPENPVP_BLACK"
+  },
+  "4352": { "id": "4352", "name": "Whitewall Ridge", "type": "OPENPVP_BLACK" },
+  "4359": { "id": "4359", "name": "Whitewall Pass", "type": "OPENPVP_BLACK" },
+  "0311": {
+    "id": "0311",
+    "name": "Runnelvein Slough",
+    "type": "OPENPVP_BLACK"
+  },
+  "0326": { "id": "0326", "name": "Runnelvein Bog", "type": "OPENPVP_BLACK" },
+  "0341": { "id": "0341", "name": "Runnelvein Sink", "type": "OPENPVP_BLACK" },
+  "1310": { "id": "1310", "name": "Giantweald Copse", "type": "OPENPVP_BLACK" },
+  "1327": { "id": "1327", "name": "Deepwood Gorge", "type": "OPENPVP_BLACK" },
+  "1331": { "id": "1331", "name": "Giantweald Roots", "type": "OPENPVP_BLACK" },
+  "1343": { "id": "1343", "name": "Deepwood Copse", "type": "OPENPVP_BLACK" },
+  "1344": { "id": "1344", "name": "Giantweald Glade", "type": "OPENPVP_BLACK" },
+  "1356": {
+    "id": "1356",
+    "name": "Eye of the Forest",
+    "type": "OPENPVP_BLACK"
+  },
+  "1357": { "id": "1357", "name": "Eldersleep", "type": "OPENPVP_BLACK" },
+  "3339": {
+    "id": "3339",
+    "name": "Skylake Hinterlands",
+    "type": "OPENPVP_BLACK"
+  },
+  "3353": { "id": "3353", "name": "Thunderrock Draw", "type": "OPENPVP_BLACK" },
+  "4313": { "id": "4313", "name": "Floatshoal Floe", "type": "OPENPVP_BLACK" },
+  "4318": { "id": "4318", "name": "Iceburn Firth", "type": "OPENPVP_BLACK" },
+  "4319": { "id": "4319", "name": "Flammog Fork", "type": "OPENPVP_BLACK" },
+  "4328": { "id": "4328", "name": "Iceburn Peaks", "type": "OPENPVP_BLACK" },
+  "4330": { "id": "4330", "name": "Flammog Valley", "type": "OPENPVP_BLACK" },
+  "4342": { "id": "4342", "name": "Iceburn Cliffs", "type": "OPENPVP_BLACK" },
+  "4346": { "id": "4346", "name": "Iceburn Tundra", "type": "OPENPVP_BLACK" },
+  "4354": {
+    "id": "4354",
+    "name": "Flammog Desolation",
+    "type": "OPENPVP_BLACK"
+  },
+  "4356": {
+    "id": "4356",
+    "name": "Glacierfall Fissure",
+    "type": "OPENPVP_BLACK"
+  },
+  "PSG-0053#1": {
+    "id": "PSG-0053#1",
+    "name": "Driprock Tunnel",
+    "type": "PASSAGE_BLACK"
+  },
+  "PSG-0051#1": {
+    "id": "PSG-0051#1",
+    "name": "Shale Underway",
+    "type": "PASSAGE_BLACK"
+  },
+  "PSG-0052#1": {
+    "id": "PSG-0052#1",
+    "name": "Smuggler's Rut",
+    "type": "PASSAGE_BLACK"
+  },
+  "PSG-0038#2": {
+    "id": "PSG-0038#2",
+    "name": "Crosscut Skip",
+    "type": "PASSAGE_BLACK"
+  },
+  "0317": { "id": "0317", "name": "Widemoor Delta", "type": "OPENPVP_BLACK" },
+  "0318": { "id": "0318", "name": "Willowshade Mire", "type": "OPENPVP_BLACK" },
+  "0319": { "id": "0319", "name": "Willowshade Lake", "type": "OPENPVP_BLACK" },
+  "0320": {
+    "id": "0320",
+    "name": "Willowshade Icemarsh",
+    "type": "OPENPVP_BLACK"
+  },
+  "0334": { "id": "0334", "name": "Widemoor Flats", "type": "OPENPVP_BLACK" },
+  "0345": { "id": "0345", "name": "Willowshade Sink", "type": "OPENPVP_BLACK" },
+  "0348": { "id": "0348", "name": "Widemoor Fen", "type": "OPENPVP_BLACK" },
+  "0350": {
+    "id": "0350",
+    "name": "Twinchannel Narrows",
+    "type": "OPENPVP_BLACK"
+  },
+  "0357": {
+    "id": "0357",
+    "name": "Unhallowed Cloister",
+    "type": "OPENPVP_BLACK"
+  },
+  "1323": {
+    "id": "1323",
+    "name": "Westweald Thicket",
+    "type": "OPENPVP_BLACK"
+  },
+  "1334": { "id": "1334", "name": "Driftwood Glen", "type": "OPENPVP_BLACK" },
+  "1351": { "id": "1351", "name": "Westweald Shore", "type": "OPENPVP_BLACK" },
+  "2312": { "id": "2312", "name": "Sandmount Strand", "type": "OPENPVP_BLACK" },
+  "2314": {
+    "id": "2314",
+    "name": "Bleachskull Steppe",
+    "type": "OPENPVP_BLACK"
+  },
+  "2318": { "id": "2318", "name": "Sandmount Esker", "type": "OPENPVP_BLACK" },
+  "2321": { "id": "2321", "name": "Sandrift Steppe", "type": "OPENPVP_BLACK" },
+  "2322": { "id": "2322", "name": "Sandrift Prairie", "type": "OPENPVP_BLACK" },
+  "2323": { "id": "2323", "name": "Sandrift Coast", "type": "OPENPVP_BLACK" },
+  "2324": { "id": "2324", "name": "Sandrift Shore", "type": "OPENPVP_BLACK" },
+  "2325": { "id": "2325", "name": "Farshore Bay", "type": "OPENPVP_BLACK" },
+  "2333": {
+    "id": "2333",
+    "name": "Bleachskull Desert",
+    "type": "OPENPVP_BLACK"
+  },
+  "2337": { "id": "2337", "name": "Sandrift Expanse", "type": "OPENPVP_BLACK" },
+  "2338": { "id": "2338", "name": "Farshore Lagoon", "type": "OPENPVP_BLACK" },
+  "2349": { "id": "2349", "name": "Sandmount Desert", "type": "OPENPVP_BLACK" },
+  "2350": { "id": "2350", "name": "Sandrift Dunes", "type": "OPENPVP_BLACK" },
+  "2351": {
+    "id": "2351",
+    "name": "Farshore Drylands",
+    "type": "OPENPVP_BLACK"
+  },
+  "2352": { "id": "2352", "name": "Sandrift Fringe", "type": "OPENPVP_BLACK" },
+  "2353": { "id": "2353", "name": "Farshore Cape", "type": "OPENPVP_BLACK" },
+  "2358": { "id": "2358", "name": "Sandmount Ascent", "type": "OPENPVP_BLACK" },
+  "3309": { "id": "3309", "name": "Braemore Upland", "type": "OPENPVP_BLACK" },
+  "3318": { "id": "3318", "name": "Windgrass Border", "type": "OPENPVP_BLACK" },
+  "3320": { "id": "3320", "name": "Windgrass Gully", "type": "OPENPVP_BLACK" },
+  "3321": { "id": "3321", "name": "Windgrass Rill", "type": "OPENPVP_BLACK" },
+  "3322": {
+    "id": "3322",
+    "name": "Windgrass Precipice",
+    "type": "OPENPVP_BLACK"
+  },
+  "3331": { "id": "3331", "name": "Braemore Lowland", "type": "OPENPVP_BLACK" },
+  "3333": { "id": "3333", "name": "Windgrass Fields", "type": "OPENPVP_BLACK" },
+  "3334": { "id": "3334", "name": "Windgrass Coast", "type": "OPENPVP_BLACK" },
+  "3346": { "id": "3346", "name": "Highstone Mound", "type": "OPENPVP_BLACK" },
+  "4314": { "id": "4314", "name": "Avalanche Ravine", "type": "OPENPVP_BLACK" },
+  "4316": { "id": "4316", "name": "Frostbite Chasm", "type": "OPENPVP_BLACK" },
+  "4320": { "id": "4320", "name": "Frostseep Ravine", "type": "OPENPVP_BLACK" },
+  "4335": {
+    "id": "4335",
+    "name": "Frostbite Mountain",
+    "type": "OPENPVP_BLACK"
+  },
+  "4347": {
+    "id": "4347",
+    "name": "Frostseep Crevasse",
+    "type": "OPENPVP_BLACK"
+  },
+  "0322": { "id": "0322", "name": "Longfen Marsh", "type": "OPENPVP_BLACK" },
+  "0323": { "id": "0323", "name": "Mudfoot Sump", "type": "OPENPVP_BLACK" },
+  "0337": { "id": "0337", "name": "Mudfoot Mounds", "type": "OPENPVP_BLACK" },
+  "0352": { "id": "0352", "name": "Longfen Veins", "type": "OPENPVP_BLACK" },
+  "0359": {
+    "id": "0359",
+    "name": "Deathreach Priory",
+    "type": "OPENPVP_BLACK"
+  },
+  "1324": { "id": "1324", "name": "Greenhollow Vale", "type": "OPENPVP_BLACK" },
+  "1352": {
+    "id": "1352",
+    "name": "Greenhollow Copse",
+    "type": "OPENPVP_BLACK"
+  },
+  "3315": { "id": "3315", "name": "Highstone Plains", "type": "OPENPVP_BLACK" },
+  "3316": {
+    "id": "3316",
+    "name": "Battlebrae Flatland",
+    "type": "OPENPVP_BLACK"
+  },
+  "3319": {
+    "id": "3319",
+    "name": "Highstone Grassland",
+    "type": "OPENPVP_BLACK"
+  },
+  "3323": { "id": "3323", "name": "Gravemound Brim", "type": "OPENPVP_BLACK" },
+  "3324": { "id": "3324", "name": "Gravemound Hills", "type": "OPENPVP_BLACK" },
+  "3337": { "id": "3337", "name": "Gravemound Slope", "type": "OPENPVP_BLACK" },
+  "3349": {
+    "id": "3349",
+    "name": "Battlebrae Meadow",
+    "type": "OPENPVP_BLACK"
+  },
+  "3350": {
+    "id": "3350",
+    "name": "Windgrass Terrace",
+    "type": "OPENPVP_BLACK"
+  },
+  "3351": { "id": "3351", "name": "Gravemound Knoll", "type": "OPENPVP_BLACK" },
+  "3352": {
+    "id": "3352",
+    "name": "Gravemound Cliffs",
+    "type": "OPENPVP_BLACK"
+  },
+  "3357": { "id": "3357", "name": "Highstone Loch", "type": "OPENPVP_BLACK" },
+  "3359": { "id": "3359", "name": "Redtree Enclave", "type": "OPENPVP_BLACK" },
+  "PSG-0052#2": {
+    "id": "PSG-0052#2",
+    "name": "Deathcap Channel",
+    "type": "PASSAGE_BLACK"
+  },
+  "PSG-0052#3": {
+    "id": "PSG-0052#3",
+    "name": "Glowmire Grotto",
+    "type": "PASSAGE_BLACK"
+  },
+  "PSG-0051#2": {
+    "id": "PSG-0051#2",
+    "name": "Lurkers' Hollow",
+    "type": "PASSAGE_BLACK"
+  },
+  "PSG-0050#1": {
+    "id": "PSG-0050#1",
+    "name": "Middlemurk Path",
+    "type": "PASSAGE_BLACK"
+  },
+  "PSG-0048#1": {
+    "id": "PSG-0048#1",
+    "name": "Craglight Cavern",
+    "type": "PASSAGE_BLACK"
+  },
+  "0346": { "id": "0346", "name": "Deathwisp Sink", "type": "OPENPVP_BLACK" },
+  "0347": { "id": "0347", "name": "Deathwisp Bog", "type": "OPENPVP_BLACK" },
+  "0349": {
+    "id": "0349",
+    "name": "Sunkenbough Woods",
+    "type": "OPENPVP_BLACK"
+  },
+  "0356": { "id": "0356", "name": "Black Monastery", "type": "OPENPVP_BLACK" },
+  "0358": {
+    "id": "0358",
+    "name": "Sunkenbough Spring",
+    "type": "OPENPVP_BLACK"
+  },
+  "1318": {
+    "id": "1318",
+    "name": "Rivercopse Crossing",
+    "type": "OPENPVP_BLACK"
+  },
+  "1321": { "id": "1321", "name": "Driftwood Vale", "type": "OPENPVP_BLACK" },
+  "1333": {
+    "id": "1333",
+    "name": "Hightree Borderlands",
+    "type": "OPENPVP_BLACK"
+  },
+  "1346": { "id": "1346", "name": "Rivercopse Curve", "type": "OPENPVP_BLACK" },
+  "1348": { "id": "1348", "name": "Driftwood Hollow", "type": "OPENPVP_BLACK" },
+  "1349": { "id": "1349", "name": "Rivercopse Path", "type": "OPENPVP_BLACK" },
+  "1358": { "id": "1358", "name": "Darkbough Snag", "type": "OPENPVP_BLACK" },
+  "1359": { "id": "1359", "name": "Rivercopse Fount", "type": "OPENPVP_BLACK" },
+  "2310": { "id": "2310", "name": "Sunfang Ravine", "type": "OPENPVP_BLACK" },
+  "2330": { "id": "2330", "name": "Sunfang Approach", "type": "OPENPVP_BLACK" },
+  "2331": { "id": "2331", "name": "Parchsand Cliffs", "type": "OPENPVP_BLACK" },
+  "2343": { "id": "2343", "name": "Sunfang Cliffs", "type": "OPENPVP_BLACK" },
+  "2344": {
+    "id": "2344",
+    "name": "Sunfang Wasteland",
+    "type": "OPENPVP_BLACK"
+  },
+  "2356": { "id": "2356", "name": "Wailing Bulwark", "type": "OPENPVP_BLACK" },
+  "2357": { "id": "2357", "name": "Sunfang Dawn", "type": "OPENPVP_BLACK" },
+  "2359": {
+    "id": "2359",
+    "name": "Parchsand Drought",
+    "type": "OPENPVP_BLACK"
+  },
+  "3306": {
+    "id": "3306",
+    "name": "Murdergulch Cross",
+    "type": "OPENPVP_BLACK"
+  },
+  "3307": { "id": "3307", "name": "Murdergulch Gap", "type": "OPENPVP_BLACK" },
+  "3308": {
+    "id": "3308",
+    "name": "Razorrock Passage",
+    "type": "OPENPVP_BLACK"
+  },
+  "3310": { "id": "3310", "name": "Razorrock Valley", "type": "OPENPVP_BLACK" },
+  "3311": { "id": "3311", "name": "Highstone Meadow", "type": "OPENPVP_BLACK" },
+  "3312": { "id": "3312", "name": "Battlebrae Plain", "type": "OPENPVP_BLACK" },
+  "3313": { "id": "3313", "name": "Battlebrae Lake", "type": "OPENPVP_BLACK" },
+  "3314": {
+    "id": "3314",
+    "name": "Stonemouth Northbluff",
+    "type": "OPENPVP_BLACK"
+  },
+  "3329": {
+    "id": "3329",
+    "name": "Thunderrock Rapids",
+    "type": "OPENPVP_BLACK"
+  },
+  "3330": { "id": "3330", "name": "Razorrock Ravine", "type": "OPENPVP_BLACK" },
+  "3332": { "id": "3332", "name": "Razorrock Edge", "type": "OPENPVP_BLACK" },
+  "3335": { "id": "3335", "name": "Stonemouth Bay", "type": "OPENPVP_BLACK" },
+  "3340": {
+    "id": "3340",
+    "name": "Thunderrock Ascent",
+    "type": "OPENPVP_BLACK"
+  },
+  "3341": {
+    "id": "3341",
+    "name": "Thunderrock Upland",
+    "type": "OPENPVP_BLACK"
+  },
+  "3342": {
+    "id": "3342",
+    "name": "Murdergulch Trail",
+    "type": "OPENPVP_BLACK"
+  },
+  "3343": { "id": "3343", "name": "Razorrock Chasm", "type": "OPENPVP_BLACK" },
+  "3344": { "id": "3344", "name": "Razorrock Verge", "type": "OPENPVP_BLACK" },
+  "3345": { "id": "3345", "name": "Razorrock Bank", "type": "OPENPVP_BLACK" },
+  "3347": {
+    "id": "3347",
+    "name": "Highstone Plateau",
+    "type": "OPENPVP_BLACK"
+  },
+  "3348": {
+    "id": "3348",
+    "name": "Battlebrae Grassland",
+    "type": "OPENPVP_BLACK"
+  },
+  "3354": {
+    "id": "3354",
+    "name": "Murdergulch Divide",
+    "type": "OPENPVP_BLACK"
+  },
+  "3355": {
+    "id": "3355",
+    "name": "Murdergulch Ravine",
+    "type": "OPENPVP_BLACK"
+  },
+  "3356": { "id": "3356", "name": "Razorrock Gulch", "type": "OPENPVP_BLACK" },
+  "4333": { "id": "4333", "name": "Firesink Caldera", "type": "OPENPVP_BLACK" },
+  "4334": { "id": "4334", "name": "Whitecliff Peak", "type": "OPENPVP_BLACK" },
+  "4349": { "id": "4349", "name": "Firesink Trench", "type": "OPENPVP_BLACK" },
+  "4350": {
+    "id": "4350",
+    "name": "Whitecliff Expanse",
+    "type": "OPENPVP_BLACK"
+  },
+  "4358": {
+    "id": "4358",
+    "name": "Avalanche Incline",
+    "type": "OPENPVP_BLACK"
+  },
+  "PSG-0051#3": {
+    "id": "PSG-0051#3",
+    "name": "Bedrock Passage",
+    "type": "PASSAGE_BLACK"
+  },
+  "PSG-0051#4": {
+    "id": "PSG-0051#4",
+    "name": "Everglow Deep",
+    "type": "PASSAGE_BLACK"
+  },
+  "0336": { "id": "0336", "name": "Longfen Arms", "type": "OPENPVP_BLACK" },
+  "2311": {
+    "id": "2311",
+    "name": "Thirstwater Steppe",
+    "type": "OPENPVP_BLACK"
+  },
+  "2313": { "id": "2313", "name": "Dryvein Riverbed", "type": "OPENPVP_BLACK" },
+  "2329": {
+    "id": "2329",
+    "name": "Thirstwater Waste",
+    "type": "OPENPVP_BLACK"
+  },
+  "2332": { "id": "2332", "name": "Dryvein Steppe", "type": "OPENPVP_BLACK" },
+  "2345": { "id": "2345", "name": "Dryvein End", "type": "OPENPVP_BLACK" },
+  "2346": {
+    "id": "2346",
+    "name": "Thirstwater Gully",
+    "type": "OPENPVP_BLACK"
+  },
+  "2347": {
+    "id": "2347",
+    "name": "Dryvein Confluence",
+    "type": "OPENPVP_BLACK"
+  },
+  "2360": { "id": "2360", "name": "Daemonium Keep", "type": "OPENPVP_BLACK" },
+  "PSG-0004#1": {
+    "id": "PSG-0004#1",
+    "name": "Nightbloom Track",
+    "type": "PASSAGE_BLACK"
+  },
+  "PSG-0045#1": {
+    "id": "PSG-0045#1",
+    "name": "Mudrock Burrow",
+    "type": "PASSAGE_BLACK"
+  },
+  "PSG-0053#2": {
+    "id": "PSG-0053#2",
+    "name": "Deathcreep Adit",
+    "type": "PASSAGE_BLACK"
+  },
+  "4300": { "id": "4300", "name": "Arthur's Rest", "type": "PLAYERCITY_BLACK" },
+  "1012": { "id": "1012", "name": "Merlyn's Rest", "type": "PLAYERCITY_BLACK" },
+  "0360-HALL-01": {
+    "id": "0360-HALL-01",
+    "name": "Conquerors' Hall Lvl. 1",
+    "type": "PLAYERCITY_BLACK_ROYAL_NOFURNITURE_HALL_OF_FAME"
+  },
+  "0361-HALL-02": {
+    "id": "0361-HALL-02",
+    "name": "Conquerors' Hall Lvl. 2",
+    "type": "PLAYERCITY_BLACK_ROYAL_NOFURNITURE_HALL_OF_FAME"
+  },
+  "1013-HALL-01": {
+    "id": "1013-HALL-01",
+    "name": "Conquerors' Hall Lvl. 1",
+    "type": "PLAYERCITY_BLACK_ROYAL_NOFURNITURE_HALL_OF_FAME"
+  },
+  "1014-HALL-02": {
+    "id": "1014-HALL-02",
+    "name": "Conquerors' Hall Lvl. 2",
+    "type": "PLAYERCITY_BLACK_ROYAL_NOFURNITURE_HALL_OF_FAME"
+  },
+  "2010-HALL-01": {
+    "id": "2010-HALL-01",
+    "name": "Conquerors' Hall Lvl. 1",
+    "type": "PLAYERCITY_BLACK_ROYAL_NOFURNITURE_HALL_OF_FAME"
+  },
+  "2011-HALL-02": {
+    "id": "2011-HALL-02",
+    "name": "Conquerors' Hall Lvl. 2",
+    "type": "PLAYERCITY_BLACK_ROYAL_NOFURNITURE_HALL_OF_FAME"
+  },
+  "3014-HALL-01": {
+    "id": "3014-HALL-01",
+    "name": "Conquerors' Hall Lvl. 1",
+    "type": "PLAYERCITY_BLACK_ROYAL_NOFURNITURE_HALL_OF_FAME"
+  },
+  "3015-HALL-02": {
+    "id": "3015-HALL-02",
+    "name": "Conquerors' Hall Lvl. 2",
+    "type": "PLAYERCITY_BLACK_ROYAL_NOFURNITURE_HALL_OF_FAME"
+  },
+  "4007-HALL-01": {
+    "id": "4007-HALL-01",
+    "name": "Conquerors' Hall Lvl. 1",
+    "type": "PLAYERCITY_BLACK_ROYAL_NOFURNITURE_HALL_OF_FAME"
+  },
+  "4008-HALL-02": {
+    "id": "4008-HALL-02",
+    "name": "Conquerors' Hall Lvl. 2",
+    "type": "PLAYERCITY_BLACK_ROYAL_NOFURNITURE_HALL_OF_FAME"
+  },
+  "0008": {
+    "id": "0008",
+    "name": "Morgana's Rest",
+    "type": "PLAYERCITY_BLACK"
+  },
+  "TNL-001": { "id": "TNL-001", "name": "Ouyos-Aoeuam", "type": "TUNNEL" },
+  "TNL-002": { "id": "TNL-002", "name": "Coues-Exakrom", "type": "TUNNEL" },
+  "TNL-003": { "id": "TNL-003", "name": "Puros-Amayam", "type": "TUNNEL" },
+  "TNL-004": { "id": "TNL-004", "name": "Pures-Ouozlum", "type": "TUNNEL" },
+  "TNL-005": { "id": "TNL-005", "name": "Soros-Axaesum", "type": "TUNNEL" },
+  "TNL-006": { "id": "TNL-006", "name": "Huyos-Uxeulum", "type": "TUNNEL" },
+  "TNL-007": { "id": "TNL-007", "name": "Ceres-Iooinum", "type": "TUNNEL" },
+  "TNL-008": { "id": "TNL-008", "name": "Cetos-Obaelos", "type": "TUNNEL" },
+  "TNL-009": { "id": "TNL-009", "name": "Oieos-Umiutum", "type": "TUNNEL" },
+  "TNL-010": { "id": "TNL-010", "name": "Sebos-Avoirom", "type": "TUNNEL" },
+  "TNL-011": { "id": "TNL-011", "name": "Teros-Auiusum", "type": "TUNNEL" },
+  "TNL-012": { "id": "TNL-012", "name": "Oebos-Ixakaum", "type": "TUNNEL" },
+  "TNL-013": { "id": "TNL-013", "name": "Touos-Uoemtum", "type": "TUNNEL" },
+  "TNL-014": { "id": "TNL-014", "name": "Xasos-Aeoilos", "type": "TUNNEL" },
+  "TNL-015": { "id": "TNL-015", "name": "Xuros-Eyoztum", "type": "TUNNEL" },
+  "TNL-016": { "id": "TNL-016", "name": "Pasos-Avosam", "type": "TUNNEL" },
+  "TNL-017": { "id": "TNL-017", "name": "Oasos-Uromlum", "type": "TUNNEL" },
+  "TNL-018": { "id": "TNL-018", "name": "Casos-Uruxtum", "type": "TUNNEL" },
+  "TNL-019": { "id": "TNL-019", "name": "Ceros-Aeaylum", "type": "TUNNEL" },
+  "TNL-020": { "id": "TNL-020", "name": "Xouos-Aioblos", "type": "TUNNEL" },
+  "TNL-021": { "id": "TNL-021", "name": "Oasos-Eraerom", "type": "TUNNEL" },
+  "TNL-022": { "id": "TNL-022", "name": "Tetos-Igaelum", "type": "TUNNEL" },
+  "TNL-023": { "id": "TNL-023", "name": "Hynos-Oiaelos", "type": "TUNNEL" },
+  "TNL-024": { "id": "TNL-024", "name": "Hebos-Ulamsum", "type": "TUNNEL" },
+  "TNL-025": { "id": "TNL-025", "name": "Hiros-Iuaerom", "type": "TUNNEL" },
+  "TNL-026": { "id": "TNL-026", "name": "Cynos-Avixnum", "type": "TUNNEL" },
+  "TNL-027": { "id": "TNL-027", "name": "Conos-Avaelum", "type": "TUNNEL" },
+  "TNL-028": { "id": "TNL-028", "name": "Tetos-Ulaurom", "type": "TUNNEL" },
+  "TNL-029": { "id": "TNL-029", "name": "Oures-Araosum", "type": "TUNNEL" },
+  "TNL-030": { "id": "TNL-030", "name": "Hures-Ugumtum", "type": "TUNNEL" },
+  "TNL-031": { "id": "TNL-031", "name": "Hasos-Iuimaum", "type": "TUNNEL" },
+  "TNL-032": { "id": "TNL-032", "name": "Foros-Egoisum", "type": "TUNNEL" },
+  "TNL-033": { "id": "TNL-033", "name": "Hasos-Agoitum", "type": "TUNNEL" },
+  "TNL-034": { "id": "TNL-034", "name": "Setos-Avamsum", "type": "TUNNEL" },
+  "TNL-035": { "id": "TNL-035", "name": "Tonos-Obayam", "type": "TUNNEL" },
+  "TNL-036": { "id": "TNL-036", "name": "Honos-Umayaum", "type": "TUNNEL" },
+  "TNL-037": { "id": "TNL-037", "name": "Huyes-Ogozlum", "type": "TUNNEL" },
+  "TNL-038": { "id": "TNL-038", "name": "Curos-Avulsum", "type": "TUNNEL" },
+  "TNL-039": { "id": "TNL-039", "name": "Cebos-Avemlum", "type": "TUNNEL" },
+  "TNL-040": { "id": "TNL-040", "name": "Hasos-Inayaum", "type": "TUNNEL" },
+  "TNL-041": { "id": "TNL-041", "name": "Sasos-Egeylos", "type": "TUNNEL" },
+  "TNL-042": { "id": "TNL-042", "name": "Coros-Aiayrom", "type": "TUNNEL" },
+  "TNL-043": { "id": "TNL-043", "name": "Hiros-Exozlos", "type": "TUNNEL" },
+  "TNL-044": { "id": "TNL-044", "name": "Tiros-Ouultum", "type": "TUNNEL" },
+  "TNL-045": { "id": "TNL-045", "name": "Cases-Ugumlos", "type": "TUNNEL" },
+  "TNL-046": { "id": "TNL-046", "name": "Fynes-Unavtum", "type": "TUNNEL" },
+  "TNL-047": { "id": "TNL-047", "name": "Fetos-Aiaylos", "type": "TUNNEL" },
+  "TNL-048": { "id": "TNL-048", "name": "Fouos-Agosaum", "type": "TUNNEL" },
+  "TNL-049": { "id": "TNL-049", "name": "Huyos-Eyoztum", "type": "TUNNEL" },
+  "TNL-050": { "id": "TNL-050", "name": "Poues-Unatam", "type": "TUNNEL" },
+  "TNL-051": { "id": "TNL-051", "name": "Fouos-Amaurom", "type": "TUNNEL" },
+  "TNL-052": { "id": "TNL-052", "name": "Suyos-Onaytum", "type": "TUNNEL" },
+  "TNL-053": { "id": "TNL-053", "name": "Xasos-Oneulum", "type": "TUNNEL" },
+  "TNL-054": { "id": "TNL-054", "name": "Oynos-Oyozam", "type": "TUNNEL" },
+  "TNL-055": { "id": "TNL-055", "name": "Coros-Atinaum", "type": "TUNNEL" },
+  "TNL-056": { "id": "TNL-056", "name": "Sasos-Oiozlum", "type": "TUNNEL" },
+  "TNL-057": { "id": "TNL-057", "name": "Xynos-Oyogam", "type": "TUNNEL" },
+  "TNL-058": { "id": "TNL-058", "name": "Cynos-Oxaeaum", "type": "TUNNEL" },
+  "TNL-059": { "id": "TNL-059", "name": "Tynos-Atatlos", "type": "TUNNEL" },
+  "TNL-060": { "id": "TNL-060", "name": "Firos-Enomaum", "type": "TUNNEL" },
+  "TNL-061": { "id": "TNL-061", "name": "Hynes-Exemrom", "type": "TUNNEL" },
+  "TNL-062": { "id": "TNL-062", "name": "Hebes-Ouaylos", "type": "TUNNEL" },
+  "TNL-063": { "id": "TNL-063", "name": "Foues-Aeaosum", "type": "TUNNEL" },
+  "TNL-064": { "id": "TNL-064", "name": "Xilos-Osayam", "type": "TUNNEL" },
+  "TNL-065": { "id": "TNL-065", "name": "Casos-Ayosrom", "type": "TUNNEL" },
+  "TNL-066": { "id": "TNL-066", "name": "Souos-Ososlos", "type": "TUNNEL" },
+  "TNL-067": { "id": "TNL-067", "name": "Xebos-Emimsum", "type": "TUNNEL" },
+  "TNL-068": { "id": "TNL-068", "name": "Oetos-Oyexlos", "type": "TUNNEL" },
+  "TNL-069": { "id": "TNL-069", "name": "Xebos-Exostum", "type": "TUNNEL" },
+  "TNL-070": { "id": "TNL-070", "name": "Tynos-Eyexrom", "type": "TUNNEL" },
+  "TNL-071": { "id": "TNL-071", "name": "Casos-Aximam", "type": "TUNNEL" },
+  "TNL-072": { "id": "TNL-072", "name": "Hasos-Ayousum", "type": "TUNNEL" },
+  "TNL-073": { "id": "TNL-073", "name": "Fasos-Ayiotum", "type": "TUNNEL" },
+  "TNL-074": { "id": "TNL-074", "name": "Pebos-Avosrom", "type": "TUNNEL" },
+  "TNL-075": { "id": "TNL-075", "name": "Sases-Avuotum", "type": "TUNNEL" },
+  "TNL-076": { "id": "TNL-076", "name": "Xases-Oxoulum", "type": "TUNNEL" },
+  "TNL-077": { "id": "TNL-077", "name": "Hieos-Avaolum", "type": "TUNNEL" },
+  "TNL-078": { "id": "TNL-078", "name": "Xasos-Aoemaum", "type": "TUNNEL" },
+  "TNL-079": { "id": "TNL-079", "name": "Hasos-Osuorom", "type": "TUNNEL" },
+  "TNL-080": { "id": "TNL-080", "name": "Oynos-Eramtum", "type": "TUNNEL" },
+  "TNL-081": { "id": "TNL-081", "name": "Couos-Ayayaum", "type": "TUNNEL" },
+  "TNL-082": { "id": "TNL-082", "name": "Siros-Obobrom", "type": "TUNNEL" },
+  "TNL-083": { "id": "TNL-083", "name": "Souos-Umogaum", "type": "TUNNEL" },
+  "TNL-084": { "id": "TNL-084", "name": "Cilos-Avioaum", "type": "TUNNEL" },
+  "TNL-085": { "id": "TNL-085", "name": "Fonos-Aiugsum", "type": "TUNNEL" },
+  "TNL-086": { "id": "TNL-086", "name": "Synos-Ayailos", "type": "TUNNEL" },
+  "TNL-087": { "id": "TNL-087", "name": "Xiles-Aiavlum", "type": "TUNNEL" },
+  "TNL-088": { "id": "TNL-088", "name": "Sases-Aoarsum", "type": "TUNNEL" },
+  "TNL-089": { "id": "TNL-089", "name": "Casos-Aiagsum", "type": "TUNNEL" },
+  "TNL-090": { "id": "TNL-090", "name": "Tieos-Ayoslum", "type": "TUNNEL" },
+  "TNL-091": { "id": "TNL-091", "name": "Hieos-Aiigaum", "type": "TUNNEL" },
+  "TNL-092": { "id": "TNL-092", "name": "Poros-Aiayrom", "type": "TUNNEL" },
+  "TNL-093": { "id": "TNL-093", "name": "Cilos-Ofailos", "type": "TUNNEL" },
+  "TNL-094": { "id": "TNL-094", "name": "Silos-Apenlum", "type": "TUNNEL" },
+  "TNL-095": { "id": "TNL-095", "name": "Fynos-Alodrom", "type": "TUNNEL" },
+  "TNL-096": { "id": "TNL-096", "name": "Firos-Ezatam", "type": "TUNNEL" },
+  "TNL-097": { "id": "TNL-097", "name": "Firos-Osinsum", "type": "TUNNEL" },
+  "TNL-098": { "id": "TNL-098", "name": "Soues-Uzurtum", "type": "TUNNEL" },
+  "TNL-099": { "id": "TNL-099", "name": "Ooros-Ataltum", "type": "TUNNEL" },
+  "TNL-100": { "id": "TNL-100", "name": "Hynes-Ieatun", "type": "TUNNEL" },
+  "TNL-101": { "id": "TNL-101", "name": "Fuyes-Izohun", "type": "TUNNEL" },
+  "TNL-102": { "id": "TNL-102", "name": "Xetos-Obursum", "type": "TUNNEL" },
+  "TNL-103": { "id": "TNL-103", "name": "Oetos-Ofailos", "type": "TUNNEL" },
+  "TNL-104": { "id": "TNL-104", "name": "Tynos-Igurlum", "type": "TUNNEL" },
+  "TNL-105": { "id": "TNL-105", "name": "Puros-Ofavam", "type": "TUNNEL" },
+  "TNL-106": { "id": "TNL-106", "name": "Setos-Aiaitum", "type": "TUNNEL" },
+  "TNL-107": { "id": "TNL-107", "name": "Tynos-Uxavrom", "type": "TUNNEL" },
+  "TNL-108": { "id": "TNL-108", "name": "Souos-Availos", "type": "TUNNEL" },
+  "TNL-109": { "id": "TNL-109", "name": "Sebos-Ugersum", "type": "TUNNEL" },
+  "TNL-110": { "id": "TNL-110", "name": "Peros-Aiataum", "type": "TUNNEL" },
+  "TNL-111": { "id": "TNL-111", "name": "Pieos-Ofairom", "type": "TUNNEL" },
+  "TNL-112": { "id": "TNL-112", "name": "Sieos-Ofugtum", "type": "TUNNEL" },
+  "TNL-113": { "id": "TNL-113", "name": "Tasos-Iriglos", "type": "TUNNEL" },
+  "TNL-114": { "id": "TNL-114", "name": "Tiros-Odoxlum", "type": "TUNNEL" },
+  "TNL-115": { "id": "TNL-115", "name": "Xases-Ataglos", "type": "TUNNEL" },
+  "TNL-116": { "id": "TNL-116", "name": "Oires-Oloblum", "type": "TUNNEL" },
+  "TNL-117": { "id": "TNL-117", "name": "Firos-Aiavam", "type": "TUNNEL" },
+  "TNL-118": { "id": "TNL-118", "name": "Heros-Atoyam", "type": "TUNNEL" },
+  "TNL-119": { "id": "TNL-119", "name": "Petos-Aietam", "type": "TUNNEL" },
+  "TNL-120": { "id": "TNL-120", "name": "Touos-Ataglos", "type": "TUNNEL" },
+  "TNL-121": { "id": "TNL-121", "name": "Poros-Oconun", "type": "TUNNEL" },
+  "TNL-122": { "id": "TNL-122", "name": "Honos-Oyezam", "type": "TUNNEL" },
+  "TNL-123": { "id": "TNL-123", "name": "Fieos-Atezsum", "type": "TUNNEL" },
+  "TNL-124": { "id": "TNL-124", "name": "Ooros-Ecunsum", "type": "TUNNEL" },
+  "TNL-125": { "id": "TNL-125", "name": "Coros-Alieam", "type": "TUNNEL" },
+  "TNL-126": { "id": "TNL-126", "name": "Couos-Opodam", "type": "TUNNEL" },
+  "TNL-127": { "id": "TNL-127", "name": "Horos-Ohenlum", "type": "TUNNEL" },
+  "TNL-128": { "id": "TNL-128", "name": "Files-Azazsum", "type": "TUNNEL" },
+  "TNL-129": { "id": "TNL-129", "name": "Sasos-Abizaum", "type": "TUNNEL" },
+  "TNL-130": { "id": "TNL-130", "name": "Fones-Opavun", "type": "TUNNEL" },
+  "TNL-131": { "id": "TNL-131", "name": "Fiees-Ohohtum", "type": "TUNNEL" },
+  "TNL-132": { "id": "TNL-132", "name": "Siros-Ofurlos", "type": "TUNNEL" },
+  "TNL-133": { "id": "TNL-133", "name": "Oiros-Alaiam", "type": "TUNNEL" },
+  "TNL-134": { "id": "TNL-134", "name": "Xiros-Aiairom", "type": "TUNNEL" },
+  "TNL-135": { "id": "TNL-135", "name": "Silos-Oyarlum", "type": "TUNNEL" },
+  "TNL-136": { "id": "TNL-136", "name": "Fonos-Oleraum", "type": "TUNNEL" },
+  "TNL-137": { "id": "TNL-137", "name": "Fieos-Aiuttum", "type": "TUNNEL" },
+  "TNL-138": { "id": "TNL-138", "name": "Filos-Abalam", "type": "TUNNEL" },
+  "TNL-139": { "id": "TNL-139", "name": "Synos-Oyarlos", "type": "TUNNEL" },
+  "TNL-140": { "id": "TNL-140", "name": "Febos-Acalun", "type": "TUNNEL" },
+  "TNL-141": { "id": "TNL-141", "name": "Pieos-Eterrom", "type": "TUNNEL" },
+  "TNL-142": { "id": "TNL-142", "name": "Feros-Oyuctum", "type": "TUNNEL" },
+  "TNL-143": { "id": "TNL-143", "name": "Pynos-Opabrom", "type": "TUNNEL" },
+  "TNL-144": { "id": "TNL-144", "name": "Foros-Uzazlum", "type": "TUNNEL" },
+  "TNL-145": { "id": "TNL-145", "name": "Cieos-Atatlum", "type": "TUNNEL" },
+  "TNL-146": { "id": "TNL-146", "name": "Huros-Atontum", "type": "TUNNEL" },
+  "TNL-147": { "id": "TNL-147", "name": "Tonos-Aboysum", "type": "TUNNEL" },
+  "TNL-148": { "id": "TNL-148", "name": "Hiles-Izizaum", "type": "TUNNEL" },
+  "TNL-149": { "id": "TNL-149", "name": "Sebos-Oyohun", "type": "TUNNEL" },
+  "TNL-150": { "id": "TNL-150", "name": "Cilos-Otatrom", "type": "TUNNEL" },
+  "TNL-201": { "id": "TNL-201", "name": "Oasitos-Aoeuam", "type": "TUNNEL" },
+  "TNL-202": { "id": "TNL-202", "name": "Curites-Exakrom", "type": "TUNNEL" },
+  "TNL-203": { "id": "TNL-203", "name": "Petitos-Amayam", "type": "TUNNEL" },
+  "TNL-204": { "id": "TNL-204", "name": "Pynites-Ouozlum", "type": "TUNNEL" },
+  "TNL-205": { "id": "TNL-205", "name": "Suyitos-Axaesum", "type": "TUNNEL" },
+  "TNL-206": { "id": "TNL-206", "name": "Honitos-Uxeulum", "type": "TUNNEL" },
+  "TNL-207": { "id": "TNL-207", "name": "Cuyites-Iooinum", "type": "TUNNEL" },
+  "TNL-208": { "id": "TNL-208", "name": "Cieitos-Obaelos", "type": "TUNNEL" },
+  "TNL-209": { "id": "TNL-209", "name": "Oonitos-Umiutum", "type": "TUNNEL" },
+  "TNL-210": { "id": "TNL-210", "name": "Siritos-Avoirom", "type": "TUNNEL" },
+  "TNL-211": { "id": "TNL-211", "name": "Tuyitos-Auiusum", "type": "TUNNEL" },
+  "TNL-212": { "id": "TNL-212", "name": "Oieitos-Ixakaum", "type": "TUNNEL" },
+  "TNL-213": { "id": "TNL-213", "name": "Turitos-Uoemtum", "type": "TUNNEL" },
+  "TNL-214": { "id": "TNL-214", "name": "Xouitos-Aeoilos", "type": "TUNNEL" },
+  "TNL-215": { "id": "TNL-215", "name": "Xouitos-Eyoztum", "type": "TUNNEL" },
+  "TNL-216": { "id": "TNL-216", "name": "Peritos-Avosam", "type": "TUNNEL" },
+  "TNL-217": { "id": "TNL-217", "name": "Oynitos-Uromlum", "type": "TUNNEL" },
+  "TNL-218": { "id": "TNL-218", "name": "Conitos-Uruxtum", "type": "TUNNEL" },
+  "TNL-219": { "id": "TNL-219", "name": "Cebitos-Aeaylum", "type": "TUNNEL" },
+  "TNL-220": { "id": "TNL-220", "name": "Xuyitos-Aioblos", "type": "TUNNEL" },
+  "TNL-221": { "id": "TNL-221", "name": "Oebitos-Eraerom", "type": "TUNNEL" },
+  "TNL-222": { "id": "TNL-222", "name": "Tebitos-Igaelum", "type": "TUNNEL" },
+  "TNL-223": { "id": "TNL-223", "name": "Huritos-Oiaelos", "type": "TUNNEL" },
+  "TNL-224": { "id": "TNL-224", "name": "Hynitos-Ulamsum", "type": "TUNNEL" },
+  "TNL-225": { "id": "TNL-225", "name": "Hetitos-Iuaerom", "type": "TUNNEL" },
+  "TNL-226": { "id": "TNL-226", "name": "Cetitos-Avixnum", "type": "TUNNEL" },
+  "TNL-227": { "id": "TNL-227", "name": "Casitos-Avaelum", "type": "TUNNEL" },
+  "TNL-228": { "id": "TNL-228", "name": "Tasitos-Ulaurom", "type": "TUNNEL" },
+  "TNL-229": { "id": "TNL-229", "name": "Oynites-Araosum", "type": "TUNNEL" },
+  "TNL-230": { "id": "TNL-230", "name": "Hilites-Ugumtum", "type": "TUNNEL" },
+  "TNL-231": { "id": "TNL-231", "name": "Huritos-Iuimaum", "type": "TUNNEL" },
+  "TNL-232": { "id": "TNL-232", "name": "Fynitos-Egoisum", "type": "TUNNEL" },
+  "TNL-233": { "id": "TNL-233", "name": "Huyitos-Agoitum", "type": "TUNNEL" },
+  "TNL-234": { "id": "TNL-234", "name": "Soritos-Avamsum", "type": "TUNNEL" },
+  "TNL-235": { "id": "TNL-235", "name": "Tasitos-Obayam", "type": "TUNNEL" },
+  "TNL-236": { "id": "TNL-236", "name": "Hasitos-Umayaum", "type": "TUNNEL" },
+  "TNL-237": { "id": "TNL-237", "name": "Hynites-Ogozlum", "type": "TUNNEL" },
+  "TNL-238": { "id": "TNL-238", "name": "Ceritos-Avulsum", "type": "TUNNEL" },
+  "TNL-239": { "id": "TNL-239", "name": "Coritos-Avemlum", "type": "TUNNEL" },
+  "TNL-240": { "id": "TNL-240", "name": "Heritos-Inayaum", "type": "TUNNEL" },
+  "TNL-241": { "id": "TNL-241", "name": "Seritos-Egeylos", "type": "TUNNEL" },
+  "TNL-242": { "id": "TNL-242", "name": "Cetitos-Aiayrom", "type": "TUNNEL" },
+  "TNL-243": { "id": "TNL-243", "name": "Heritos-Exozlos", "type": "TUNNEL" },
+  "TNL-244": { "id": "TNL-244", "name": "Tieitos-Ouultum", "type": "TUNNEL" },
+  "TNL-245": { "id": "TNL-245", "name": "Cieites-Ugumlos", "type": "TUNNEL" },
+  "TNL-246": { "id": "TNL-246", "name": "Fieites-Unavtum", "type": "TUNNEL" },
+  "TNL-247": { "id": "TNL-247", "name": "Foritos-Aiaylos", "type": "TUNNEL" },
+  "TNL-248": { "id": "TNL-248", "name": "Fynitos-Agosaum", "type": "TUNNEL" },
+  "TNL-249": { "id": "TNL-249", "name": "Heritos-Eyoztum", "type": "TUNNEL" },
+  "TNL-250": { "id": "TNL-250", "name": "Pirites-Unatam", "type": "TUNNEL" },
+  "TNL-251": { "id": "TNL-251", "name": "Fonitos-Amaurom", "type": "TUNNEL" },
+  "TNL-252": { "id": "TNL-252", "name": "Seritos-Onaytum", "type": "TUNNEL" },
+  "TNL-253": { "id": "TNL-253", "name": "Xetitos-Oneulum", "type": "TUNNEL" },
+  "TNL-254": { "id": "TNL-254", "name": "Oebitos-Oyozam", "type": "TUNNEL" },
+  "TNL-255": { "id": "TNL-255", "name": "Casitos-Atinaum", "type": "TUNNEL" },
+  "TNL-256": { "id": "TNL-256", "name": "Souitos-Oiozlum", "type": "TUNNEL" },
+  "TNL-257": { "id": "TNL-257", "name": "Xebitos-Oyogam", "type": "TUNNEL" },
+  "TNL-258": { "id": "TNL-258", "name": "Conitos-Oxaeaum", "type": "TUNNEL" },
+  "TNL-259": { "id": "TNL-259", "name": "Turitos-Atatlos", "type": "TUNNEL" },
+  "TNL-260": { "id": "TNL-260", "name": "Feritos-Enomaum", "type": "TUNNEL" },
+  "TNL-261": { "id": "TNL-261", "name": "Hebites-Exemrom", "type": "TUNNEL" },
+  "TNL-262": { "id": "TNL-262", "name": "Hurites-Ouaylos", "type": "TUNNEL" },
+  "TNL-263": { "id": "TNL-263", "name": "Fynites-Aeaosum", "type": "TUNNEL" },
+  "TNL-264": { "id": "TNL-264", "name": "Xoritos-Osayam", "type": "TUNNEL" },
+  "TNL-265": { "id": "TNL-265", "name": "Cieitos-Ayosrom", "type": "TUNNEL" },
+  "TNL-266": { "id": "TNL-266", "name": "Synitos-Ososlos", "type": "TUNNEL" },
+  "TNL-267": { "id": "TNL-267", "name": "Xetitos-Emimsum", "type": "TUNNEL" },
+  "TNL-268": { "id": "TNL-268", "name": "Oeritos-Oyexlos", "type": "TUNNEL" },
+  "TNL-269": { "id": "TNL-269", "name": "Xoritos-Exostum", "type": "TUNNEL" },
+  "TNL-270": { "id": "TNL-270", "name": "Tieitos-Eyexrom", "type": "TUNNEL" },
+  "TNL-271": { "id": "TNL-271", "name": "Cetitos-Aximam", "type": "TUNNEL" },
+  "TNL-272": { "id": "TNL-272", "name": "Hynitos-Ayousum", "type": "TUNNEL" },
+  "TNL-273": { "id": "TNL-273", "name": "Fuyitos-Ayiotum", "type": "TUNNEL" },
+  "TNL-274": { "id": "TNL-274", "name": "Petitos-Avosrom", "type": "TUNNEL" },
+  "TNL-275": { "id": "TNL-275", "name": "Suyites-Avuotum", "type": "TUNNEL" },
+  "TNL-276": { "id": "TNL-276", "name": "Xerites-Oxoulum", "type": "TUNNEL" },
+  "TNL-277": { "id": "TNL-277", "name": "Hasitos-Avaolum", "type": "TUNNEL" },
+  "TNL-278": { "id": "TNL-278", "name": "Xilitos-Aoemaum", "type": "TUNNEL" },
+  "TNL-279": { "id": "TNL-279", "name": "Hilitos-Osuorom", "type": "TUNNEL" },
+  "TNL-280": { "id": "TNL-280", "name": "Oiritos-Eramtum", "type": "TUNNEL" },
+  "TNL-281": { "id": "TNL-281", "name": "Curitos-Ayayaum", "type": "TUNNEL" },
+  "TNL-282": { "id": "TNL-282", "name": "Setitos-Obobrom", "type": "TUNNEL" },
+  "TNL-283": { "id": "TNL-283", "name": "Sasitos-Umogaum", "type": "TUNNEL" },
+  "TNL-284": { "id": "TNL-284", "name": "Cieitos-Avioaum", "type": "TUNNEL" },
+  "TNL-285": { "id": "TNL-285", "name": "Fynitos-Aiugsum", "type": "TUNNEL" },
+  "TNL-286": { "id": "TNL-286", "name": "Sonitos-Ayailos", "type": "TUNNEL" },
+  "TNL-287": { "id": "TNL-287", "name": "Xonites-Aiavlum", "type": "TUNNEL" },
+  "TNL-288": { "id": "TNL-288", "name": "Synites-Aoarsum", "type": "TUNNEL" },
+  "TNL-289": { "id": "TNL-289", "name": "Cynitos-Aiagsum", "type": "TUNNEL" },
+  "TNL-290": { "id": "TNL-290", "name": "Tetitos-Ayoslum", "type": "TUNNEL" },
+  "TNL-291": { "id": "TNL-291", "name": "Hilitos-Aiigaum", "type": "TUNNEL" },
+  "TNL-292": { "id": "TNL-292", "name": "Ponitos-Aiayrom", "type": "TUNNEL" },
+  "TNL-293": { "id": "TNL-293", "name": "Conitos-Ofailos", "type": "TUNNEL" },
+  "TNL-294": { "id": "TNL-294", "name": "Soritos-Apenlum", "type": "TUNNEL" },
+  "TNL-295": { "id": "TNL-295", "name": "Firitos-Alodrom", "type": "TUNNEL" },
+  "TNL-296": { "id": "TNL-296", "name": "Fynitos-Ezatam", "type": "TUNNEL" },
+  "TNL-297": { "id": "TNL-297", "name": "Feritos-Osinsum", "type": "TUNNEL" },
+  "TNL-298": { "id": "TNL-298", "name": "Suyites-Uzurtum", "type": "TUNNEL" },
+  "TNL-299": { "id": "TNL-299", "name": "Ouritos-Ataltum", "type": "TUNNEL" },
+  "TNL-300": { "id": "TNL-300", "name": "Hurites-Ieatun", "type": "TUNNEL" },
+  "TNL-301": { "id": "TNL-301", "name": "Filites-Izohun", "type": "TUNNEL" },
+  "TNL-302": { "id": "TNL-302", "name": "Xynitos-Obursum", "type": "TUNNEL" },
+  "TNL-303": { "id": "TNL-303", "name": "Ouritos-Ofailos", "type": "TUNNEL" },
+  "TNL-304": { "id": "TNL-304", "name": "Tonitos-Igurlum", "type": "TUNNEL" },
+  "TNL-305": { "id": "TNL-305", "name": "Piritos-Ofavam", "type": "TUNNEL" },
+  "TNL-306": { "id": "TNL-306", "name": "Soritos-Aiaitum", "type": "TUNNEL" },
+  "TNL-307": { "id": "TNL-307", "name": "Tonitos-Uxavrom", "type": "TUNNEL" },
+  "TNL-308": { "id": "TNL-308", "name": "Synitos-Availos", "type": "TUNNEL" },
+  "TNL-309": { "id": "TNL-309", "name": "Sasitos-Ugersum", "type": "TUNNEL" },
+  "TNL-310": { "id": "TNL-310", "name": "Puyitos-Aiataum", "type": "TUNNEL" },
+  "TNL-311": { "id": "TNL-311", "name": "Pouitos-Ofairom", "type": "TUNNEL" },
+  "TNL-312": { "id": "TNL-312", "name": "Suyitos-Ofugtum", "type": "TUNNEL" },
+  "TNL-313": { "id": "TNL-313", "name": "Toritos-Iriglos", "type": "TUNNEL" },
+  "TNL-314": { "id": "TNL-314", "name": "Tebitos-Odoxlum", "type": "TUNNEL" },
+  "TNL-315": { "id": "TNL-315", "name": "Xurites-Ataglos", "type": "TUNNEL" },
+  "TNL-316": { "id": "TNL-316", "name": "Oynites-Oloblum", "type": "TUNNEL" },
+  "TNL-317": { "id": "TNL-317", "name": "Furitos-Aiavam", "type": "TUNNEL" },
+  "TNL-318": { "id": "TNL-318", "name": "Hynitos-Atoyam", "type": "TUNNEL" },
+  "TNL-319": { "id": "TNL-319", "name": "Pynitos-Aietam", "type": "TUNNEL" },
+  "TNL-320": { "id": "TNL-320", "name": "Tilitos-Ataglos", "type": "TUNNEL" },
+  "TNL-321": { "id": "TNL-321", "name": "Peritos-Oconun", "type": "TUNNEL" },
+  "TNL-322": { "id": "TNL-322", "name": "Hynitos-Oyezam", "type": "TUNNEL" },
+  "TNL-323": { "id": "TNL-323", "name": "Fasitos-Atezsum", "type": "TUNNEL" },
+  "TNL-324": { "id": "TNL-324", "name": "Oeritos-Ecunsum", "type": "TUNNEL" },
+  "TNL-325": { "id": "TNL-325", "name": "Casitos-Alieam", "type": "TUNNEL" },
+  "TNL-326": { "id": "TNL-326", "name": "Cilitos-Opodam", "type": "TUNNEL" },
+  "TNL-327": { "id": "TNL-327", "name": "Huyitos-Ohenlum", "type": "TUNNEL" },
+  "TNL-328": { "id": "TNL-328", "name": "Fasites-Azazsum", "type": "TUNNEL" },
+  "TNL-329": { "id": "TNL-329", "name": "Silitos-Abizaum", "type": "TUNNEL" },
+  "TNL-330": { "id": "TNL-330", "name": "Febites-Opavun", "type": "TUNNEL" },
+  "TNL-331": { "id": "TNL-331", "name": "Ferites-Ohohtum", "type": "TUNNEL" },
+  "TNL-332": { "id": "TNL-332", "name": "Synitos-Ofurlos", "type": "TUNNEL" },
+  "TNL-333": { "id": "TNL-333", "name": "Oouitos-Alaiam", "type": "TUNNEL" },
+  "TNL-334": { "id": "TNL-334", "name": "Xoritos-Aiairom", "type": "TUNNEL" },
+  "TNL-335": { "id": "TNL-335", "name": "Sasitos-Oyarlum", "type": "TUNNEL" },
+  "TNL-336": { "id": "TNL-336", "name": "Fasitos-Oleraum", "type": "TUNNEL" },
+  "TNL-337": { "id": "TNL-337", "name": "Fouitos-Aiuttum", "type": "TUNNEL" },
+  "TNL-338": { "id": "TNL-338", "name": "Fynitos-Abalam", "type": "TUNNEL" },
+  "TNL-339": { "id": "TNL-339", "name": "Suyitos-Oyarlos", "type": "TUNNEL" },
+  "TNL-340": { "id": "TNL-340", "name": "Fuyitos-Acalun", "type": "TUNNEL" },
+  "TNL-341": { "id": "TNL-341", "name": "Pilitos-Eterrom", "type": "TUNNEL" },
+  "TNL-342": { "id": "TNL-342", "name": "Fasitos-Oyuctum", "type": "TUNNEL" },
+  "TNL-343": { "id": "TNL-343", "name": "Piritos-Opabrom", "type": "TUNNEL" },
+  "TNL-344": { "id": "TNL-344", "name": "Filitos-Uzazlum", "type": "TUNNEL" },
+  "TNL-345": { "id": "TNL-345", "name": "Cynitos-Atatlum", "type": "TUNNEL" },
+  "TNL-346": { "id": "TNL-346", "name": "Hebitos-Atontum", "type": "TUNNEL" },
+  "TNL-347": { "id": "TNL-347", "name": "Tuyitos-Aboysum", "type": "TUNNEL" },
+  "TNL-348": { "id": "TNL-348", "name": "Honites-Izizaum", "type": "TUNNEL" },
+  "TNL-349": { "id": "TNL-349", "name": "Siritos-Oyohun", "type": "TUNNEL" },
+  "TNL-350": { "id": "TNL-350", "name": "Cieitos-Otatrom", "type": "TUNNEL" },
+  "CORRUPT-001": {
+    "id": "CORRUPT-001",
+    "name": "Corrupted Lair",
+    "type": "CORRUPTED_DUNGEON"
+  },
+  "CORRUPT-002": {
+    "id": "CORRUPT-002",
+    "name": "Corrupted Lair",
+    "type": "CORRUPTED_DUNGEON"
+  },
+  "CORRUPT-003": {
+    "id": "CORRUPT-003",
+    "name": "Corrupted Lair",
+    "type": "CORRUPTED_DUNGEON"
+  },
+  "PSG-0038": {
+    "id": "PSG-0038",
+    "name": "PSG-0038",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0039": {
+    "id": "PSG-0039",
+    "name": "PSG-0039",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0042": {
+    "id": "PSG-0042",
+    "name": "PSG-0042",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0044": {
+    "id": "PSG-0044",
+    "name": "PSG-0044",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0045": {
+    "id": "PSG-0045",
+    "name": "PSG-0045",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0048": {
+    "id": "PSG-0048",
+    "name": "PSG-0048",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0049": {
+    "id": "PSG-0049",
+    "name": "PSG-0049",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0050": {
+    "id": "PSG-0050",
+    "name": "PSG-0050",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0051": {
+    "id": "PSG-0051",
+    "name": "PSG-0051",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0052": {
+    "id": "PSG-0052",
+    "name": "PSG-0052",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0053": {
+    "id": "PSG-0053",
+    "name": "PSG-0053",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0054": {
+    "id": "PSG-0054",
+    "name": "PSG-0054",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "CORRUPT-004": {
+    "id": "CORRUPT-004",
+    "name": "Corrupted Lair",
+    "type": "CORRUPTED_DUNGEON"
+  },
+  "CORRUPT-005": {
+    "id": "CORRUPT-005",
+    "name": "Corrupted Lair",
+    "type": "CORRUPTED_DUNGEON"
+  },
+  "CORRUPT-006": {
+    "id": "CORRUPT-006",
+    "name": "Corrupted Lair",
+    "type": "CORRUPTED_DUNGEON"
+  },
+  "CORRUPT-007": {
+    "id": "CORRUPT-007",
+    "name": "Corrupted Lair",
+    "type": "CORRUPTED_DUNGEON"
+  },
+  "PSG-0008": {
+    "id": "PSG-0008",
+    "name": "PSG-0008",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0009": {
+    "id": "PSG-0009",
+    "name": "PSG-0009",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0010": {
+    "id": "PSG-0010",
+    "name": "PSG-0010",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0011": {
+    "id": "PSG-0011",
+    "name": "PSG-0011",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0012": {
+    "id": "PSG-0012",
+    "name": "PSG-0012",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0013": {
+    "id": "PSG-0013",
+    "name": "PSG-0013",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0014": {
+    "id": "PSG-0014",
+    "name": "PSG-0014",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0015": {
+    "id": "PSG-0015",
+    "name": "PSG-0015",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0016": {
+    "id": "PSG-0016",
+    "name": "PSG-0016",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0017": {
+    "id": "PSG-0017",
+    "name": "PSG-0017",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0018": {
+    "id": "PSG-0018",
+    "name": "PSG-0018",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0019": {
+    "id": "PSG-0019",
+    "name": "PSG-0019",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0020": {
+    "id": "PSG-0020",
+    "name": "PSG-0020",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0021": {
+    "id": "PSG-0021",
+    "name": "PSG-0021",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0022": {
+    "id": "PSG-0022",
+    "name": "PSG-0022",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0023": {
+    "id": "PSG-0023",
+    "name": "PSG-0023",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0024": {
+    "id": "PSG-0024",
+    "name": "PSG-0024",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0025": {
+    "id": "PSG-0025",
+    "name": "PSG-0025",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0026": {
+    "id": "PSG-0026",
+    "name": "PSG-0026",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0027": {
+    "id": "PSG-0027",
+    "name": "PSG-0027",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0028": {
+    "id": "PSG-0028",
+    "name": "PSG-0028",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0029": {
+    "id": "PSG-0029",
+    "name": "PSG-0029",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0030": {
+    "id": "PSG-0030",
+    "name": "PSG-0030",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0031": {
+    "id": "PSG-0031",
+    "name": "PSG-0031",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0032": {
+    "id": "PSG-0032",
+    "name": "PSG-0032",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0033": {
+    "id": "PSG-0033",
+    "name": "PSG-0033",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0034": {
+    "id": "PSG-0034",
+    "name": "PSG-0034",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0035": {
+    "id": "PSG-0035",
+    "name": "PSG-0035",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0036": {
+    "id": "PSG-0036",
+    "name": "PSG-0036",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0037": {
+    "id": "PSG-0037",
+    "name": "PSG-0037",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0040": {
+    "id": "PSG-0040",
+    "name": "PSG-0040",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0041": {
+    "id": "PSG-0041",
+    "name": "PSG-0041",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0043": {
+    "id": "PSG-0043",
+    "name": "PSG-0043",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0046": {
+    "id": "PSG-0046",
+    "name": "PSG-0046",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "PSG-0047": {
+    "id": "PSG-0047",
+    "name": "PSG-0047",
+    "type": "PASSAGE_SAFEAREA"
+  },
+  "TNL-151": { "id": "TNL-151", "name": "Quaent-Vynsum", "type": "TUNNEL" },
+  "TNL-351": { "id": "TNL-351", "name": "Quaent-Al-Vynsum", "type": "TUNNEL" },
+  "TNL-152": { "id": "TNL-152", "name": "Quaent-Tersis", "type": "TUNNEL" },
+  "TNL-352": { "id": "TNL-352", "name": "Quaent-Al-Tersis", "type": "TUNNEL" },
+  "TNL-153": { "id": "TNL-153", "name": "Quaent-Viesom", "type": "TUNNEL" },
+  "TNL-353": { "id": "TNL-353", "name": "Quaent-Al-Viesom", "type": "TUNNEL" },
+  "TNL-154": { "id": "TNL-154", "name": "Quatun-Nusas", "type": "TUNNEL" },
+  "TNL-354": { "id": "TNL-354", "name": "Quatun-Et-Nusas", "type": "TUNNEL" },
+  "TNL-155": { "id": "TNL-155", "name": "Quaent-Qintis", "type": "TUNNEL" },
+  "TNL-355": { "id": "TNL-355", "name": "Quaent-Al-Qintis", "type": "TUNNEL" },
+  "TNL-156": { "id": "TNL-156", "name": "Quatun-Odetum", "type": "TUNNEL" },
+  "TNL-356": { "id": "TNL-356", "name": "Quatun-Et-Odetum", "type": "TUNNEL" },
+  "TNL-157": { "id": "TNL-157", "name": "Quaent-Al-Odesum", "type": "TUNNEL" },
+  "TNL-357": { "id": "TNL-357", "name": "Quaent-In-Odesum", "type": "TUNNEL" },
+  "TNL-158": { "id": "TNL-158", "name": "Quaent-Al-Nusis", "type": "TUNNEL" },
+  "TNL-358": { "id": "TNL-358", "name": "Quaent-In-Nusis", "type": "TUNNEL" },
+  "TNL-159": { "id": "TNL-159", "name": "Qiient-Tersom", "type": "TUNNEL" },
+  "TNL-359": { "id": "TNL-359", "name": "Qiient-In-Tersom", "type": "TUNNEL" },
+  "TNL-160": { "id": "TNL-160", "name": "Qiient-Odesas", "type": "TUNNEL" },
+  "TNL-360": { "id": "TNL-360", "name": "Qiient-Qi-Odesas", "type": "TUNNEL" },
+  "TNL-161": { "id": "TNL-161", "name": "Qiient-Nutis", "type": "TUNNEL" },
+  "TNL-361": { "id": "TNL-361", "name": "Qiient-In-Nutis", "type": "TUNNEL" },
+  "TNL-162": { "id": "TNL-162", "name": "Qiient-Vyntum", "type": "TUNNEL" },
+  "TNL-362": { "id": "TNL-362", "name": "Qiient-In-Vyntum", "type": "TUNNEL" },
+  "TNL-163": { "id": "TNL-163", "name": "Qiient-Al-Odesum", "type": "TUNNEL" },
+  "TNL-363": { "id": "TNL-363", "name": "Qiient-Si-Odesum", "type": "TUNNEL" },
+  "TNL-164": { "id": "TNL-164", "name": "Qiient-Al-Vynsis", "type": "TUNNEL" },
+  "TNL-364": { "id": "TNL-364", "name": "Qiient-Qi-Vynsis", "type": "TUNNEL" },
+  "TNL-165": { "id": "TNL-165", "name": "Qiitun-Et-Vynsom", "type": "TUNNEL" },
+  "TNL-365": { "id": "TNL-365", "name": "Qiitun-Si-Vynsom", "type": "TUNNEL" },
+  "TNL-166": { "id": "TNL-166", "name": "Qiient-Al-Tersas", "type": "TUNNEL" },
+  "TNL-366": { "id": "TNL-366", "name": "Qiient-Qi-Tersas", "type": "TUNNEL" },
+  "TNL-167": { "id": "TNL-167", "name": "Qiitun-Vietis", "type": "TUNNEL" },
+  "TNL-367": { "id": "TNL-367", "name": "Qiitun-Et-Vietis", "type": "TUNNEL" },
+  "TNL-168": { "id": "TNL-168", "name": "Qiient-Et-Tertum", "type": "TUNNEL" },
+  "TNL-368": { "id": "TNL-368", "name": "Qiient-Si-Tertum", "type": "TUNNEL" },
+  "TNL-169": { "id": "TNL-169", "name": "Qiient-Qinsum", "type": "TUNNEL" },
+  "TNL-369": { "id": "TNL-369", "name": "Qiient-Et-Qinsum", "type": "TUNNEL" },
+  "TNL-170": { "id": "TNL-170", "name": "Qiient-Al-Viesis", "type": "TUNNEL" },
+  "TNL-370": { "id": "TNL-370", "name": "Qiient-In-Viesis", "type": "TUNNEL" },
+  "TNL-171": { "id": "TNL-171", "name": "Qiient-Al-Nusom", "type": "TUNNEL" },
+  "TNL-371": { "id": "TNL-371", "name": "Qiient-Qi-Nusom", "type": "TUNNEL" },
+  "TNL-172": { "id": "TNL-172", "name": "Qiient-Et-Nusas", "type": "TUNNEL" },
+  "TNL-372": { "id": "TNL-372", "name": "Qiient-Si-Nusas", "type": "TUNNEL" },
+  "TNL-173": { "id": "TNL-173", "name": "Qiient-Et-Odetis", "type": "TUNNEL" },
+  "TNL-373": { "id": "TNL-373", "name": "Qiient-Sa-Odetis", "type": "TUNNEL" },
+  "TNL-174": { "id": "TNL-174", "name": "Qiient-In-Odetum", "type": "TUNNEL" },
+  "TNL-374": { "id": "TNL-374", "name": "Qiient-Oc-Odetum", "type": "TUNNEL" },
+  "TNL-175": { "id": "TNL-175", "name": "Qiitun-Duosum", "type": "TUNNEL" },
+  "TNL-375": { "id": "TNL-375", "name": "Qiitun-Al-Duosum", "type": "TUNNEL" },
+  "TNL-176": { "id": "TNL-176", "name": "Qiient-Al-Qinsis", "type": "TUNNEL" },
+  "TNL-376": { "id": "TNL-376", "name": "Qiient-In-Qinsis", "type": "TUNNEL" },
+  "TNL-177": { "id": "TNL-177", "name": "Secent-Odesom", "type": "TUNNEL" },
+  "TNL-377": { "id": "TNL-377", "name": "Secent-Qi-Odesom", "type": "TUNNEL" },
+  "TNL-178": { "id": "TNL-178", "name": "Sectun-Tersas", "type": "TUNNEL" },
+  "TNL-378": { "id": "TNL-378", "name": "Sectun-Et-Tersas", "type": "TUNNEL" },
+  "TNL-179": { "id": "TNL-179", "name": "Secent-Al-Odetis", "type": "TUNNEL" },
+  "TNL-379": { "id": "TNL-379", "name": "Secent-Si-Odetis", "type": "TUNNEL" },
+  "TNL-180": { "id": "TNL-180", "name": "Secent-Vyntum", "type": "TUNNEL" },
+  "TNL-380": { "id": "TNL-380", "name": "Secent-Et-Vyntum", "type": "TUNNEL" },
+  "TNL-181": { "id": "TNL-181", "name": "Secent-Viesum", "type": "TUNNEL" },
+  "TNL-381": { "id": "TNL-381", "name": "Secent-Al-Viesum", "type": "TUNNEL" },
+  "TNL-182": { "id": "TNL-182", "name": "Secent-Et-Odesis", "type": "TUNNEL" },
+  "TNL-382": { "id": "TNL-382", "name": "Secent-Sa-Odesis", "type": "TUNNEL" },
+  "TNL-183": { "id": "TNL-183", "name": "Sectun-Qinsom", "type": "TUNNEL" },
+  "TNL-383": { "id": "TNL-383", "name": "Sectun-In-Qinsom", "type": "TUNNEL" },
+  "TNL-184": { "id": "TNL-184", "name": "Secent-Al-Qinsom", "type": "TUNNEL" },
+  "TNL-384": { "id": "TNL-384", "name": "Secent-Qi-Qinsom", "type": "TUNNEL" },
+  "TNL-185": { "id": "TNL-185", "name": "Sectun-Al-Vyntis", "type": "TUNNEL" },
+  "TNL-385": { "id": "TNL-385", "name": "Sectun-In-Vyntis", "type": "TUNNEL" },
+  "TNL-186": { "id": "TNL-186", "name": "Secent-Nutum", "type": "TUNNEL" },
+  "TNL-386": { "id": "TNL-386", "name": "Secent-Al-Nutum", "type": "TUNNEL" },
+  "TNL-187": { "id": "TNL-187", "name": "Secent-Al-Tersum", "type": "TUNNEL" },
+  "TNL-387": { "id": "TNL-387", "name": "Secent-In-Tersum", "type": "TUNNEL" },
+  "TNL-188": { "id": "TNL-188", "name": "Sectun-In-Odesis", "type": "TUNNEL" },
+  "TNL-388": { "id": "TNL-388", "name": "Sectun-Oc-Odesis", "type": "TUNNEL" },
+  "TNL-189": { "id": "TNL-189", "name": "Secent-Duosom", "type": "TUNNEL" },
+  "TNL-389": { "id": "TNL-389", "name": "Secent-Al-Duosom", "type": "TUNNEL" },
+  "TNL-190": { "id": "TNL-190", "name": "Secent-Et-Qinsas", "type": "TUNNEL" },
+  "TNL-390": { "id": "TNL-390", "name": "Secent-Si-Qinsas", "type": "TUNNEL" },
+  "TNL-191": { "id": "TNL-191", "name": "Setent-Vietis", "type": "TUNNEL" },
+  "TNL-391": { "id": "TNL-391", "name": "Setent-Al-Vietis", "type": "TUNNEL" },
+  "TNL-192": { "id": "TNL-192", "name": "Settun-Odetum", "type": "TUNNEL" },
+  "TNL-392": { "id": "TNL-392", "name": "Settun-Et-Odetum", "type": "TUNNEL" },
+  "TNL-193": { "id": "TNL-193", "name": "Setent-Nusum", "type": "TUNNEL" },
+  "TNL-393": { "id": "TNL-393", "name": "Setent-Et-Nusum", "type": "TUNNEL" },
+  "TNL-194": { "id": "TNL-194", "name": "Settun-Vynsis", "type": "TUNNEL" },
+  "TNL-394": { "id": "TNL-394", "name": "Settun-Al-Vynsis", "type": "TUNNEL" },
+  "TNL-195": { "id": "TNL-195", "name": "Settun-Tersom", "type": "TUNNEL" },
+  "TNL-395": { "id": "TNL-395", "name": "Settun-Al-Tersom", "type": "TUNNEL" },
+  "TNL-196": { "id": "TNL-196", "name": "Setent-Duosas", "type": "TUNNEL" },
+  "TNL-396": { "id": "TNL-396", "name": "Setent-Al-Duosas", "type": "TUNNEL" },
+  "TNL-197": { "id": "TNL-197", "name": "Setent-Qintis", "type": "TUNNEL" },
+  "TNL-397": { "id": "TNL-397", "name": "Setent-Et-Qintis", "type": "TUNNEL" },
+  "TNL-198": { "id": "TNL-198", "name": "Settun-Al-Odetum", "type": "TUNNEL" },
+  "TNL-398": { "id": "TNL-398", "name": "Settun-In-Odetum", "type": "TUNNEL" },
+  "TNL-199": { "id": "TNL-199", "name": "Setent-Al-Qinsum", "type": "TUNNEL" },
+  "TNL-399": { "id": "TNL-399", "name": "Setent-In-Qinsum", "type": "TUNNEL" },
+  "TNL-200": { "id": "TNL-200", "name": "Settun-Al-Nusis", "type": "TUNNEL" },
+  "TNL-400": { "id": "TNL-400", "name": "Settun-In-Nusis", "type": "TUNNEL" },
+  "CORRUPT-008": {
+    "id": "CORRUPT-008",
+    "name": "Corrupted Lair",
+    "type": "CORRUPTED_DUNGEON"
+  },
+  "CORRUPT-009": {
+    "id": "CORRUPT-009",
+    "name": "Corrupted Lair",
+    "type": "CORRUPTED_DUNGEON"
+  },
+  "CORRUPT-010": {
+    "id": "CORRUPT-010",
+    "name": "Corrupted Lair",
+    "type": "CORRUPTED_DUNGEON"
+  },
+  "CORRUPT-011": {
+    "id": "CORRUPT-011",
+    "name": "Corrupted Lair",
+    "type": "CORRUPTED_DUNGEON"
+  },
+  "CORRUPT-012": {
+    "id": "CORRUPT-012",
+    "name": "Corrupted Lair",
+    "type": "CORRUPTED_DUNGEON"
+  },
+  "CORRUPT-013": {
+    "id": "CORRUPT-013",
+    "name": "Corrupted Lair",
+    "type": "CORRUPTED_DUNGEON"
+  },
+  "CORRUPT-014": {
+    "id": "CORRUPT-014",
+    "name": "Corrupted Lair",
+    "type": "CORRUPTED_DUNGEON"
+  },
+  "CORRUPT-015": {
+    "id": "CORRUPT-015",
+    "name": "Corrupted Lair",
+    "type": "CORRUPTED_DUNGEON"
+  },
+  "CORRUPT-016": {
+    "id": "CORRUPT-016",
+    "name": "Corrupted Lair",
+    "type": "CORRUPTED_DUNGEON"
+  },
+  "CORRUPT-017": {
+    "id": "CORRUPT-017",
+    "name": "Corrupted Lair",
+    "type": "CORRUPTED_DUNGEON"
+  },
+  "CORRUPT-018": {
+    "id": "CORRUPT-018",
+    "name": "Corrupted Lair",
+    "type": "CORRUPTED_DUNGEON"
+  },
+  "CORRUPT-019": {
+    "id": "CORRUPT-019",
+    "name": "Corrupted Lair",
+    "type": "CORRUPTED_DUNGEON"
+  },
+  "CORRUPT-020": {
+    "id": "CORRUPT-020",
+    "name": "Corrupted Lair",
+    "type": "CORRUPTED_DUNGEON"
+  },
+  "CrystalRealmDebug": {
+    "id": "CrystalRealmDebug",
+    "name": "CrystalRealmDebug",
+    "type": "STARTAREA"
+  },
+  "0362-HALL-1-4": {
+    "id": "0362-HALL-1-4",
+    "name": "Conquerors' Hall Lvl. 3",
+    "type": "PLAYERCITY_BLACK_ROYAL_NOFURNITURE_HALL_OF_FAME"
+  },
+  "1015-HALL-1-4": {
+    "id": "1015-HALL-1-4",
+    "name": "Conquerors' Hall Lvl. 3",
+    "type": "PLAYERCITY_BLACK_ROYAL_NOFURNITURE_HALL_OF_FAME"
+  },
+  "2012-HALL-1-4": {
+    "id": "2012-HALL-1-4",
+    "name": "Conquerors' Hall Lvl. 3",
+    "type": "PLAYERCITY_BLACK_ROYAL_NOFURNITURE_HALL_OF_FAME"
+  },
+  "3016-HALL-1-4-MART": {
+    "id": "3016-HALL-1-4-MART",
+    "name": "Conquerors' Hall Lvl. 3",
+    "type": "PLAYERCITY_BLACK_ROYAL_NOFURNITURE_HALL_OF_FAME"
+  },
+  "4009-HALL-1-4": {
+    "id": "4009-HALL-1-4",
+    "name": "Conquerors' Hall Lvl. 3",
+    "type": "PLAYERCITY_BLACK_ROYAL_NOFURNITURE_HALL_OF_FAME"
+  },
+  "ChampionsRealmLive": {
+    "id": "ChampionsRealmLive",
+    "name": "Champions' Realm",
+    "type": "STARTAREA"
+  },
+  "VegAnimTest": {
+    "id": "VegAnimTest",
+    "name": "VegAnimTest",
+    "type": "SAFEAREA"
+  },
+  "CrystalRealm20v20": {
+    "id": "CrystalRealm20v20",
+    "name": "Large Crystal Realm",
+    "type": "ARENA_CRYSTAL"
+  },
+  "HELLGATE-01-10v10-01": {
+    "id": "HELLGATE-01-10v10-01",
+    "name": "The Plains",
+    "type": "DUNGEON_HELL_10V10_NON_LETHAL"
+  },
+  "HELLGATE-01-2v2-01": {
+    "id": "HELLGATE-01-2v2-01",
+    "name": "The Plains",
+    "type": "DUNGEON_HELL_2V2_NON_LETHAL"
+  },
+  "HELLGATE-01-5v5-01": {
+    "id": "HELLGATE-01-5v5-01",
+    "name": "The Plains",
+    "type": "DUNGEON_HELL_5V5_NON_LETHAL"
+  },
+  "HELLGATE-02-10v10-01": {
+    "id": "HELLGATE-02-10v10-01",
+    "name": "The Hill",
+    "type": "DUNGEON_HELL_10V10_NON_LETHAL"
+  },
+  "HELLGATE-02-2v2-01": {
+    "id": "HELLGATE-02-2v2-01",
+    "name": "The Hill",
+    "type": "DUNGEON_HELL_2V2_NON_LETHAL"
+  },
+  "HELLGATE-02-5v5-01": {
+    "id": "HELLGATE-02-5v5-01",
+    "name": "The Hill",
+    "type": "DUNGEON_HELL_5V5_NON_LETHAL"
+  },
+  "HELLGATE-03-10v10-01": {
+    "id": "HELLGATE-03-10v10-01",
+    "name": "The Boneyard",
+    "type": "DUNGEON_HELL_10V10_NON_LETHAL"
+  },
+  "HELLGATE-03-2v2-01": {
+    "id": "HELLGATE-03-2v2-01",
+    "name": "The Boneyard",
+    "type": "DUNGEON_HELL_2V2_NON_LETHAL"
+  },
+  "HELLGATE-03-5v5-01": {
+    "id": "HELLGATE-03-5v5-01",
+    "name": "The Boneyard",
+    "type": "DUNGEON_HELL_5V5_NON_LETHAL"
+  },
+  "HELLGATE-04-10v10-01": {
+    "id": "HELLGATE-04-10v10-01",
+    "name": "The Four Bridges",
+    "type": "DUNGEON_HELL_10V10_NON_LETHAL"
+  },
+  "HELLGATE-04-2v2-01": {
+    "id": "HELLGATE-04-2v2-01",
+    "name": "The Four Bridges",
+    "type": "DUNGEON_HELL_2V2_NON_LETHAL"
+  },
+  "HELLGATE-04-5v5-01": {
+    "id": "HELLGATE-04-5v5-01",
+    "name": "The Four Bridges",
+    "type": "DUNGEON_HELL_5V5_NON_LETHAL"
+  },
+  "HELLGATE-05-10v10-01": {
+    "id": "HELLGATE-05-10v10-01",
+    "name": "The Traverse",
+    "type": "DUNGEON_HELL_10V10_NON_LETHAL"
+  },
+  "HELLGATE-05-2v2-01": {
+    "id": "HELLGATE-05-2v2-01",
+    "name": "The Traverse",
+    "type": "DUNGEON_HELL_2V2_NON_LETHAL"
+  },
+  "HELLGATE-05-5v5-01": {
+    "id": "HELLGATE-05-5v5-01",
+    "name": "The Traverse",
+    "type": "DUNGEON_HELL_5V5_NON_LETHAL"
+  },
+  "HELLGATE-06-10v10-01": {
+    "id": "HELLGATE-06-10v10-01",
+    "name": "The Fortress",
+    "type": "DUNGEON_HELL_10V10_NON_LETHAL"
+  },
+  "HELLGATE-06-2v2-01": {
+    "id": "HELLGATE-06-2v2-01",
+    "name": "The Fortress",
+    "type": "DUNGEON_HELL_2V2_NON_LETHAL"
+  },
+  "HELLGATE-06-5v5-01": {
+    "id": "HELLGATE-06-5v5-01",
+    "name": "The Fortress",
+    "type": "DUNGEON_HELL_5V5_NON_LETHAL"
+  },
+  "HELLGATE-07-10v10-01": {
+    "id": "HELLGATE-07-10v10-01",
+    "name": "The Pit",
+    "type": "DUNGEON_HELL_10V10_NON_LETHAL"
+  },
+  "HELLGATE-07-2v2-01": {
+    "id": "HELLGATE-07-2v2-01",
+    "name": "The Pit",
+    "type": "DUNGEON_HELL_2V2_NON_LETHAL"
+  },
+  "HELLGATE-07-5v5-01": {
+    "id": "HELLGATE-07-5v5-01",
+    "name": "The Pit",
+    "type": "DUNGEON_HELL_5V5_NON_LETHAL"
+  },
+  "HELLGATE-08-10v10-01": {
+    "id": "HELLGATE-08-10v10-01",
+    "name": "The Courtyard",
+    "type": "DUNGEON_HELL_10V10_NON_LETHAL"
+  },
+  "HELLGATE-08-2v2-01": {
+    "id": "HELLGATE-08-2v2-01",
+    "name": "The Courtyard",
+    "type": "DUNGEON_HELL_2V2_NON_LETHAL"
+  },
+  "HELLGATE-08-5v5-01": {
+    "id": "HELLGATE-08-5v5-01",
+    "name": "The Courtyard",
+    "type": "DUNGEON_HELL_5V5_NON_LETHAL"
+  },
+  "HELLGATE-09-10v10-01": {
+    "id": "HELLGATE-09-10v10-01",
+    "name": "The Tribunal",
+    "type": "DUNGEON_HELL_10V10_NON_LETHAL"
+  },
+  "HELLGATE-09-2v2-01": {
+    "id": "HELLGATE-09-2v2-01",
+    "name": "The Tribunal",
+    "type": "DUNGEON_HELL_2V2_NON_LETHAL"
+  },
+  "HELLGATE-09-5v5-01": {
+    "id": "HELLGATE-09-5v5-01",
+    "name": "The Tribunal",
+    "type": "DUNGEON_HELL_5V5_NON_LETHAL"
+  },
+  "HELLGATE-10-10v10-01": {
+    "id": "HELLGATE-10-10v10-01",
+    "name": "The Citadel",
+    "type": "DUNGEON_HELL_10V10_NON_LETHAL"
+  },
+  "HELLGATE-10-2v2-01": {
+    "id": "HELLGATE-10-2v2-01",
+    "name": "The Citadel",
+    "type": "DUNGEON_HELL_2V2_NON_LETHAL"
+  },
+  "HELLGATE-10-5v5-01": {
+    "id": "HELLGATE-10-5v5-01",
+    "name": "The Citadel",
+    "type": "DUNGEON_HELL_5V5_NON_LETHAL"
+  },
+  "0215": { "id": "0215", "name": "Murky Fen", "type": "SAFEAREA" },
+  "0216": { "id": "0216", "name": "Fog Fen", "type": "SAFEAREA" },
+  "0217": {
+    "id": "0217",
+    "name": "Drownhorse Basin",
+    "type": "OPENPVP_YELLOW"
+  },
+  "0218": {
+    "id": "0218",
+    "name": "Slithertail Marsh",
+    "type": "OPENPVP_YELLOW"
+  },
+  "0219": {
+    "id": "0219",
+    "name": "Wanderlure Basin",
+    "type": "OPENPVP_YELLOW"
+  },
+  "0220": { "id": "0220", "name": "Falsestep Marsh", "type": "OPENPVP_YELLOW" },
+  "0221": { "id": "0221", "name": "Darkground Swamp", "type": "OPENPVP_RED" },
+  "0222": { "id": "0222", "name": "Anklesnag Mire", "type": "OPENPVP_RED" },
+  "0223": { "id": "0223", "name": "Dusktree Swamp", "type": "OPENPVP_RED" },
+  "1216": { "id": "1216", "name": "Flynsdell", "type": "SAFEAREA" },
+  "1217": { "id": "1217", "name": "Pinecopse", "type": "SAFEAREA" },
+  "1218": { "id": "1218", "name": "Deeproot Wood", "type": "OPENPVP_YELLOW" },
+  "1220": { "id": "1220", "name": "Aspenwood", "type": "OPENPVP_YELLOW" },
+  "1221": { "id": "1221", "name": "Spindlewood", "type": "OPENPVP_YELLOW" },
+  "1222": { "id": "1222", "name": "Owlsong Glen", "type": "OPENPVP_RED" },
+  "1223": { "id": "1223", "name": "Nightbloom Forest", "type": "OPENPVP_RED" },
+  "2216": { "id": "2216", "name": "Dryfield Meadow", "type": "SAFEAREA" },
+  "2217": { "id": "2217", "name": "Sandgust Cleft", "type": "SAFEAREA" },
+  "2218": {
+    "id": "2218",
+    "name": "Longshadow Plain",
+    "type": "OPENPVP_YELLOW"
+  },
+  "2219": {
+    "id": "2219",
+    "name": "Flatriver Trough",
+    "type": "OPENPVP_YELLOW"
+  },
+  "2220": { "id": "2220", "name": "Redstone Plain", "type": "OPENPVP_YELLOW" },
+  "2221": { "id": "2221", "name": "Flimmerair Steppe", "type": "OPENPVP_RED" },
+  "2222": {
+    "id": "2222",
+    "name": "Goldshimmer Plain",
+    "type": "OPENPVP_YELLOW"
+  },
+  "3216": { "id": "3216", "name": "Kilmar Tor", "type": "SAFEAREA" },
+  "3217": { "id": "3217", "name": "Carns Hill", "type": "OPENPVP_YELLOW" },
+  "3218": { "id": "3218", "name": "Brons Hill", "type": "OPENPVP_YELLOW" },
+  "3219": { "id": "3219", "name": "Felniks Hill", "type": "OPENPVP_YELLOW" },
+  "3220": { "id": "3220", "name": "Adrens Hill", "type": "OPENPVP_YELLOW" },
+  "3221": { "id": "3221", "name": "Garrow Fell", "type": "OPENPVP_RED" },
+  "3222": { "id": "3222", "name": "Broken Fell", "type": "OPENPVP_RED" },
+  "4217": { "id": "4217", "name": "Pen Fenair", "type": "SAFEAREA" },
+  "4218": { "id": "4218", "name": "Cairn Drain", "type": "OPENPVP_YELLOW" },
+  "4219": { "id": "4219", "name": "Caulder Fissure", "type": "OPENPVP_YELLOW" },
+  "4220": { "id": "4220", "name": "Cairn Cloch", "type": "OPENPVP_YELLOW" },
+  "4221": { "id": "4221", "name": "Creag Dhor", "type": "OPENPVP_RED" },
+  "4222": { "id": "4222", "name": "Creag Meagir", "type": "OPENPVP_RED" },
+  "4223": { "id": "4223", "name": "Domhain Chasm", "type": "OPENPVP_RED" },
+  "PSG-0006#1": {
+    "id": "PSG-0006#1",
+    "name": "Creag's Way",
+    "type": "PASSAGE_RED"
+  },
+  "PSG-0006#2": {
+    "id": "PSG-0006#2",
+    "name": "Chasmlight Cave",
+    "type": "PASSAGE_RED"
+  },
+  "PSG-H-0001": {
+    "id": "PSG-H-0001",
+    "name": "PSG-H-0001",
+    "type": "STARTAREA"
+  },
+  "PSG-H-0001#1": {
+    "id": "PSG-H-0001#1",
+    "name": "Boulder Deep",
+    "type": "PASSAGE_RED"
+  },
+  "PSG-H-0002": {
+    "id": "PSG-H-0002",
+    "name": "PSG-H-0002",
+    "type": "STARTAREA"
+  },
+  "PSG-H-0002#1": {
+    "id": "PSG-H-0002#1",
+    "name": "Drystone Channel",
+    "type": "PASSAGE_RED"
+  },
+  "PSG-0001": { "id": "PSG-0001", "name": "PSG-0001", "type": "STARTAREA" },
+  "PSG-0002": { "id": "PSG-0002", "name": "PSG-0002", "type": "STARTAREA" },
+  "HELLGATE-01-10v10-01-HRD": {
+    "id": "HELLGATE-01-10v10-01-HRD",
+    "name": "The Plains",
+    "type": "DUNGEON_HELL_10V10_LETHAL"
+  },
+  "HELLGATE-01-2v2-01-HRD": {
+    "id": "HELLGATE-01-2v2-01-HRD",
+    "name": "The Plains",
+    "type": "DUNGEON_HELL_2V2_LETHAL"
+  },
+  "HELLGATE-01-5v5-01-HRD": {
+    "id": "HELLGATE-01-5v5-01-HRD",
+    "name": "The Plains",
+    "type": "DUNGEON_HELL_5V5_LETHAL"
+  },
+  "HELLGATE-02-10v10-01-HRD": {
+    "id": "HELLGATE-02-10v10-01-HRD",
+    "name": "The Hill",
+    "type": "DUNGEON_HELL_10V10_LETHAL"
+  },
+  "HELLGATE-02-2v2-01-HRD": {
+    "id": "HELLGATE-02-2v2-01-HRD",
+    "name": "The Hill",
+    "type": "DUNGEON_HELL_2V2_LETHAL"
+  },
+  "HELLGATE-02-5v5-01-HRD": {
+    "id": "HELLGATE-02-5v5-01-HRD",
+    "name": "The Hill",
+    "type": "DUNGEON_HELL_5V5_LETHAL"
+  },
+  "HELLGATE-03-10v10-01-HRD": {
+    "id": "HELLGATE-03-10v10-01-HRD",
+    "name": "The Boneyard",
+    "type": "DUNGEON_HELL_10V10_LETHAL"
+  },
+  "HELLGATE-03-2v2-01-HRD": {
+    "id": "HELLGATE-03-2v2-01-HRD",
+    "name": "The Boneyard",
+    "type": "DUNGEON_HELL_2V2_LETHAL"
+  },
+  "HELLGATE-03-5v5-01-HRD": {
+    "id": "HELLGATE-03-5v5-01-HRD",
+    "name": "The Boneyard",
+    "type": "DUNGEON_HELL_5V5_LETHAL"
+  },
+  "HELLGATE-04-10v10-01-HRD": {
+    "id": "HELLGATE-04-10v10-01-HRD",
+    "name": "The Four Bridges",
+    "type": "DUNGEON_HELL_10V10_LETHAL"
+  },
+  "HELLGATE-04-2v2-01-HRD": {
+    "id": "HELLGATE-04-2v2-01-HRD",
+    "name": "The Four Bridges",
+    "type": "DUNGEON_HELL_2V2_LETHAL"
+  },
+  "HELLGATE-04-5v5-01-HRD": {
+    "id": "HELLGATE-04-5v5-01-HRD",
+    "name": "The Four Bridges",
+    "type": "DUNGEON_HELL_5V5_LETHAL"
+  },
+  "HELLGATE-05-10v10-01-HRD": {
+    "id": "HELLGATE-05-10v10-01-HRD",
+    "name": "The Traverse",
+    "type": "DUNGEON_HELL_10V10_LETHAL"
+  },
+  "HELLGATE-05-2v2-01-HRD": {
+    "id": "HELLGATE-05-2v2-01-HRD",
+    "name": "The Traverse",
+    "type": "DUNGEON_HELL_2V2_LETHAL"
+  },
+  "HELLGATE-05-5v5-01-HRD": {
+    "id": "HELLGATE-05-5v5-01-HRD",
+    "name": "The Traverse",
+    "type": "DUNGEON_HELL_5V5_LETHAL"
+  },
+  "HELLGATE-06-10v10-01-HRD": {
+    "id": "HELLGATE-06-10v10-01-HRD",
+    "name": "The Fortress",
+    "type": "DUNGEON_HELL_10V10_LETHAL"
+  },
+  "HELLGATE-06-2v2-01-HRD": {
+    "id": "HELLGATE-06-2v2-01-HRD",
+    "name": "The Fortress",
+    "type": "DUNGEON_HELL_2V2_LETHAL"
+  },
+  "HELLGATE-06-5v5-01-HRD": {
+    "id": "HELLGATE-06-5v5-01-HRD",
+    "name": "The Fortress",
+    "type": "DUNGEON_HELL_5V5_LETHAL"
+  },
+  "HELLGATE-07-10v10-01-HRD": {
+    "id": "HELLGATE-07-10v10-01-HRD",
+    "name": "The Pit",
+    "type": "DUNGEON_HELL_10V10_LETHAL"
+  },
+  "HELLGATE-07-2v2-01-HRD": {
+    "id": "HELLGATE-07-2v2-01-HRD",
+    "name": "The Pit",
+    "type": "DUNGEON_HELL_2V2_LETHAL"
+  },
+  "HELLGATE-07-5v5-01-HRD": {
+    "id": "HELLGATE-07-5v5-01-HRD",
+    "name": "The Pit",
+    "type": "DUNGEON_HELL_5V5_LETHAL"
+  },
+  "HELLGATE-08-10v10-01-HRD": {
+    "id": "HELLGATE-08-10v10-01-HRD",
+    "name": "The Courtyard",
+    "type": "DUNGEON_HELL_10V10_LETHAL"
+  },
+  "HELLGATE-08-2v2-01-HRD": {
+    "id": "HELLGATE-08-2v2-01-HRD",
+    "name": "The Courtyard",
+    "type": "DUNGEON_HELL_2V2_LETHAL"
+  },
+  "HELLGATE-08-5v5-01-HRD": {
+    "id": "HELLGATE-08-5v5-01-HRD",
+    "name": "The Courtyard",
+    "type": "DUNGEON_HELL_5V5_LETHAL"
+  },
+  "HELLGATE-09-10v10-01-HRD": {
+    "id": "HELLGATE-09-10v10-01-HRD",
+    "name": "The Tribunal",
+    "type": "DUNGEON_HELL_10V10_LETHAL"
+  },
+  "HELLGATE-09-2v2-01-HRD": {
+    "id": "HELLGATE-09-2v2-01-HRD",
+    "name": "The Tribunal",
+    "type": "DUNGEON_HELL_2V2_LETHAL"
+  },
+  "HELLGATE-09-5v5-01-HRD": {
+    "id": "HELLGATE-09-5v5-01-HRD",
+    "name": "The Tribunal",
+    "type": "DUNGEON_HELL_5V5_LETHAL"
+  },
+  "HELLGATE-10-10v10-01-HRD": {
+    "id": "HELLGATE-10-10v10-01-HRD",
+    "name": "The Citadel",
+    "type": "DUNGEON_HELL_10V10_LETHAL"
+  },
+  "HELLGATE-10-2v2-01-HRD": {
+    "id": "HELLGATE-10-2v2-01-HRD",
+    "name": "The Citadel",
+    "type": "DUNGEON_HELL_2V2_LETHAL"
+  },
+  "HELLGATE-10-5v5-01-HRD": {
+    "id": "HELLGATE-10-5v5-01-HRD",
+    "name": "The Citadel",
+    "type": "DUNGEON_HELL_5V5_LETHAL"
+  },
+  "3010": { "id": "3010", "name": "3010", "type": "STARTAREA" },
+  "DNG-KPR-02-MAIN-010": {
+    "id": "DNG-KPR-02-MAIN-010",
+    "name": "Stoneroot Caverns",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-KPR-02-MAIN-011": {
+    "id": "DNG-KPR-02-MAIN-011",
+    "name": "Stoneroot Caverns",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-KPR-02-MAIN-012": {
+    "id": "DNG-KPR-02-MAIN-012",
+    "name": "Stoneroot Caverns",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-KPR-02-MAIN-013": {
+    "id": "DNG-KPR-02-MAIN-013",
+    "name": "Stoneroot Caverns",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-KPR-02-MAIN-014": {
+    "id": "DNG-KPR-02-MAIN-014",
+    "name": "Stoneroot Caverns",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-KPR-02-MAIN-015": {
+    "id": "DNG-KPR-02-MAIN-015",
+    "name": "Stoneroot Caverns",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-KPR-02-MAIN-016": {
+    "id": "DNG-KPR-02-MAIN-016",
+    "name": "Stoneroot Caverns",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-KPR-02-MAIN-018": {
+    "id": "DNG-KPR-02-MAIN-018",
+    "name": "Stoneroot Caverns",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-KPR-02-MAIN-019": {
+    "id": "DNG-KPR-02-MAIN-019",
+    "name": "Stoneroot Caverns",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-KPR-02-MAIN-01": {
+    "id": "DNG-KPR-02-MAIN-01",
+    "name": "Stoneroot Caverns",
+    "type": "DUNGEON_YELLOW"
+  },
+  "DNG-KPR-02-MAIN-020": {
+    "id": "DNG-KPR-02-MAIN-020",
+    "name": "Stoneroot Caverns",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-KPR-02-MAIN-021": {
+    "id": "DNG-KPR-02-MAIN-021",
+    "name": "Stoneroot Caverns",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-KPR-02-MAIN-022": {
+    "id": "DNG-KPR-02-MAIN-022",
+    "name": "Stoneroot Caverns",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-KPR-02-MAIN-023": {
+    "id": "DNG-KPR-02-MAIN-023",
+    "name": "Stoneroot Caverns",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-KPR-02-MAIN-024": {
+    "id": "DNG-KPR-02-MAIN-024",
+    "name": "Stoneroot Caverns",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-KPR-02-MAIN-025": {
+    "id": "DNG-KPR-02-MAIN-025",
+    "name": "Stoneroot Caverns",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-KPR-02-MAIN-026": {
+    "id": "DNG-KPR-02-MAIN-026",
+    "name": "Stoneroot Caverns",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-KPR-02-MAIN-027": {
+    "id": "DNG-KPR-02-MAIN-027",
+    "name": "Stoneroot Caverns",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-KPR-02-MAIN-04": {
+    "id": "DNG-KPR-02-MAIN-04",
+    "name": "Stoneroot Caverns",
+    "type": "DUNGEON_YELLOW"
+  },
+  "DNG-KPR-02-MAIN-08": {
+    "id": "DNG-KPR-02-MAIN-08",
+    "name": "Stoneroot Caverns",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-KPR-02-MAIN-09": {
+    "id": "DNG-KPR-02-MAIN-09",
+    "name": "Stoneroot Caverns",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-MAIN-001": {
+    "id": "DNG-MOR-01-MAIN-001",
+    "name": "Cathedral of Light",
+    "type": "DUNGEON_RED"
+  },
+  "DNG-MOR-01-MAIN-002": {
+    "id": "DNG-MOR-01-MAIN-002",
+    "name": "Cathedral of Light",
+    "type": "DUNGEON_RED"
+  },
+  "DNG-MOR-01-MAIN-003": {
+    "id": "DNG-MOR-01-MAIN-003",
+    "name": "Cathedral of Light",
+    "type": "DUNGEON_RED"
+  },
+  "DNG-MOR-01-MAIN-010": {
+    "id": "DNG-MOR-01-MAIN-010",
+    "name": "Cathedral of Light",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-MAIN-011": {
+    "id": "DNG-MOR-01-MAIN-011",
+    "name": "Cathedral of Light",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-MAIN-012": {
+    "id": "DNG-MOR-01-MAIN-012",
+    "name": "Cathedral of Light",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-MAIN-017": {
+    "id": "DNG-MOR-01-MAIN-017",
+    "name": "Cathedral of Light",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-MAIN-018": {
+    "id": "DNG-MOR-01-MAIN-018",
+    "name": "Cathedral of Light",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-MAIN-019": {
+    "id": "DNG-MOR-01-MAIN-019",
+    "name": "Cathedral of Light",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-MAIN-01": {
+    "id": "DNG-MOR-01-MAIN-01",
+    "name": "Cathedral of Light",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-MAIN-020": {
+    "id": "DNG-MOR-01-MAIN-020",
+    "name": "Cathedral of Light",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-MAIN-021": {
+    "id": "DNG-MOR-01-MAIN-021",
+    "name": "Cathedral of Light",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-MAIN-022": {
+    "id": "DNG-MOR-01-MAIN-022",
+    "name": "Cathedral of Light",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-MAIN-023": {
+    "id": "DNG-MOR-01-MAIN-023",
+    "name": "Cathedral of Light",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-MAIN-024": {
+    "id": "DNG-MOR-01-MAIN-024",
+    "name": "Cathedral of Light",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-MAIN-025": {
+    "id": "DNG-MOR-01-MAIN-025",
+    "name": "Cathedral of Light",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-MAIN-027": {
+    "id": "DNG-MOR-01-MAIN-027",
+    "name": "Cathedral of Light",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-MAIN-02": {
+    "id": "DNG-MOR-01-MAIN-02",
+    "name": "Cathedral of Light",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-MAIN-03": {
+    "id": "DNG-MOR-01-MAIN-03",
+    "name": "Cathedral of Light",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-MAIN-04": {
+    "id": "DNG-MOR-01-MAIN-04",
+    "name": "Cathedral of Light",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-MAIN-05": {
+    "id": "DNG-MOR-01-MAIN-05",
+    "name": "Cathedral of Light",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-MAIN-06": {
+    "id": "DNG-MOR-01-MAIN-06",
+    "name": "Cathedral of Light",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-MAIN-07": {
+    "id": "DNG-MOR-01-MAIN-07",
+    "name": "Cathedral of Light",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-MAIN-08": {
+    "id": "DNG-MOR-01-MAIN-08",
+    "name": "Cathedral of Light",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-MAIN-09": {
+    "id": "DNG-MOR-01-MAIN-09",
+    "name": "Cathedral of Light",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-SUB-001": {
+    "id": "DNG-MOR-01-SUB-001",
+    "name": "Chambers of Truth",
+    "type": "DUNGEON_RED"
+  },
+  "DNG-MOR-01-SUB-002": {
+    "id": "DNG-MOR-01-SUB-002",
+    "name": "Chambers of Truth",
+    "type": "DUNGEON_RED"
+  },
+  "DNG-MOR-01-SUB-003": {
+    "id": "DNG-MOR-01-SUB-003",
+    "name": "Chambers of Truth",
+    "type": "DUNGEON_RED"
+  },
+  "DNG-MOR-01-SUB-010": {
+    "id": "DNG-MOR-01-SUB-010",
+    "name": "Chambers of Truth",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-SUB-011": {
+    "id": "DNG-MOR-01-SUB-011",
+    "name": "Chambers of Truth",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-SUB-012": {
+    "id": "DNG-MOR-01-SUB-012",
+    "name": "Chambers of Truth",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-SUB-017": {
+    "id": "DNG-MOR-01-SUB-017",
+    "name": "Chambers of Truth",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-SUB-018": {
+    "id": "DNG-MOR-01-SUB-018",
+    "name": "Chambers of Truth",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-SUB-019": {
+    "id": "DNG-MOR-01-SUB-019",
+    "name": "Chambers of Truth",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-SUB-01": {
+    "id": "DNG-MOR-01-SUB-01",
+    "name": "Chambers of Truth",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-SUB-020": {
+    "id": "DNG-MOR-01-SUB-020",
+    "name": "Chambers of Truth",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-SUB-021": {
+    "id": "DNG-MOR-01-SUB-021",
+    "name": "Chambers of Truth",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-SUB-022": {
+    "id": "DNG-MOR-01-SUB-022",
+    "name": "Chambers of Truth",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-SUB-023": {
+    "id": "DNG-MOR-01-SUB-023",
+    "name": "Chambers of Truth",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-SUB-024": {
+    "id": "DNG-MOR-01-SUB-024",
+    "name": "Chambers of Truth",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-SUB-025": {
+    "id": "DNG-MOR-01-SUB-025",
+    "name": "Chambers of Truth",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-SUB-027": {
+    "id": "DNG-MOR-01-SUB-027",
+    "name": "Chambers of Truth",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-SUB-02": {
+    "id": "DNG-MOR-01-SUB-02",
+    "name": "Chambers of Truth",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-SUB-03": {
+    "id": "DNG-MOR-01-SUB-03",
+    "name": "Chambers of Truth",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-SUB-04": {
+    "id": "DNG-MOR-01-SUB-04",
+    "name": "Chambers of Truth",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-SUB-05": {
+    "id": "DNG-MOR-01-SUB-05",
+    "name": "Chambers of Truth",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-SUB-06": {
+    "id": "DNG-MOR-01-SUB-06",
+    "name": "Chambers of Truth",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-SUB-07": {
+    "id": "DNG-MOR-01-SUB-07",
+    "name": "Chambers of Truth",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-SUB-08": {
+    "id": "DNG-MOR-01-SUB-08",
+    "name": "Chambers of Truth",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-MOR-01-SUB-09": {
+    "id": "DNG-MOR-01-SUB-09",
+    "name": "Chambers of Truth",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-MAIN-002": {
+    "id": "DNG-UND-01-MAIN-002",
+    "name": "Hallowed Crypt",
+    "type": "DUNGEON_SAFEAREA"
+  },
+  "DNG-UND-01-MAIN-003": {
+    "id": "DNG-UND-01-MAIN-003",
+    "name": "Hallowed Crypt",
+    "type": "DUNGEON_SAFEAREA"
+  },
+  "DNG-UND-01-MAIN-004": {
+    "id": "DNG-UND-01-MAIN-004",
+    "name": "Hallowed Crypt",
+    "type": "DUNGEON_SAFEAREA"
+  },
+  "DNG-UND-01-MAIN-005": {
+    "id": "DNG-UND-01-MAIN-005",
+    "name": "Hallowed Crypt",
+    "type": "DUNGEON_SAFEAREA"
+  },
+  "DNG-UND-01-MAIN-006": {
+    "id": "DNG-UND-01-MAIN-006",
+    "name": "Hallowed Crypt",
+    "type": "DUNGEON_SAFEAREA"
+  },
+  "DNG-UND-01-MAIN-007": {
+    "id": "DNG-UND-01-MAIN-007",
+    "name": "Hallowed Crypt",
+    "type": "DUNGEON_SAFEAREA"
+  },
+  "DNG-UND-01-MAIN-008": {
+    "id": "DNG-UND-01-MAIN-008",
+    "name": "Hallowed Crypt",
+    "type": "DUNGEON_SAFEAREA"
+  },
+  "DNG-UND-01-MAIN-009": {
+    "id": "DNG-UND-01-MAIN-009",
+    "name": "Hallowed Crypt",
+    "type": "DUNGEON_SAFEAREA"
+  },
+  "DNG-UND-01-MAIN-010": {
+    "id": "DNG-UND-01-MAIN-010",
+    "name": "Exalted Crypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-MAIN-011": {
+    "id": "DNG-UND-01-MAIN-011",
+    "name": "Exalted Crypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-MAIN-012": {
+    "id": "DNG-UND-01-MAIN-012",
+    "name": "Exalted Crypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-MAIN-013": {
+    "id": "DNG-UND-01-MAIN-013",
+    "name": "Exalted Crypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-MAIN-014": {
+    "id": "DNG-UND-01-MAIN-014",
+    "name": "Exalted Crypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-MAIN-015": {
+    "id": "DNG-UND-01-MAIN-015",
+    "name": "Exalted Crypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-MAIN-016": {
+    "id": "DNG-UND-01-MAIN-016",
+    "name": "Exalted Crypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-MAIN-017": {
+    "id": "DNG-UND-01-MAIN-017",
+    "name": "Exalted Crypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-MAIN-018": {
+    "id": "DNG-UND-01-MAIN-018",
+    "name": "Exalted Crypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-MAIN-019": {
+    "id": "DNG-UND-01-MAIN-019",
+    "name": "Exalted Crypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-MAIN-01": {
+    "id": "DNG-UND-01-MAIN-01",
+    "name": "Exalted Crypt",
+    "type": "DUNGEON_RED"
+  },
+  "DNG-UND-01-MAIN-020": {
+    "id": "DNG-UND-01-MAIN-020",
+    "name": "Exalted Crypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-MAIN-021": {
+    "id": "DNG-UND-01-MAIN-021",
+    "name": "Exalted Crypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-MAIN-022": {
+    "id": "DNG-UND-01-MAIN-022",
+    "name": "Exalted Crypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-MAIN-023": {
+    "id": "DNG-UND-01-MAIN-023",
+    "name": "Exalted Crypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-MAIN-024": {
+    "id": "DNG-UND-01-MAIN-024",
+    "name": "Exalted Crypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-MAIN-025": {
+    "id": "DNG-UND-01-MAIN-025",
+    "name": "Exalted Crypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-MAIN-026": {
+    "id": "DNG-UND-01-MAIN-026",
+    "name": "Exalted Crypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-MAIN-027": {
+    "id": "DNG-UND-01-MAIN-027",
+    "name": "Exalted Crypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-MAIN-02": {
+    "id": "DNG-UND-01-MAIN-02",
+    "name": "Exalted Crypt",
+    "type": "DUNGEON_RED"
+  },
+  "DNG-UND-01-MAIN-03": {
+    "id": "DNG-UND-01-MAIN-03",
+    "name": "Exalted Crypt",
+    "type": "DUNGEON_RED"
+  },
+  "DNG-UND-01-MAIN-05": {
+    "id": "DNG-UND-01-MAIN-05",
+    "name": "Exalted Crypt",
+    "type": "DUNGEON_RED"
+  },
+  "DNG-UND-01-MAIN-07": {
+    "id": "DNG-UND-01-MAIN-07",
+    "name": "Exalted Crypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-MAIN-08": {
+    "id": "DNG-UND-01-MAIN-08",
+    "name": "Exalted Crypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-MAIN-09": {
+    "id": "DNG-UND-01-MAIN-09",
+    "name": "Exalted Crypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-SUB-002": {
+    "id": "DNG-UND-01-SUB-002",
+    "name": "Hallowed Undercrypt",
+    "type": "DUNGEON_SAFEAREA"
+  },
+  "DNG-UND-01-SUB-003": {
+    "id": "DNG-UND-01-SUB-003",
+    "name": "Hallowed Undercrypt",
+    "type": "DUNGEON_SAFEAREA"
+  },
+  "DNG-UND-01-SUB-004": {
+    "id": "DNG-UND-01-SUB-004",
+    "name": "Hallowed Undercrypt",
+    "type": "DUNGEON_SAFEAREA"
+  },
+  "DNG-UND-01-SUB-005": {
+    "id": "DNG-UND-01-SUB-005",
+    "name": "Hallowed Undercrypt",
+    "type": "DUNGEON_SAFEAREA"
+  },
+  "DNG-UND-01-SUB-006": {
+    "id": "DNG-UND-01-SUB-006",
+    "name": "Hallowed Undercrypt",
+    "type": "DUNGEON_SAFEAREA"
+  },
+  "DNG-UND-01-SUB-007": {
+    "id": "DNG-UND-01-SUB-007",
+    "name": "Hallowed Undercrypt",
+    "type": "DUNGEON_SAFEAREA"
+  },
+  "DNG-UND-01-SUB-008": {
+    "id": "DNG-UND-01-SUB-008",
+    "name": "Hallowed Undercrypt",
+    "type": "DUNGEON_SAFEAREA"
+  },
+  "DNG-UND-01-SUB-009": {
+    "id": "DNG-UND-01-SUB-009",
+    "name": "Hallowed Undercrypt",
+    "type": "DUNGEON_SAFEAREA"
+  },
+  "DNG-UND-01-SUB-010": {
+    "id": "DNG-UND-01-SUB-010",
+    "name": "Exalted Undercrypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-SUB-011": {
+    "id": "DNG-UND-01-SUB-011",
+    "name": "Exalted Undercrypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-SUB-012": {
+    "id": "DNG-UND-01-SUB-012",
+    "name": "Exalted Undercrypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-SUB-013": {
+    "id": "DNG-UND-01-SUB-013",
+    "name": "Exalted Undercrypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-SUB-014": {
+    "id": "DNG-UND-01-SUB-014",
+    "name": "Exalted Undercrypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-SUB-015": {
+    "id": "DNG-UND-01-SUB-015",
+    "name": "Exalted Undercrypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-SUB-016": {
+    "id": "DNG-UND-01-SUB-016",
+    "name": "Exalted Undercrypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-SUB-017": {
+    "id": "DNG-UND-01-SUB-017",
+    "name": "Exalted Undercrypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-SUB-018": {
+    "id": "DNG-UND-01-SUB-018",
+    "name": "Exalted Undercrypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-SUB-019": {
+    "id": "DNG-UND-01-SUB-019",
+    "name": "Exalted Undercrypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-SUB-01": {
+    "id": "DNG-UND-01-SUB-01",
+    "name": "Exalted Undercrypt",
+    "type": "DUNGEON_RED"
+  },
+  "DNG-UND-01-SUB-020": {
+    "id": "DNG-UND-01-SUB-020",
+    "name": "Exalted Undercrypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-SUB-021": {
+    "id": "DNG-UND-01-SUB-021",
+    "name": "Exalted Undercrypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-SUB-022": {
+    "id": "DNG-UND-01-SUB-022",
+    "name": "Exalted Undercrypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-SUB-023": {
+    "id": "DNG-UND-01-SUB-023",
+    "name": "Exalted Undercrypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-SUB-024": {
+    "id": "DNG-UND-01-SUB-024",
+    "name": "Exalted Undercrypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-SUB-025": {
+    "id": "DNG-UND-01-SUB-025",
+    "name": "Exalted Undercrypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-SUB-026": {
+    "id": "DNG-UND-01-SUB-026",
+    "name": "Exalted Undercrypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-SUB-027": {
+    "id": "DNG-UND-01-SUB-027",
+    "name": "Exalted Undercrypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-SUB-02": {
+    "id": "DNG-UND-01-SUB-02",
+    "name": "Exalted Undercrypt",
+    "type": "DUNGEON_RED"
+  },
+  "DNG-UND-01-SUB-03": {
+    "id": "DNG-UND-01-SUB-03",
+    "name": "Exalted Undercrypt",
+    "type": "DUNGEON_RED"
+  },
+  "DNG-UND-01-SUB-05": {
+    "id": "DNG-UND-01-SUB-05",
+    "name": "Exalted Undercrypt",
+    "type": "DUNGEON_RED"
+  },
+  "DNG-UND-01-SUB-07": {
+    "id": "DNG-UND-01-SUB-07",
+    "name": "Exalted Undercrypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-SUB-08": {
+    "id": "DNG-UND-01-SUB-08",
+    "name": "Exalted Undercrypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-SUB-09": {
+    "id": "DNG-UND-01-SUB-09",
+    "name": "Exalted Undercrypt",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-KPR-01-MAIN-01": {
+    "id": "DNG-KPR-01-MAIN-01",
+    "name": "Deepwood Enclave",
+    "type": "DUNGEON_YELLOW"
+  },
+  "DNG-KPR-01-MAIN-02": {
+    "id": "DNG-KPR-01-MAIN-02",
+    "name": "Deepwood Enclave",
+    "type": "DUNGEON_YELLOW"
+  },
+  "DNG-KPR-01-MAIN-03": {
+    "id": "DNG-KPR-01-MAIN-03",
+    "name": "Deepwood Enclave",
+    "type": "DUNGEON_YELLOW"
+  },
+  "DNG-KPR-02-MAIN-017": {
+    "id": "DNG-KPR-02-MAIN-017",
+    "name": "Stoneroot Caverns",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-02-MAIN-01": {
+    "id": "DNG-UND-02-MAIN-01",
+    "name": "Trinity Hall",
+    "type": "DUNGEON_SAFEAREA"
+  },
+  "DNG-UND-02-MAIN-02": {
+    "id": "DNG-UND-02-MAIN-02",
+    "name": "Trinity Hall",
+    "type": "DUNGEON_SAFEAREA"
+  },
+  "DNG-UND-02-MAIN-03": {
+    "id": "DNG-UND-02-MAIN-03",
+    "name": "Trinity Hall",
+    "type": "DUNGEON_SAFEAREA"
+  },
+  "DNG-UND-02-MAIN-04": {
+    "id": "DNG-UND-02-MAIN-04",
+    "name": "Trinity Hall",
+    "type": "DUNGEON_SAFEAREA"
+  },
+  "0363-HALL-04": {
+    "id": "0363-HALL-04",
+    "name": "Conquerors' Hall Lvl. 4",
+    "type": "PLAYERCITY_BLACK_ROYAL_NOFURNITURE_HALL_OF_FAME"
+  },
+  "1016-HALL-04": {
+    "id": "1016-HALL-04",
+    "name": "Conquerors' Hall Lvl. 4",
+    "type": "PLAYERCITY_BLACK_ROYAL_NOFURNITURE_HALL_OF_FAME"
+  },
+  "2013-HALL-04": {
+    "id": "2013-HALL-04",
+    "name": "Conquerors' Hall Lvl. 4",
+    "type": "PLAYERCITY_BLACK_ROYAL_NOFURNITURE_HALL_OF_FAME"
+  },
+  "3017-HALL-04-MART": {
+    "id": "3017-HALL-04-MART",
+    "name": "Conquerors' Hall Lvl. 4",
+    "type": "PLAYERCITY_BLACK_ROYAL_NOFURNITURE_HALL_OF_FAME"
+  },
+  "4010-HALL-04": {
+    "id": "4010-HALL-04",
+    "name": "Conquerors' Hall Lvl. 4",
+    "type": "PLAYERCITY_BLACK_ROYAL_NOFURNITURE_HALL_OF_FAME"
+  },
+  "DNG-UND-01-MAIN-06": {
+    "id": "DNG-UND-01-MAIN-06",
+    "name": "DNG-UND-01-MAIN-06",
+    "type": "STARTAREA"
+  },
+  "DNG-UND-01-SUB-06": {
+    "id": "DNG-UND-01-SUB-06",
+    "name": "DNG-UND-01-SUB-06",
+    "type": "STARTAREA"
+  },
+  "DNG-KPR-02-MAIN-028": {
+    "id": "DNG-KPR-02-MAIN-028",
+    "name": "Stoneroot Caverns",
+    "type": "DUNGEON_BLACK"
+  },
+  "DNG-UND-01-MAIN-028": {
+    "id": "DNG-UND-01-MAIN-028",
+    "name": "Exalted Crypt",
+    "type": "DUNGEON_SAFEAREA"
+  },
+  "DNG-UND-01-SUB-028": {
+    "id": "DNG-UND-01-SUB-028",
+    "name": "Exalted Undercrypt",
+    "type": "DUNGEON_SAFEAREA"
+  },
+  "3012-HALL-02": {
+    "id": "3012-HALL-02",
+    "name": "3012-HALL-02",
+    "type": "STARTAREA"
+  },
+  "LEGACY-KEEPER-01": {
+    "id": "LEGACY-KEEPER-01",
+    "name": "LEGACY-KEEPER-01",
+    "type": "STARTAREA"
+  },
+  "LEGACY-KEEPER-SOLO-01": {
+    "id": "LEGACY-KEEPER-SOLO-01",
+    "name": "LEGACY-KEEPER-SOLO-01",
+    "type": "STARTAREA"
+  },
+  "LEGACY-UNDEAD-01": {
+    "id": "LEGACY-UNDEAD-01",
+    "name": "LEGACY-UNDEAD-01",
+    "type": "STARTAREA"
+  },
+  "LEGACY-UNDEAD-02": {
+    "id": "LEGACY-UNDEAD-02",
+    "name": "LEGACY-UNDEAD-02",
+    "type": "STARTAREA"
+  },
+  "DNG-HER-01-MAIN-01": {
+    "id": "DNG-HER-01-MAIN-01",
+    "name": "Heretic Cellar Network",
+    "type": "DUNGEON_SAFEAREA"
+  },
+  "0301": {
+    "id": "0301",
+    "name": "Thetford Portal",
+    "type": "PLAYERCITY_BLACK_PORTALCITY_NOFURNITURE"
+  },
+  "1301": {
+    "id": "1301",
+    "name": "Lymhurst Portal",
+    "type": "PLAYERCITY_BLACK_PORTALCITY_NOFURNITURE"
+  },
+  "2301": {
+    "id": "2301",
+    "name": "Bridgewatch Portal",
+    "type": "PLAYERCITY_BLACK_PORTALCITY_NOFURNITURE"
+  },
+  "3301": {
+    "id": "3301",
+    "name": "Martlock Portal",
+    "type": "PLAYERCITY_BLACK_PORTALCITY_NOFURNITURE"
+  },
+  "4301": {
+    "id": "4301",
+    "name": "Fort Sterling Portal",
+    "type": "PLAYERCITY_BLACK_PORTALCITY_NOFURNITURE"
+  },
+  "0302": { "id": "0302", "name": "0302", "type": "STARTAREA" },
+  "0303": { "id": "0303", "name": "0303", "type": "STARTAREA" },
+  "0304": { "id": "0304", "name": "0304", "type": "STARTAREA" },
+  "1302": { "id": "1302", "name": "1302", "type": "STARTAREA" },
+  "1303": { "id": "1303", "name": "1303", "type": "STARTAREA" },
+  "1304": { "id": "1304", "name": "1304", "type": "STARTAREA" },
+  "2302": { "id": "2302", "name": "2302", "type": "STARTAREA" },
+  "2303": { "id": "2303", "name": "2303", "type": "STARTAREA" },
+  "2304": { "id": "2304", "name": "2304", "type": "STARTAREA" },
+  "3302": { "id": "3302", "name": "3302", "type": "STARTAREA" },
+  "3303": { "id": "3303", "name": "3303", "type": "STARTAREA" },
+  "3304": { "id": "3304", "name": "3304", "type": "STARTAREA" },
+  "4302": { "id": "4302", "name": "4302", "type": "STARTAREA" },
+  "4303": { "id": "4303", "name": "4303", "type": "STARTAREA" },
+  "4304": { "id": "4304", "name": "4304", "type": "STARTAREA" },
+  "CrystalRealm02": {
+    "id": "CrystalRealm02",
+    "name": "Crystal Realm",
+    "type": "ARENA_CRYSTAL"
+  },
+  "DNG-HER-01-MAIN-02": {
+    "id": "DNG-HER-01-MAIN-02",
+    "name": "Heretic Cellar Network",
+    "type": "DUNGEON_SAFEAREA"
+  },
+  "DNG-HER-01-MAIN-03": {
+    "id": "DNG-HER-01-MAIN-03",
+    "name": "Heretic Cellar Network",
+    "type": "DUNGEON_SAFEAREA"
+  },
+  "DNG-HER-01-MAIN-04": {
+    "id": "DNG-HER-01-MAIN-04",
+    "name": "Heretic Cellar Network",
+    "type": "DUNGEON_SAFEAREA"
+  },
+  "DNG-HER-01-MAIN-05": {
+    "id": "DNG-HER-01-MAIN-05",
+    "name": "Heretic Cellar Network",
+    "type": "DUNGEON_SAFEAREA"
+  },
+  "CrystalRealm-Nonlethal": {
+    "id": "CrystalRealm-Nonlethal",
+    "name": "Crystal Realm",
+    "type": "ARENA_CRYSTAL"
+  },
+  "CrystalRealm02-Nonlethal": {
+    "id": "CrystalRealm02-Nonlethal",
+    "name": "Crystal Realm",
+    "type": "ARENA_CRYSTAL"
+  },
+  "5000": { "id": "5000", "name": "Brecilien", "type": "PLAYERCITY_BLACK" },
+  "5001": {
+    "id": "5001",
+    "name": "Brecilien",
+    "type": "PLAYERCITY_BLACK_NOFURNITURE"
+  },
+  "5002": {
+    "id": "5002",
+    "name": "Brecilien Bank",
+    "type": "PLAYERCITY_BLACK_NOFURNITURE"
+  },
+  "5003": {
+    "id": "5003",
+    "name": "Brecilien Market",
+    "type": "PLAYERCITY_BLACK_NOFURNITURE"
+  },
+  "5100": { "id": "5100", "name": "Brecilien Weald", "type": "OPENPVP_RED" },
+  "5101": { "id": "5101", "name": "Brecilien Copse", "type": "OPENPVP_RED" },
+  "5102": { "id": "5102", "name": "Brecilien Grove", "type": "OPENPVP_YELLOW" },
+  "5103": { "id": "5103", "name": "Brecilien Thicket", "type": "OPENPVP_RED" },
+  "DNG-Test-UND-01-MAIN-001": {
+    "id": "DNG-Test-UND-01-MAIN-001",
+    "name": "UND Test 1",
+    "type": "DUNGEON_YELLOW"
+  },
+  "DNG-Test-UND-01-MAIN-001#1": {
+    "id": "DNG-Test-UND-01-MAIN-001#1",
+    "name": "UND Test 2",
+    "type": "DUNGEON_YELLOW"
+  }
+}

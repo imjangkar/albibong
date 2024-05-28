@@ -1,0 +1,46 @@
+.dmgBar {
+  background: linear-gradient(135deg, #ff6486, #6486ff);
+  height: 6px;
+  border-radius: 8px;
+  margin-bottom: 2px;
+}
+
+.healBar {
+  background: linear-gradient(135deg, #64ffde, #64ff90);
+  height: 2px;
+  border-radius: 4px;
+}
+
+.dpsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 4px;
+  box-sizing: content-box;
+  padding: 16px;
+}
+
+.dpsRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dpsNumber {
+  width: 128px;
+  text-align: right;
+}
+
+.hidden {
+  display: none;
+}
+
+.player {
+  flex-grow: 1;
+}
+
+.checkboxColor {
+  accent-color: #64d3ff;
+}

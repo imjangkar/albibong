@@ -1,0 +1,41 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+exclude = [
+  "/.*",
+  "/dump",
+  "/log",
+  "/pcap",
+  "/tests",
+  "/gui",
+  "/readme_screenshots",
+  "/README.md"
+]
+
+[project.scripts]
+albibong = "albibong:main"
+
+[project]
+name = "albibong"
+version = "1.0.1"
+authors = [
+  { name="imjangkar", email="imjangkar@gmail.com" },
+]
+description = "A cross-platform Albion Online damage, fame, and dungeon tracker"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "scapy==2.5.0",
+  "websockets==12.0",
+  "pywebview==5.1"
+]
+
+[project.urls]
+Homepage = "https://github.com/imjangkar/albibong"
+Issues = "https://github.com/imjangkar/albibong/issues"
