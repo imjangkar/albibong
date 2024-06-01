@@ -74,7 +74,7 @@ albibong
 2. Run the Backend inside `src`
 
 ```
-cd src && python albibong
+cd src && python -m albibong
 ```
 
 3. Run the Frontend inside `gui`

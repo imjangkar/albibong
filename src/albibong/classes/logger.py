@@ -7,6 +7,12 @@ from scapy.all import wrpcap
 
 from albibong.photon_packet_parser import EventData, OperationRequest, OperationResponse
 
+isUsingLogger = False
+
+
+def use_logger(value):
+    isUsingLogger = value
+
 
 class Logger(logging.Logger):
     def __init__(
@@ -63,6 +69,9 @@ class Logger(logging.Logger):
         return datetime.now(timezone.utc).strftime("%H:%M:%S")
 
     def log_payload(self, payload):
+        if not isUsingLogger:
+            return
+
         if type(payload) == EventData:
             self.log_event(payload)
         elif type(payload) == OperationRequest:
@@ -72,8 +81,9 @@ class Logger(logging.Logger):
 
     def log_dps_meter_state(self, state: bool):
         text = f"{self.get_timestamp()} DPS METER IS {'RUNNING. The damages below this point will be recorded.' if state else 'PAUSED. The damages below this point will NOT be recorded.'}"
-        self.info(text)
         print(text)
+        if isUsingLogger:
+            self.info(text)
 
     def log_event(self, payload: EventData):
         if self.ignore_event:

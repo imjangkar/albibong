@@ -7,7 +7,6 @@ from urllib.parse import urlparse
 from albibong.classes.logger import Logger
 
 logger = Logger(__name__, stdout=True, log_to_file=False)
-PORT = 8000
 DIRECTORY = os.path.join(os.path.dirname(__file__), "../gui_dist")
 INDEXFILE = "/index.html"
 
@@ -38,15 +37,16 @@ class HttpRequestHandler(http.server.SimpleHTTPRequestHandler):
 
 
 class HttpServerThread(threading.Thread):
-    def __init__(self, name):
+    def __init__(self, name, port):
         super().__init__()
         self.name = name
+        self.port = port
 
     def run(self):
         # Create an object of the above class
         handler_object = HttpRequestHandler
 
-        self.http_server = socketserver.TCPServer(("", PORT), handler_object)
+        self.http_server = socketserver.TCPServer(("", self.port), handler_object)
         self.http_server.allow_reuse_address = True
 
         # Star the server
