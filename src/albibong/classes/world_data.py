@@ -1,12 +1,14 @@
 import json
 import os
 from collections import deque
+from uuid import UUID
 
 from albibong.classes.character import Character
 from albibong.classes.coords import Coords
 from albibong.classes.dungeon import Dungeon
 from albibong.classes.item import Item
 from albibong.classes.location import Location
+from albibong.classes.utils import Utils
 from albibong.resources.EventCode import EventCode
 from albibong.resources.OperationCode import OperationCode
 from albibong.threads.websocket_server import send_event
@@ -20,6 +22,7 @@ class WorldData:
     def __init__(self) -> None:
         self.me: Character = Character(
             id=None,
+            uuid=None,
             username="not initialized",
             guild="not initialized",
             alliance="not initialized",
@@ -29,6 +32,7 @@ class WorldData:
         self.current_dungeon: Dungeon = None
         self.characters: dict[str, Character] = {}
         self.char_id_to_username: dict[int, str] = {self.me.id: self.me.username}
+        self.char_uuid_to_username: dict[UUID, str] = {self.me.uuid: self.me.username}
         self.change_equipment_log: dict[int, list] = {}
         self.party_members: set[str] = set()
         self.is_dps_meter_running: bool = True
@@ -39,6 +43,8 @@ class WorldData:
                 self.handle_join_response(parameters)
             elif parameters[253] == OperationCode.CHANGE_CLUSTER.value:
                 self.set_location(parameters)
+            # elif parameters[253] == OperationCode.PARTY_LEAVE.value:
+            #     self.party_members = set(self.me.username)
 
     def handle_event(self, parameters):
         if 252 in parameters:
@@ -73,6 +79,7 @@ class WorldData:
             elif parameters[252] == EventCode.NEW_CHARACTER.value:
                 self.create_character(
                     id=parameters[0],
+                    uuid=parameters[7],
                     username=parameters[1],
                     guild=parameters[8] if 8 in parameters else "",
                     alliance=parameters[49] if 49 in parameters else "",
@@ -159,19 +166,22 @@ class WorldData:
         send_event(event)
 
     def update_party_member(self, parameters):
-        if self.me != None:
-            self.party_members.add(self.me.username)
         if parameters[252] == EventCode.PARTY_JOINED.value:
-            for member in parameters[5]:
-                self.party_members.add(member)
+            self.party_members = set(parameters[5])
         elif parameters[252] == EventCode.PARTY_DISBANDED.value:
             self.party_members = set()
         elif parameters[252] == EventCode.PARTY_PLAYER_JOINED.value:
             self.party_members.add(parameters[2])
         elif parameters[252] == EventCode.PARTY_PLAYER_LEFT.value:
-            if parameters[0] in self.char_id_to_username:
-                name = self.char_id_to_username[parameters[0]]
+            uuid = UUID(bytes=bytes(parameters[1]))
+            name = self.char_uuid_to_username[uuid]
+            if name == self.me.username:
+                self.party_members = set()
+            else:
                 self.party_members.remove(name)
+                print(f"out party {name}")
+        if self.me.id != None:
+            self.party_members.add(self.me.username)
         event = {
             "type": "update_dps",
             "payload": {"party_members": self.serialize_party_members()},
@@ -193,14 +203,17 @@ class WorldData:
     def change_character_equipment(self, parameters):
         if 2 in parameters:
             if parameters[0] in self.char_id_to_username:
-                char = self.characters[self.char_id_to_username[parameters[0]]]
-                if char.username in self.party_members:
-                    char.update_equipment(parameters[2])
-                    event = {
-                        "type": "update_dps",
-                        "payload": {"party_members": self.serialize_party_members()},
-                    }
-                    send_event(event)
+                if self.char_id_to_username[parameters[0]] != "not initialized":
+                    char = self.characters[self.char_id_to_username[parameters[0]]]
+                    if char.username in self.party_members:
+                        char.update_equipment(parameters[2])
+                        event = {
+                            "type": "update_dps",
+                            "payload": {
+                                "party_members": self.serialize_party_members()
+                            },
+                        }
+                        send_event(event)
             else:
                 self.change_equipment_log[parameters[0]] = parameters[2]
 
@@ -209,14 +222,14 @@ class WorldData:
 
         self.convert_id_to_name(old_id=self.me.id, new_id=parameters[0], char=self.me)
 
+        self.me.uuid = Utils.convert_int_arr_to_uuid(parameters[1])
         self.me.username = parameters[2]
         self.me.guild = parameters[57] if 57 in parameters else ""
         self.me.alliance = parameters[77] if 77 in parameters else ""
         self.characters[self.me.username] = self.me
+        self.char_uuid_to_username[self.me.uuid] = self.me.username
         if self.me.id in self.change_equipment_log:
             self.me.update_equipment(self.change_equipment_log[self.me.id])
-
-        self.party_members.add(self.me.username)
 
         # set map my character is currently in
         if parameters[8][0] == "@":
@@ -258,6 +271,7 @@ class WorldData:
     def create_character(
         self,
         id: int,
+        uuid: list[int],
         username: str,
         guild: str,
         alliance: str,
@@ -269,6 +283,7 @@ class WorldData:
         if username not in self.characters:
             char: Character = Character(
                 id=id,
+                uuid=Utils.convert_int_arr_to_uuid(uuid),
                 username=username,
                 guild=guild,
                 alliance=alliance,
@@ -277,6 +292,7 @@ class WorldData:
             char.update_equipment(equipments)
             self.characters[char.username] = char
             self.char_id_to_username[char.id] = char.username
+            self.char_uuid_to_username[char.uuid] = char.username
 
         # change map
         else:

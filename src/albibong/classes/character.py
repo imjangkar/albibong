@@ -1,4 +1,5 @@
 import json
+from uuid import UUID
 
 from albibong.classes.coords import Coords
 from albibong.classes.item import Item
@@ -12,6 +13,7 @@ class Character:
     def __init__(
         self,
         id: int,
+        uuid: UUID,
         username: str,
         guild: str,
         alliance: str,
@@ -19,6 +21,7 @@ class Character:
         equipment: list[Item] = [Item.get_item_from_code("0")] * 10,
     ):
         self.id = id
+        self.uuid = uuid
         self.username = username
         self.guild = guild
         self.alliance = alliance

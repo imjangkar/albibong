@@ -11,6 +11,7 @@ isUsingLogger = False
 
 
 def use_logger(value):
+    global isUsingLogger
     isUsingLogger = value
 
 
@@ -31,7 +32,7 @@ class Logger(logging.Logger):
 
         self.file_timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H%M%S")
         log_filepath = os.path.join(
-            os.path.expanduser("~"), f"Albibong/log/log_{self.file_timestamp}.txt"
+            os.path.dirname(__file__), f"../../../log/log_{self.file_timestamp}.txt"
         )
         os.makedirs(os.path.dirname(log_filepath), exist_ok=True)
 
