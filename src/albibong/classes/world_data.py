@@ -174,12 +174,10 @@ class WorldData:
             self.party_members.add(parameters[2])
         elif parameters[252] == EventCode.PARTY_PLAYER_LEFT.value:
             uuid = UUID(bytes=bytes(parameters[1]))
-            name = self.char_uuid_to_username[uuid]
-            if name == self.me.username:
-                self.party_members = set()
-            else:
-                self.party_members.remove(name)
-                print(f"out party {name}")
+            if uuid in self.char_uuid_to_username:
+                name = self.char_uuid_to_username[uuid]
+                if name == self.me.username:
+                    self.party_members = set()
         if self.me.id != None:
             self.party_members.add(self.me.username)
         event = {
