@@ -1,5 +1,6 @@
 import queue
 import random
+import socket
 import sys
 from time import sleep
 
@@ -14,7 +15,8 @@ from albibong.threads.sniffer_thread import SnifferThread
 from albibong.threads.websocket_server import get_ws_server
 
 logger = Logger(__name__, stdout=True, log_to_file=False)
-PORT = random.randrange(8500,8999)
+PORT = random.randrange(8500, 8999)
+
 
 def read_pcap(path):
     packet_handler = PacketHandler()
@@ -42,14 +44,18 @@ def sniff(useWebview):
     ws_server.start()
 
     if useWebview:
-        print("addr",PORT)
 
-        http_server = HttpServerThread(name="http_server", port=PORT)
+        sock = socket.socket()
+        sock.bind(("", 0))
+        port = sock.getsockname()[1]
+        sock.close()
+
+        http_server = HttpServerThread(name="http_server", port=port)
         http_server.start()
 
         window = webview.create_window(
             "Albibong",
-            url=f"http://localhost:{PORT}/",
+            url=f"http://localhost:{port}/",
             width=1280,
             height=720,
             zoomable=True,
