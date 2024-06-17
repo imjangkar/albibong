@@ -19,7 +19,7 @@ albibong = "albibong:main"
 
 [project]
 name = "albibong"
-version = "1.0.1"
+version = "1.0.3"
 authors = [
   { name="imjangkar", email="imjangkar@gmail.com" },
 ]

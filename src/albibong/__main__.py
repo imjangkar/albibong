@@ -1,4 +1,6 @@
 from albibong import main
+from albibong.classes.logger import use_logger
 
 if __name__ == "__main__":
-    main()
+    use_logger(True)
+    main(useWebview=False)

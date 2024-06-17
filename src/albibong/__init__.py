@@ -1,4 +1,6 @@
 import queue
+import random
+import socket
 import sys
 from time import sleep
 
@@ -13,6 +15,7 @@ from albibong.threads.sniffer_thread import SnifferThread
 from albibong.threads.websocket_server import get_ws_server
 
 logger = Logger(__name__, stdout=True, log_to_file=False)
+PORT = random.randrange(8500, 8999)
 
 
 def read_pcap(path):
@@ -22,7 +25,7 @@ def read_pcap(path):
         packet_handler.handle(packet)
 
 
-def sniff():
+def sniff(useWebview):
     _sentinel = object()
     packet_queue = queue.Queue()
 
@@ -40,39 +43,47 @@ def sniff():
     ws_server = get_ws_server()
     ws_server.start()
 
-    http_server = HttpServerThread(name="http_server")
-    http_server.start()
+    if useWebview:
 
-    # sleep(0.25)
-    # with open("../gui/dist/index.html", "r") as html:
-    window = webview.create_window(
-        "Albibong",
-        # "../../gui/dist/index.html",
-        url="http://localhost:8000/",
-        width=1280,
-        height=720,
-        zoomable=True,
-    )
+        sock = socket.socket()
+        sock.bind(("", 0))
+        port = sock.getsockname()[1]
+        sock.close()
 
-    def on_closing():
-        c.stop()
-        p.stop()
-        ws_server.stop()
-        http_server.stop()
+        http_server = HttpServerThread(name="http_server", port=port)
+        http_server.start()
 
-    window.events.closing += on_closing
+        window = webview.create_window(
+            "Albibong",
+            url=f"http://localhost:{port}/",
+            width=1280,
+            height=720,
+            zoomable=True,
+        )
 
-    webview.start()
+        def on_closing():
+            c.stop()
+            p.stop()
+            ws_server.stop()
+            http_server.stop()
+
+        window.events.closing += on_closing
+
+        webview.start()
+    else:
+        try:
+            while True:
+                sleep(100)
+        except KeyboardInterrupt as e:
+            p.stop()
+            ws_server.stop()
 
 
-def main():
+def main(useWebview=True):
     if len(sys.argv) > 1:
         ws_server = get_ws_server()
         ws_server.start()
 
-        http_server = HttpServerThread(name="http_server")
-        http_server.start()
-
         read_pcap(sys.argv[1])
     else:
-        sniff()
+        sniff(useWebview)

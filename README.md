@@ -1,5 +1,9 @@
 # Albibong
 
+[![Discord](https://img.shields.io/discord/772406813438115891?logo=discord&logoColor=7289da&label=discord&labelColor=1E2126&color=7289da)](https://discord.gg/tHztGJ2QYT)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/albibong)](https://pypi.org/project/albibong/)
+[![PyPI - Version](https://img.shields.io/pypi/v/albibong?label=pypi%20version)](https://pypi.org/project/albibong/)
+
 ## 🎯 Features
 
 1. Damage (and Heal) Meter
@@ -65,7 +69,7 @@ cd gui && npm install
 albibong
 ```
 
-3. A window will pop out and you're good to go!
+2. A window will pop out and you're good to go!
 
 ### 👨‍💻 Devs
 
@@ -74,7 +78,7 @@ albibong
 2. Run the Backend inside `src`
 
 ```
-cd src && python albibong
+cd src && python -m albibong
 ```
 
 3. Run the Frontend inside `gui`
