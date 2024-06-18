@@ -34,13 +34,11 @@ class Character:
         self.loot: list[str] = []
         self.equipment = equipment
 
-    def handle_health_update(self, parameters):
-        if 2 in parameters:
-            if parameters[2] < 0:
-                if parameters[0] != self.id:
-                    self.damage_dealt += abs(parameters[2])
-            else:
-                self.healing_dealt += abs(parameters[2])
+    def update_damage_dealt(self, nominal):
+        self.damage_dealt += nominal
+
+    def update_heal_dealt(self, nominal):
+        self.healing_dealt += nominal
 
     def update_coords(self, parameters):
         if 3 in parameters:

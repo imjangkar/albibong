@@ -19,7 +19,7 @@ albibong = "albibong:main"
 
 [project]
 name = "albibong"
-version = "1.0.3"
+version = "1.0.4"
 authors = [
   { name="imjangkar", email="imjangkar@gmail.com" },
 ]
@@ -33,7 +33,8 @@ classifiers = [
 dependencies = [
   "scapy==2.5.0",
   "websockets==12.0",
-  "pywebview==5.1"
+  "pywebview==5.1",
+  "playsound==1.3.0"
 ]
 
 [project.urls]

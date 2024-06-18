@@ -1,7 +1,9 @@
 import json
 import os
 from collections import deque
+import threading
 from uuid import UUID
+from playsound import playsound
 
 from albibong.classes.character import Character
 from albibong.classes.coords import Coords
@@ -66,7 +68,12 @@ class WorldData:
                 parameters[252] == EventCode.HEALTH_UPDATE.value
                 and self.is_dps_meter_running
             ):
-                self.update_dps_meter(parameters)
+                self.handle_health_update(parameters)
+            elif (
+                parameters[252] == EventCode.HEALTH_UPDATES.value
+                and self.is_dps_meter_running
+            ):
+                self.handle_health_updates(parameters)
             elif (
                 parameters[252] == EventCode.PARTY_JOINED.value
                 or parameters[252] == EventCode.PARTY_PLAYER_JOINED.value
@@ -182,17 +189,50 @@ class WorldData:
         }
         send_event(event)
 
-    def update_dps_meter(self, parameters):
-        if 6 in parameters and parameters[6] in self.char_id_to_username:
-            username = self.char_id_to_username[parameters[6]]
-            if username in self.party_members:
-                char: Character = self.characters[username]
-                char.handle_health_update(parameters)
-                event = {
-                    "type": "update_dps",
-                    "payload": {"party_members": self.serialize_party_members()},
-                }
-                send_event(event)
+    def handle_health_update(self, parameters):
+
+        nominal = parameters[2] if 2 in parameters else 0
+        target = parameters[0]
+        inflictor = parameters[6]
+
+        self.update_damage_or_heal(target, inflictor, nominal)
+
+    def update_damage_or_heal(self, target, inflictor, nominal):
+
+        if inflictor not in self.char_id_to_username:
+            # character not initialized yet
+            return
+
+        username = self.char_id_to_username[inflictor]
+
+        if username == "not initialized":
+            # self not initialized
+            return
+
+        char: Character = self.characters[username]
+
+        if nominal < 0:
+            if target == inflictor:
+                # suicide
+                return
+            char.update_damage_dealt(abs(nominal))
+        else:
+            char.update_heal_dealt(nominal)
+
+        event = {
+            "type": "update_dps",
+            "payload": {"party_members": self.serialize_party_members()},
+        }
+        send_event(event)
+
+    def handle_health_updates(self, parameters):
+
+        for i in range(len(parameters[2])):
+            nominal = parameters[2][i]
+            target = parameters[0]
+            inflictor = parameters[6][i]
+
+            self.update_damage_or_heal(target, inflictor, nominal)
 
     def change_character_equipment(self, parameters):
         if 2 in parameters:
