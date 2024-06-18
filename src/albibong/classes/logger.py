@@ -40,7 +40,7 @@ class Logger(logging.Logger):
         log_formatter = logging.Formatter("%(message)s")
 
         if log_to_file:
-            file_handler = logging.FileHandler(log_filepath)
+            file_handler = logging.FileHandler(log_filepath, encoding="utf-8")
             file_handler.setFormatter(log_formatter)
             file_handler.setLevel(logging.INFO)
             self.addHandler(file_handler)
