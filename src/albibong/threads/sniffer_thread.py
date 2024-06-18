@@ -13,9 +13,7 @@ class SnifferThread(threading.Thread):
         self.name = name
         self.out_queue = out_queue
         self.sentinel = sentinel
-        self.sniffer = AsyncSniffer(
-            filter="udp and port 5056 and host 193.169.238 or 5.45.187 or 5.188.125",
-            prn=self.push_packet)
+        self.sniffer = AsyncSniffer(filter="udp and port 5056", prn=self.push_packet)
 
     def push_packet(self, packet):
         self.out_queue.put(packet)
