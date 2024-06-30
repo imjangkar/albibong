@@ -3,8 +3,9 @@ import traceback
 
 from scapy.all import UDP, Packet
 
+from albibong.classes.event_handler import EventHandler
 from albibong.classes.logger import Logger
-from albibong.classes.world_data import WorldData, get_world_data
+from albibong.classes.world_data import get_world_data
 from albibong.photon_packet_parser import (
     EventData,
     OperationRequest,
@@ -33,6 +34,7 @@ class PacketHandler:
             self.on_event, self.on_request, self.on_response
         )
         self.world_data = get_world_data()
+        self.event_handler = EventHandler()
 
     @log_payload
     def on_event(self, payload: EventData):
@@ -41,12 +43,12 @@ class PacketHandler:
 
     @log_payload
     def on_request(self, payload: OperationRequest):
-        self.world_data.handle_request(payload.parameters)
+        self.event_handler.on_request(self.world_data, payload.parameters)
         return payload
 
     @log_payload
     def on_response(self, payload: OperationResponse):
-        self.world_data.handle_response(payload.parameters)
+        self.event_handler.on_response(self.world_data, payload.parameters)
         return payload
 
     def handle(self, packet: Packet):
