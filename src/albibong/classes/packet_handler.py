@@ -38,7 +38,7 @@ class PacketHandler:
 
     @log_payload
     def on_event(self, payload: EventData):
-        self.world_data.handle_event(payload.parameters)
+        self.event_handler.on_event(self.world_data, payload.parameters)
         return payload
 
     @log_payload
