@@ -15,7 +15,7 @@ class Item:
         self.image = (
             "https://render.albiononline.com/v1/item/" + self.unique_name
             if self.unique_name != "None"
-            else "../public/No Equipment.png"
+            else "/No Equipment.png"
         )
 
     @staticmethod

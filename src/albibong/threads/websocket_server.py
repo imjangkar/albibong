@@ -1,4 +1,5 @@
 import asyncio
+from datetime import timedelta
 import json
 import os
 import queue
@@ -89,6 +90,7 @@ class WebsocketServer(threading.Thread):
                         char = world_data.characters[member]
                         char.damage_dealt = 0
                         char.healing_dealt = 0
+                        char.total_combat_duration = timedelta(0, 0)
                     reply = {
                         "type": "update_dps",
                         "payload": {
