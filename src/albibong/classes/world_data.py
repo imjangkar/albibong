@@ -1,3 +1,4 @@
+from datetime import timedelta
 import json
 import os
 from collections import deque
@@ -111,10 +112,18 @@ class WorldData:
                     if total_heal > 0
                     else 0
                 )
+                duration = char.total_combat_duration
+
+                combat_duration = str(duration).split(".")[0]
+                dps = (
+                    damage_dealt // duration.total_seconds()
+                    if duration.total_seconds() != 0
+                    else 0
+                )
                 weapon = (
                     Item.serialize(char.equipment[0])["image"]
                     if char.equipment != []
-                    else "../public/No Equipment.png"
+                    else "/No Equipment.png"
                 )
 
             # member character not initialized
@@ -124,7 +133,9 @@ class WorldData:
                 damage_percent = 0
                 healing_dealt = 0
                 heal_percent = 0
-                weapon = "../public/No Equipment.png"
+                combat_duration = 0
+                dps = 0
+                weapon = "/No Equipment.png"
 
             data = {
                 "username": username,
@@ -132,6 +143,8 @@ class WorldData:
                 "damage_percent": damage_percent,
                 "healing_dealt": healing_dealt,
                 "heal_percent": heal_percent,
+                "combat_duration": combat_duration,
+                "dps": dps,
                 "weapon": weapon,
             }
             serialized.append(data)
