@@ -8,7 +8,7 @@ def handle_event_party_joined(world_data: WorldData, parameters):
     ws_update_party_member(world_data)
 
 
-def handle_event_party_disbanded(world_data: WorldData):
+def handle_event_party_disbanded(world_data: WorldData, parameters):
     world_data.party_members = {world_data.me.username}
     ws_update_party_member(world_data)
 
