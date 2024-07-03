@@ -9,6 +9,8 @@ import {
 import { useContext, useEffect, useState } from "react";
 import { Dungeon, WorldContext } from "../providers/WorldProvider";
 import DungeonCard from "../components/DungeonCard";
+import style from "./DungeonTracker.module.css";
+import { theme } from "../theme";
 
 const DungeonTracker = () => {
   const { world, dungeonFilter } = useContext(WorldContext);
@@ -38,23 +40,29 @@ const DungeonTracker = () => {
 
   return (
     <div className={app.container}>
-      <Typography variant="h1">Dungeon Tracker</Typography>
-      <FormControl fullWidth>
-        <InputLabel id="demo-simple-select-label">
-          Filter by Dungeon Type
-        </InputLabel>
-        <Select
-          value={selectedFilter}
-          label="Filter by Dungeon Type"
-          onChange={(e) => setSelectedFilter(e.target.value)}
-        >
-          {dungeonFilter.map((filter, index) => (
-            <MenuItem key={index} value={filter}>
-              {filter}
-            </MenuItem>
-          ))}
-        </Select>
-      </FormControl>
+      <Typography variant="h2">Dungeon Tracker</Typography>
+      <div
+        className={style.stickToTop}
+        style={{ backgroundColor: theme.palette.background.default }}
+      >
+        <FormControl fullWidth>
+          <InputLabel id="demo-simple-select-label">
+            Filter by Dungeon Type
+          </InputLabel>
+          <Select
+            value={selectedFilter}
+            label="Filter by Dungeon Type"
+            onChange={(e) => setSelectedFilter(e.target.value)}
+          >
+            {dungeonFilter.map((filter, index) => (
+              <MenuItem key={index} value={filter}>
+                {filter}
+              </MenuItem>
+            ))}
+          </Select>
+        </FormControl>
+      </div>
+
       {filteredDungeon.length > 0 ? (
         filteredDungeon.map((dungeon) => {
           return <DungeonCard key={dungeon.id} dungeon={dungeon}></DungeonCard>;
