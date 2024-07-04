@@ -1,5 +1,6 @@
 from albibong.classes.character import Character
 from albibong.classes.coords import Coords
+from albibong.classes.event_handler.world_data_utils import WorldDataUtils
 from albibong.classes.utils import Utils
 from albibong.classes.world_data import WorldData
 
@@ -38,4 +39,6 @@ def handle_event_new_character(world_data: WorldData, parameters):
         char: Character = world_data.characters[username]
         char.update_equipment(equipments)
         char.coords = coords
-        world_data.convert_id_to_name(old_id=char.id, new_id=id, char=char)
+        WorldDataUtils.convert_id_to_name(
+            world_data, old_id=char.id, new_id=id, char=char
+        )

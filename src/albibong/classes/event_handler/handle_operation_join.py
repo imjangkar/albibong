@@ -1,4 +1,5 @@
 from albibong.classes.dungeon import Dungeon
+from albibong.classes.event_handler.world_data_utils import WorldDataUtils
 from albibong.classes.location import Location
 from albibong.classes.utils import Utils
 from albibong.classes.world_data import WorldData
@@ -7,8 +8,8 @@ from albibong.threads.websocket_server import send_event
 
 def handle_operation_join(world_data: WorldData, parameters):
     # set my character
-    world_data.convert_id_to_name(
-        old_id=world_data.me.id, new_id=parameters[0], char=world_data.me
+    WorldDataUtils.convert_id_to_name(
+        world_data, old_id=world_data.me.id, new_id=parameters[0], char=world_data.me
     )
     world_data.me.uuid = Utils.convert_int_arr_to_uuid(parameters[1])
     world_data.me.username = parameters[2]
@@ -31,7 +32,9 @@ def handle_operation_join(world_data: WorldData, parameters):
         area = parameters[8].split("@")
         if area[1] == "RANDOMDUNGEON":
             check_map = Location.get_location_from_code(area[1])
-            world_data.start_current_dungeon(type=check_map.type, name=check_map.name)
+            WorldDataUtils.start_current_dungeon(
+                world_data, type=check_map.type, name=check_map.name
+            )
 
     ws_init_character(world_data)
     ws_update_location(world_data)

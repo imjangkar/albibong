@@ -1,3 +1,4 @@
+from albibong.classes.event_handler.world_data_utils import WorldDataUtils
 from albibong.classes.location import Location
 from albibong.classes.world_data import WorldData
 from albibong.threads.websocket_server import send_event
@@ -9,7 +10,7 @@ def handle_operation_change_cluster(world_data: WorldData, parameters):
     if 1 in parameters:
         check_map = Location.get_location_from_code(parameters[1])
         map_type_splitted = set(check_map.type.split("_"))
-        world_data.set_dungeon_status(check_map, map_type_splitted)
+        WorldDataUtils.set_dungeon_status(world_data, check_map, map_type_splitted)
 
         if "ISLAND" in map_type_splitted or "HIDEOUT" in map_type_splitted:
             check_map.name = f"{parameters[2]}'s {check_map.name}"
@@ -18,7 +19,9 @@ def handle_operation_change_cluster(world_data: WorldData, parameters):
     elif 0 in parameters:
         check_map = Location.get_location_from_code(parameters[0])
         map_type_splitted = set(check_map.type.split("_"))
-        is_dungeon = world_data.set_dungeon_status(check_map, map_type_splitted)
+        is_dungeon = WorldDataUtils.set_dungeon_status(
+            world_data, check_map, map_type_splitted
+        )
         if is_dungeon == False:
             world_data.current_map = Location.get_location_from_code(parameters[0])
 

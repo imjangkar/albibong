@@ -22,7 +22,7 @@
 
 ### Prerequisites
 
-- You need Python 3.8 and above
+- You need Python 3.10 and above
 - Ability to type or copy paste in your computer's Terminal or Command Line
 
 ### 🔰 Casual Users
@@ -70,6 +70,8 @@ albibong
 ```
 
 2. A window will pop out and you're good to go!
+
+Note: If you can't start the application by typing `albibong`, you can try use `sudo albibong` instead.
 
 ### 👨‍💻 Devs
 

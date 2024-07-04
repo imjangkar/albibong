@@ -44,15 +44,12 @@ class Character:
         self.total_combat_duration: timedelta = timedelta(0, 0)
 
     def update_combat_duration(self, is_starting_combat):
-        print("masuk update_combat_duration")
         if self.is_already_in_combat == False:
             if is_starting_combat == True:
-                print("starting combat")
                 self.is_already_in_combat = True
                 self.start_combat_time = datetime.now()
         else:
             if is_starting_combat == False:
-                print("ending combat")
                 self.is_already_in_combat = False
                 current_combat_duration = datetime.now() - self.start_combat_time
                 self.total_combat_duration += current_combat_duration
