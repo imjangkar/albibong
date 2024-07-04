@@ -16,3 +16,14 @@
   color: #0f3c4e;
   font-weight: bold;
 }
+
+.stickToTop {
+  z-index: 10;
+
+  position: sticky;
+  top: 64px;
+  left: 0;
+
+  width: 100%;
+  padding: 24px 0;
+}

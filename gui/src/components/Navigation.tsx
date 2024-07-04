@@ -186,7 +186,6 @@ const Navigation = () => {
           })}
         </List>
       </Drawer>
-      <p>Hello</p>
     </>
   );
 };

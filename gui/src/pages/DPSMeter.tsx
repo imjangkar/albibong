@@ -1,6 +1,8 @@
 import classNames from "classnames";
 import { useContext, useRef, useState } from "react";
 import styles from "./DPSMeter.module.css";
+import dungeon from "./DungeonTracker.module.css";
+
 import app from "../App.module.css";
 import Checkbox from "../components/Checkbox";
 import { WorldContext } from "../providers/WorldProvider";
@@ -17,9 +19,7 @@ import { theme } from "../theme";
 
 export type DisplayedColumn = {
   Heal: boolean;
-  "Heal%": boolean;
   Damage: boolean;
-  "Damage%": boolean;
 };
 
 export const formatter = (num: number) => {
@@ -28,10 +28,8 @@ export const formatter = (num: number) => {
 
 const DPSMeter = () => {
   const [displayedCol, setDisplayedCol] = useState<DisplayedColumn>({
-    Heal: true,
-    "Heal%": true,
+    Heal: false,
     Damage: true,
-    "Damage%": true,
   });
   const [alert, setAlert] = useState({
     copyDamage: false,
@@ -43,7 +41,7 @@ const DPSMeter = () => {
   const { me, world } = useContext(WorldContext);
   const { sendMessage } = useContext(WebsocketContext);
 
-  const dpsRowBold = classNames(styles.bold, styles.dpsRow);
+  const dpsRowBold = classNames(styles.bold, styles.dpsRow, dungeon.stickToTop);
 
   const getMaxHeal = () => {
     let maxHeal = 0;
@@ -56,8 +54,7 @@ const DPSMeter = () => {
   };
 
   const show = (label: keyof DisplayedColumn) =>
-    classNames({
-      [styles.dpsNumber]: true,
+    classNames(styles.dpsNumber, {
       [styles.hidden]: !displayedCol[label],
     });
 
@@ -107,7 +104,7 @@ const DPSMeter = () => {
           <Alert severity="success">Damage has been reset.</Alert>
         </Collapse>
       </div>
-      <Typography variant="h1">Damage Meter</Typography>
+      <Typography variant="h2">Damage Meter</Typography>
       <Typography>
         Damage Meter is currently{" "}
         <b>{world.isDPSMeterRunning ? "recording damage" : "paused"}</b>
@@ -162,7 +159,10 @@ const DPSMeter = () => {
         style={{ backgroundColor: theme.palette.background.default }}
         ref={dpsRef}
       >
-        <div className={dpsRowBold}>
+        <div
+          className={dpsRowBold}
+          style={{ backgroundColor: theme.palette.background.default }}
+        >
           <div className={styles.player}>
             {world.isDPSMeterRunning == false ? (
               <Button
@@ -186,8 +186,10 @@ const DPSMeter = () => {
           <Typography className={show("Heal")}>Heal</Typography>
           <Typography className={show("Heal")}>Heal%</Typography>
           <Typography className={show("Damage")}>Damage</Typography>
+          <Typography className={show("Damage")}>Damage%</Typography>
+          <Typography className={styles.dpsNumber}>Duration</Typography>
           <Typography className={show("Damage")} sx={{ fontWeight: "bold" }}>
-            Damage%
+            DPS
           </Typography>
         </div>
         {world.party.map((member, index) => {
@@ -221,11 +223,17 @@ const DPSMeter = () => {
                 <Typography className={show("Damage")}>
                   {formatter(member.damage_dealt)}
                 </Typography>
+                <Typography className={show("Damage")}>
+                  {formatter(member.damage_percent)}%
+                </Typography>
+                <Typography className={styles.dpsNumber}>
+                  {member.combat_duration}
+                </Typography>
                 <Typography
                   className={show("Damage")}
                   sx={{ fontWeight: "bold" }}
                 >
-                  {formatter(member.damage_percent)}%
+                  {member.dps}/dps
                 </Typography>
               </div>
               <div className={styles.dmgBar} style={dpsWidth} />

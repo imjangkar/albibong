@@ -5,6 +5,9 @@ from albibong.classes.event_handler.handle_event_health import (
     handle_event_health_update,
     handle_event_health_updates,
 )
+from albibong.classes.event_handler.handle_event_in_combat_state_update import (
+    handle_event_in_combat_state_update,
+)
 from albibong.classes.event_handler.handle_event_new_character import (
     handle_event_new_character,
 )
@@ -48,6 +51,10 @@ class EventHandler:
         self.event_handler[EventCode.NEW_CHARACTER.value] = handle_event_new_character
         self.event_handler[EventCode.HEALTH_UPDATE.value] = handle_event_health_update
         self.event_handler[EventCode.HEALTH_UPDATES.value] = handle_event_health_updates
+        self.event_handler[EventCode.IN_COMBAT_STATE_UPDATE.value] = (
+            handle_event_in_combat_state_update
+        )
+
         self.event_handler[EventCode.UPDATE_FAME.value] = handle_event_update_fame
         self.event_handler[EventCode.UPDATE_RE_SPEC_POINTS.value] = (
             handle_event_update_re_spec_points

@@ -14,6 +14,8 @@ type PartyMember = {
   damage_dealt: number;
   heal_percent: number;
   healing_dealt: number;
+  combat_duration: string;
+  dps: number;
   weapon: string;
 };
 

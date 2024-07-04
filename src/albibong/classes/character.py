@@ -1,3 +1,4 @@
+from datetime import datetime, timedelta
 import json
 from uuid import UUID
 
@@ -20,25 +21,46 @@ class Character:
         coords: Coords,
         equipment: list[Item] = [Item.get_item_from_code("0")] * 10,
     ):
+        # Profile
         self.id = id
         self.uuid = uuid
         self.username = username
         self.guild = guild
         self.alliance = alliance
         self.coords = coords
+        self.equipment = equipment
+
+        # Stats
         self.fame_gained: int = 0
         self.re_spec_gained: int = 0
         self.silver_gained: int = 0
+        self.loot: list[str] = []
+
+        # Combat
         self.damage_dealt: int = 0
         self.healing_dealt: int = 0
-        self.loot: list[str] = []
-        self.equipment = equipment
+        self.is_already_in_combat: bool = False
+        self.start_combat_time: timedelta = timedelta(0, 0)
+        self.total_combat_duration: timedelta = timedelta(0, 0)
+
+    def update_combat_duration(self, is_starting_combat):
+        if self.is_already_in_combat == False:
+            if is_starting_combat == True:
+                self.is_already_in_combat = True
+                self.start_combat_time = datetime.now()
+        else:
+            if is_starting_combat == False:
+                self.is_already_in_combat = False
+                current_combat_duration = datetime.now() - self.start_combat_time
+                self.total_combat_duration += current_combat_duration
 
     def update_damage_dealt(self, nominal):
-        self.damage_dealt += nominal
+        if self.is_already_in_combat:
+            self.damage_dealt += nominal
 
     def update_heal_dealt(self, nominal):
-        self.healing_dealt += nominal
+        if self.is_already_in_combat:
+            self.healing_dealt += nominal
 
     def update_coords(self, parameters):
         if 3 in parameters:
