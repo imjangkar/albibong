@@ -71,7 +71,7 @@ class Character:
         self.fame_gained += fame
         event = {
             "type": "update_fame",
-            "payload": {"username": self.username, "fame_gained": fame},
+            "payload": {"username": self.username, "fame_gained": self.fame_gained},
         }
         send_event(event)
 
@@ -80,7 +80,10 @@ class Character:
         self.re_spec_gained += re_spec
         event = {
             "type": "update_re_spec",
-            "payload": {"username": self.username, "re_spec_gained": re_spec},
+            "payload": {
+                "username": self.username,
+                "re_spec_gained": self.re_spec_gained,
+            },
         }
         send_event(event)
 
@@ -91,7 +94,10 @@ class Character:
                 self.silver_gained += silver
                 event = {
                     "type": "update_silver",
-                    "payload": {"username": self.username, "silver_gained": silver},
+                    "payload": {
+                        "username": self.username,
+                        "silver_gained": self.silver_gained,
+                    },
                 }
                 send_event(event)
         else:

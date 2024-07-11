@@ -136,14 +136,14 @@ const WorldProvider = ({ children }: WorldProviderProps) => {
   const updateFame = (fame_gained: number) => {
     setMe((prev) => ({
       ...prev,
-      fame: prev.fame + fame_gained,
+      fame: fame_gained,
     }));
   };
 
   const updateReSpec = (re_spec_gained: number) => {
     setMe((prev) => ({
       ...prev,
-      re_spec: prev.re_spec + re_spec_gained,
+      re_spec: re_spec_gained,
     }));
   };
 
@@ -151,7 +151,7 @@ const WorldProvider = ({ children }: WorldProviderProps) => {
     if (username == me.username) {
       setMe((prev) => ({
         ...prev,
-        silver: prev.silver + silver_gained,
+        silver: silver_gained,
       }));
     }
   };
