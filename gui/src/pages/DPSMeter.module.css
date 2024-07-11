@@ -33,6 +33,12 @@
   text-align: right;
 }
 
+.dpsButton {
+  display: flex;
+  flex-grow: 1;
+  gap: 1rem;
+}
+
 .hidden {
   display: none;
 }

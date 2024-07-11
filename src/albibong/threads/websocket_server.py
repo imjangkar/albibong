@@ -98,6 +98,34 @@ class WebsocketServer(threading.Thread):
                         },
                     }
                     await websocket.send(json.dumps(reply))
+                elif event["type"] == "reset_player_stats":
+                    world_data.me.fame_gained = 0
+                    world_data.me.re_spec_gained = 0
+                    world_data.me.silver_gained = 0
+                    fame = {
+                        "type": "update_fame",
+                        "payload": {
+                            "username": world_data.me.username,
+                            "fame_gained": world_data.me.fame_gained,
+                        },
+                    }
+                    re_spec = {
+                        "type": "update_re_spec",
+                        "payload": {
+                            "username": world_data.me.username,
+                            "re_spec_gained": world_data.me.re_spec_gained,
+                        },
+                    }
+                    silver = {
+                        "type": "update_silver",
+                        "payload": {
+                            "username": world_data.me.username,
+                            "silver_gained": world_data.me.silver_gained,
+                        },
+                    }
+                    await websocket.send(json.dumps(fame))
+                    await websocket.send(json.dumps(re_spec))
+                    await websocket.send(json.dumps(silver))
                 elif event["type"] == "refresh_dungeon_list":
                     try:
                         with open(FILENAME) as json_file:

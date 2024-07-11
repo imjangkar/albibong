@@ -31,9 +31,11 @@ const DPSMeter = () => {
     Heal: false,
     Damage: true,
   });
+
   const [alert, setAlert] = useState({
     copyDamage: false,
     resetDamage: false,
+    resetStats: false,
   });
 
   const dpsRef = useRef(null);
@@ -63,6 +65,18 @@ const DPSMeter = () => {
       type: "update_is_dps_meter_running",
       payload: { value },
     });
+  };
+
+  const resetStats = () => {
+    sendMessage({
+      type: "reset_player_stats",
+      payload: { value: true },
+    });
+
+    setAlert((prev) => ({ ...prev, resetStats: true }));
+    setTimeout(() => {
+      setAlert((prev) => ({ ...prev, resetStats: false }));
+    }, 1000);
   };
 
   const resetDamage = () => {
@@ -103,6 +117,9 @@ const DPSMeter = () => {
         <Collapse in={alert.resetDamage}>
           <Alert severity="success">Damage has been reset.</Alert>
         </Collapse>
+        <Collapse in={alert.resetStats}>
+          <Alert severity="success">Stats has been reset.</Alert>
+        </Collapse>
       </div>
       <Typography variant="h2">Damage Meter</Typography>
       <Typography>
@@ -125,11 +142,11 @@ const DPSMeter = () => {
           </div>
         </div>
         <Button
-          variant="contained"
-          startIcon={<ContentCopy />}
-          onClick={() => formatDamageToText()}
+          variant="text"
+          startIcon={<RestartAlt />}
+          onClick={() => resetStats()}
         >
-          Copy Damage
+          Reset Stats
         </Button>
       </div>
       <div className={app.row}>
@@ -163,7 +180,7 @@ const DPSMeter = () => {
           className={dpsRowBold}
           style={{ backgroundColor: theme.palette.background.default }}
         >
-          <div className={styles.player}>
+          <div className={styles.dpsButton}>
             {world.isDPSMeterRunning == false ? (
               <Button
                 variant="outlined"
@@ -181,6 +198,13 @@ const DPSMeter = () => {
                 Pause
               </Button>
             )}
+            <Button
+              variant="contained"
+              startIcon={<ContentCopy />}
+              onClick={() => formatDamageToText()}
+            >
+              Copy Damage
+            </Button>
           </div>
 
           <Typography className={show("Heal")}>Heal</Typography>
