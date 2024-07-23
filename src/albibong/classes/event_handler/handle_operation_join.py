@@ -7,10 +7,16 @@ from albibong.threads.websocket_server import send_event
 
 
 def handle_operation_join(world_data: WorldData, parameters):
+    # update relative id if character has initialized before
+    if world_data.me.username != "not initialized":
+        WorldDataUtils.convert_id_to_name(
+            world_data,
+            old_id=world_data.me.id,
+            new_id=parameters[0],
+            char=world_data.me,
+        )
+
     # set my character
-    WorldDataUtils.convert_id_to_name(
-        world_data, old_id=world_data.me.id, new_id=parameters[0], char=world_data.me
-    )
     world_data.me.uuid = Utils.convert_int_arr_to_uuid(parameters[1])
     world_data.me.username = parameters[2]
     world_data.me.guild = parameters[57] if 57 in parameters else ""
@@ -30,7 +36,7 @@ def handle_operation_join(world_data: WorldData, parameters):
     # set map my character is currently in
     if parameters[8][0] == "@":
         area = parameters[8].split("@")
-        if area[1] == "RANDOMDUNGEON":
+        if area[1] == "RANDOMDUNGEON" or area[1] == "MISTS":
             check_map = Location.get_location_from_code(area[1])
             WorldDataUtils.start_current_dungeon(
                 world_data, type=check_map.type, name=check_map.name

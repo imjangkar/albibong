@@ -71,7 +71,7 @@ albibong
 
 2. A window will pop out and you're good to go!
 
-Note: If you can't start the application by typing `albibong`, you can try use `sudo albibong` instead.
+**Can't run the program?** Refer to [FAQ](#FAQ)
 
 ### 👨‍💻 Devs
 
@@ -94,7 +94,29 @@ cd gui && npm run dev
 
 ## ❓ FAQ
 
-### Can I use the tool with ExitLag, 1.1.1.1 or VPN?
+### _"I can't run Albibong by typing Albibong"_
+
+#### Common Mac Problems
+
+If you encounter this problem
+
+```
+scapy.error.Scapy_Exception: Permission denied: could not open /dev/bpf0. Make sure to be running Scapy as root ! (sudo)
+```
+
+Use `sudo albibong` to start Albibong.
+
+#### Common Windows Problems
+
+If you encounter this problem
+
+```
+'albibong' is not recognized as an internal or external command, operable program or batch file.
+```
+
+Add PIP package to path by following this guide https://stackoverflow.com/a/36160069
+
+### _"Can I use the tool with ExitLag, 1.1.1.1 or VPN?"_
 
 No, this is not possible. If Albion is blocked in your country, I suggest to add Albion's servers to your hosts file.
 

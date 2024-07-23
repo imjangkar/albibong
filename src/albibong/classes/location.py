@@ -13,34 +13,6 @@ class Location:
         self.name = name
         self.type = type
 
-    def is_black_zone(self):
-        if self.type == "OPENPVP_BLACK":
-            return True
-        elif self.type == "DUNGEON_BLACK":
-            return True
-        elif self.type == "PASSAGE_BLACK":
-            return True
-        elif self.type == "TUNNEL":
-            return True
-        else:
-            return False
-
-    def is_red_zone(self):
-        if self.type == "OPENPVP_RED":
-            return True
-        elif self.type == "DUNGEON_RED":
-            return True
-        elif self.type == "PASSAGE_RED":
-            return True
-        else:
-            return False
-
-    def is_safe_zone(self):
-        if self.is_black_zone() == False and self.is_red_zone() == False:
-            return True
-        else:
-            return False
-
     @classmethod
     def get_location_from_code(cls, code: str):
         location = map_data[code]
