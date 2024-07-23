@@ -52,9 +52,19 @@ class WorldDataUtils:
     def set_dungeon_status(
         world_data: WorldData, check_map: Location, map_type_splitted: set
     ):
-        if "EXPEDITION" in map_type_splitted or "DUNGEON" in map_type_splitted:
+        if "EXPEDITION" in map_type_splitted:
             WorldDataUtils.start_current_dungeon(
                 world_data, type=check_map.type, name=check_map.name
+            )
+        elif "DUNGEON" in map_type_splitted:
+            WorldDataUtils.start_current_dungeon(
+                world_data,
+                type=check_map.type,
+                name=(
+                    f"{check_map.name} at {world_data.current_map.name}"
+                    if world_data.current_map
+                    else check_map.name
+                ),
             )
         elif (
             "EXPEDITION" not in map_type_splitted or "DUNGEON" not in map_type_splitted
