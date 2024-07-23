@@ -1,12 +1,15 @@
 {
-  "0": {
-    "id": "None",
-    "name": "None",
-    "type": "None"
+  "0": { "id": "None", "name": "None", "type": "None" },
+  "RANDOMDUNGEON": {
+    "id": "RANDOMDUNGEON",
+    "name": "Dungeon",
+    "type": "RANDOMDUNGEON"
   },
+  "MISTS": { "id": "MISTS", "name": "Mists", "type": "MISTS" },
+  "Debug": { "id": "Debug", "name": "Debug", "type": "DEBUG_BLACK" },
   "ISLAND-GUILD-0001a": {
     "id": "ISLAND-GUILD-0001a",
-    "name": "Guild Island",
+    "name": "ISLAND-GUILD-0001a_ISL_DL_T1_NON",
     "type": "ISLAND"
   },
   "ISLAND-PLAYER-0001a": {
@@ -41,237 +44,27 @@
   },
   "ISLAND-GUILD-0001b": {
     "id": "ISLAND-GUILD-0001b",
-    "name": "Guild Island",
+    "name": "ISLAND-GUILD-0001b_ISL_DL_T1_NON",
     "type": "ISLAND"
   },
   "ISLAND-GUILD-0001c": {
     "id": "ISLAND-GUILD-0001c",
-    "name": "Guild Island",
+    "name": "ISLAND-GUILD-0001c_ISL_DL_T1_NON",
     "type": "ISLAND"
   },
   "ISLAND-GUILD-0001d": {
     "id": "ISLAND-GUILD-0001d",
-    "name": "Guild Island",
+    "name": "ISLAND-GUILD-0001d_ISL_DL_T1_NON",
     "type": "ISLAND"
   },
   "ISLAND-GUILD-0001e": {
     "id": "ISLAND-GUILD-0001e",
-    "name": "Guild Island",
+    "name": "ISLAND-GUILD-0001e_ISL_DL_T1_NON",
     "type": "ISLAND"
   },
   "ISLAND-GUILD-0001f": {
     "id": "ISLAND-GUILD-0001f",
-    "name": "Guild Island",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-FOREST-0001a": {
-    "id": "ISLAND-PLAYER-FOREST-0001a",
-    "name": "Island at Lymhurst",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-FOREST-0001b": {
-    "id": "ISLAND-PLAYER-FOREST-0001b",
-    "name": "Island at Lymhurst",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-FOREST-0001c": {
-    "id": "ISLAND-PLAYER-FOREST-0001c",
-    "name": "Island at Lymhurst",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-FOREST-0001d": {
-    "id": "ISLAND-PLAYER-FOREST-0001d",
-    "name": "Island at Lymhurst",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-FOREST-0001e": {
-    "id": "ISLAND-PLAYER-FOREST-0001e",
-    "name": "Island at Lymhurst",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-FOREST-0001f": {
-    "id": "ISLAND-PLAYER-FOREST-0001f",
-    "name": "Island at Lymhurst",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-HIGHLAND-0001a": {
-    "id": "ISLAND-PLAYER-HIGHLAND-0001a",
-    "name": "Island at Martlock",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-HIGHLAND-0001b": {
-    "id": "ISLAND-PLAYER-HIGHLAND-0001b",
-    "name": "Island at Martlock",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-HIGHLAND-0001c": {
-    "id": "ISLAND-PLAYER-HIGHLAND-0001c",
-    "name": "Island at Martlock",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-HIGHLAND-0001d": {
-    "id": "ISLAND-PLAYER-HIGHLAND-0001d",
-    "name": "Island at Martlock",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-HIGHLAND-0001e": {
-    "id": "ISLAND-PLAYER-HIGHLAND-0001e",
-    "name": "Island at Martlock",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-HIGHLAND-0001f": {
-    "id": "ISLAND-PLAYER-HIGHLAND-0001f",
-    "name": "Island at Martlock",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-MOUNTAIN-0001a": {
-    "id": "ISLAND-PLAYER-MOUNTAIN-0001a",
-    "name": "Island at Fort Sterling",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-MOUNTAIN-0001b": {
-    "id": "ISLAND-PLAYER-MOUNTAIN-0001b",
-    "name": "Island at Fort Sterling",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-MOUNTAIN-0001c": {
-    "id": "ISLAND-PLAYER-MOUNTAIN-0001c",
-    "name": "Island at Fort Sterling",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-MOUNTAIN-0001d": {
-    "id": "ISLAND-PLAYER-MOUNTAIN-0001d",
-    "name": "Island at Fort Sterling",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-MOUNTAIN-0001e": {
-    "id": "ISLAND-PLAYER-MOUNTAIN-0001e",
-    "name": "Island at Fort Sterling",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-MOUNTAIN-0001f": {
-    "id": "ISLAND-PLAYER-MOUNTAIN-0001f",
-    "name": "Island at Fort Sterling",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-STEPPE-0001a": {
-    "id": "ISLAND-PLAYER-STEPPE-0001a",
-    "name": "Island at Bridgewatch",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-STEPPE-0001b": {
-    "id": "ISLAND-PLAYER-STEPPE-0001b",
-    "name": "Island at Bridgewatch",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-STEPPE-0001c": {
-    "id": "ISLAND-PLAYER-STEPPE-0001c",
-    "name": "Island at Bridgewatch",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-STEPPE-0001d": {
-    "id": "ISLAND-PLAYER-STEPPE-0001d",
-    "name": "Island at Bridgewatch",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-STEPPE-0001e": {
-    "id": "ISLAND-PLAYER-STEPPE-0001e",
-    "name": "Island at Bridgewatch",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-STEPPE-0001f": {
-    "id": "ISLAND-PLAYER-STEPPE-0001f",
-    "name": "Island at Bridgewatch",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-SWAMP-0001a": {
-    "id": "ISLAND-PLAYER-SWAMP-0001a",
-    "name": "Island at Thetford",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-SWAMP-0001b": {
-    "id": "ISLAND-PLAYER-SWAMP-0001b",
-    "name": "Island at Thetford",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-SWAMP-0001c": {
-    "id": "ISLAND-PLAYER-SWAMP-0001c",
-    "name": "Island at Thetford",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-SWAMP-0001d": {
-    "id": "ISLAND-PLAYER-SWAMP-0001d",
-    "name": "Island at Thetford",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-SWAMP-0001e": {
-    "id": "ISLAND-PLAYER-SWAMP-0001e",
-    "name": "Island at Thetford",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-SWAMP-0001f": {
-    "id": "ISLAND-PLAYER-SWAMP-0001f",
-    "name": "Island at Thetford",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-MISTS-0001a": {
-    "id": "ISLAND-PLAYER-MISTS-0001a",
-    "name": "Island at Brecilien",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-MISTS-0001b": {
-    "id": "ISLAND-PLAYER-MISTS-0001b",
-    "name": "Island at Brecilien",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-MISTS-0001c": {
-    "id": "ISLAND-PLAYER-MISTS-0001c",
-    "name": "Island at Brecilien",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-MISTS-0001d": {
-    "id": "ISLAND-PLAYER-MISTS-0001d",
-    "name": "Island at Brecilien",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-MISTS-0001e": {
-    "id": "ISLAND-PLAYER-MISTS-0001e",
-    "name": "Island at Brecilien",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-MISTS-0001f": {
-    "id": "ISLAND-PLAYER-MISTS-0001f",
-    "name": "Island at Brecilien",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-CAERLEON-0001a": {
-    "id": "ISLAND-PLAYER-CAERLEON-0001a",
-    "name": "Island at Caerleon",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-CAERLEON-0001b": {
-    "id": "ISLAND-PLAYER-CAERLEON-0001b",
-    "name": "Island at Caerleon",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-CAERLEON-0001c": {
-    "id": "ISLAND-PLAYER-CAERLEON-0001c",
-    "name": "Island at Caerleon",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-CAERLEON-0001d": {
-    "id": "ISLAND-PLAYER-CAERLEON-0001d",
-    "name": "Island at Caerleon",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-CAERLEON-0001e": {
-    "id": "ISLAND-PLAYER-CAERLEON-0001e",
-    "name": "Island at Caerleon",
-    "type": "ISLAND"
-  },
-  "ISLAND-PLAYER-CAERLEON-0001f": {
-    "id": "ISLAND-PLAYER-CAERLEON-0001f",
-    "name": "Island at Caerleon",
+    "name": "ISLAND-GUILD-0001f_ISL_DL_T1_NON",
     "type": "ISLAND"
   },
   "0004": { "id": "0004", "name": "Swamp Cross", "type": "STARTINGCITY" },
@@ -279,32 +72,32 @@
   "MushroomCave-GROUP": {
     "id": "MushroomCave-GROUP",
     "name": "Mushroom Cave",
-    "type": "GROUP_EXPEDITION"
+    "type": "EXPEDITION"
   },
   "MushroomCave-SOLO": {
     "id": "MushroomCave-SOLO",
     "name": "Mushroom Cave",
-    "type": "SOLO_EXPEDITION"
+    "type": "EXPEDITION"
   },
   "FishyBusiness-GROUP": {
     "id": "FishyBusiness-GROUP",
     "name": "Fishy Business",
-    "type": "GROUP_EXPEDITION"
+    "type": "EXPEDITION"
   },
   "FishyBusiness-SOLO": {
     "id": "FishyBusiness-SOLO",
     "name": "Fishy Business",
-    "type": "SOLO_EXPEDITION"
+    "type": "EXPEDITION"
   },
   "StoneWars-GROUP": {
     "id": "StoneWars-GROUP",
     "name": "Stone Wars",
-    "type": "GROUP_EXPEDITION"
+    "type": "EXPEDITION"
   },
   "StoneWars-SOLO": {
     "id": "StoneWars-SOLO",
     "name": "Stone Wars",
-    "type": "SOLO_EXPEDITION"
+    "type": "EXPEDITION"
   },
   "4209": { "id": "4209", "name": "Cairn Darg", "type": "OPENPVP_YELLOW" },
   "4210": { "id": "4210", "name": "Gwan Gorge", "type": "SAFEAREA" },
@@ -386,17 +179,17 @@
   "LumberCampGROUP": {
     "id": "LumberCampGROUP",
     "name": "Lumber Lunacy",
-    "type": "GROUP_EXPEDITION"
+    "type": "EXPEDITION"
   },
   "RecruitmentOfTheDead-GROUP": {
     "id": "RecruitmentOfTheDead-GROUP",
     "name": "Preaching to the Dead",
-    "type": "GROUP_EXPEDITION"
+    "type": "EXPEDITION"
   },
   "RecruitmentOfTheDead-SOLO": {
     "id": "RecruitmentOfTheDead-SOLO",
     "name": "Preaching to the Dead",
-    "type": "SOLO_EXPEDITION"
+    "type": "EXPEDITION"
   },
   "3208": { "id": "3208", "name": "Bowscale Fell", "type": "OPENPVP_RED" },
   "4214": { "id": "4214", "name": "Cairn Fidair", "type": "OPENPVP_YELLOW" },
@@ -418,7 +211,7 @@
   "LumberCampSOLO": {
     "id": "LumberCampSOLO",
     "name": "Lumber Lunacy",
-    "type": "SOLO_EXPEDITION"
+    "type": "EXPEDITION"
   },
   "3004": {
     "id": "3004",
@@ -452,12 +245,12 @@
   "Mine-SOLO": {
     "id": "Mine-SOLO",
     "name": "Curious Excavation",
-    "type": "SOLO_EXPEDITION"
+    "type": "EXPEDITION"
   },
   "SewersMaintenance-GROUP": {
     "id": "SewersMaintenance-GROUP",
     "name": "Lurking Underneath",
-    "type": "GROUP_EXPEDITION"
+    "type": "EXPEDITION"
   },
   "2000": {
     "id": "2000",
@@ -496,12 +289,12 @@
   "ThreeSisters-GROUP": {
     "id": "ThreeSisters-GROUP",
     "name": "Three Sisters",
-    "type": "GROUP_EXPEDITION"
+    "type": "EXPEDITION"
   },
   "FistfulOfSilver-GROUP": {
     "id": "FistfulOfSilver-GROUP",
     "name": "A Fistful of Silver",
-    "type": "GROUP_EXPEDITION"
+    "type": "EXPEDITION"
   },
   "1246": { "id": "1246", "name": "Cedarcopse", "type": "SAFEAREA" },
   "3249": { "id": "3249", "name": "Bellever Tor", "type": "SAFEAREA" },
@@ -524,12 +317,12 @@
   "EternalBattle-GROUP": {
     "id": "EternalBattle-GROUP",
     "name": "Eternal Battle",
-    "type": "GROUP_EXPEDITION"
+    "type": "EXPEDITION"
   },
   "SewersMaintenance-SOLO": {
     "id": "SewersMaintenance-SOLO",
     "name": "Lurking Underneath",
-    "type": "SOLO_EXPEDITION"
+    "type": "EXPEDITION"
   },
   "ARENA-01": { "id": "ARENA-01", "name": "Arena1", "type": "ARENA_STANDARD" },
   "ARENA-01#1": {
@@ -640,7 +433,7 @@
   "Torturer-GROUP": {
     "id": "Torturer-GROUP",
     "name": "In the Raven's Claws",
-    "type": "GROUP_EXPEDITION"
+    "type": "EXPEDITION"
   },
   "Torturer-HRD": {
     "id": "Torturer-HRD",
@@ -677,6 +470,11 @@
     "name": "Crystal Realm",
     "type": "ARENA_CRYSTAL"
   },
+  "CrystalRealm-CrystalLeague-NonLethal": {
+    "id": "CrystalRealm-CrystalLeague-NonLethal",
+    "name": "Crystal Realm",
+    "type": "ARENA_CRYSTAL_NONLETHAL"
+  },
   "1008": { "id": "1008", "name": "The Lighthouse", "type": "TUTORIAL" },
   "1009": { "id": "1009", "name": "Forgotten Woods", "type": "STARTAREA" },
   "1010": { "id": "1010", "name": "Mountain Fort", "type": "STARTAREA" },
@@ -705,11 +503,6 @@
     "id": "HIDEOUT-0001c",
     "name": "Hideout",
     "type": "HIDEOUT"
-  },
-  "RANDOMDUNGEON": {
-    "id": "RANDOMDUNGEON",
-    "name": "Dungeon",
-    "type": "RANDOMDUNGEON"
   },
   "2305": {
     "id": "2305",
@@ -1421,8 +1214,16 @@
     "name": "Deathcreep Adit",
     "type": "PASSAGE_BLACK"
   },
-  "4300": { "id": "4300", "name": "Arthur's Rest", "type": "PLAYERCITY_BLACK" },
-  "1012": { "id": "1012", "name": "Merlyn's Rest", "type": "PLAYERCITY_BLACK" },
+  "4300": {
+    "id": "4300",
+    "name": "Arthur's Rest",
+    "type": "PLAYERCITY_BLACK_REST"
+  },
+  "1012": {
+    "id": "1012",
+    "name": "Merlyn's Rest",
+    "type": "PLAYERCITY_BLACK_REST"
+  },
   "0360-HALL-01": {
     "id": "0360-HALL-01",
     "name": "Conquerors' Hall Lvl. 1",
@@ -1476,7 +1277,7 @@
   "0008": {
     "id": "0008",
     "name": "Morgana's Rest",
-    "type": "PLAYERCITY_BLACK"
+    "type": "PLAYERCITY_BLACK_REST"
   },
   "TNL-001": { "id": "TNL-001", "name": "Ouyos-Aoeuam", "type": "TUNNEL" },
   "TNL-002": { "id": "TNL-002", "name": "Coues-Exakrom", "type": "TUNNEL" },
@@ -2256,7 +2057,7 @@
   "CrystalRealm20v20": {
     "id": "CrystalRealm20v20",
     "name": "Large Crystal Realm",
-    "type": "ARENA_CRYSTAL"
+    "type": "ARENA_CRYSTAL_20VS20"
   },
   "HELLGATE-01-10v10-01": {
     "id": "HELLGATE-01-10v10-01",
@@ -2651,7 +2452,6 @@
     "name": "The Citadel",
     "type": "DUNGEON_HELL_5V5_LETHAL"
   },
-  "3010": { "id": "3010", "name": "3010", "type": "STARTAREA" },
   "DNG-KPR-02-MAIN-010": {
     "id": "DNG-KPR-02-MAIN-010",
     "name": "Stoneroot Caverns",
@@ -3427,11 +3227,6 @@
     "name": "Exalted Undercrypt",
     "type": "DUNGEON_SAFEAREA"
   },
-  "3012-HALL-02": {
-    "id": "3012-HALL-02",
-    "name": "3012-HALL-02",
-    "type": "STARTAREA"
-  },
   "LEGACY-KEEPER-01": {
     "id": "LEGACY-KEEPER-01",
     "name": "LEGACY-KEEPER-01",
@@ -3502,6 +3297,11 @@
     "name": "Crystal Realm",
     "type": "ARENA_CRYSTAL"
   },
+  "CrystalRealm02-CrystalLeague-NonLethal": {
+    "id": "CrystalRealm02-CrystalLeague-NonLethal",
+    "name": "Crystal Realm",
+    "type": "ARENA_CRYSTAL_NONLETHAL"
+  },
   "DNG-HER-01-MAIN-02": {
     "id": "DNG-HER-01-MAIN-02",
     "name": "Heretic Cellar Network",
@@ -3530,7 +3330,7 @@
   "CrystalRealm02-Nonlethal": {
     "id": "CrystalRealm02-Nonlethal",
     "name": "Crystal Realm",
-    "type": "ARENA_CRYSTAL"
+    "type": "ARENA_CRYSTAL_NONLETHAL"
   },
   "5000": { "id": "5000", "name": "Brecilien", "type": "PLAYERCITY_BLACK" },
   "5001": {
@@ -3548,18 +3348,459 @@
     "name": "Brecilien Market",
     "type": "PLAYERCITY_BLACK_NOFURNITURE"
   },
+  "ISLAND-PLAYER-MISTS-0001f": {
+    "id": "ISLAND-PLAYER-MISTS-0001f",
+    "name": "Island at Brecilien",
+    "type": "ISLAND"
+  },
   "5100": { "id": "5100", "name": "Brecilien Weald", "type": "OPENPVP_RED" },
   "5101": { "id": "5101", "name": "Brecilien Copse", "type": "OPENPVP_RED" },
   "5102": { "id": "5102", "name": "Brecilien Grove", "type": "OPENPVP_YELLOW" },
   "5103": { "id": "5103", "name": "Brecilien Thicket", "type": "OPENPVP_RED" },
-  "DNG-Test-UND-01-MAIN-001": {
-    "id": "DNG-Test-UND-01-MAIN-001",
-    "name": "UND Test 1",
+  "ISLAND-PLAYER-MISTS-0001a": {
+    "id": "ISLAND-PLAYER-MISTS-0001a",
+    "name": "Island at Brecilien",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-MISTS-0001b": {
+    "id": "ISLAND-PLAYER-MISTS-0001b",
+    "name": "Island at Brecilien",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-MISTS-0001c": {
+    "id": "ISLAND-PLAYER-MISTS-0001c",
+    "name": "Island at Brecilien",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-MISTS-0001d": {
+    "id": "ISLAND-PLAYER-MISTS-0001d",
+    "name": "Island at Brecilien",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-MISTS-0001e": {
+    "id": "ISLAND-PLAYER-MISTS-0001e",
+    "name": "Island at Brecilien",
+    "type": "ISLAND"
+  },
+  "DNG-MISTS-UND-WIP-01-01": {
+    "id": "DNG-MISTS-UND-WIP-01-01",
+    "name": "Mists Dungeon",
     "type": "DUNGEON_YELLOW"
   },
-  "DNG-Test-UND-01-MAIN-001#1": {
-    "id": "DNG-Test-UND-01-MAIN-001#1",
-    "name": "UND Test 2",
-    "type": "DUNGEON_YELLOW"
+  "0364-HALL-05": {
+    "id": "0364-HALL-05",
+    "name": "Conquerors' Hall Lvl. 5",
+    "type": "PLAYERCITY_BLACK_ROYAL_NOFURNITURE_HALL_OF_FAME"
+  },
+  "1017-HALL-05": {
+    "id": "1017-HALL-05",
+    "name": "Conquerors' Hall Lvl. 5",
+    "type": "PLAYERCITY_BLACK_ROYAL_NOFURNITURE_HALL_OF_FAME"
+  },
+  "2014-HALL-05": {
+    "id": "2014-HALL-05",
+    "name": "Conquerors' Hall Lvl. 5",
+    "type": "PLAYERCITY_BLACK_ROYAL_NOFURNITURE_HALL_OF_FAME"
+  },
+  "3018-HALL-05": {
+    "id": "3018-HALL-05",
+    "name": "Conquerors' Hall Lvl. 5",
+    "type": "PLAYERCITY_BLACK_ROYAL_NOFURNITURE_HALL_OF_FAME"
+  },
+  "4011-HALL-05": {
+    "id": "4011-HALL-05",
+    "name": "Conquerors' Hall Lvl. 5",
+    "type": "PLAYERCITY_BLACK_ROYAL_NOFURNITURE_HALL_OF_FAME"
+  },
+  "3010": { "id": "3010", "name": "3010", "type": "STARTAREA" },
+  "3012-HALL-02": {
+    "id": "3012-HALL-02",
+    "name": "3012-HALL-02",
+    "type": "STARTAREA"
+  },
+  "ISLAND-PLAYER-FOREST-0001a": {
+    "id": "ISLAND-PLAYER-FOREST-0001a",
+    "name": "Island at Lymhurst",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-FOREST-0001b": {
+    "id": "ISLAND-PLAYER-FOREST-0001b",
+    "name": "Island at Lymhurst",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-FOREST-0001c": {
+    "id": "ISLAND-PLAYER-FOREST-0001c",
+    "name": "Island at Lymhurst",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-FOREST-0001d": {
+    "id": "ISLAND-PLAYER-FOREST-0001d",
+    "name": "Island at Lymhurst",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-FOREST-0001e": {
+    "id": "ISLAND-PLAYER-FOREST-0001e",
+    "name": "Island at Lymhurst",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-FOREST-0001f": {
+    "id": "ISLAND-PLAYER-FOREST-0001f",
+    "name": "Island at Lymhurst",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-HIGHLAND-0001a": {
+    "id": "ISLAND-PLAYER-HIGHLAND-0001a",
+    "name": "Island at Martlock",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-HIGHLAND-0001b": {
+    "id": "ISLAND-PLAYER-HIGHLAND-0001b",
+    "name": "Island at Martlock",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-HIGHLAND-0001c": {
+    "id": "ISLAND-PLAYER-HIGHLAND-0001c",
+    "name": "Island at Martlock",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-HIGHLAND-0001d": {
+    "id": "ISLAND-PLAYER-HIGHLAND-0001d",
+    "name": "Island at Martlock",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-HIGHLAND-0001e": {
+    "id": "ISLAND-PLAYER-HIGHLAND-0001e",
+    "name": "Island at Martlock",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-HIGHLAND-0001f": {
+    "id": "ISLAND-PLAYER-HIGHLAND-0001f",
+    "name": "Island at Martlock",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-MOUNTAIN-0001a": {
+    "id": "ISLAND-PLAYER-MOUNTAIN-0001a",
+    "name": "Island at Fort Sterling",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-MOUNTAIN-0001b": {
+    "id": "ISLAND-PLAYER-MOUNTAIN-0001b",
+    "name": "Island at Fort Sterling",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-MOUNTAIN-0001c": {
+    "id": "ISLAND-PLAYER-MOUNTAIN-0001c",
+    "name": "Island at Fort Sterling",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-MOUNTAIN-0001d": {
+    "id": "ISLAND-PLAYER-MOUNTAIN-0001d",
+    "name": "Island at Fort Sterling",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-MOUNTAIN-0001e": {
+    "id": "ISLAND-PLAYER-MOUNTAIN-0001e",
+    "name": "Island at Fort Sterling",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-MOUNTAIN-0001f": {
+    "id": "ISLAND-PLAYER-MOUNTAIN-0001f",
+    "name": "Island at Fort Sterling",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-CAERLEON-0001a": {
+    "id": "ISLAND-PLAYER-CAERLEON-0001a",
+    "name": "Island at Caerleon",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-CAERLEON-0001b": {
+    "id": "ISLAND-PLAYER-CAERLEON-0001b",
+    "name": "Island at Caerleon",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-CAERLEON-0001c": {
+    "id": "ISLAND-PLAYER-CAERLEON-0001c",
+    "name": "Island at Caerleon",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-CAERLEON-0001d": {
+    "id": "ISLAND-PLAYER-CAERLEON-0001d",
+    "name": "Island at Caerleon",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-CAERLEON-0001e": {
+    "id": "ISLAND-PLAYER-CAERLEON-0001e",
+    "name": "Island at Caerleon",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-CAERLEON-0001f": {
+    "id": "ISLAND-PLAYER-CAERLEON-0001f",
+    "name": "Island at Caerleon",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-STEPPE-0001a": {
+    "id": "ISLAND-PLAYER-STEPPE-0001a",
+    "name": "Island at Bridgewatch",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-STEPPE-0001b": {
+    "id": "ISLAND-PLAYER-STEPPE-0001b",
+    "name": "Island at Bridgewatch",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-STEPPE-0001c": {
+    "id": "ISLAND-PLAYER-STEPPE-0001c",
+    "name": "Island at Bridgewatch",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-STEPPE-0001d": {
+    "id": "ISLAND-PLAYER-STEPPE-0001d",
+    "name": "Island at Bridgewatch",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-STEPPE-0001e": {
+    "id": "ISLAND-PLAYER-STEPPE-0001e",
+    "name": "Island at Bridgewatch",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-STEPPE-0001f": {
+    "id": "ISLAND-PLAYER-STEPPE-0001f",
+    "name": "Island at Bridgewatch",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-SWAMP-0001a": {
+    "id": "ISLAND-PLAYER-SWAMP-0001a",
+    "name": "Island at Thetford",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-SWAMP-0001b": {
+    "id": "ISLAND-PLAYER-SWAMP-0001b",
+    "name": "Island at Thetford",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-SWAMP-0001c": {
+    "id": "ISLAND-PLAYER-SWAMP-0001c",
+    "name": "Island at Thetford",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-SWAMP-0001d": {
+    "id": "ISLAND-PLAYER-SWAMP-0001d",
+    "name": "Island at Thetford",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-SWAMP-0001e": {
+    "id": "ISLAND-PLAYER-SWAMP-0001e",
+    "name": "Island at Thetford",
+    "type": "ISLAND"
+  },
+  "ISLAND-PLAYER-SWAMP-0001f": {
+    "id": "ISLAND-PLAYER-SWAMP-0001f",
+    "name": "Island at Thetford",
+    "type": "ISLAND"
+  },
+  "0365-HALL-06": {
+    "id": "0365-HALL-06",
+    "name": "Conquerors' Hall Lvl. 6",
+    "type": "PLAYERCITY_BLACK_ROYAL_NOFURNITURE_HALL_OF_FAME"
+  },
+  "1018-HALL-06": {
+    "id": "1018-HALL-06",
+    "name": "Conquerors' Hall Lvl. 6",
+    "type": "PLAYERCITY_BLACK_ROYAL_NOFURNITURE_HALL_OF_FAME"
+  },
+  "2015-HALL-06": {
+    "id": "2015-HALL-06",
+    "name": "Conquerors' Hall Lvl. 6",
+    "type": "PLAYERCITY_BLACK_ROYAL_NOFURNITURE_HALL_OF_FAME"
+  },
+  "3019-HALL-06": {
+    "id": "3019-HALL-06",
+    "name": "Conquerors' Hall Lvl. 6",
+    "type": "PLAYERCITY_BLACK_ROYAL_NOFURNITURE_HALL_OF_FAME"
+  },
+  "4012-HALL-06": {
+    "id": "4012-HALL-06",
+    "name": "Conquerors' Hall Lvl. 6",
+    "type": "PLAYERCITY_BLACK_ROYAL_NOFURNITURE_HALL_OF_FAME"
+  },
+  "ISLAND-GUILD-FOREST-0001a": {
+    "id": "ISLAND-GUILD-FOREST-0001a",
+    "name": "Island at Lymhurst",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-FOREST-0001b": {
+    "id": "ISLAND-GUILD-FOREST-0001b",
+    "name": "Island at Lymhurst",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-FOREST-0001c": {
+    "id": "ISLAND-GUILD-FOREST-0001c",
+    "name": "Island at Lymhurst",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-FOREST-0001d": {
+    "id": "ISLAND-GUILD-FOREST-0001d",
+    "name": "Island at Lymhurst",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-FOREST-0001e": {
+    "id": "ISLAND-GUILD-FOREST-0001e",
+    "name": "Island at Lymhurst",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-FOREST-0001f": {
+    "id": "ISLAND-GUILD-FOREST-0001f",
+    "name": "Island at Lymhurst",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-CAERLEON-0001a": {
+    "id": "ISLAND-GUILD-CAERLEON-0001a",
+    "name": "Island at Caerleon",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-CAERLEON-0001b": {
+    "id": "ISLAND-GUILD-CAERLEON-0001b",
+    "name": "Island at Caerleon",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-CAERLEON-0001c": {
+    "id": "ISLAND-GUILD-CAERLEON-0001c",
+    "name": "Island at Caerleon",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-CAERLEON-0001d": {
+    "id": "ISLAND-GUILD-CAERLEON-0001d",
+    "name": "Island at Caerleon",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-CAERLEON-0001e": {
+    "id": "ISLAND-GUILD-CAERLEON-0001e",
+    "name": "Island at Caerleon",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-CAERLEON-0001f": {
+    "id": "ISLAND-GUILD-CAERLEON-0001f",
+    "name": "Island at Caerleon",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-HIGHLAND-0001a": {
+    "id": "ISLAND-GUILD-HIGHLAND-0001a",
+    "name": "Island at Martlock",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-HIGHLAND-0001b": {
+    "id": "ISLAND-GUILD-HIGHLAND-0001b",
+    "name": "Island at Martlock",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-HIGHLAND-0001c": {
+    "id": "ISLAND-GUILD-HIGHLAND-0001c",
+    "name": "Island at Martlock",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-HIGHLAND-0001d": {
+    "id": "ISLAND-GUILD-HIGHLAND-0001d",
+    "name": "Island at Martlock",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-HIGHLAND-0001e": {
+    "id": "ISLAND-GUILD-HIGHLAND-0001e",
+    "name": "Island at Martlock",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-HIGHLAND-0001f": {
+    "id": "ISLAND-GUILD-HIGHLAND-0001f",
+    "name": "Island at Martlock",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-MOUNTAIN-0001a": {
+    "id": "ISLAND-GUILD-MOUNTAIN-0001a",
+    "name": "Island at Fort Sterling",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-MOUNTAIN-0001b": {
+    "id": "ISLAND-GUILD-MOUNTAIN-0001b",
+    "name": "Island at Fort Sterling",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-MOUNTAIN-0001c": {
+    "id": "ISLAND-GUILD-MOUNTAIN-0001c",
+    "name": "Island at Fort Sterling",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-MOUNTAIN-0001d": {
+    "id": "ISLAND-GUILD-MOUNTAIN-0001d",
+    "name": "Island at Fort Sterling",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-MOUNTAIN-0001e": {
+    "id": "ISLAND-GUILD-MOUNTAIN-0001e",
+    "name": "Island at Fort Sterling",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-MOUNTAIN-0001f": {
+    "id": "ISLAND-GUILD-MOUNTAIN-0001f",
+    "name": "Island at Fort Sterling",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-STEPPE-0001a": {
+    "id": "ISLAND-GUILD-STEPPE-0001a",
+    "name": "Island at Bridgewatch",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-STEPPE-0001b": {
+    "id": "ISLAND-GUILD-STEPPE-0001b",
+    "name": "Island at Bridgewatch",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-STEPPE-0001c": {
+    "id": "ISLAND-GUILD-STEPPE-0001c",
+    "name": "Island at Bridgewatch",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-STEPPE-0001d": {
+    "id": "ISLAND-GUILD-STEPPE-0001d",
+    "name": "Island at Bridgewatch",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-STEPPE-0001e": {
+    "id": "ISLAND-GUILD-STEPPE-0001e",
+    "name": "Island at Bridgewatch",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-STEPPE-0001f": {
+    "id": "ISLAND-GUILD-STEPPE-0001f",
+    "name": "Island at Bridgewatch",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-SWAMP-0001a": {
+    "id": "ISLAND-GUILD-SWAMP-0001a",
+    "name": "Island at Thetford",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-SWAMP-0001b": {
+    "id": "ISLAND-GUILD-SWAMP-0001b",
+    "name": "Island at Thetford",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-SWAMP-0001c": {
+    "id": "ISLAND-GUILD-SWAMP-0001c",
+    "name": "Island at Thetford",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-SWAMP-0001d": {
+    "id": "ISLAND-GUILD-SWAMP-0001d",
+    "name": "Island at Thetford",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-SWAMP-0001e": {
+    "id": "ISLAND-GUILD-SWAMP-0001e",
+    "name": "Island at Thetford",
+    "type": "ISLAND"
+  },
+  "ISLAND-GUILD-SWAMP-0001f": {
+    "id": "ISLAND-GUILD-SWAMP-0001f",
+    "name": "Island at Thetford",
+    "type": "ISLAND"
   }
 }
