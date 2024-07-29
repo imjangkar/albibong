@@ -1,49 +1,57 @@
-import { useContext, useState } from "react";
-import { formatter } from "../pages/DPSMeter";
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import { TextField, Typography } from "@mui/material";
+import { useContext, useState } from "react";
 import app from "../App.module.css";
-import { theme } from "../theme";
-import { Dungeon, World, WorldContext } from "../providers/WorldProvider";
+import { formatter } from "../pages/DPSMeter";
 import styles from "../pages/DungeonTracker.module.css";
 import { WebsocketContext } from "../providers/WebsocketProvider";
-import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import { Dungeon } from "../providers/WorldProvider";
+import { theme } from "../theme";
 
 type DungeonCardProps = {
   dungeon: Dungeon;
 };
 
 const DungeonCard = ({ dungeon }: DungeonCardProps) => {
-  const { world, setWorld } = useContext(WorldContext);
+  // const { world, setWorld } = useContext(WorldContext);
 
   const { sendMessage } = useContext(WebsocketContext);
 
-  const sendDataToBE = (list_dungeon: Dungeon[]) => {
-    sendMessage({
-      type: "update_dungeon_data",
-      payload: { list_dungeon },
-    });
-  };
+  // const sendDataToBE = (list_dungeon: Dungeon[]) => {
+  //   sendMessage({
+  //     type: "update_dungeon_data",
+  //     payload: { list_dungeon },
+  //   });
+  // };
 
   const updateDungeonName = () => {
-    let new_list_dungeon = world.list_dungeon;
-    new_list_dungeon.forEach((currentDungeon, index) => {
-      if (currentDungeon.id == dungeon.id) {
-        new_list_dungeon[index].name = name;
-      }
+    sendMessage({
+      type: "update_dungeon_name",
+      payload: { id: dungeon.id, value: name },
     });
-    setWorld((prev: World) => ({ ...prev, list_dungeon: new_list_dungeon }));
-    sendDataToBE(new_list_dungeon);
+    // let new_list_dungeon = world.list_dungeon;
+    // new_list_dungeon.forEach((currentDungeon, index) => {
+    //   if (currentDungeon.id == dungeon.id) {
+    //     new_list_dungeon[index].name = name;
+    //   }
+    // });
+    // setWorld((prev: World) => ({ ...prev, list_dungeon: new_list_dungeon }));
+    // sendDataToBE(new_list_dungeon);
   };
 
   const updateTierDungeon = () => {
-    let new_list_dungeon = world.list_dungeon;
-    new_list_dungeon.forEach((currentDungeon, index) => {
-      if (currentDungeon.id == dungeon.id) {
-        new_list_dungeon[index].tier = Number(tier);
-      }
+    sendMessage({
+      type: "update_dungeon_tier",
+      payload: { id: dungeon.id, value: tier },
     });
-    setWorld((prev: World) => ({ ...prev, list_dungeon: new_list_dungeon }));
-    sendDataToBE(new_list_dungeon);
+    // let new_list_dungeon = world.list_dungeon;
+    // new_list_dungeon.forEach((currentDungeon, index) => {
+    //   if (currentDungeon.id == dungeon.id) {
+    //     new_list_dungeon[index].tier = Number(tier);
+    //   }
+    // });
+    // setWorld((prev: World) => ({ ...prev, list_dungeon: new_list_dungeon }));
+    // sendDataToBE(new_list_dungeon);
   };
 
   const [name, setName] = useState(dungeon.name);
