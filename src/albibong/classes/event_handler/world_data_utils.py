@@ -17,23 +17,26 @@ class WorldDataUtils:
 
     def end_current_dungeon(world_data: WorldData):
         if world_data.current_dungeon:
-            list_dungeon = deque()
-
-            try:
-                with open(FILENAME) as json_file:
-                    list_dungeon = deque(json.load(json_file))
-            except:
-                pass
 
             world_data.current_dungeon.get_elapsed_time()
-            list_dungeon.appendleft(Dungeon.serialize(world_data.current_dungeon))
 
-            with open(FILENAME, "w") as json_file:
-                json.dump(list(list_dungeon), json_file)
+            # list_dungeon = deque()
 
-            WorldDataUtils.ws_update_dungeon(list(list_dungeon))
+            # try:
+            #     with open(FILENAME) as json_file:
+            #         list_dungeon = deque(json.load(json_file))
+            # except:
+            #     pass
 
-            world_data.current_dungeon = None
+            # world_data.current_dungeon.get_elapsed_time()
+            # list_dungeon.appendleft(Dungeon.serialize(world_data.current_dungeon))
+
+            # with open(FILENAME, "w") as json_file:
+            #     json.dump(list(list_dungeon), json_file)
+
+            # WorldDataUtils.ws_update_dungeon(list(list_dungeon))
+
+            # world_data.current_dungeon = None
 
     def ws_update_dungeon(list_dungeon: list):
         event = {
