@@ -1,3 +1,4 @@
 scapy==2.5.0
 websockets==12.0
 pywebview==5.1
+peewee==3.17.6

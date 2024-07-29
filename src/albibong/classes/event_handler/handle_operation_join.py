@@ -67,9 +67,9 @@ def ws_update_location(world_data: WorldData):
         "payload": {
             "map": world_data.current_map.name if world_data.current_map else "None",
             "dungeon": (
-                Dungeon.serialize(world_data.current_dungeon)
+                world_data.current_dungeon.name
                 if world_data.current_dungeon
-                else None
+                else "None"
             ),
         },
     }

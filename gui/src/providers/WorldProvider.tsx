@@ -33,7 +33,7 @@ export type Dungeon = {
 
 export type World = {
   map: string;
-  dungeon?: Dungeon;
+  dungeon: string;
   isDPSMeterRunning: boolean;
   party: PartyMember[];
   list_dungeon: Dungeon[];
@@ -49,7 +49,7 @@ type WorldContextData = {
   updateFame: (fame_gained: number) => void;
   updateReSpec: (re_spec_gained: number) => void;
   updateSilver: (username: string, silver_gained: number) => void;
-  updateLocation: (map: string, dungeon: Dungeon) => void;
+  updateLocation: (map: string, dungeon: string) => void;
   updateIsDPSMeterRunning: (value: boolean) => void;
   updateParty: (party: PartyMember[]) => void;
   updateDungeon: (list_dungeon: Dungeon[]) => void;
@@ -64,8 +64,8 @@ export const WorldContext = React.createContext<WorldContextData>({
     weapon: "Not initialized",
   },
   world: {
-    map: "Not in map",
-    dungeon: undefined,
+    map: "None",
+    dungeon: "None",
     isDPSMeterRunning: false,
     party: [],
     list_dungeon: [],
@@ -97,8 +97,8 @@ const WorldProvider = ({ children }: WorldProviderProps) => {
   });
 
   const [world, setWorld] = useState<World>({
-    map: "Not in map",
-    dungeon: undefined,
+    map: "None",
+    dungeon: "None",
     isDPSMeterRunning: false,
     party: [],
     list_dungeon: [],
@@ -156,7 +156,7 @@ const WorldProvider = ({ children }: WorldProviderProps) => {
     }
   };
 
-  const updateLocation = (map: string, dungeon: Dungeon) =>
+  const updateLocation = (map: string, dungeon: string) =>
     setWorld((prev) => ({
       ...prev,
       map: map,

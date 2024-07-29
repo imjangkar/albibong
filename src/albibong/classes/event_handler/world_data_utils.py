@@ -1,6 +1,7 @@
-from collections import deque
 import json
 import os
+import uuid
+from collections import deque
 
 from albibong.classes.character import Character
 from albibong.classes.dungeon import Dungeon
@@ -17,26 +18,10 @@ class WorldDataUtils:
 
     def end_current_dungeon(world_data: WorldData):
         if world_data.current_dungeon:
-
-            world_data.current_dungeon.get_elapsed_time()
-
-            # list_dungeon = deque()
-
-            # try:
-            #     with open(FILENAME) as json_file:
-            #         list_dungeon = deque(json.load(json_file))
-            # except:
-            #     pass
-
-            # world_data.current_dungeon.get_elapsed_time()
-            # list_dungeon.appendleft(Dungeon.serialize(world_data.current_dungeon))
-
-            # with open(FILENAME, "w") as json_file:
-            #     json.dump(list(list_dungeon), json_file)
-
-            # WorldDataUtils.ws_update_dungeon(list(list_dungeon))
-
-            # world_data.current_dungeon = None
+            world_data.current_dungeon.set_end_time()
+            world_data.current_dungeon.save(force_insert=True)
+            WorldDataUtils.ws_update_dungeon(Dungeon.get_all_dungeon())
+            world_data.current_dungeon = None
 
     def ws_update_dungeon(list_dungeon: list):
         event = {
@@ -48,7 +33,7 @@ class WorldDataUtils:
     @staticmethod
     def start_current_dungeon(world_data: WorldData, type: str, name: str):
         if world_data.current_dungeon == None:
-            new_dungeon = Dungeon(type, name)
+            new_dungeon = Dungeon(type=type, name=name)
             world_data.current_dungeon = new_dungeon
 
     @staticmethod

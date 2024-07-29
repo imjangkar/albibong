@@ -1,9 +1,9 @@
 import asyncio
-from datetime import timedelta
 import json
 import os
 import queue
 import threading
+from datetime import timedelta
 
 import websockets
 
@@ -127,27 +127,33 @@ class WebsocketServer(threading.Thread):
                     await websocket.send(json.dumps(re_spec))
                     await websocket.send(json.dumps(silver))
                 elif event["type"] == "refresh_dungeon_list":
-                    try:
-                        with open(FILENAME) as json_file:
-                            list_dungeon = json.load(json_file)
-                            reply = {
-                                "type": "update_dungeon",
-                                "payload": {"list_dungeon": list_dungeon},
-                            }
-                    except:
-                        reply = {
-                            "type": "update_dungeon",
-                            "payload": {"list_dungeon": []},
-                        }
-                    await websocket.send(json.dumps(reply))
-                elif event["type"] == "update_dungeon_data":
-                    updated_tier = event["payload"]["list_dungeon"]
-                    with open(FILENAME, "w") as json_file:
-                        json.dump(updated_tier, json_file)
-
                     reply = {
                         "type": "update_dungeon",
-                        "payload": {"list_dungeon": updated_tier},
+                        "payload": {"list_dungeon": Dungeon.get_all_dungeon()},
+                    }
+                    await websocket.send(json.dumps(reply))
+                elif event["type"] == "update_dungeon_tier":
+                    id = event["payload"]["id"]
+                    value = event["payload"]["value"]
+                    dungeon: Dungeon = Dungeon.update(tier=value).where(
+                        Dungeon.id == id
+                    )
+                    dungeon.execute()
+                    reply = {
+                        "type": "update_dungeon",
+                        "payload": {"list_dungeon": Dungeon.get_all_dungeon()},
+                    }
+                    await websocket.send(json.dumps(reply))
+                elif event["type"] == "update_dungeon_name":
+                    id = event["payload"]["id"]
+                    value = event["payload"]["value"]
+                    dungeon: Dungeon = Dungeon.update(name=value).where(
+                        Dungeon.id == id
+                    )
+                    dungeon.execute()
+                    reply = {
+                        "type": "update_dungeon",
+                        "payload": {"list_dungeon": Dungeon.get_all_dungeon()},
                     }
                     await websocket.send(json.dumps(reply))
 

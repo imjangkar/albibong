@@ -132,10 +132,7 @@ const Navigation = () => {
             CURRENT MAP: <b>{world.map}</b>
           </Typography>
           <Typography>
-            CURRENT DUNGEON:{" "}
-            <b>
-              {world.dungeon != null ? world.dungeon.name : "not in dungeon"}
-            </b>
+            CURRENT DUNGEON: <b>{world.dungeon}</b>
           </Typography>
         </Toolbar>
       </AppBar>

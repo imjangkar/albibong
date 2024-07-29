@@ -1,10 +1,10 @@
-from datetime import datetime
 import queue
 import random
 import socket
 import sys
-from time import sleep
 import uuid
+from datetime import datetime
+from time import sleep
 
 import webview
 from scapy.all import rdpcap
@@ -12,11 +12,11 @@ from scapy.all import rdpcap
 from albibong.classes.dungeon import Dungeon
 from albibong.classes.logger import Logger
 from albibong.classes.packet_handler import PacketHandler
+from albibong.models.models import db
 from albibong.threads.http_server import HttpServerThread
 from albibong.threads.packet_handler_thread import PacketHandlerThread
 from albibong.threads.sniffer_thread import SnifferThread
 from albibong.threads.websocket_server import get_ws_server
-from albibong.models.models import db
 
 logger = Logger(__name__, stdout=True, log_to_file=False)
 PORT = random.randrange(8500, 8999)
@@ -47,42 +47,8 @@ def sniff(useWebview):
     ws_server = get_ws_server()
     ws_server.start()
 
-    # --- start trial db ---
-
     db.connect()
     db.create_tables([Dungeon])
-
-    obj: Dungeon = Dungeon(
-        type="DUNGEON_SAFEAREA",
-        name=f"DG {random.randint(1,100)}",
-    )
-
-    obj.update_fame(
-        {
-            0: 48,
-            1: 4991558844254,
-            2: 2373972,
-            3: 1,
-            4: 20624,
-            5: True,
-            6: 0.36000001430511475,
-            252: 82,
-        }
-    )
-
-    obj.update_loot({0: 48, 2: "imjangkar", 3: True, 5: 251973, 252: 271})
-
-    obj.update_re_spec({0: [0, 94541807877, 0, 0, 0], 1: 1, 2: 700000, 252: 84})
-
-    sleep(2)
-
-    obj.set_end_time()
-
-    # print(f"Data baru:\n{Dungeon.serialize(obj)}")
-
-    obj.save(force_insert=True)
-
-    # --- end trial db ---
 
     if useWebview:
 
