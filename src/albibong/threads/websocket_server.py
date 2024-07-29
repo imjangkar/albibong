@@ -49,9 +49,9 @@ class WebsocketServer(threading.Thread):
                             else "not initialized"
                         ),
                         "dungeon": (
-                            Dungeon.serialize(world_data.current_dungeon)
+                            world_data.current_dungeon.name
                             if world_data.current_dungeon
-                            else None
+                            else "not initialized"
                         ),
                         "isDPSMeterRunning": world_data.is_dps_meter_running,
                     },
@@ -59,18 +59,10 @@ class WebsocketServer(threading.Thread):
             }
             # logger.info(f"initializing character: {event}")
             await websocket.send(json.dumps(event_init_world))
-            try:
-                with open(FILENAME) as json_file:
-                    list_dungeon = json.load(json_file)
-                    event_init_dungeon_list = {
-                        "type": "update_dungeon",
-                        "payload": {"list_dungeon": list_dungeon},
-                    }
-            except:
-                event_init_dungeon_list = {
-                    "type": "update_dungeon",
-                    "payload": {"list_dungeon": []},
-                }
+            event_init_dungeon_list = {
+                "type": "update_dungeon",
+                "payload": {"list_dungeon": Dungeon.get_all_dungeon()},
+            }
             await websocket.send(json.dumps(event_init_dungeon_list))
 
             async for message in websocket:
