@@ -8,7 +8,7 @@ type PlayerCharacter = {
   weapon: string;
 };
 
-type PartyMember = {
+export type PartyMember = {
   username: string;
   damage_percent: number;
   damage_dealt: number;
@@ -17,6 +17,14 @@ type PartyMember = {
   combat_duration: string;
   dps: number;
   weapon: string;
+};
+
+export type Item = {
+  id: string;
+  name: string;
+  unique_name: string;
+  image: string;
+  quantity: number;
 };
 
 export type Dungeon = {
@@ -29,6 +37,22 @@ export type Dungeon = {
   re_spec: number;
   date_time: string;
   time_elapsed: string;
+  meter: PartyMember[];
+};
+
+export type Island = {
+  id: string;
+  name: string;
+  type: string;
+  date_time: string;
+  crops: Item[];
+  animals: Item[];
+};
+
+export type IslandWidget = {
+  crops: Item[];
+  animals: Item[];
+  date: string;
 };
 
 export type World = {
@@ -37,11 +61,13 @@ export type World = {
   isDPSMeterRunning: boolean;
   party: PartyMember[];
   list_dungeon: Dungeon[];
+  list_island: Island[];
 };
 
 type WorldContextData = {
   me: PlayerCharacter;
   world: World;
+  islandWidget: IslandWidget;
   dungeonFilter: string[];
   setWorld: any;
   initWorld: (me: PlayerCharacter, world: World) => void;
@@ -53,6 +79,8 @@ type WorldContextData = {
   updateIsDPSMeterRunning: (value: boolean) => void;
   updateParty: (party: PartyMember[]) => void;
   updateDungeon: (list_dungeon: Dungeon[]) => void;
+  updateIsland: (list_island: Island[]) => void;
+  updateIslandWidget: (crops: Item[], animals: Item[], date: string) => void;
 };
 
 export const WorldContext = React.createContext<WorldContextData>({
@@ -69,6 +97,12 @@ export const WorldContext = React.createContext<WorldContextData>({
     isDPSMeterRunning: false,
     party: [],
     list_dungeon: [],
+    list_island: [],
+  },
+  islandWidget: {
+    crops: [],
+    animals: [],
+    date: "2000-1-1",
   },
   dungeonFilter: [],
   setWorld: () => {},
@@ -81,6 +115,8 @@ export const WorldContext = React.createContext<WorldContextData>({
   updateIsDPSMeterRunning: () => {},
   updateParty: () => {},
   updateDungeon: () => {},
+  updateIsland: () => {},
+  updateIslandWidget: () => {},
 });
 
 type WorldProviderProps = {
@@ -102,6 +138,13 @@ const WorldProvider = ({ children }: WorldProviderProps) => {
     isDPSMeterRunning: false,
     party: [],
     list_dungeon: [],
+    list_island: [],
+  });
+
+  const [islandWidget, setIslandWidget] = useState<IslandWidget>({
+    crops: [],
+    animals: [],
+    date: "2000-1-1",
   });
 
   const [dungeonFilter, setDungeonFilter] = useState<string[]>(["ALL"]);
@@ -120,6 +163,7 @@ const WorldProvider = ({ children }: WorldProviderProps) => {
       isDPSMeterRunning: world.isDPSMeterRunning,
       party: [],
       list_dungeon: [],
+      list_island: [],
     });
   };
 
@@ -185,6 +229,21 @@ const WorldProvider = ({ children }: WorldProviderProps) => {
     updateDungeonFilter(list_dungeon);
   };
 
+  const updateIsland = (list_island: Island[]) => {
+    setWorld((prev) => ({
+      ...prev,
+      list_island: list_island,
+    }));
+  };
+
+  const updateIslandWidget = (crops: Item[], animals: Item[], date: string) => {
+    setIslandWidget({
+      crops: crops,
+      animals: animals,
+      date: date,
+    });
+  };
+
   const updateDungeonFilter = (list_dungeon: Dungeon[]) => {
     let dungeonFilter = new Set<string>();
     dungeonFilter.add("ALL");
@@ -199,6 +258,7 @@ const WorldProvider = ({ children }: WorldProviderProps) => {
       value={{
         me,
         world,
+        islandWidget,
         dungeonFilter,
         setWorld,
         initWorld,
@@ -210,6 +270,8 @@ const WorldProvider = ({ children }: WorldProviderProps) => {
         updateIsDPSMeterRunning,
         updateParty,
         updateDungeon,
+        updateIsland,
+        updateIslandWidget,
       }}
     >
       {children}

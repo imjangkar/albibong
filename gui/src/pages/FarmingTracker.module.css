@@ -1,0 +1,24 @@
+.column {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.row {
+  display: flex;
+  gap: 40px;
+}
+
+.harvest {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.statsContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
