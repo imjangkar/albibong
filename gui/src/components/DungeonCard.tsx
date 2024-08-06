@@ -1,8 +1,17 @@
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
-import { TextField, Typography } from "@mui/material";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+
+import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+  TextField,
+  Typography,
+} from "@mui/material";
 import { useContext, useState } from "react";
 import app from "../App.module.css";
 import { formatter } from "../pages/DPSMeter";
+import dps from "../pages/DPSMeter.module.css";
 import styles from "../pages/DungeonTracker.module.css";
 import { WebsocketContext } from "../providers/WebsocketProvider";
 import { Dungeon } from "../providers/WorldProvider";
@@ -31,6 +40,16 @@ const DungeonCard = ({ dungeon }: DungeonCardProps) => {
 
   const [name, setName] = useState(dungeon.name);
   const [tier, setTier] = useState(String(dungeon.tier));
+
+  const getMaxHeal = () => {
+    let maxHeal = 0;
+    dungeon.meter.forEach((member) => {
+      if (member.healing_dealt > maxHeal) {
+        maxHeal = member.healing_dealt;
+      }
+    });
+    return maxHeal;
+  };
 
   return (
     <div
@@ -64,7 +83,6 @@ const DungeonCard = ({ dungeon }: DungeonCardProps) => {
           onChange={(e) => setTier(e.target.value)}
         />
       </div>
-
       <div className={app.options}>
         <div className={app.stats}>
           <img src="fame.png" width={"24px"} />
@@ -83,6 +101,87 @@ const DungeonCard = ({ dungeon }: DungeonCardProps) => {
           {dungeon.time_elapsed}
         </div>
       </div>
+      <Accordion style={{ marginTop: "1rem" }}>
+        <AccordionSummary
+          expandIcon={<ArrowDropDownIcon />}
+          aria-controls="content"
+          id="header"
+        >
+          <Typography variant="h4">Damage Meter Snapshot</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          {dungeon.meter.length > 0 ? (
+            <>
+              <Typography variant="h5">
+                This is only a snapshot taken from <a href="/">Damage Meter</a>{" "}
+                when the player left the dungeon. Results might be inaccurate if
+                the meter didn't get reset after entering a new dungeon.
+              </Typography>
+              <br />
+              <div className={dps.dpsRow}>
+                <Typography className={dps.player}>Member</Typography>
+                <Typography className={dps.dpsNumber}>Damage</Typography>
+                <Typography className={dps.dpsNumber}>Damage%</Typography>
+                <Typography className={dps.dpsNumber}>Duration</Typography>
+                <Typography
+                  className={dps.dpsNumber}
+                  sx={{ fontWeight: "bold" }}
+                >
+                  DPS
+                </Typography>
+              </div>
+            </>
+          ) : null}
+          {dungeon.meter.length > 0 ? (
+            dungeon.meter.map((member, index) => {
+              const pertama = dungeon.meter[0];
+              const dpsPercent =
+                member["damage_dealt"] / pertama["damage_dealt"];
+              const dpsWidth = {
+                width:
+                  pertama["damage_dealt"] > 0 ? `${dpsPercent * 100}%` : "0",
+              };
+              const healPercent = member["healing_dealt"] / getMaxHeal();
+              const healWidth = {
+                width: getMaxHeal() > 0 ? `${healPercent * 100}%` : "0",
+              };
+
+              return (
+                <div style={{ width: "100%" }} key={index}>
+                  <div className={dps.dpsRow}>
+                    <Typography style={{ marginRight: 16 }}>
+                      {index + 1}.
+                    </Typography>{" "}
+                    <Typography className={dps.player}>
+                      {member.username}
+                    </Typography>
+                    <img src={member.weapon} width={"48px"} height={"48px"} />
+                    <Typography className={dps.dpsNumber}>
+                      {formatter(member.damage_dealt)}
+                    </Typography>
+                    <Typography className={dps.dpsNumber}>
+                      {formatter(member.damage_percent)}%
+                    </Typography>
+                    <Typography className={dps.dpsNumber}>
+                      {member.combat_duration}
+                    </Typography>
+                    <Typography
+                      className={dps.dpsNumber}
+                      sx={{ fontWeight: "bold" }}
+                    >
+                      {member.dps}/dps
+                    </Typography>
+                  </div>
+                  <div className={dps.dmgBar} style={dpsWidth} />
+                  <div className={dps.healBar} style={healWidth} />
+                </div>
+              );
+            })
+          ) : (
+            <Typography>No snapshot taken</Typography>
+          )}
+        </AccordionDetails>
+      </Accordion>
     </div>
   );
 };

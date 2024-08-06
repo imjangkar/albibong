@@ -13,6 +13,7 @@ import webview
 from scapy.all import rdpcap
 
 from albibong.classes.dungeon import Dungeon
+from albibong.classes.location import Island
 from albibong.classes.logger import Logger
 from albibong.classes.packet_handler import PacketHandler
 from albibong.models.models import db
@@ -25,7 +26,7 @@ logger = Logger(__name__, stdout=True, log_to_file=False)
 PORT = random.randrange(8500, 8999)
 
 home_dir = os.path.expanduser("~")
-JSON_DB = f"{home_dir}/Albibong/list_dungeon.json"
+DUNGEON_DB = f"{home_dir}/Albibong/list_dungeon.json"
 SQLITE_DB = f"{home_dir}/Albibong/Albibong.db"
 
 
@@ -60,17 +61,34 @@ def sniff(useWebview):
         return timedelta(seconds=seconds) + start_time
 
     if Path(SQLITE_DB).is_file() == False:
-        if Path(JSON_DB).is_file() == True:
+        db.connect()
+        db.create_tables([Dungeon, Island])
+        if Path(DUNGEON_DB).is_file() == True:
             # convert json db to sqlite db
-            db.connect()
-            db.create_tables([Dungeon])
-            json_data = json.load(open(JSON_DB))
+            json_data = json.load(open(DUNGEON_DB))
+
             for dungeon in json_data:
                 start_time = datetime.strptime(
                     dungeon["date_time"], "%a %d %b %Y, %I:%M%p"
                 )
+                type_splitted = set(dungeon["type"].split("_"))
+
+                if "CORRUPTED" in type_splitted:
+                    converted_type = "CORRUPTED DUNGEON"
+                elif "HARDCORE" in type_splitted:
+                    converted_type = "HARDCORE EXPEDITION"
+                elif "10V10" in type_splitted:
+                    converted_type = "HELLGATE 10V10"
+                elif "5V5" in type_splitted:
+                    converted_type = "HELLGATE 5V5"
+                elif "2V2" in type_splitted:
+                    converted_type = "HELLGATE 2V2"
+                elif "DUNGEON" in type_splitted:
+                    converted_type = "STATIC DUNGEON"
+                elif "RANDOMDUNGEON" in type_splitted:
+                    converted_type = "SPAWN DUNGEON"
                 Dungeon.create(
-                    type=dungeon["type"],
+                    type=converted_type,
                     name=dungeon["name"],
                     tier=dungeon["tier"],
                     fame=dungeon["fame"],
@@ -79,10 +97,8 @@ def sniff(useWebview):
                     start_time=start_time,
                     end_time=get_end_time(dungeon["time_elapsed"], start_time),
                 )
-            Path(JSON_DB).unlink()
 
     db.connect(reuse_if_open=True)
-    db.create_tables([Dungeon])
 
     if useWebview:
 

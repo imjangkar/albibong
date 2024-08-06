@@ -10,13 +10,17 @@
    ![Damage (and Heal) Meter](readme_screenshots/damage_meter.png)
    - Pause and Resume damage and heal logging
    - Copy damage rank to clipboard
-   - Reset damage and heal
+   - Reset damage, heal, and player stats
 2. Dungeon Tracker
    ![Dungeon Tracker](readme_screenshots/dungeon_tracker.png)
-   - Automatically track dungeon name, fame gained, silver gained, respec points gained, start time and dungeon duration.
-   - Ability to change recorded dungeon name
-   - Ability to add dungeon tier/level
+   - Automatically track dungeon name, fame gained, silver gained, respec points gained, start time, dungeon duration and dps meter snapshot.
+   - Change recorded dungeon name
+   - Add dungeon tier/level
    - Filter dungeon by dungeon types
+3. Farming Tracker
+   ![Farming Tracker](readme_screenshots/farming_tracker.png)
+   - Automatically track harvested crops and animals in an island
+   - See farming recap of a specific day
 
 ## How to Install
 
@@ -71,7 +75,7 @@ albibong
 
 2. A window will pop out and you're good to go!
 
-**Can't run the program?** Refer to [FAQ](#FAQ)
+**Can't run the program?** Refer to [FAQ](#-faq)
 
 ### 👨‍💻 Devs
 
@@ -114,7 +118,7 @@ If you encounter this problem
 'albibong' is not recognized as an internal or external command, operable program or batch file.
 ```
 
-Add PIP package to path by following this guide https://stackoverflow.com/a/36160069
+Add PIP package to path by following this guide https://youtu.be/9_WyyV_66rU?si=0shXXv59MBeQBHiH
 
 ### _"Can I use the tool with ExitLag, 1.1.1.1 or VPN?"_
 

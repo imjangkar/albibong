@@ -1,5 +1,5 @@
+from albibong.classes.event_handler.world_data_utils import WorldDataUtils
 from albibong.classes.world_data import WorldData
-from albibong.threads.websocket_server import send_event
 
 
 def handle_event_character_equipment_changed(world_data: WorldData, parameters):
@@ -11,14 +11,6 @@ def handle_event_character_equipment_changed(world_data: WorldData, parameters):
                 ]
                 if char.username in world_data.party_members:
                     char.update_equipment(parameters[2])
-                    ws_update_character_equipment(world_data)
+                    WorldDataUtils.ws_update_damage_meter(world_data)
         else:
             world_data.change_equipment_log[parameters[0]] = parameters[2]
-
-
-def ws_update_character_equipment(world_data: WorldData):
-    event = {
-        "type": "update_dps",
-        "payload": {"party_members": world_data.serialize_party_members()},
-    }
-    send_event(event)

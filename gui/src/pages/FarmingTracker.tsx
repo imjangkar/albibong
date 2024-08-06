@@ -47,7 +47,7 @@ const FarmingTracker = () => {
       <Typography variant="h2">Farming Tracker</Typography>
       <div className={styles.statsContainer}>
         <div className={app.row}>
-          <h2>Total Harvested at {date_to_string()}</h2>
+          <h2>Total Harvested {date_to_string()}</h2>
           <LocalizationProvider
             dateAdapter={AdapterDayjs}
             adapterLocale="en-gb"
