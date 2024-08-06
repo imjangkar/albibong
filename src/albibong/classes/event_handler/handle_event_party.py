@@ -1,21 +1,22 @@
 from uuid import UUID
+
+from albibong.classes.event_handler.world_data_utils import WorldDataUtils
 from albibong.classes.world_data import WorldData
-from albibong.threads.websocket_server import send_event
 
 
 def handle_event_party_joined(world_data: WorldData, parameters):
     world_data.party_members = set(parameters[5])
-    ws_update_party_member(world_data)
+    WorldDataUtils.ws_update_damage_meter(world_data)
 
 
 def handle_event_party_disbanded(world_data: WorldData, parameters):
     world_data.party_members = {world_data.me.username}
-    ws_update_party_member(world_data)
+    WorldDataUtils.ws_update_damage_meter(world_data)
 
 
 def handle_event_party_player_joined(world_data: WorldData, parameters):
     world_data.party_members.add(parameters[2])
-    ws_update_party_member(world_data)
+    WorldDataUtils.ws_update_damage_meter(world_data)
 
 
 def handle_event_party_player_left(world_data: WorldData, parameters):
@@ -27,12 +28,4 @@ def handle_event_party_player_left(world_data: WorldData, parameters):
         # self out party
         if name == world_data.me.username:
             world_data.party_members = {world_data.me.username}
-            ws_update_party_member(world_data)
-
-
-def ws_update_party_member(world_data: WorldData):
-    event = {
-        "type": "update_dps",
-        "payload": {"party_members": world_data.serialize_party_members()},
-    }
-    send_event(event)
+            WorldDataUtils.ws_update_damage_meter(world_data)

@@ -43,8 +43,8 @@ def handle_operation_join(world_data: WorldData, parameters):
             )
 
     ws_init_character(world_data)
-    ws_update_location(world_data)
-    ws_update_dps(world_data)
+    WorldDataUtils.ws_update_location(world_data)
+    WorldDataUtils.ws_update_damage_meter(world_data)
 
 
 def ws_init_character(world_data: WorldData):
@@ -57,28 +57,5 @@ def ws_init_character(world_data: WorldData):
             "silver": world_data.me.silver_gained,
             "weapon": world_data.me.equipment[0].image,
         },
-    }
-    send_event(event)
-
-
-def ws_update_location(world_data: WorldData):
-    event = {
-        "type": "update_location",
-        "payload": {
-            "map": world_data.current_map.name if world_data.current_map else "None",
-            "dungeon": (
-                world_data.current_dungeon.name
-                if world_data.current_dungeon
-                else "None"
-            ),
-        },
-    }
-    send_event(event)
-
-
-def ws_update_dps(world_data: WorldData):
-    event = {
-        "type": "update_dps",
-        "payload": {"party_members": world_data.serialize_party_members()},
     }
     send_event(event)

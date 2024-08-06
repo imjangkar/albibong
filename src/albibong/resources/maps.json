@@ -2,8 +2,8 @@
   "0": { "id": "None", "name": "None", "type": "None" },
   "RANDOMDUNGEON": {
     "id": "RANDOMDUNGEON",
-    "name": "Dungeon",
-    "type": "RANDOMDUNGEON"
+    "name": "Spawn Dungeon",
+    "type": "SPAWN DUNGEON"
   },
   "MISTS": { "id": "MISTS", "name": "Mists", "type": "MISTS" },
   "Debug": { "id": "Debug", "name": "Debug", "type": "DEBUG_BLACK" },
@@ -338,7 +338,7 @@
   "RecruitmentOfTheDead-HRD": {
     "id": "RecruitmentOfTheDead-HRD",
     "name": "Preaching to the Dead",
-    "type": "HARDCORE_EXPEDITION"
+    "type": "HARDCORE EXPEDITION"
   },
   "0006": {
     "id": "0006",
@@ -393,42 +393,42 @@
   "EternalBattle-HRD": {
     "id": "EternalBattle-HRD",
     "name": "Eternal Battle",
-    "type": "HARDCORE_EXPEDITION"
+    "type": "HARDCORE EXPEDITION"
   },
   "FishyBusiness-HRD": {
     "id": "FishyBusiness-HRD",
     "name": "Fishy Business",
-    "type": "HARDCORE_EXPEDITION"
+    "type": "HARDCORE EXPEDITION"
   },
   "LumberCamp-HRD": {
     "id": "LumberCamp-HRD",
     "name": "Lumber Lunacy",
-    "type": "HARDCORE_EXPEDITION"
+    "type": "HARDCORE EXPEDITION"
   },
   "MushroomCave-HRD": {
     "id": "MushroomCave-HRD",
     "name": "Mushroom Cave",
-    "type": "HARDCORE_EXPEDITION"
+    "type": "HARDCORE EXPEDITION"
   },
   "SewersMaintenance-HRD": {
     "id": "SewersMaintenance-HRD",
     "name": "Lurking Underneath",
-    "type": "HARDCORE_EXPEDITION"
+    "type": "HARDCORE EXPEDITION"
   },
   "StoneWars-HRD": {
     "id": "StoneWars-HRD",
     "name": "Stone Wars",
-    "type": "HARDCORE_EXPEDITION"
+    "type": "HARDCORE EXPEDITION"
   },
   "ThreeSisters-HRD": {
     "id": "ThreeSisters-HRD",
     "name": "Three Sisters",
-    "type": "HARDCORE_EXPEDITION"
+    "type": "HARDCORE EXPEDITION"
   },
   "FistfulOfSilver-HRD": {
     "id": "FistfulOfSilver-HRD",
     "name": "A Fistful Of Silver",
-    "type": "HARDCORE_EXPEDITION"
+    "type": "HARDCORE EXPEDITION"
   },
   "Torturer-GROUP": {
     "id": "Torturer-GROUP",
@@ -438,42 +438,42 @@
   "Torturer-HRD": {
     "id": "Torturer-HRD",
     "name": "In the Raven's Claws",
-    "type": "HARDCORE_EXPEDITION"
+    "type": "HARDCORE EXPEDITION"
   },
   "ARENA-FarmLand": {
     "id": "ARENA-FarmLand",
     "name": "Farmland Skirmish",
-    "type": "ARENA_CUSTOM"
+    "type": "ARENA CUSTOM"
   },
   "ARENA-HomeTerritory": {
     "id": "ARENA-HomeTerritory",
     "name": "HomeTerritory Skirmish",
-    "type": "ARENA_CUSTOM"
+    "type": "ARENA CUSTOM"
   },
   "ARENA-Resources": {
     "id": "ARENA-Resources",
     "name": "Resource Skirmish",
-    "type": "ARENA_CUSTOM"
+    "type": "ARENA CUSTOM"
   },
   "ARENA-Resources1": {
     "id": "ARENA-Resources1",
     "name": "Resource Skirmish",
-    "type": "ARENA_CUSTOM"
+    "type": "ARENA CUSTOM"
   },
   "ARENA-Resources2": {
     "id": "ARENA-Resources2",
     "name": "Resource Skirmish 2",
-    "type": "ARENA_CUSTOM"
+    "type": "ARENA CUSTOM"
   },
   "CrystalRealm": {
     "id": "CrystalRealm",
     "name": "Crystal Realm",
-    "type": "ARENA_CRYSTAL"
+    "type": "ARENA CRYSTAL"
   },
   "CrystalRealm-CrystalLeague-NonLethal": {
     "id": "CrystalRealm-CrystalLeague-NonLethal",
     "name": "Crystal Realm",
-    "type": "ARENA_CRYSTAL_NONLETHAL"
+    "type": "ARENA CRYSTAL"
   },
   "1008": { "id": "1008", "name": "The Lighthouse", "type": "TUTORIAL" },
   "1009": { "id": "1009", "name": "Forgotten Woods", "type": "STARTAREA" },
@@ -487,7 +487,7 @@
   "ARENA-City": {
     "id": "ARENA-City",
     "name": "ARENA-City",
-    "type": "ARENA_CUSTOM"
+    "type": "ARENA CUSTOM"
   },
   "HIDEOUT-0001a": {
     "id": "HIDEOUT-0001a",
@@ -1582,17 +1582,17 @@
   "CORRUPT-001": {
     "id": "CORRUPT-001",
     "name": "Corrupted Lair",
-    "type": "CORRUPTED_DUNGEON"
+    "type": "CORRUPTED DUNGEON"
   },
   "CORRUPT-002": {
     "id": "CORRUPT-002",
     "name": "Corrupted Lair",
-    "type": "CORRUPTED_DUNGEON"
+    "type": "CORRUPTED DUNGEON"
   },
   "CORRUPT-003": {
     "id": "CORRUPT-003",
     "name": "Corrupted Lair",
-    "type": "CORRUPTED_DUNGEON"
+    "type": "CORRUPTED DUNGEON"
   },
   "PSG-0038": {
     "id": "PSG-0038",
@@ -1657,22 +1657,22 @@
   "CORRUPT-004": {
     "id": "CORRUPT-004",
     "name": "Corrupted Lair",
-    "type": "CORRUPTED_DUNGEON"
+    "type": "CORRUPTED DUNGEON"
   },
   "CORRUPT-005": {
     "id": "CORRUPT-005",
     "name": "Corrupted Lair",
-    "type": "CORRUPTED_DUNGEON"
+    "type": "CORRUPTED DUNGEON"
   },
   "CORRUPT-006": {
     "id": "CORRUPT-006",
     "name": "Corrupted Lair",
-    "type": "CORRUPTED_DUNGEON"
+    "type": "CORRUPTED DUNGEON"
   },
   "CORRUPT-007": {
     "id": "CORRUPT-007",
     "name": "Corrupted Lair",
-    "type": "CORRUPTED_DUNGEON"
+    "type": "CORRUPTED DUNGEON"
   },
   "PSG-0008": {
     "id": "PSG-0008",
@@ -1952,67 +1952,67 @@
   "CORRUPT-008": {
     "id": "CORRUPT-008",
     "name": "Corrupted Lair",
-    "type": "CORRUPTED_DUNGEON"
+    "type": "CORRUPTED DUNGEON"
   },
   "CORRUPT-009": {
     "id": "CORRUPT-009",
     "name": "Corrupted Lair",
-    "type": "CORRUPTED_DUNGEON"
+    "type": "CORRUPTED DUNGEON"
   },
   "CORRUPT-010": {
     "id": "CORRUPT-010",
     "name": "Corrupted Lair",
-    "type": "CORRUPTED_DUNGEON"
+    "type": "CORRUPTED DUNGEON"
   },
   "CORRUPT-011": {
     "id": "CORRUPT-011",
     "name": "Corrupted Lair",
-    "type": "CORRUPTED_DUNGEON"
+    "type": "CORRUPTED DUNGEON"
   },
   "CORRUPT-012": {
     "id": "CORRUPT-012",
     "name": "Corrupted Lair",
-    "type": "CORRUPTED_DUNGEON"
+    "type": "CORRUPTED DUNGEON"
   },
   "CORRUPT-013": {
     "id": "CORRUPT-013",
     "name": "Corrupted Lair",
-    "type": "CORRUPTED_DUNGEON"
+    "type": "CORRUPTED DUNGEON"
   },
   "CORRUPT-014": {
     "id": "CORRUPT-014",
     "name": "Corrupted Lair",
-    "type": "CORRUPTED_DUNGEON"
+    "type": "CORRUPTED DUNGEON"
   },
   "CORRUPT-015": {
     "id": "CORRUPT-015",
     "name": "Corrupted Lair",
-    "type": "CORRUPTED_DUNGEON"
+    "type": "CORRUPTED DUNGEON"
   },
   "CORRUPT-016": {
     "id": "CORRUPT-016",
     "name": "Corrupted Lair",
-    "type": "CORRUPTED_DUNGEON"
+    "type": "CORRUPTED DUNGEON"
   },
   "CORRUPT-017": {
     "id": "CORRUPT-017",
     "name": "Corrupted Lair",
-    "type": "CORRUPTED_DUNGEON"
+    "type": "CORRUPTED DUNGEON"
   },
   "CORRUPT-018": {
     "id": "CORRUPT-018",
     "name": "Corrupted Lair",
-    "type": "CORRUPTED_DUNGEON"
+    "type": "CORRUPTED DUNGEON"
   },
   "CORRUPT-019": {
     "id": "CORRUPT-019",
     "name": "Corrupted Lair",
-    "type": "CORRUPTED_DUNGEON"
+    "type": "CORRUPTED DUNGEON"
   },
   "CORRUPT-020": {
     "id": "CORRUPT-020",
     "name": "Corrupted Lair",
-    "type": "CORRUPTED_DUNGEON"
+    "type": "CORRUPTED DUNGEON"
   },
   "CrystalRealmDebug": {
     "id": "CrystalRealmDebug",
@@ -2057,157 +2057,157 @@
   "CrystalRealm20v20": {
     "id": "CrystalRealm20v20",
     "name": "Large Crystal Realm",
-    "type": "ARENA_CRYSTAL_20VS20"
+    "type": "ARENA CRYSTAL"
   },
   "HELLGATE-01-10v10-01": {
     "id": "HELLGATE-01-10v10-01",
     "name": "The Plains",
-    "type": "DUNGEON_HELL_10V10_NON_LETHAL"
+    "type": "HELLGATE 10V10"
   },
   "HELLGATE-01-2v2-01": {
     "id": "HELLGATE-01-2v2-01",
     "name": "The Plains",
-    "type": "DUNGEON_HELL_2V2_NON_LETHAL"
+    "type": "HELLGATE 2V2"
   },
   "HELLGATE-01-5v5-01": {
     "id": "HELLGATE-01-5v5-01",
     "name": "The Plains",
-    "type": "DUNGEON_HELL_5V5_NON_LETHAL"
+    "type": "HELLGATE 5V5"
   },
   "HELLGATE-02-10v10-01": {
     "id": "HELLGATE-02-10v10-01",
     "name": "The Hill",
-    "type": "DUNGEON_HELL_10V10_NON_LETHAL"
+    "type": "HELLGATE 10V10"
   },
   "HELLGATE-02-2v2-01": {
     "id": "HELLGATE-02-2v2-01",
     "name": "The Hill",
-    "type": "DUNGEON_HELL_2V2_NON_LETHAL"
+    "type": "HELLGATE 2V2"
   },
   "HELLGATE-02-5v5-01": {
     "id": "HELLGATE-02-5v5-01",
     "name": "The Hill",
-    "type": "DUNGEON_HELL_5V5_NON_LETHAL"
+    "type": "HELLGATE 5V5"
   },
   "HELLGATE-03-10v10-01": {
     "id": "HELLGATE-03-10v10-01",
     "name": "The Boneyard",
-    "type": "DUNGEON_HELL_10V10_NON_LETHAL"
+    "type": "HELLGATE 10V10"
   },
   "HELLGATE-03-2v2-01": {
     "id": "HELLGATE-03-2v2-01",
     "name": "The Boneyard",
-    "type": "DUNGEON_HELL_2V2_NON_LETHAL"
+    "type": "HELLGATE 2V2"
   },
   "HELLGATE-03-5v5-01": {
     "id": "HELLGATE-03-5v5-01",
     "name": "The Boneyard",
-    "type": "DUNGEON_HELL_5V5_NON_LETHAL"
+    "type": "HELLGATE 5V5"
   },
   "HELLGATE-04-10v10-01": {
     "id": "HELLGATE-04-10v10-01",
     "name": "The Four Bridges",
-    "type": "DUNGEON_HELL_10V10_NON_LETHAL"
+    "type": "HELLGATE 10V10"
   },
   "HELLGATE-04-2v2-01": {
     "id": "HELLGATE-04-2v2-01",
     "name": "The Four Bridges",
-    "type": "DUNGEON_HELL_2V2_NON_LETHAL"
+    "type": "HELLGATE 2V2"
   },
   "HELLGATE-04-5v5-01": {
     "id": "HELLGATE-04-5v5-01",
     "name": "The Four Bridges",
-    "type": "DUNGEON_HELL_5V5_NON_LETHAL"
+    "type": "HELLGATE 5V5"
   },
   "HELLGATE-05-10v10-01": {
     "id": "HELLGATE-05-10v10-01",
     "name": "The Traverse",
-    "type": "DUNGEON_HELL_10V10_NON_LETHAL"
+    "type": "HELLGATE 10V10"
   },
   "HELLGATE-05-2v2-01": {
     "id": "HELLGATE-05-2v2-01",
     "name": "The Traverse",
-    "type": "DUNGEON_HELL_2V2_NON_LETHAL"
+    "type": "HELLGATE 2V2"
   },
   "HELLGATE-05-5v5-01": {
     "id": "HELLGATE-05-5v5-01",
     "name": "The Traverse",
-    "type": "DUNGEON_HELL_5V5_NON_LETHAL"
+    "type": "HELLGATE 5V5"
   },
   "HELLGATE-06-10v10-01": {
     "id": "HELLGATE-06-10v10-01",
     "name": "The Fortress",
-    "type": "DUNGEON_HELL_10V10_NON_LETHAL"
+    "type": "HELLGATE 10V10"
   },
   "HELLGATE-06-2v2-01": {
     "id": "HELLGATE-06-2v2-01",
     "name": "The Fortress",
-    "type": "DUNGEON_HELL_2V2_NON_LETHAL"
+    "type": "HELLGATE 2V2"
   },
   "HELLGATE-06-5v5-01": {
     "id": "HELLGATE-06-5v5-01",
     "name": "The Fortress",
-    "type": "DUNGEON_HELL_5V5_NON_LETHAL"
+    "type": "HELLGATE 5V5"
   },
   "HELLGATE-07-10v10-01": {
     "id": "HELLGATE-07-10v10-01",
     "name": "The Pit",
-    "type": "DUNGEON_HELL_10V10_NON_LETHAL"
+    "type": "HELLGATE 10V10"
   },
   "HELLGATE-07-2v2-01": {
     "id": "HELLGATE-07-2v2-01",
     "name": "The Pit",
-    "type": "DUNGEON_HELL_2V2_NON_LETHAL"
+    "type": "HELLGATE 2V2"
   },
   "HELLGATE-07-5v5-01": {
     "id": "HELLGATE-07-5v5-01",
     "name": "The Pit",
-    "type": "DUNGEON_HELL_5V5_NON_LETHAL"
+    "type": "HELLGATE 5V5"
   },
   "HELLGATE-08-10v10-01": {
     "id": "HELLGATE-08-10v10-01",
     "name": "The Courtyard",
-    "type": "DUNGEON_HELL_10V10_NON_LETHAL"
+    "type": "HELLGATE 10V10"
   },
   "HELLGATE-08-2v2-01": {
     "id": "HELLGATE-08-2v2-01",
     "name": "The Courtyard",
-    "type": "DUNGEON_HELL_2V2_NON_LETHAL"
+    "type": "HELLGATE 2V2"
   },
   "HELLGATE-08-5v5-01": {
     "id": "HELLGATE-08-5v5-01",
     "name": "The Courtyard",
-    "type": "DUNGEON_HELL_5V5_NON_LETHAL"
+    "type": "HELLGATE 5V5"
   },
   "HELLGATE-09-10v10-01": {
     "id": "HELLGATE-09-10v10-01",
     "name": "The Tribunal",
-    "type": "DUNGEON_HELL_10V10_NON_LETHAL"
+    "type": "HELLGATE 10V10"
   },
   "HELLGATE-09-2v2-01": {
     "id": "HELLGATE-09-2v2-01",
     "name": "The Tribunal",
-    "type": "DUNGEON_HELL_2V2_NON_LETHAL"
+    "type": "HELLGATE 2V2"
   },
   "HELLGATE-09-5v5-01": {
     "id": "HELLGATE-09-5v5-01",
     "name": "The Tribunal",
-    "type": "DUNGEON_HELL_5V5_NON_LETHAL"
+    "type": "HELLGATE 5V5"
   },
   "HELLGATE-10-10v10-01": {
     "id": "HELLGATE-10-10v10-01",
     "name": "The Citadel",
-    "type": "DUNGEON_HELL_10V10_NON_LETHAL"
+    "type": "HELLGATE 10V10"
   },
   "HELLGATE-10-2v2-01": {
     "id": "HELLGATE-10-2v2-01",
     "name": "The Citadel",
-    "type": "DUNGEON_HELL_2V2_NON_LETHAL"
+    "type": "HELLGATE 2V2"
   },
   "HELLGATE-10-5v5-01": {
     "id": "HELLGATE-10-5v5-01",
     "name": "The Citadel",
-    "type": "DUNGEON_HELL_5V5_NON_LETHAL"
+    "type": "HELLGATE 5V5"
   },
   "0215": { "id": "0215", "name": "Murky Fen", "type": "SAFEAREA" },
   "0216": { "id": "0216", "name": "Fog Fen", "type": "SAFEAREA" },
@@ -2305,877 +2305,877 @@
   "HELLGATE-01-10v10-01-HRD": {
     "id": "HELLGATE-01-10v10-01-HRD",
     "name": "The Plains",
-    "type": "DUNGEON_HELL_10V10_LETHAL"
+    "type": "HELLGATE 10V10"
   },
   "HELLGATE-01-2v2-01-HRD": {
     "id": "HELLGATE-01-2v2-01-HRD",
     "name": "The Plains",
-    "type": "DUNGEON_HELL_2V2_LETHAL"
+    "type": "HELLGATE 2V2"
   },
   "HELLGATE-01-5v5-01-HRD": {
     "id": "HELLGATE-01-5v5-01-HRD",
     "name": "The Plains",
-    "type": "DUNGEON_HELL_5V5_LETHAL"
+    "type": "HELLGATE 5V5"
   },
   "HELLGATE-02-10v10-01-HRD": {
     "id": "HELLGATE-02-10v10-01-HRD",
     "name": "The Hill",
-    "type": "DUNGEON_HELL_10V10_LETHAL"
+    "type": "HELLGATE 10V10"
   },
   "HELLGATE-02-2v2-01-HRD": {
     "id": "HELLGATE-02-2v2-01-HRD",
     "name": "The Hill",
-    "type": "DUNGEON_HELL_2V2_LETHAL"
+    "type": "HELLGATE 2V2"
   },
   "HELLGATE-02-5v5-01-HRD": {
     "id": "HELLGATE-02-5v5-01-HRD",
     "name": "The Hill",
-    "type": "DUNGEON_HELL_5V5_LETHAL"
+    "type": "HELLGATE 5V5"
   },
   "HELLGATE-03-10v10-01-HRD": {
     "id": "HELLGATE-03-10v10-01-HRD",
     "name": "The Boneyard",
-    "type": "DUNGEON_HELL_10V10_LETHAL"
+    "type": "HELLGATE 10V10"
   },
   "HELLGATE-03-2v2-01-HRD": {
     "id": "HELLGATE-03-2v2-01-HRD",
     "name": "The Boneyard",
-    "type": "DUNGEON_HELL_2V2_LETHAL"
+    "type": "HELLGATE 2V2"
   },
   "HELLGATE-03-5v5-01-HRD": {
     "id": "HELLGATE-03-5v5-01-HRD",
     "name": "The Boneyard",
-    "type": "DUNGEON_HELL_5V5_LETHAL"
+    "type": "HELLGATE 5V5"
   },
   "HELLGATE-04-10v10-01-HRD": {
     "id": "HELLGATE-04-10v10-01-HRD",
     "name": "The Four Bridges",
-    "type": "DUNGEON_HELL_10V10_LETHAL"
+    "type": "HELLGATE 10V10"
   },
   "HELLGATE-04-2v2-01-HRD": {
     "id": "HELLGATE-04-2v2-01-HRD",
     "name": "The Four Bridges",
-    "type": "DUNGEON_HELL_2V2_LETHAL"
+    "type": "HELLGATE 2V2"
   },
   "HELLGATE-04-5v5-01-HRD": {
     "id": "HELLGATE-04-5v5-01-HRD",
     "name": "The Four Bridges",
-    "type": "DUNGEON_HELL_5V5_LETHAL"
+    "type": "HELLGATE 5V5"
   },
   "HELLGATE-05-10v10-01-HRD": {
     "id": "HELLGATE-05-10v10-01-HRD",
     "name": "The Traverse",
-    "type": "DUNGEON_HELL_10V10_LETHAL"
+    "type": "HELLGATE 10V10"
   },
   "HELLGATE-05-2v2-01-HRD": {
     "id": "HELLGATE-05-2v2-01-HRD",
     "name": "The Traverse",
-    "type": "DUNGEON_HELL_2V2_LETHAL"
+    "type": "HELLGATE 2V2"
   },
   "HELLGATE-05-5v5-01-HRD": {
     "id": "HELLGATE-05-5v5-01-HRD",
     "name": "The Traverse",
-    "type": "DUNGEON_HELL_5V5_LETHAL"
+    "type": "HELLGATE 5V5"
   },
   "HELLGATE-06-10v10-01-HRD": {
     "id": "HELLGATE-06-10v10-01-HRD",
     "name": "The Fortress",
-    "type": "DUNGEON_HELL_10V10_LETHAL"
+    "type": "HELLGATE 10V10"
   },
   "HELLGATE-06-2v2-01-HRD": {
     "id": "HELLGATE-06-2v2-01-HRD",
     "name": "The Fortress",
-    "type": "DUNGEON_HELL_2V2_LETHAL"
+    "type": "HELLGATE 2V2"
   },
   "HELLGATE-06-5v5-01-HRD": {
     "id": "HELLGATE-06-5v5-01-HRD",
     "name": "The Fortress",
-    "type": "DUNGEON_HELL_5V5_LETHAL"
+    "type": "HELLGATE 5V5"
   },
   "HELLGATE-07-10v10-01-HRD": {
     "id": "HELLGATE-07-10v10-01-HRD",
     "name": "The Pit",
-    "type": "DUNGEON_HELL_10V10_LETHAL"
+    "type": "HELLGATE 10V10"
   },
   "HELLGATE-07-2v2-01-HRD": {
     "id": "HELLGATE-07-2v2-01-HRD",
     "name": "The Pit",
-    "type": "DUNGEON_HELL_2V2_LETHAL"
+    "type": "HELLGATE 2V2"
   },
   "HELLGATE-07-5v5-01-HRD": {
     "id": "HELLGATE-07-5v5-01-HRD",
     "name": "The Pit",
-    "type": "DUNGEON_HELL_5V5_LETHAL"
+    "type": "HELLGATE 5V5"
   },
   "HELLGATE-08-10v10-01-HRD": {
     "id": "HELLGATE-08-10v10-01-HRD",
     "name": "The Courtyard",
-    "type": "DUNGEON_HELL_10V10_LETHAL"
+    "type": "HELLGATE 10V10"
   },
   "HELLGATE-08-2v2-01-HRD": {
     "id": "HELLGATE-08-2v2-01-HRD",
     "name": "The Courtyard",
-    "type": "DUNGEON_HELL_2V2_LETHAL"
+    "type": "HELLGATE 2V2"
   },
   "HELLGATE-08-5v5-01-HRD": {
     "id": "HELLGATE-08-5v5-01-HRD",
     "name": "The Courtyard",
-    "type": "DUNGEON_HELL_5V5_LETHAL"
+    "type": "HELLGATE 5V5"
   },
   "HELLGATE-09-10v10-01-HRD": {
     "id": "HELLGATE-09-10v10-01-HRD",
     "name": "The Tribunal",
-    "type": "DUNGEON_HELL_10V10_LETHAL"
+    "type": "HELLGATE 10V10"
   },
   "HELLGATE-09-2v2-01-HRD": {
     "id": "HELLGATE-09-2v2-01-HRD",
     "name": "The Tribunal",
-    "type": "DUNGEON_HELL_2V2_LETHAL"
+    "type": "HELLGATE 2V2"
   },
   "HELLGATE-09-5v5-01-HRD": {
     "id": "HELLGATE-09-5v5-01-HRD",
     "name": "The Tribunal",
-    "type": "DUNGEON_HELL_5V5_LETHAL"
+    "type": "HELLGATE 5V5"
   },
   "HELLGATE-10-10v10-01-HRD": {
     "id": "HELLGATE-10-10v10-01-HRD",
     "name": "The Citadel",
-    "type": "DUNGEON_HELL_10V10_LETHAL"
+    "type": "HELLGATE 10V10"
   },
   "HELLGATE-10-2v2-01-HRD": {
     "id": "HELLGATE-10-2v2-01-HRD",
     "name": "The Citadel",
-    "type": "DUNGEON_HELL_2V2_LETHAL"
+    "type": "HELLGATE 2V2"
   },
   "HELLGATE-10-5v5-01-HRD": {
     "id": "HELLGATE-10-5v5-01-HRD",
     "name": "The Citadel",
-    "type": "DUNGEON_HELL_5V5_LETHAL"
+    "type": "HELLGATE 5V5"
   },
   "DNG-KPR-02-MAIN-010": {
     "id": "DNG-KPR-02-MAIN-010",
     "name": "Stoneroot Caverns",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-KPR-02-MAIN-011": {
     "id": "DNG-KPR-02-MAIN-011",
     "name": "Stoneroot Caverns",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-KPR-02-MAIN-012": {
     "id": "DNG-KPR-02-MAIN-012",
     "name": "Stoneroot Caverns",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-KPR-02-MAIN-013": {
     "id": "DNG-KPR-02-MAIN-013",
     "name": "Stoneroot Caverns",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-KPR-02-MAIN-014": {
     "id": "DNG-KPR-02-MAIN-014",
     "name": "Stoneroot Caverns",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-KPR-02-MAIN-015": {
     "id": "DNG-KPR-02-MAIN-015",
     "name": "Stoneroot Caverns",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-KPR-02-MAIN-016": {
     "id": "DNG-KPR-02-MAIN-016",
     "name": "Stoneroot Caverns",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-KPR-02-MAIN-018": {
     "id": "DNG-KPR-02-MAIN-018",
     "name": "Stoneroot Caverns",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-KPR-02-MAIN-019": {
     "id": "DNG-KPR-02-MAIN-019",
     "name": "Stoneroot Caverns",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-KPR-02-MAIN-01": {
     "id": "DNG-KPR-02-MAIN-01",
     "name": "Stoneroot Caverns",
-    "type": "DUNGEON_YELLOW"
+    "type": "STATIC DUNGEON"
   },
   "DNG-KPR-02-MAIN-020": {
     "id": "DNG-KPR-02-MAIN-020",
     "name": "Stoneroot Caverns",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-KPR-02-MAIN-021": {
     "id": "DNG-KPR-02-MAIN-021",
     "name": "Stoneroot Caverns",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-KPR-02-MAIN-022": {
     "id": "DNG-KPR-02-MAIN-022",
     "name": "Stoneroot Caverns",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-KPR-02-MAIN-023": {
     "id": "DNG-KPR-02-MAIN-023",
     "name": "Stoneroot Caverns",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-KPR-02-MAIN-024": {
     "id": "DNG-KPR-02-MAIN-024",
     "name": "Stoneroot Caverns",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-KPR-02-MAIN-025": {
     "id": "DNG-KPR-02-MAIN-025",
     "name": "Stoneroot Caverns",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-KPR-02-MAIN-026": {
     "id": "DNG-KPR-02-MAIN-026",
     "name": "Stoneroot Caverns",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-KPR-02-MAIN-027": {
     "id": "DNG-KPR-02-MAIN-027",
     "name": "Stoneroot Caverns",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-KPR-02-MAIN-04": {
     "id": "DNG-KPR-02-MAIN-04",
     "name": "Stoneroot Caverns",
-    "type": "DUNGEON_YELLOW"
+    "type": "STATIC DUNGEON"
   },
   "DNG-KPR-02-MAIN-08": {
     "id": "DNG-KPR-02-MAIN-08",
     "name": "Stoneroot Caverns",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-KPR-02-MAIN-09": {
     "id": "DNG-KPR-02-MAIN-09",
     "name": "Stoneroot Caverns",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-MAIN-001": {
     "id": "DNG-MOR-01-MAIN-001",
     "name": "Cathedral of Light",
-    "type": "DUNGEON_RED"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-MAIN-002": {
     "id": "DNG-MOR-01-MAIN-002",
     "name": "Cathedral of Light",
-    "type": "DUNGEON_RED"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-MAIN-003": {
     "id": "DNG-MOR-01-MAIN-003",
     "name": "Cathedral of Light",
-    "type": "DUNGEON_RED"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-MAIN-010": {
     "id": "DNG-MOR-01-MAIN-010",
     "name": "Cathedral of Light",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-MAIN-011": {
     "id": "DNG-MOR-01-MAIN-011",
     "name": "Cathedral of Light",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-MAIN-012": {
     "id": "DNG-MOR-01-MAIN-012",
     "name": "Cathedral of Light",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-MAIN-017": {
     "id": "DNG-MOR-01-MAIN-017",
     "name": "Cathedral of Light",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-MAIN-018": {
     "id": "DNG-MOR-01-MAIN-018",
     "name": "Cathedral of Light",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-MAIN-019": {
     "id": "DNG-MOR-01-MAIN-019",
     "name": "Cathedral of Light",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-MAIN-01": {
     "id": "DNG-MOR-01-MAIN-01",
     "name": "Cathedral of Light",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-MAIN-020": {
     "id": "DNG-MOR-01-MAIN-020",
     "name": "Cathedral of Light",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-MAIN-021": {
     "id": "DNG-MOR-01-MAIN-021",
     "name": "Cathedral of Light",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-MAIN-022": {
     "id": "DNG-MOR-01-MAIN-022",
     "name": "Cathedral of Light",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-MAIN-023": {
     "id": "DNG-MOR-01-MAIN-023",
     "name": "Cathedral of Light",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-MAIN-024": {
     "id": "DNG-MOR-01-MAIN-024",
     "name": "Cathedral of Light",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-MAIN-025": {
     "id": "DNG-MOR-01-MAIN-025",
     "name": "Cathedral of Light",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-MAIN-027": {
     "id": "DNG-MOR-01-MAIN-027",
     "name": "Cathedral of Light",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-MAIN-02": {
     "id": "DNG-MOR-01-MAIN-02",
     "name": "Cathedral of Light",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-MAIN-03": {
     "id": "DNG-MOR-01-MAIN-03",
     "name": "Cathedral of Light",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-MAIN-04": {
     "id": "DNG-MOR-01-MAIN-04",
     "name": "Cathedral of Light",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-MAIN-05": {
     "id": "DNG-MOR-01-MAIN-05",
     "name": "Cathedral of Light",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-MAIN-06": {
     "id": "DNG-MOR-01-MAIN-06",
     "name": "Cathedral of Light",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-MAIN-07": {
     "id": "DNG-MOR-01-MAIN-07",
     "name": "Cathedral of Light",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-MAIN-08": {
     "id": "DNG-MOR-01-MAIN-08",
     "name": "Cathedral of Light",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-MAIN-09": {
     "id": "DNG-MOR-01-MAIN-09",
     "name": "Cathedral of Light",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-SUB-001": {
     "id": "DNG-MOR-01-SUB-001",
     "name": "Chambers of Truth",
-    "type": "DUNGEON_RED"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-SUB-002": {
     "id": "DNG-MOR-01-SUB-002",
     "name": "Chambers of Truth",
-    "type": "DUNGEON_RED"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-SUB-003": {
     "id": "DNG-MOR-01-SUB-003",
     "name": "Chambers of Truth",
-    "type": "DUNGEON_RED"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-SUB-010": {
     "id": "DNG-MOR-01-SUB-010",
     "name": "Chambers of Truth",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-SUB-011": {
     "id": "DNG-MOR-01-SUB-011",
     "name": "Chambers of Truth",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-SUB-012": {
     "id": "DNG-MOR-01-SUB-012",
     "name": "Chambers of Truth",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-SUB-017": {
     "id": "DNG-MOR-01-SUB-017",
     "name": "Chambers of Truth",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-SUB-018": {
     "id": "DNG-MOR-01-SUB-018",
     "name": "Chambers of Truth",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-SUB-019": {
     "id": "DNG-MOR-01-SUB-019",
     "name": "Chambers of Truth",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-SUB-01": {
     "id": "DNG-MOR-01-SUB-01",
     "name": "Chambers of Truth",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-SUB-020": {
     "id": "DNG-MOR-01-SUB-020",
     "name": "Chambers of Truth",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-SUB-021": {
     "id": "DNG-MOR-01-SUB-021",
     "name": "Chambers of Truth",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-SUB-022": {
     "id": "DNG-MOR-01-SUB-022",
     "name": "Chambers of Truth",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-SUB-023": {
     "id": "DNG-MOR-01-SUB-023",
     "name": "Chambers of Truth",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-SUB-024": {
     "id": "DNG-MOR-01-SUB-024",
     "name": "Chambers of Truth",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-SUB-025": {
     "id": "DNG-MOR-01-SUB-025",
     "name": "Chambers of Truth",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-SUB-027": {
     "id": "DNG-MOR-01-SUB-027",
     "name": "Chambers of Truth",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-SUB-02": {
     "id": "DNG-MOR-01-SUB-02",
     "name": "Chambers of Truth",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-SUB-03": {
     "id": "DNG-MOR-01-SUB-03",
     "name": "Chambers of Truth",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-SUB-04": {
     "id": "DNG-MOR-01-SUB-04",
     "name": "Chambers of Truth",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-SUB-05": {
     "id": "DNG-MOR-01-SUB-05",
     "name": "Chambers of Truth",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-SUB-06": {
     "id": "DNG-MOR-01-SUB-06",
     "name": "Chambers of Truth",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-SUB-07": {
     "id": "DNG-MOR-01-SUB-07",
     "name": "Chambers of Truth",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-SUB-08": {
     "id": "DNG-MOR-01-SUB-08",
     "name": "Chambers of Truth",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-MOR-01-SUB-09": {
     "id": "DNG-MOR-01-SUB-09",
     "name": "Chambers of Truth",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-MAIN-002": {
     "id": "DNG-UND-01-MAIN-002",
     "name": "Hallowed Crypt",
-    "type": "DUNGEON_SAFEAREA"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-MAIN-003": {
     "id": "DNG-UND-01-MAIN-003",
     "name": "Hallowed Crypt",
-    "type": "DUNGEON_SAFEAREA"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-MAIN-004": {
     "id": "DNG-UND-01-MAIN-004",
     "name": "Hallowed Crypt",
-    "type": "DUNGEON_SAFEAREA"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-MAIN-005": {
     "id": "DNG-UND-01-MAIN-005",
     "name": "Hallowed Crypt",
-    "type": "DUNGEON_SAFEAREA"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-MAIN-006": {
     "id": "DNG-UND-01-MAIN-006",
     "name": "Hallowed Crypt",
-    "type": "DUNGEON_SAFEAREA"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-MAIN-007": {
     "id": "DNG-UND-01-MAIN-007",
     "name": "Hallowed Crypt",
-    "type": "DUNGEON_SAFEAREA"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-MAIN-008": {
     "id": "DNG-UND-01-MAIN-008",
     "name": "Hallowed Crypt",
-    "type": "DUNGEON_SAFEAREA"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-MAIN-009": {
     "id": "DNG-UND-01-MAIN-009",
     "name": "Hallowed Crypt",
-    "type": "DUNGEON_SAFEAREA"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-MAIN-010": {
     "id": "DNG-UND-01-MAIN-010",
     "name": "Exalted Crypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-MAIN-011": {
     "id": "DNG-UND-01-MAIN-011",
     "name": "Exalted Crypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-MAIN-012": {
     "id": "DNG-UND-01-MAIN-012",
     "name": "Exalted Crypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-MAIN-013": {
     "id": "DNG-UND-01-MAIN-013",
     "name": "Exalted Crypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-MAIN-014": {
     "id": "DNG-UND-01-MAIN-014",
     "name": "Exalted Crypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-MAIN-015": {
     "id": "DNG-UND-01-MAIN-015",
     "name": "Exalted Crypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-MAIN-016": {
     "id": "DNG-UND-01-MAIN-016",
     "name": "Exalted Crypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-MAIN-017": {
     "id": "DNG-UND-01-MAIN-017",
     "name": "Exalted Crypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-MAIN-018": {
     "id": "DNG-UND-01-MAIN-018",
     "name": "Exalted Crypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-MAIN-019": {
     "id": "DNG-UND-01-MAIN-019",
     "name": "Exalted Crypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-MAIN-01": {
     "id": "DNG-UND-01-MAIN-01",
     "name": "Exalted Crypt",
-    "type": "DUNGEON_RED"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-MAIN-020": {
     "id": "DNG-UND-01-MAIN-020",
     "name": "Exalted Crypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-MAIN-021": {
     "id": "DNG-UND-01-MAIN-021",
     "name": "Exalted Crypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-MAIN-022": {
     "id": "DNG-UND-01-MAIN-022",
     "name": "Exalted Crypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-MAIN-023": {
     "id": "DNG-UND-01-MAIN-023",
     "name": "Exalted Crypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-MAIN-024": {
     "id": "DNG-UND-01-MAIN-024",
     "name": "Exalted Crypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-MAIN-025": {
     "id": "DNG-UND-01-MAIN-025",
     "name": "Exalted Crypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-MAIN-026": {
     "id": "DNG-UND-01-MAIN-026",
     "name": "Exalted Crypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-MAIN-027": {
     "id": "DNG-UND-01-MAIN-027",
     "name": "Exalted Crypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-MAIN-02": {
     "id": "DNG-UND-01-MAIN-02",
     "name": "Exalted Crypt",
-    "type": "DUNGEON_RED"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-MAIN-03": {
     "id": "DNG-UND-01-MAIN-03",
     "name": "Exalted Crypt",
-    "type": "DUNGEON_RED"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-MAIN-05": {
     "id": "DNG-UND-01-MAIN-05",
     "name": "Exalted Crypt",
-    "type": "DUNGEON_RED"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-MAIN-07": {
     "id": "DNG-UND-01-MAIN-07",
     "name": "Exalted Crypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-MAIN-08": {
     "id": "DNG-UND-01-MAIN-08",
     "name": "Exalted Crypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-MAIN-09": {
     "id": "DNG-UND-01-MAIN-09",
     "name": "Exalted Crypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-SUB-002": {
     "id": "DNG-UND-01-SUB-002",
     "name": "Hallowed Undercrypt",
-    "type": "DUNGEON_SAFEAREA"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-SUB-003": {
     "id": "DNG-UND-01-SUB-003",
     "name": "Hallowed Undercrypt",
-    "type": "DUNGEON_SAFEAREA"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-SUB-004": {
     "id": "DNG-UND-01-SUB-004",
     "name": "Hallowed Undercrypt",
-    "type": "DUNGEON_SAFEAREA"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-SUB-005": {
     "id": "DNG-UND-01-SUB-005",
     "name": "Hallowed Undercrypt",
-    "type": "DUNGEON_SAFEAREA"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-SUB-006": {
     "id": "DNG-UND-01-SUB-006",
     "name": "Hallowed Undercrypt",
-    "type": "DUNGEON_SAFEAREA"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-SUB-007": {
     "id": "DNG-UND-01-SUB-007",
     "name": "Hallowed Undercrypt",
-    "type": "DUNGEON_SAFEAREA"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-SUB-008": {
     "id": "DNG-UND-01-SUB-008",
     "name": "Hallowed Undercrypt",
-    "type": "DUNGEON_SAFEAREA"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-SUB-009": {
     "id": "DNG-UND-01-SUB-009",
     "name": "Hallowed Undercrypt",
-    "type": "DUNGEON_SAFEAREA"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-SUB-010": {
     "id": "DNG-UND-01-SUB-010",
     "name": "Exalted Undercrypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-SUB-011": {
     "id": "DNG-UND-01-SUB-011",
     "name": "Exalted Undercrypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-SUB-012": {
     "id": "DNG-UND-01-SUB-012",
     "name": "Exalted Undercrypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-SUB-013": {
     "id": "DNG-UND-01-SUB-013",
     "name": "Exalted Undercrypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-SUB-014": {
     "id": "DNG-UND-01-SUB-014",
     "name": "Exalted Undercrypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-SUB-015": {
     "id": "DNG-UND-01-SUB-015",
     "name": "Exalted Undercrypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-SUB-016": {
     "id": "DNG-UND-01-SUB-016",
     "name": "Exalted Undercrypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-SUB-017": {
     "id": "DNG-UND-01-SUB-017",
     "name": "Exalted Undercrypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-SUB-018": {
     "id": "DNG-UND-01-SUB-018",
     "name": "Exalted Undercrypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-SUB-019": {
     "id": "DNG-UND-01-SUB-019",
     "name": "Exalted Undercrypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-SUB-01": {
     "id": "DNG-UND-01-SUB-01",
     "name": "Exalted Undercrypt",
-    "type": "DUNGEON_RED"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-SUB-020": {
     "id": "DNG-UND-01-SUB-020",
     "name": "Exalted Undercrypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-SUB-021": {
     "id": "DNG-UND-01-SUB-021",
     "name": "Exalted Undercrypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-SUB-022": {
     "id": "DNG-UND-01-SUB-022",
     "name": "Exalted Undercrypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-SUB-023": {
     "id": "DNG-UND-01-SUB-023",
     "name": "Exalted Undercrypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-SUB-024": {
     "id": "DNG-UND-01-SUB-024",
     "name": "Exalted Undercrypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-SUB-025": {
     "id": "DNG-UND-01-SUB-025",
     "name": "Exalted Undercrypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-SUB-026": {
     "id": "DNG-UND-01-SUB-026",
     "name": "Exalted Undercrypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-SUB-027": {
     "id": "DNG-UND-01-SUB-027",
     "name": "Exalted Undercrypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-SUB-02": {
     "id": "DNG-UND-01-SUB-02",
     "name": "Exalted Undercrypt",
-    "type": "DUNGEON_RED"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-SUB-03": {
     "id": "DNG-UND-01-SUB-03",
     "name": "Exalted Undercrypt",
-    "type": "DUNGEON_RED"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-SUB-05": {
     "id": "DNG-UND-01-SUB-05",
     "name": "Exalted Undercrypt",
-    "type": "DUNGEON_RED"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-SUB-07": {
     "id": "DNG-UND-01-SUB-07",
     "name": "Exalted Undercrypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-SUB-08": {
     "id": "DNG-UND-01-SUB-08",
     "name": "Exalted Undercrypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-SUB-09": {
     "id": "DNG-UND-01-SUB-09",
     "name": "Exalted Undercrypt",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-KPR-01-MAIN-01": {
     "id": "DNG-KPR-01-MAIN-01",
     "name": "Deepwood Enclave",
-    "type": "DUNGEON_YELLOW"
+    "type": "STATIC DUNGEON"
   },
   "DNG-KPR-01-MAIN-02": {
     "id": "DNG-KPR-01-MAIN-02",
     "name": "Deepwood Enclave",
-    "type": "DUNGEON_YELLOW"
+    "type": "STATIC DUNGEON"
   },
   "DNG-KPR-01-MAIN-03": {
     "id": "DNG-KPR-01-MAIN-03",
     "name": "Deepwood Enclave",
-    "type": "DUNGEON_YELLOW"
+    "type": "STATIC DUNGEON"
   },
   "DNG-KPR-02-MAIN-017": {
     "id": "DNG-KPR-02-MAIN-017",
     "name": "Stoneroot Caverns",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-02-MAIN-01": {
     "id": "DNG-UND-02-MAIN-01",
     "name": "Trinity Hall",
-    "type": "DUNGEON_SAFEAREA"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-02-MAIN-02": {
     "id": "DNG-UND-02-MAIN-02",
     "name": "Trinity Hall",
-    "type": "DUNGEON_SAFEAREA"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-02-MAIN-03": {
     "id": "DNG-UND-02-MAIN-03",
     "name": "Trinity Hall",
-    "type": "DUNGEON_SAFEAREA"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-02-MAIN-04": {
     "id": "DNG-UND-02-MAIN-04",
     "name": "Trinity Hall",
-    "type": "DUNGEON_SAFEAREA"
+    "type": "STATIC DUNGEON"
   },
   "0363-HALL-04": {
     "id": "0363-HALL-04",
@@ -3215,17 +3215,17 @@
   "DNG-KPR-02-MAIN-028": {
     "id": "DNG-KPR-02-MAIN-028",
     "name": "Stoneroot Caverns",
-    "type": "DUNGEON_BLACK"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-MAIN-028": {
     "id": "DNG-UND-01-MAIN-028",
     "name": "Exalted Crypt",
-    "type": "DUNGEON_SAFEAREA"
+    "type": "STATIC DUNGEON"
   },
   "DNG-UND-01-SUB-028": {
     "id": "DNG-UND-01-SUB-028",
     "name": "Exalted Undercrypt",
-    "type": "DUNGEON_SAFEAREA"
+    "type": "STATIC DUNGEON"
   },
   "LEGACY-KEEPER-01": {
     "id": "LEGACY-KEEPER-01",
@@ -3250,7 +3250,7 @@
   "DNG-HER-01-MAIN-01": {
     "id": "DNG-HER-01-MAIN-01",
     "name": "Heretic Cellar Network",
-    "type": "DUNGEON_SAFEAREA"
+    "type": "STATIC DUNGEON"
   },
   "0301": {
     "id": "0301",
@@ -3295,42 +3295,42 @@
   "CrystalRealm02": {
     "id": "CrystalRealm02",
     "name": "Crystal Realm",
-    "type": "ARENA_CRYSTAL"
+    "type": "ARENA CRYSTAL"
   },
   "CrystalRealm02-CrystalLeague-NonLethal": {
     "id": "CrystalRealm02-CrystalLeague-NonLethal",
     "name": "Crystal Realm",
-    "type": "ARENA_CRYSTAL_NONLETHAL"
+    "type": "ARENA CRYSTAL"
   },
   "DNG-HER-01-MAIN-02": {
     "id": "DNG-HER-01-MAIN-02",
     "name": "Heretic Cellar Network",
-    "type": "DUNGEON_SAFEAREA"
+    "type": "STATIC DUNGEON"
   },
   "DNG-HER-01-MAIN-03": {
     "id": "DNG-HER-01-MAIN-03",
     "name": "Heretic Cellar Network",
-    "type": "DUNGEON_SAFEAREA"
+    "type": "STATIC DUNGEON"
   },
   "DNG-HER-01-MAIN-04": {
     "id": "DNG-HER-01-MAIN-04",
     "name": "Heretic Cellar Network",
-    "type": "DUNGEON_SAFEAREA"
+    "type": "STATIC DUNGEON"
   },
   "DNG-HER-01-MAIN-05": {
     "id": "DNG-HER-01-MAIN-05",
     "name": "Heretic Cellar Network",
-    "type": "DUNGEON_SAFEAREA"
+    "type": "STATIC DUNGEON"
   },
   "CrystalRealm-Nonlethal": {
     "id": "CrystalRealm-Nonlethal",
     "name": "Crystal Realm",
-    "type": "ARENA_CRYSTAL"
+    "type": "ARENA CRYSTAL"
   },
   "CrystalRealm02-Nonlethal": {
     "id": "CrystalRealm02-Nonlethal",
     "name": "Crystal Realm",
-    "type": "ARENA_CRYSTAL_NONLETHAL"
+    "type": "ARENA CRYSTAL"
   },
   "5000": { "id": "5000", "name": "Brecilien", "type": "PLAYERCITY_BLACK" },
   "5001": {
@@ -3385,7 +3385,7 @@
   "DNG-MISTS-UND-WIP-01-01": {
     "id": "DNG-MISTS-UND-WIP-01-01",
     "name": "Mists Dungeon",
-    "type": "DUNGEON_YELLOW"
+    "type": "STATIC DUNGEON"
   },
   "0364-HALL-05": {
     "id": "0364-HALL-05",

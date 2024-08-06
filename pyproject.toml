@@ -11,7 +11,8 @@ exclude = [
   "/tests",
   "/gui",
   "/readme_screenshots",
-  "/README.md"
+  "/README.md",
+  "/*.db"
 ]
 
 [project.scripts]
@@ -19,7 +20,7 @@ albibong = "albibong:main"
 
 [project]
 name = "albibong"
-version = "1.0.7"
+version = "1.1.0"
 authors = [
   { name="imjangkar", email="imjangkar@gmail.com" },
 ]
