@@ -2,6 +2,7 @@ import uuid
 from datetime import datetime
 
 from peewee import *
+from playhouse.sqlite_ext import JSONField
 
 from albibong.models.models import BaseModel
 
@@ -19,6 +20,7 @@ class Dungeon(BaseModel):
     re_spec = FloatField(default=0)
     start_time = DateTimeField(default=datetime.now)
     end_time = DateTimeField(null=True, default=None)
+    meter = JSONField(default=dict)
 
     @staticmethod
     def serialize(dungeon):
@@ -36,6 +38,7 @@ class Dungeon(BaseModel):
                 if dungeon.end_time
                 else ""
             ),
+            "meter": dungeon.meter,
         }
 
     def set_end_time(self):
@@ -53,6 +56,9 @@ class Dungeon(BaseModel):
         if 3 in parameters and parameters[3] == True:
             silver = parameters[5] / DIVISOR
             self.silver += silver
+
+    def update_meter(self, party):
+        self.meter = party
 
     @staticmethod
     def get_all_dungeon():
