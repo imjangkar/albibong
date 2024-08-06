@@ -18,6 +18,7 @@ import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 
 import {
+  Agriculture,
   Assessment,
   ChevronLeft,
   ChevronRight,
@@ -106,6 +107,11 @@ const Navigation = () => {
       pageName: "Dungeon Tracker",
       url: "/dungeon-tracker",
       icon: <Assessment />,
+    },
+    {
+      pageName: "Farming Tracker",
+      url: "/farming-tracker",
+      icon: <Agriculture />,
     },
   ];
   const navigate = useNavigate();

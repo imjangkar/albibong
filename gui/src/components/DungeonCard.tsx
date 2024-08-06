@@ -13,30 +13,13 @@ type DungeonCardProps = {
 };
 
 const DungeonCard = ({ dungeon }: DungeonCardProps) => {
-  // const { world, setWorld } = useContext(WorldContext);
-
   const { sendMessage } = useContext(WebsocketContext);
-
-  // const sendDataToBE = (list_dungeon: Dungeon[]) => {
-  //   sendMessage({
-  //     type: "update_dungeon_data",
-  //     payload: { list_dungeon },
-  //   });
-  // };
 
   const updateDungeonName = () => {
     sendMessage({
       type: "update_dungeon_name",
       payload: { id: dungeon.id, value: name },
     });
-    // let new_list_dungeon = world.list_dungeon;
-    // new_list_dungeon.forEach((currentDungeon, index) => {
-    //   if (currentDungeon.id == dungeon.id) {
-    //     new_list_dungeon[index].name = name;
-    //   }
-    // });
-    // setWorld((prev: World) => ({ ...prev, list_dungeon: new_list_dungeon }));
-    // sendDataToBE(new_list_dungeon);
   };
 
   const updateTierDungeon = () => {
@@ -44,14 +27,6 @@ const DungeonCard = ({ dungeon }: DungeonCardProps) => {
       type: "update_dungeon_tier",
       payload: { id: dungeon.id, value: tier },
     });
-    // let new_list_dungeon = world.list_dungeon;
-    // new_list_dungeon.forEach((currentDungeon, index) => {
-    //   if (currentDungeon.id == dungeon.id) {
-    //     new_list_dungeon[index].tier = Number(tier);
-    //   }
-    // });
-    // setWorld((prev: World) => ({ ...prev, list_dungeon: new_list_dungeon }));
-    // sendDataToBE(new_list_dungeon);
   };
 
   const [name, setName] = useState(dungeon.name);

@@ -30,6 +30,10 @@ from albibong.classes.event_handler.handle_operation_change_cluster import (
     handle_operation_change_cluster,
 )
 from albibong.classes.event_handler.handle_operation_join import handle_operation_join
+from albibong.classes.event_handler.handle_operation_farmable_harvest import (
+    handle_operation_farmable_harvest,
+    handle_operation_farmable_finish_grown_item,
+)
 from albibong.classes.event_handler.handle_operation_move import handle_operation_move
 from albibong.classes.world_data import WorldData
 from albibong.resources.EventCode import EventCode
@@ -83,6 +87,12 @@ class EventHandler:
         self.response_handler[OperationCode.JOIN.value] = handle_operation_join
         self.response_handler[OperationCode.CHANGE_CLUSTER.value] = (
             handle_operation_change_cluster
+        )
+        self.response_handler[OperationCode.FARMABLE_FINISH_GROWN_ITEM.value] = (
+            handle_operation_farmable_finish_grown_item
+        )
+        self.response_handler[OperationCode.FARMABLE_HARVEST.value] = (
+            handle_operation_farmable_harvest
         )
 
     def on_request(self, world_data: WorldData, parameters):

@@ -4,6 +4,7 @@ import queue
 import random
 import socket
 import sys
+import uuid
 from datetime import datetime, timedelta
 from pathlib import Path
 from time import sleep

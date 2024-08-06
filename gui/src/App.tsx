@@ -2,11 +2,12 @@ import { useContext, useEffect } from "react";
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import DPSMeter from "./pages/DPSMeter";
-import WorldProvider, { WorldContext } from "./providers/WorldProvider";
+import DungeonTracker from "./pages/DungeonTracker";
+import FarmingTracker from "./pages/FarmingTracker";
 import WebsocketProvider, {
   WebsocketContext,
 } from "./providers/WebsocketProvider";
-import DungeonTracker from "./pages/DungeonTracker";
+import WorldProvider, { WorldContext } from "./providers/WorldProvider";
 import { theme } from "./theme";
 
 const App = () => {
@@ -53,6 +54,10 @@ const Router = () => {
           path: "/dungeon-tracker",
           element: <DungeonTracker />,
         },
+        {
+          path: "/farming-tracker",
+          element: <FarmingTracker />,
+        },
       ],
     },
   ]);
@@ -71,6 +76,8 @@ const Init = ({ children }: { children: React.ReactNode }) => {
     updateIsDPSMeterRunning,
     updateParty,
     updateDungeon,
+    updateIsland,
+    updateIslandWidget,
   } = useContext(WorldContext);
 
   useEffect(() => {
@@ -88,12 +95,20 @@ const Init = ({ children }: { children: React.ReactNode }) => {
         updateSilver(ws_event.payload.username, ws_event.payload.silver_gained);
       } else if (ws_event.type == "update_location") {
         updateLocation(ws_event.payload.map, ws_event.payload.dungeon);
-      } else if (ws_event.type == "update_dps") {
+      } else if (ws_event.type == "update_damage_meter") {
         updateParty(ws_event.payload.party_members);
       } else if (ws_event.type == "update_is_dps_meter_running") {
         updateIsDPSMeterRunning(ws_event.payload.value);
       } else if (ws_event.type == "update_dungeon") {
         updateDungeon(ws_event.payload.list_dungeon);
+      } else if (ws_event.type == "update_island") {
+        updateIsland(ws_event.payload.list_island);
+      } else if (ws_event.type == "update_total_harvest_by_date") {
+        updateIslandWidget(
+          ws_event.payload.crops,
+          ws_event.payload.animals,
+          ws_event.payload.date
+        );
       }
     }
   }, [lastMessage]);
@@ -101,6 +116,10 @@ const Init = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
     sendMessage({
       type: "refresh_dungeon_list",
+      payload: { value: true },
+    });
+    sendMessage({
+      type: "refresh_island_list",
       payload: { value: true },
     });
   }, []);

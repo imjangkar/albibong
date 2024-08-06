@@ -8,6 +8,7 @@ log/
 pcap/
 .vscode
 src/*.db
+*.db
 
 ### macOS ###
 # General
