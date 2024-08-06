@@ -83,7 +83,7 @@ class WorldDataUtils:
             WorldDataUtils.start_current_dungeon(
                 world_data, type=check_map.type, name=check_map.name
             )
-        elif "DUNGEON" in map_type_splitted or "HELLGATE" in map_type_splitted:
+        elif "DUNGEON" in map_type_splitted:
             WorldDataUtils.start_current_dungeon(
                 world_data,
                 type=check_map.type,
