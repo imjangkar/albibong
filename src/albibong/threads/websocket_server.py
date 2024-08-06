@@ -3,18 +3,16 @@ import json
 import os
 import queue
 import threading
-from datetime import timedelta
+from datetime import datetime, timedelta
 
 import websockets
 
 from albibong.classes.dungeon import Dungeon
+from albibong.classes.location import Island
 from albibong.classes.logger import Logger
 
 logger = Logger(__name__, stdout=True, log_to_file=False)
 logger_file = Logger(__name__)
-
-home_dir = os.path.expanduser("~")
-FILENAME = f"{home_dir}/Albibong/list_dungeon.json"
 
 
 class WebsocketServer(threading.Thread):
@@ -32,7 +30,6 @@ class WebsocketServer(threading.Thread):
         try:
             world_data = get_world_data()
             me = world_data.me
-            # if me.id != None:
             event_init_world = {
                 "type": "init_world",
                 "payload": {
@@ -57,17 +54,24 @@ class WebsocketServer(threading.Thread):
                     },
                 },
             }
-            # logger.info(f"initializing character: {event}")
             await websocket.send(json.dumps(event_init_world))
             event_init_dungeon_list = {
                 "type": "update_dungeon",
                 "payload": {"list_dungeon": Dungeon.get_all_dungeon()},
             }
             await websocket.send(json.dumps(event_init_dungeon_list))
-
+            event_init_island_list = {
+                "type": "update_island",
+                "payload": {"list_island": Island.get_all_island()},
+            }
+            await websocket.send(json.dumps(event_init_island_list))
+            total_harvest_reply = {
+                "type": "update_total_harvest_by_date",
+                "payload": Island.get_total_harvest_by_date(),
+            }
+            await websocket.send(json.dumps(total_harvest_reply))
             async for message in websocket:
                 event = json.loads(message)
-                # print(event)
                 if event["type"] == "update_is_dps_meter_running":
                     world_data.is_dps_meter_running = event["payload"]["value"]
                     reply = {
@@ -84,7 +88,7 @@ class WebsocketServer(threading.Thread):
                         char.healing_dealt = 0
                         char.total_combat_duration = timedelta(0, 0)
                     reply = {
-                        "type": "update_dps",
+                        "type": "update_damage_meter",
                         "payload": {
                             "party_members": world_data.serialize_party_members()
                         },
@@ -148,6 +152,27 @@ class WebsocketServer(threading.Thread):
                         "payload": {"list_dungeon": Dungeon.get_all_dungeon()},
                     }
                     await websocket.send(json.dumps(reply))
+                elif event["type"] == "refresh_island_list":
+                    refresh_island_reply = {
+                        "type": "update_island",
+                        "payload": {"list_island": Island.get_all_island()},
+                    }
+                    total_harvest_reply = {
+                        "type": "update_total_harvest_by_date",
+                        "payload": Island.get_total_harvest_by_date(),
+                    }
+                    await websocket.send(json.dumps(refresh_island_reply))
+                    await websocket.send(json.dumps(total_harvest_reply))
+                elif event["type"] == "update_total_harvested_date_range":
+                    date = event["payload"]["date"]
+                    format = "%Y-%m-%d"
+                    total_harvest_reply = {
+                        "type": "update_total_harvest_by_date",
+                        "payload": Island.get_total_harvest_by_date(
+                            date=datetime.strptime(date, format)
+                        ),
+                    }
+                    await websocket.send(json.dumps(total_harvest_reply))
 
             event = {}
             send_event(event)

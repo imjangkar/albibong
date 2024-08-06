@@ -1,24 +1,63 @@
 import json
 import os
-import uuid
 from collections import deque
+from datetime import datetime
 
 from albibong.classes.character import Character
 from albibong.classes.dungeon import Dungeon
-from albibong.classes.location import Location
+from albibong.classes.location import Island, Location
 from albibong.classes.utils import Utils
 from albibong.classes.world_data import WorldData
 from albibong.threads.websocket_server import send_event
 
-FILENAME = os.path.join(os.path.expanduser("~"), "Albibong/list_dungeon.json")
-os.makedirs(os.path.dirname(FILENAME), exist_ok=True)
+LIST_DUNGEON = os.path.join(os.path.expanduser("~"), "Albibong/list_dungeon.json")
+os.makedirs(os.path.dirname(LIST_DUNGEON), exist_ok=True)
+LIST_ISLAND = os.path.join(os.path.expanduser("~"), "Albibong/list_island.json")
+os.makedirs(os.path.dirname(LIST_ISLAND), exist_ok=True)
 
 
 class WorldDataUtils:
 
+    def save_current_island(current_map: Island):
+        current_map.save(force_insert=True)
+        WorldDataUtils.ws_update_total_harvest_by_date(
+            Island.get_total_harvest_by_date()
+        )
+        WorldDataUtils.ws_update_island(Island.get_all_island())
+
+    def set_island_status(current_island: Island, parameters):
+        check_map = (
+            Location.get_location_from_code(parameters[1])
+            if 1 in parameters
+            else Location.get_location_from_code(parameters[0])
+        )
+        check_map_name = (
+            f"{parameters[2]}'s {check_map.name}" if 2 in parameters else check_map.name
+        )
+        if current_island.name != check_map_name:
+            if current_island.crops != {} or current_island.animals != {}:
+                WorldDataUtils.save_current_island(current_island)
+
+    def ws_update_total_harvest_by_date(payload):
+        event = {
+            "type": "update_total_harvest_by_date",
+            "payload": payload,
+        }
+        send_event(event)
+
+    def ws_update_island(list_island: list):
+        event = {
+            "type": "update_island",
+            "payload": {"list_island": list_island},
+        }
+        send_event(event)
+
     def end_current_dungeon(world_data: WorldData):
         if world_data.current_dungeon:
             world_data.current_dungeon.set_end_time()
+            world_data.current_dungeon.update_meter(
+                world_data.serialize_party_members()
+            )
             world_data.current_dungeon.save(force_insert=True)
             WorldDataUtils.ws_update_dungeon(Dungeon.get_all_dungeon())
             world_data.current_dungeon = None
@@ -44,7 +83,7 @@ class WorldDataUtils:
             WorldDataUtils.start_current_dungeon(
                 world_data, type=check_map.type, name=check_map.name
             )
-        elif "DUNGEON" in map_type_splitted:
+        elif "DUNGEON" in map_type_splitted or "HELLGATE" in map_type_splitted:
             WorldDataUtils.start_current_dungeon(
                 world_data,
                 type=check_map.type,
@@ -90,11 +129,27 @@ class WorldDataUtils:
         else:
             char.update_heal_dealt(nominal)
 
-        WorldDataUtils.ws_update_damage_heal(world_data)
+        WorldDataUtils.ws_update_damage_meter(world_data)
 
-    def ws_update_damage_heal(world_data: WorldData):
+    def ws_update_damage_meter(world_data: WorldData):
         event = {
-            "type": "update_dps",
+            "type": "update_damage_meter",
             "payload": {"party_members": world_data.serialize_party_members()},
+        }
+        send_event(event)
+
+    def ws_update_location(world_data: WorldData):
+        event = {
+            "type": "update_location",
+            "payload": {
+                "map": (
+                    world_data.current_map.name if world_data.current_map else "None"
+                ),
+                "dungeon": (
+                    world_data.current_dungeon.name
+                    if world_data.current_dungeon
+                    else "None"
+                ),
+            },
         }
         send_event(event)

@@ -1,9 +1,16 @@
 import json
 import os
 
-itemsJsonPath = os.path.join(os.path.dirname(__file__), "../resources/items.json")
-with open(itemsJsonPath) as json_file:
-    item_data = json.load(json_file)
+itemsByIdJsonPath = os.path.join(
+    os.path.dirname(__file__), "../resources/items_by_id.json"
+)
+itemsByUniqueNameJsonPath = os.path.join(
+    os.path.dirname(__file__), "../resources/items_by_unique_name.json"
+)
+with open(itemsByIdJsonPath) as json_file:
+    items_by_id = json.load(json_file)
+with open(itemsByUniqueNameJsonPath) as json_file:
+    items_by_unique_name = json.load(json_file)
 
 
 class Item:
@@ -17,6 +24,7 @@ class Item:
             if self.unique_name != "None"
             else "/No Equipment.png"
         )
+        self.quantity = 0
 
     @staticmethod
     def serialize(item):
@@ -25,6 +33,7 @@ class Item:
             "name": item.name,
             "unique_name": item.unique_name,
             "image": item.image,
+            "quantity": item.quantity,
         }
 
     @staticmethod
@@ -36,6 +45,12 @@ class Item:
 
     @classmethod
     def get_item_from_code(cls, code: str):
-        item = item_data[code]
+        item = items_by_id[code]
+
+        return cls(id=item["id"], name=item["name"], unique_name=item["unique_name"])
+
+    @classmethod
+    def get_item_from_unique_name(cls, unique_name: str):
+        item = items_by_unique_name[unique_name]
 
         return cls(id=item["id"], name=item["name"], unique_name=item["unique_name"])
