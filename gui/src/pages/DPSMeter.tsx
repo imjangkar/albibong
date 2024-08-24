@@ -3,17 +3,17 @@ import { useContext, useRef, useState } from "react";
 import styles from "./DPSMeter.module.css";
 import dungeon from "./DungeonTracker.module.css";
 
-import app from "../App.module.css";
-import Checkbox from "../components/Checkbox";
-import { WorldContext } from "../providers/WorldProvider";
-import { WebsocketContext } from "../providers/WebsocketProvider";
-import { Alert, Button, Collapse, Typography } from "@mui/material";
 import {
+  ContentCopy,
   FiberManualRecord,
   Pause,
-  ContentCopy,
   RestartAlt,
 } from "@mui/icons-material";
+import { Alert, Button, Collapse, Typography } from "@mui/material";
+import app from "../App.module.css";
+import Checkbox from "../components/Checkbox";
+import { WebsocketContext } from "../providers/WebsocketProvider";
+import { WorldContext } from "../providers/WorldProvider";
 
 import { theme } from "../theme";
 
@@ -139,6 +139,14 @@ const DPSMeter = () => {
           <div className={app.stats}>
             <img src="re_spec.png" width={"24px"} />
             <Typography>{formatter(Math.round(me.re_spec))}</Typography>
+          </div>
+          <div className={app.stats}>
+            <img src="might.png" width={"24px"} />
+            <Typography>{formatter(Math.round(me.might))}</Typography>
+          </div>
+          <div className={app.stats}>
+            <img src="favor.png" width={"24px"} />
+            <Typography>{formatter(Math.round(me.favor))}</Typography>
           </div>
         </div>
         <Button

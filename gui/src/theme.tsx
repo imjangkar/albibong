@@ -35,6 +35,9 @@ export const theme = createTheme({
     body1: {
       fontSize: "1rem",
     },
+    body2: {
+      fontSize: "0.8rem",
+    },
   },
   components: {
     MuiInput: {

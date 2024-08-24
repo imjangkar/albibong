@@ -17,6 +17,20 @@
   font-weight: bold;
 }
 
+.stats {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 0.5rem;
+}
+
+.statRow {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 3rem;
+}
+
 .stickToTop {
   z-index: 10;
 

@@ -83,20 +83,63 @@ const DungeonCard = ({ dungeon }: DungeonCardProps) => {
           onChange={(e) => setTier(e.target.value)}
         />
       </div>
-      <div className={app.options}>
-        <div className={app.stats}>
+      <div className={styles.statRow}>
+        <div className={styles.stats}>
           <img src="fame.png" width={"24px"} />
-          <Typography>{formatter(Math.round(dungeon.fame))}</Typography>
+          <div>
+            <Typography fontWeight={"bold"}>
+              {formatter(Math.round(dungeon.fame))}
+            </Typography>
+            <Typography variant="body2">
+              {formatter(Math.round(dungeon.fame_per_hour))}/hr
+            </Typography>
+          </div>
         </div>
-        <div className={app.stats}>
+        <div className={styles.stats}>
           <img src="silver.png" width={"24px"} />
-          <Typography>{formatter(Math.round(dungeon.silver))}</Typography>
+          <div>
+            <Typography fontWeight={"bold"}>
+              {formatter(Math.round(dungeon.silver))}
+            </Typography>
+            <Typography variant="body2">
+              {formatter(Math.round(dungeon.silver_per_hour))}/hr
+            </Typography>
+          </div>{" "}
         </div>
-        <div className={app.stats}>
+        <div className={styles.stats}>
           <img src="re_spec.png" width={"24px"} />
-          <Typography>{formatter(Math.round(dungeon.re_spec))}</Typography>
+          <div>
+            <Typography fontWeight={"bold"}>
+              {formatter(Math.round(dungeon.re_spec))}
+            </Typography>
+            <Typography variant="body2">
+              {formatter(Math.round(dungeon.re_spec_per_hour))}/hr
+            </Typography>
+          </div>{" "}
         </div>
-        <div className={app.stats}>
+        <div className={styles.stats}>
+          <img src="might.png" width={"24px"} />
+          <div>
+            <Typography fontWeight={"bold"}>
+              {formatter(Math.round(dungeon.might))}
+            </Typography>
+            <Typography variant="body2">
+              {formatter(Math.round(dungeon.might_per_hour))}/hr
+            </Typography>
+          </div>{" "}
+        </div>
+        <div className={styles.stats}>
+          <img src="favor.png" width={"24px"} />
+          <div>
+            <Typography fontWeight={"bold"}>
+              {formatter(Math.round(dungeon.favor))}
+            </Typography>
+            <Typography variant="body2">
+              {formatter(Math.round(dungeon.favor_per_hour))}/hr
+            </Typography>
+          </div>{" "}
+        </div>
+        <div className={styles.stats}>
           <AccessTimeIcon />
           {dungeon.time_elapsed}
         </div>

@@ -5,6 +5,8 @@ type PlayerCharacter = {
   fame: number;
   re_spec: number;
   silver: number;
+  might: number;
+  favor: number;
   weapon: string;
 };
 
@@ -33,8 +35,15 @@ export type Dungeon = {
   name: string;
   tier: number;
   fame: number;
+  fame_per_hour: number;
   silver: number;
+  silver_per_hour: number;
   re_spec: number;
+  re_spec_per_hour: number;
+  might: number;
+  might_per_hour: number;
+  favor: number;
+  favor_per_hour: number;
   date_time: string;
   time_elapsed: string;
   meter: PartyMember[];
@@ -82,6 +91,11 @@ type WorldContextData = {
   updateHealthCheck: (healthCheck: HealthCheck) => void;
   updateReSpec: (re_spec_gained: number) => void;
   updateSilver: (username: string, silver_gained: number) => void;
+  updateMightAndFavor: (
+    username: string,
+    might_gained: number,
+    favor_gained: number
+  ) => void;
   updateLocation: (map: string, dungeon: string) => void;
   updateIsDPSMeterRunning: (value: boolean) => void;
   updateParty: (party: PartyMember[]) => void;
@@ -97,6 +111,8 @@ export const WorldContext = React.createContext<WorldContextData>({
     re_spec: 0,
     silver: 0,
     weapon: "Waiting for backend",
+    might: 0,
+    favor: 0,
   },
   world: {
     map: "None",
@@ -123,6 +139,7 @@ export const WorldContext = React.createContext<WorldContextData>({
   updateFame: () => {},
   updateReSpec: () => {},
   updateSilver: () => {},
+  updateMightAndFavor: () => {},
   updateLocation: () => {},
   updateIsDPSMeterRunning: () => {},
   updateParty: () => {},
@@ -142,6 +159,8 @@ const WorldProvider = ({ children }: WorldProviderProps) => {
     re_spec: 0,
     silver: 0,
     weapon: "Waiting for backend",
+    might: 0,
+    favor: 0,
   });
 
   const [world, setWorld] = useState<World>({
@@ -172,6 +191,8 @@ const WorldProvider = ({ children }: WorldProviderProps) => {
       fame: me.fame,
       re_spec: me.re_spec,
       silver: me.silver,
+      might: me.might,
+      favor: me.favor,
       weapon: me.weapon,
     });
     setWorld({
@@ -190,6 +211,8 @@ const WorldProvider = ({ children }: WorldProviderProps) => {
       fame: me.fame,
       re_spec: me.re_spec,
       silver: me.silver,
+      might: me.might,
+      favor: me.favor,
       weapon: me.weapon,
     });
   };
@@ -213,6 +236,19 @@ const WorldProvider = ({ children }: WorldProviderProps) => {
       setMe((prev) => ({
         ...prev,
         silver: silver_gained,
+      }));
+    }
+  };
+  const updateMightAndFavor = (
+    username: string,
+    might_gained: number,
+    favor_gained: number
+  ) => {
+    if (username == me.username) {
+      setMe((prev) => ({
+        ...prev,
+        might: might_gained,
+        favor: favor_gained,
       }));
     }
   };
@@ -289,6 +325,7 @@ const WorldProvider = ({ children }: WorldProviderProps) => {
         updateFame,
         updateReSpec,
         updateSilver,
+        updateMightAndFavor,
         updateLocation,
         updateIsDPSMeterRunning,
         updateParty,
