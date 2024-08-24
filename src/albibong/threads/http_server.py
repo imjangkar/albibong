@@ -45,6 +45,7 @@ class HttpServerThread(threading.Thread):
     def run(self):
         # Create an object of the above class
         handler_object = HttpRequestHandler
+        handler_object.extensions_map.update({".js": "application/javascript"})
 
         self.http_server = socketserver.TCPServer(("", self.port), handler_object)
         self.http_server.allow_reuse_address = True
