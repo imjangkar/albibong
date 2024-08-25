@@ -64,15 +64,22 @@ export type World = {
   list_island: Island[];
 };
 
+type HealthCheck = {
+  status: string;
+  message: string;
+};
+
 type WorldContextData = {
   me: PlayerCharacter;
   world: World;
   islandWidget: IslandWidget;
   dungeonFilter: string[];
+  healthCheck: HealthCheck;
   setWorld: any;
   initWorld: (me: PlayerCharacter, world: World) => void;
   initPlayer: (me: PlayerCharacter) => void;
   updateFame: (fame_gained: number) => void;
+  updateHealthCheck: (healthCheck: HealthCheck) => void;
   updateReSpec: (re_spec_gained: number) => void;
   updateSilver: (username: string, silver_gained: number) => void;
   updateLocation: (map: string, dungeon: string) => void;
@@ -85,11 +92,11 @@ type WorldContextData = {
 
 export const WorldContext = React.createContext<WorldContextData>({
   me: {
-    username: "Not initialized",
+    username: "Waiting for backend",
     fame: 0,
     re_spec: 0,
     silver: 0,
-    weapon: "Not initialized",
+    weapon: "Waiting for backend",
   },
   world: {
     map: "None",
@@ -105,9 +112,14 @@ export const WorldContext = React.createContext<WorldContextData>({
     date: "2000-1-1",
   },
   dungeonFilter: [],
+  healthCheck: {
+    status: "failed",
+    message: "Waiting for backend",
+  },
   setWorld: () => {},
   initWorld: () => {},
   initPlayer: () => {},
+  updateHealthCheck: () => {},
   updateFame: () => {},
   updateReSpec: () => {},
   updateSilver: () => {},
@@ -125,11 +137,11 @@ type WorldProviderProps = {
 
 const WorldProvider = ({ children }: WorldProviderProps) => {
   const [me, setMe] = useState<PlayerCharacter>({
-    username: "Not initialized",
+    username: "Waiting for backend",
     fame: 0,
     re_spec: 0,
     silver: 0,
-    weapon: "Not initialized",
+    weapon: "Waiting for backend",
   });
 
   const [world, setWorld] = useState<World>({
@@ -148,6 +160,11 @@ const WorldProvider = ({ children }: WorldProviderProps) => {
   });
 
   const [dungeonFilter, setDungeonFilter] = useState<string[]>(["ALL"]);
+
+  const [healthCheck, setHealthCheck] = useState<HealthCheck>({
+    status: "failed",
+    message: "System Booting Up",
+  });
 
   const initWorld = (me: PlayerCharacter, world: World) => {
     setMe({
@@ -253,6 +270,10 @@ const WorldProvider = ({ children }: WorldProviderProps) => {
     setDungeonFilter([...dungeonFilter]);
   };
 
+  const updateHealthCheck = (payload: HealthCheck) => {
+    setHealthCheck(payload);
+  };
+
   return (
     <WorldContext.Provider
       value={{
@@ -260,9 +281,11 @@ const WorldProvider = ({ children }: WorldProviderProps) => {
         world,
         islandWidget,
         dungeonFilter,
+        healthCheck,
         setWorld,
         initWorld,
         initPlayer,
+        updateHealthCheck,
         updateFame,
         updateReSpec,
         updateSilver,

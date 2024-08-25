@@ -69,6 +69,7 @@ const Init = ({ children }: { children: React.ReactNode }) => {
   const {
     initPlayer,
     initWorld,
+    updateHealthCheck,
     updateFame,
     updateReSpec,
     updateSilver,
@@ -87,6 +88,8 @@ const Init = ({ children }: { children: React.ReactNode }) => {
         initWorld(ws_event.payload.me, ws_event.payload.world);
       } else if (ws_event.type == "init_character") {
         initPlayer(ws_event.payload);
+      } else if (ws_event.type == "health_check") {
+        updateHealthCheck(ws_event.payload);
       } else if (ws_event.type == "update_fame") {
         updateFame(ws_event.payload.fame_gained);
       } else if (ws_event.type == "update_re_spec") {

@@ -24,7 +24,10 @@ import {
   ChevronRight,
   Speed,
 } from "@mui/icons-material";
+import classNames from "classnames";
 import { WorldContext } from "../providers/WorldProvider";
+
+import styles from "./Navigation.module.css";
 
 const drawerWidth = 240;
 
@@ -117,7 +120,7 @@ const Navigation = () => {
   const navigate = useNavigate();
 
   const [open, setOpen] = React.useState(false);
-  const { me, world } = useContext(WorldContext);
+  const { me, world, healthCheck } = useContext(WorldContext);
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -127,19 +130,31 @@ const Navigation = () => {
     setOpen(false);
   };
 
+  const healthCheckIndicator = classNames({
+    [styles.healthCheckDiv]: true,
+    [styles.passed]: healthCheck.status == "passed",
+    [styles.failed]: healthCheck.status == "failed",
+  });
+
   return (
     <>
       <AppBar position="fixed" open={open} color="secondary">
-        <Toolbar style={{ display: "flex", gap: "1rem" }}>
-          <Typography>
-            USERNAME: <b>{me.username}</b>
-          </Typography>
-          <Typography>
-            CURRENT MAP: <b>{world.map}</b>
-          </Typography>
-          <Typography>
-            CURRENT DUNGEON: <b>{world.dungeon}</b>
-          </Typography>
+        <Toolbar className={styles.toolbar}>
+          <div className={styles.data}>
+            <Typography>
+              USERNAME: <b>{me.username}</b>
+            </Typography>
+            <Typography>
+              CURRENT MAP: <b>{world.map}</b>
+            </Typography>
+            <Typography>
+              CURRENT DUNGEON: <b>{world.dungeon}</b>
+            </Typography>
+          </div>
+          <div className={styles.data}>
+            <div className={healthCheckIndicator} />
+            {healthCheck.status == "failed" && <p>{healthCheck.message}</p>}
+          </div>
         </Toolbar>
       </AppBar>
       <Drawer variant="permanent" open={open}>
