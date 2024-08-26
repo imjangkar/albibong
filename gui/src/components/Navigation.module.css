@@ -1,0 +1,23 @@
+.passed {
+  background-color: green;
+}
+.failed {
+  background-color: red;
+}
+.healthCheckDiv {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 1rem;
+  /* background-color: white; */
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.data {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}

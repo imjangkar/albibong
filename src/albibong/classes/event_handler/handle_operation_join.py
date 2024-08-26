@@ -7,20 +7,20 @@ from albibong.threads.websocket_server import send_event
 
 
 def handle_operation_join(world_data: WorldData, parameters):
-    # update relative id if character has initialized before
-    if world_data.me.username != "not initialized":
-        WorldDataUtils.convert_id_to_name(
-            world_data,
-            old_id=world_data.me.id,
-            new_id=parameters[0],
-            char=world_data.me,
-        )
-
     # set my character
-    world_data.me.uuid = Utils.convert_int_arr_to_uuid(parameters[1])
     world_data.me.username = parameters[2]
+    world_data.me.uuid = Utils.convert_int_arr_to_uuid(parameters[1])
     world_data.me.guild = parameters[57] if 57 in parameters else ""
     world_data.me.alliance = parameters[77] if 77 in parameters else ""
+
+    # update relative id if character has initialized before
+    WorldDataUtils.convert_id_to_name(
+        world_data,
+        old_id=world_data.me.id,
+        new_id=parameters[0],
+        char=world_data.me,
+    )
+
     if world_data.me.id in world_data.change_equipment_log:
         world_data.me.update_equipment(
             world_data.change_equipment_log[world_data.me.id]

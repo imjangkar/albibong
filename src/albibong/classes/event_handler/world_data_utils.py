@@ -10,11 +10,6 @@ from albibong.classes.utils import Utils
 from albibong.classes.world_data import WorldData
 from albibong.threads.websocket_server import send_event
 
-LIST_DUNGEON = os.path.join(os.path.expanduser("~"), "Albibong/list_dungeon.json")
-os.makedirs(os.path.dirname(LIST_DUNGEON), exist_ok=True)
-LIST_ISLAND = os.path.join(os.path.expanduser("~"), "Albibong/list_island.json")
-os.makedirs(os.path.dirname(LIST_ISLAND), exist_ok=True)
-
 
 class WorldDataUtils:
 

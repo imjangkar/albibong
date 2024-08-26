@@ -43,12 +43,12 @@ class WebsocketServer(threading.Thread):
                         "map": (
                             world_data.current_map.name
                             if world_data.current_map
-                            else "not initialized"
+                            else "zone in to other map to initialize"
                         ),
                         "dungeon": (
                             world_data.current_dungeon.name
                             if world_data.current_dungeon
-                            else "not initialized"
+                            else "zone in to other map to initialize"
                         ),
                         "isDPSMeterRunning": world_data.is_dps_meter_running,
                     },

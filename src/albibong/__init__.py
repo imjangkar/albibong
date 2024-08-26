@@ -4,7 +4,6 @@ import queue
 import random
 import socket
 import sys
-import uuid
 from datetime import datetime, timedelta
 from pathlib import Path
 from time import sleep
@@ -16,6 +15,7 @@ from albibong.classes.dungeon import Dungeon
 from albibong.classes.location import Island
 from albibong.classes.logger import Logger
 from albibong.classes.packet_handler import PacketHandler
+from albibong.classes.utils import Utils
 from albibong.models.models import db
 from albibong.threads.http_server import HttpServerThread
 from albibong.threads.packet_handler_thread import PacketHandlerThread
@@ -37,11 +37,13 @@ def read_pcap(path):
         packet_handler.handle(packet)
 
 
-def sniff(useWebview):
+def sniff(useWebview, is_debug=False):
     _sentinel = object()
     packet_queue = queue.Queue()
 
-    p = SnifferThread(name="sniffer", out_queue=packet_queue, sentinel=_sentinel)
+    p = SnifferThread(
+        name="sniffer", out_queue=packet_queue, sentinel=_sentinel, is_debug=is_debug
+    )
 
     c = PacketHandlerThread(
         name="packet_handler",
@@ -139,9 +141,12 @@ def sniff(useWebview):
 
 def main(useWebview=True):
     if len(sys.argv) > 1:
-        ws_server = get_ws_server()
-        ws_server.start()
-
-        read_pcap(sys.argv[1])
+        if sys.argv[-1] == "--debug":
+            Utils.get_user_specifications("pip")
+            sniff(useWebview, is_debug=True)
+        else:
+            ws_server = get_ws_server()
+            ws_server.start()
+            read_pcap(sys.argv[1])
     else:
         sniff(useWebview)
