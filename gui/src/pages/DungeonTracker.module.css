@@ -41,3 +41,11 @@
   width: 100%;
   padding: 24px 0;
 }
+
+@media screen and (max-width: 1000px) {
+  .statRow {
+    width: 100%;
+    justify-content: space-between;
+    gap: 0;
+  }
+}

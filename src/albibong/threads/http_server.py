@@ -55,6 +55,9 @@ class HttpServerThread(threading.Thread):
         server_thread.daemon = True
         server_thread.start()
         logger.info(f"Thread {self.name} started at port {self.port}")
+        logger.info(
+            f"\n==\n\nYou can access the GUI using a browser using below url\n\nhttp://localhost:{self.port}/\n\n==\n\n"
+        )
 
     def stop(self):
         self.http_server.shutdown()
