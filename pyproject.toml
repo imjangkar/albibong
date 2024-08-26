@@ -20,7 +20,7 @@ albibong = "albibong:main"
 
 [project]
 name = "albibong"
-version = "1.1.0"
+version = "1.1.1"
 authors = [
   { name="imjangkar", email="imjangkar@gmail.com" },
 ]
@@ -36,6 +36,7 @@ dependencies = [
   "websockets==12.0",
   "pywebview==5.1",
   "peewee==3.17.6",
+  "peewee-migrate==1.13.0",
 ]
 
 [project.urls]

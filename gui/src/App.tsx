@@ -73,6 +73,7 @@ const Init = ({ children }: { children: React.ReactNode }) => {
     updateFame,
     updateReSpec,
     updateSilver,
+    updateMightAndFavor,
     updateLocation,
     updateIsDPSMeterRunning,
     updateParty,
@@ -96,6 +97,12 @@ const Init = ({ children }: { children: React.ReactNode }) => {
         updateReSpec(ws_event.payload.re_spec_gained);
       } else if (ws_event.type == "update_silver") {
         updateSilver(ws_event.payload.username, ws_event.payload.silver_gained);
+      } else if (ws_event.type == "update_might_and_favor") {
+        updateMightAndFavor(
+          ws_event.payload.username,
+          ws_event.payload.might_gained,
+          ws_event.payload.favor_gained
+        );
       } else if (ws_event.type == "update_location") {
         updateLocation(ws_event.payload.map, ws_event.payload.dungeon);
       } else if (ws_event.type == "update_damage_meter") {

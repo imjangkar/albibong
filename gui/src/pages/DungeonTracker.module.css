@@ -17,6 +17,20 @@
   font-weight: bold;
 }
 
+.stats {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 0.5rem;
+}
+
+.statRow {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 3rem;
+}
+
 .stickToTop {
   z-index: 10;
 
@@ -26,4 +40,12 @@
 
   width: 100%;
   padding: 24px 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .statRow {
+    width: 100%;
+    justify-content: space-between;
+    gap: 0;
+  }
 }

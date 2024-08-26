@@ -8,6 +8,9 @@ from albibong.classes.event_handler.handle_event_health import (
 from albibong.classes.event_handler.handle_event_in_combat_state_update import (
     handle_event_in_combat_state_update,
 )
+from albibong.classes.event_handler.handle_event_might_and_favor_received_event import (
+    handle_event_might_and_favor_received_event,
+)
 from albibong.classes.event_handler.handle_event_new_character import (
     handle_event_new_character,
 )
@@ -29,16 +32,15 @@ from albibong.classes.event_handler.handle_event_update_re_spec_points import (
 from albibong.classes.event_handler.handle_operation_change_cluster import (
     handle_operation_change_cluster,
 )
-from albibong.classes.event_handler.handle_operation_join import handle_operation_join
 from albibong.classes.event_handler.handle_operation_farmable_harvest import (
-    handle_operation_farmable_harvest,
     handle_operation_farmable_finish_grown_item,
+    handle_operation_farmable_harvest,
 )
+from albibong.classes.event_handler.handle_operation_join import handle_operation_join
 from albibong.classes.event_handler.handle_operation_move import handle_operation_move
 from albibong.classes.world_data import WorldData
 from albibong.resources.EventCode import EventCode
 from albibong.resources.OperationCode import OperationCode
-
 
 EVENT_TYPE_PARAMETER = 252
 REQUEST_TYPE_PARAMETER = 253
@@ -63,6 +65,10 @@ class EventHandler:
         self.event_handler[EventCode.UPDATE_RE_SPEC_POINTS.value] = (
             handle_event_update_re_spec_points
         )
+        self.event_handler[EventCode.MIGHT_AND_FAVOR_RECEIVED_EVENT.value] = (
+            handle_event_might_and_favor_received_event
+        )
+
         self.event_handler[EventCode.OTHER_GRABBED_LOOT.value] = (
             handle_event_other_grabbed_loot
         )

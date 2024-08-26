@@ -1,4 +1,3 @@
-from albibong.classes.dungeon import Dungeon
 from albibong.classes.event_handler.world_data_utils import WorldDataUtils
 from albibong.classes.location import Location
 from albibong.classes.utils import Utils
@@ -55,6 +54,8 @@ def ws_init_character(world_data: WorldData):
             "fame": world_data.me.fame_gained,
             "re_spec": world_data.me.re_spec_gained,
             "silver": world_data.me.silver_gained,
+            "might": world_data.me.might_gained,
+            "favor": world_data.me.favor_gained,
             "weapon": world_data.me.equipment[0].image,
         },
     }

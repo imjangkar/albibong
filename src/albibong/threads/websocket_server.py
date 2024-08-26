@@ -1,6 +1,5 @@
 import asyncio
 import json
-import os
 import queue
 import threading
 from datetime import datetime, timedelta
@@ -38,6 +37,8 @@ class WebsocketServer(threading.Thread):
                         "fame": me.fame_gained,
                         "re_spec": me.re_spec_gained,
                         "silver": me.silver_gained,
+                        "might": me.might_gained,
+                        "favor": me.favor_gained,
                     },
                     "world": {
                         "map": (
@@ -98,6 +99,9 @@ class WebsocketServer(threading.Thread):
                     world_data.me.fame_gained = 0
                     world_data.me.re_spec_gained = 0
                     world_data.me.silver_gained = 0
+                    world_data.me.might_gained = 0
+                    world_data.me.favor_gained = 0
+
                     fame = {
                         "type": "update_fame",
                         "payload": {
@@ -119,9 +123,19 @@ class WebsocketServer(threading.Thread):
                             "silver_gained": world_data.me.silver_gained,
                         },
                     }
+                    might_and_favor = {
+                        "type": "update_might_and_favor",
+                        "payload": {
+                            "username": world_data.me.username,
+                            "favor_gained": world_data.me.favor_gained,
+                            "might_gained": world_data.me.might_gained,
+                        },
+                    }
                     await websocket.send(json.dumps(fame))
                     await websocket.send(json.dumps(re_spec))
                     await websocket.send(json.dumps(silver))
+                    await websocket.send(json.dumps(might_and_favor))
+
                 elif event["type"] == "refresh_dungeon_list":
                     reply = {
                         "type": "update_dungeon",
