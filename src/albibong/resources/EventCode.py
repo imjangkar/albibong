@@ -2,6 +2,7 @@ from enum import Enum
 
 
 class EventCode(Enum):
+
     LEAVE = 1
     JOIN_FINISHED = 2
     MOVE = 3
@@ -591,3 +592,4 @@ class EventCode(Enum):
     BOT_COMMAND = 587
     JOURNAL_ACHIEVEMENT_PROGRESS_UPDATE = 588
     JOURNAL_CLAIMABLE_REWARD_UPDATE = 589
+    KEY_SYNC = 590
