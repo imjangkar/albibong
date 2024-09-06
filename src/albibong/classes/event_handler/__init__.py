@@ -33,7 +33,7 @@ from albibong.classes.event_handler.handle_operation_change_cluster import (
     handle_operation_change_cluster,
 )
 from albibong.classes.event_handler.handle_operation_farmable_harvest import (
-    handle_operation_farmable_finish_grown_item,
+    handle_operation_farmable_get_product,
     handle_operation_farmable_harvest,
 )
 from albibong.classes.event_handler.handle_operation_join import handle_operation_join
@@ -94,8 +94,8 @@ class EventHandler:
         self.response_handler[OperationCode.CHANGE_CLUSTER.value] = (
             handle_operation_change_cluster
         )
-        self.response_handler[OperationCode.FARMABLE_FINISH_GROWN_ITEM.value] = (
-            handle_operation_farmable_finish_grown_item
+        self.response_handler[OperationCode.FARMABLE_GET_PRODUCT.value] = (
+            handle_operation_farmable_get_product
         )
         self.response_handler[OperationCode.FARMABLE_HARVEST.value] = (
             handle_operation_farmable_harvest

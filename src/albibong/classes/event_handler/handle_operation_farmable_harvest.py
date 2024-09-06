@@ -9,7 +9,7 @@ def handle_operation_farmable_harvest(world_data: WorldData, parameters):
             )
 
 
-def handle_operation_farmable_finish_grown_item(world_data: WorldData, parameters):
+def handle_operation_farmable_get_product(world_data: WorldData, parameters):
     if type(world_data.current_map).__name__ == "Island":
         for i in range(len(parameters[0])):
             world_data.current_map.add_animal(

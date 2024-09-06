@@ -6,18 +6,17 @@ from albibong.classes.world_data import WorldData
 
 
 def handle_event_new_character(world_data: WorldData, parameters):
-
     id = parameters[0]
     uuid = parameters[7]
     username = parameters[1]
     guild = parameters[8] if 8 in parameters else ""
-    alliance = parameters[49] if 49 in parameters else ""
+    alliance = parameters[51] if 51 in parameters else ""
     coords = (
         Coords(parameters[15][0], parameters[15][1])
         if 15 in parameters
         else Coords(0, 0)
     )
-    equipments = parameters[38] if 38 in parameters else []
+    equipments = parameters[40] if 40 in parameters else []
 
     # initiate character
     if username not in world_data.characters:
