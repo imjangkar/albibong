@@ -4,6 +4,10 @@
 [![PyPI - Downloads](https://img.shields.io/pypi/dm/albibong)](https://pypi.org/project/albibong/)
 [![PyPI - Version](https://img.shields.io/pypi/v/albibong?label=pypi%20version)](https://pypi.org/project/albibong/)
 
+### Optimized for Mac
+
+❗️ Untested in Windows and Linux, I don't have those machines :( ❗️
+
 ## 🎯 Features
 
 1. Damage (and Heal) Meter
