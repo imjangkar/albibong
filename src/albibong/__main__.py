@@ -1,4 +1,7 @@
 import sys
+import os
+
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 from albibong import main
 from albibong.classes.logger import use_logger
