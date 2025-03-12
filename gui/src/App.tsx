@@ -4,6 +4,7 @@ import Navigation from "./components/Navigation";
 import DPSMeter from "./pages/DPSMeter";
 import DungeonTracker from "./pages/DungeonTracker";
 import FarmingTracker from "./pages/FarmingTracker";
+import MapRadar from "./pages/MapRadar";
 import WebsocketProvider, {
   WebsocketContext,
 } from "./providers/WebsocketProvider";
@@ -58,6 +59,10 @@ const Router = () => {
           path: "/farming-tracker",
           element: <FarmingTracker />,
         },
+        {
+          path: "/map-radar",
+          element: <MapRadar />,
+        }
       ],
     },
   ]);
@@ -80,6 +85,8 @@ const Init = ({ children }: { children: React.ReactNode }) => {
     updateDungeon,
     updateIsland,
     updateIslandWidget,
+    updateRadarPosition,
+    updateRadarWidget,
   } = useContext(WorldContext);
 
   useEffect(() => {
@@ -119,6 +126,11 @@ const Init = ({ children }: { children: React.ReactNode }) => {
           ws_event.payload.animals,
           ws_event.payload.date
         );
+      } else if (ws_event.type == "radar_update") {
+        // console.log('radar_update', ws_event.payload);
+        updateRadarWidget(ws_event.payload);
+      } else if (ws_event.type == "radar_position_update") {
+        updateRadarPosition(ws_event.payload.position.x, ws_event.payload.position.y);
       }
     }
   }, [lastMessage]);

@@ -10,6 +10,29 @@ type PlayerCharacter = {
   weapon: string;
 };
 
+export type HarvestableObject = {
+  id: number;
+  type: number;
+  tier: number;
+  location: {
+      x: number;
+      y: number;
+  };
+  enchant: number;
+  size: number;
+  unique_name: string;
+  item_type: string;
+}
+
+export type RadarWidget = {
+  harvestable_list: HarvestableObject[];
+}
+
+export type RadarPosition = {
+  x: number;
+  y: number;
+};
+
 export type PartyMember = {
   username: string;
   damage_percent: number;
@@ -85,6 +108,8 @@ type WorldContextData = {
   dungeonFilter: string[];
   healthCheck: HealthCheck;
   setWorld: any;
+  radarPosition: RadarPosition;
+  radarWidget: RadarWidget;
   initWorld: (me: PlayerCharacter, world: World) => void;
   initPlayer: (me: PlayerCharacter) => void;
   updateFame: (fame_gained: number) => void;
@@ -102,6 +127,8 @@ type WorldContextData = {
   updateDungeon: (list_dungeon: Dungeon[]) => void;
   updateIsland: (list_island: Island[]) => void;
   updateIslandWidget: (crops: Item[], animals: Item[], date: string) => void;
+  updateRadarWidget: (payload: RadarWidget) => void;
+  updateRadarPosition: (x: number, y: number) => void;
 };
 
 export const WorldContext = React.createContext<WorldContextData>({
@@ -132,6 +159,13 @@ export const WorldContext = React.createContext<WorldContextData>({
     status: "failed",
     message: "Waiting for backend",
   },
+  radarPosition: {
+    x: 0,
+    y: 0,
+  },
+  radarWidget: {
+    harvestable_list: [],
+  },
   setWorld: () => {},
   initWorld: () => {},
   initPlayer: () => {},
@@ -146,6 +180,8 @@ export const WorldContext = React.createContext<WorldContextData>({
   updateDungeon: () => {},
   updateIsland: () => {},
   updateIslandWidget: () => {},
+  updateRadarPosition: () => {},
+  updateRadarWidget: () => {},
 });
 
 type WorldProviderProps = {
@@ -161,6 +197,15 @@ const WorldProvider = ({ children }: WorldProviderProps) => {
     weapon: "Waiting for backend",
     might: 0,
     favor: 0,
+  });
+
+  const [radarPosition, setRadarPosition] = useState<RadarPosition>({
+    x: 0,
+    y: 0,
+  });
+
+  const [radarWidget, setRadarWidget] = useState<RadarWidget>({
+    harvestable_list: [],
   });
 
   const [world, setWorld] = useState<World>({
@@ -310,6 +355,17 @@ const WorldProvider = ({ children }: WorldProviderProps) => {
     setHealthCheck(payload);
   };
 
+  const updateRadarPosition = (x: number, y: number) => {
+    setRadarPosition({
+      x: x,
+      y: y,
+    });
+  };
+
+  const updateRadarWidget = (payload: RadarWidget) => {
+    setRadarWidget(payload);
+  };
+
   return (
     <WorldContext.Provider
       value={{
@@ -318,6 +374,8 @@ const WorldProvider = ({ children }: WorldProviderProps) => {
         islandWidget,
         dungeonFilter,
         healthCheck,
+        radarPosition,
+        radarWidget,
         setWorld,
         initWorld,
         initPlayer,
@@ -332,6 +390,8 @@ const WorldProvider = ({ children }: WorldProviderProps) => {
         updateDungeon,
         updateIsland,
         updateIslandWidget,
+        updateRadarPosition,
+        updateRadarWidget,
       }}
     >
       {children}

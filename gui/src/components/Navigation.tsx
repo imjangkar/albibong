@@ -23,6 +23,7 @@ import {
   ChevronLeft,
   ChevronRight,
   Speed,
+  Map,
 } from "@mui/icons-material";
 import classNames from "classnames";
 import { WorldContext } from "../providers/WorldProvider";
@@ -116,6 +117,11 @@ const Navigation = () => {
       url: "/farming-tracker",
       icon: <Agriculture />,
     },
+    {
+      pageName: "Map Radar",
+      url: "/map-radar",
+      icon: <Map />,
+    }
   ];
   const navigate = useNavigate();
 

@@ -5,6 +5,7 @@ from albibong.classes.coords import Coords
 from albibong.classes.dungeon import Dungeon
 from albibong.classes.item import Item
 from albibong.classes.location import Location
+from albibong.classes.radar import Radar
 
 
 class WorldData:
@@ -20,6 +21,7 @@ class WorldData:
         )
         self.current_map: Location = None
         self.current_dungeon: Dungeon = None
+        self.radar: Radar = Radar()
         self.characters: dict[str, Character] = {}
         self.char_id_to_username: dict[int, str] = {self.me.id: self.me.username}
         self.char_uuid_to_username: dict[UUID, str] = {self.me.uuid: self.me.username}

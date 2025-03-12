@@ -36,6 +36,12 @@ from albibong.classes.event_handler.handle_operation_farmable_harvest import (
     handle_operation_farmable_get_product,
     handle_operation_farmable_harvest,
 )
+from albibong.classes.event_handler.radar_event_harvestable_object import (
+    radar_event_new_harvestable_object,
+    radar_event_new_simple_harvestable_object,
+    radar_event_harvest_finished,
+)
+
 from albibong.classes.event_handler.handle_operation_join import handle_operation_join
 from albibong.classes.event_handler.handle_operation_move import handle_operation_move
 from albibong.classes.world_data import WorldData
@@ -84,6 +90,23 @@ class EventHandler:
         )
         self.event_handler[EventCode.CHARACTER_EQUIPMENT_CHANGED.value] = (
             handle_event_character_equipment_changed
+        )
+
+        # Radar Event Handler
+        self.event_handler[EventCode.NEW_HARVESTABLE_OBJECT.value] = (
+            radar_event_new_harvestable_object
+        )
+
+        self.event_handler[EventCode.HARVESTABLE_CHANGE_STATE.value] = (
+            radar_event_harvest_finished
+        )
+
+        self.event_handler[EventCode.NEW_SIMPLE_HARVESTABLE_OBJECT.value] = (
+            radar_event_new_simple_harvestable_object
+        )
+
+        self.event_handler[EventCode.NEW_SIMPLE_HARVESTABLE_OBJECT_LIST.value] = (
+            radar_event_new_simple_harvestable_object
         )
 
         # Request Handler
