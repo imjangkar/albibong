@@ -41,6 +41,17 @@ from albibong.classes.event_handler.radar_event_harvestable_object import (
     radar_event_new_simple_harvestable_object,
     radar_event_harvest_finished,
 )
+from albibong.classes.event_handler.radar_event_dungeon_object import (
+    radar_event_random_dungeon_position_info,
+    radar_event_new_random_dungeon_exists
+)
+
+from albibong.classes.event_handler.radar_event_chest_object import (
+    radar_event_new_loot_chest,
+    radar_event_new_treasure_chest,
+    radar_event_new_match_loot_chest_object
+)
+
 
 from albibong.classes.event_handler.handle_operation_join import handle_operation_join
 from albibong.classes.event_handler.handle_operation_move import handle_operation_move
@@ -93,6 +104,8 @@ class EventHandler:
         )
 
         # Radar Event Handler
+
+        ## Resources
         self.event_handler[EventCode.NEW_HARVESTABLE_OBJECT.value] = (
             radar_event_new_harvestable_object
         )
@@ -108,6 +121,30 @@ class EventHandler:
         self.event_handler[EventCode.NEW_SIMPLE_HARVESTABLE_OBJECT_LIST.value] = (
             radar_event_new_simple_harvestable_object
         )
+
+        ## Dungeons
+        self.event_handler[EventCode.RANDOM_DUNGEON_POSITION_INFO.value] = (
+            radar_event_random_dungeon_position_info
+        )
+
+        self.event_handler[EventCode.NEW_RANDOM_DUNGEON_EXIT.value] = (
+            radar_event_new_random_dungeon_exists
+        )
+
+
+        ## chest
+        self.event_handler[EventCode.NEW_LOOT_CHEST.value] = (
+            radar_event_new_loot_chest
+        )
+
+        self.event_handler[EventCode.NEW_MATCH_LOOT_CHEST_OBJECT.value] = (
+            radar_event_new_match_loot_chest_object
+        )
+
+        self.event_handler[EventCode.NEW_TREASURE_CHEST.value] = (
+            radar_event_new_treasure_chest
+        )
+
 
         # Request Handler
         self.request_handler[OperationCode.MOVE.value] = handle_operation_move

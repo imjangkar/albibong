@@ -1,5 +1,3 @@
-import { red } from "@mui/material/colors";
-
 class RadarRendering {
     static rotation = 45;
     static ResourceSize = 45;
@@ -41,17 +39,59 @@ class RadarRendering {
         ctx.font = "12px Arial";
         ctx.fillStyle = 'white';
 
-        const adjustedX = canvas.width / 2 - rX - itemSize / 2 + 10;
+        const textWidth = ctx.measureText(value).width;
+        const adjustedX = canvas.width / 2 - rX - textWidth / 2;
         const adjustedY = canvas.height / 2 - rY - itemSize / 2 - 5;
         
-        ctx.fillText(value, adjustedX, adjustedY);;
+        ctx.fillText(value, adjustedX, adjustedY);
     }
 
-    static renderCenter(ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement) {
-        ctx.fillStyle = 'green';
-        ctx.beginPath();
-        ctx.arc(canvas.width / 2, canvas.height / 2, 5, 0, 2 * Math.PI);
-        ctx.fill();
+    static renderButterfly(ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement, itemSize: number, rX: number, rY: number, enchant: number) {
+        if (enchant === 0) {
+            return;
+        }
+
+        const butterfly_map: { [key: number]: string } = {
+            1: 'butterfly_uncommon',
+            2: 'butterfly_rare',
+            3: 'butterfly_epic',
+            4: 'butterfly_legendary',
+        }
+
+         /* Render Iteam */
+         const img = new Image();
+         img.src = `/public/mapMarker/butterfly/${butterfly_map[enchant]}.png`;
+
+        const adjustedX = canvas.width / 2 - rX - itemSize / 2 + 15;
+        const adjustedY = canvas.height / 2 - rY - itemSize / 2 - 10;
+
+        
+        img.onload = () => {
+            ctx.drawImage(img, adjustedX, adjustedY, 45, 45);
+        }
+    }
+
+    static renderEnemyObject(ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement, itemSize: number, rX: number, rY: number) {
+
+         /* Render Iteam */
+         const img = new Image();
+         img.src = `/public/mapMarker/additionals/auto_attack.png`;
+
+        const adjustedX = canvas.width / 2 - rX - itemSize / 2 - 15;
+        const adjustedY = canvas.height / 2 - rY - itemSize / 2 - 10;
+
+        
+        img.onload = () => {
+            ctx.drawImage(img, adjustedX, adjustedY, 35, 35);
+        }
+    }
+
+    static renderUnknowResource(ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement, radarPosition: any, resource: any, zoom: number) {
+        const rX =  this.getRelativePositionX(radarPosition, resource.location, zoom);
+        const rY =  this.getRelativePositionY(radarPosition, resource.location, zoom);
+
+        this.renderDistance(ctx, canvas, radarPosition, resource.location, this.ResourceSize, rX, rY);
+        this.renderValue(ctx, canvas, this.ResourceSize, rX, rY, `${resource.id} || ${resource.type}`);  
     }
 
     static renderTheScreenView(ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement, zoom: number) {
@@ -62,12 +102,11 @@ class RadarRendering {
         ctx.stroke();
     }
 
-    static renderUnknowResource(ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement, radarPosition: any, resource: any, zoom: number) {
-        const rX =  this.getRelativePositionX(radarPosition, resource.location, zoom);
-        const rY =  this.getRelativePositionY(radarPosition, resource.location, zoom);
-
-        this.renderDistance(ctx, canvas, radarPosition, resource.location, this.ResourceSize, rX, rY);
-        this.renderValue(ctx, canvas, this.ResourceSize, rX, rY, `${resource.id} || ${resource.type}`);  
+    static renderCenter(ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement) {
+        ctx.fillStyle = 'green';
+        ctx.beginPath();
+        ctx.arc(canvas.width / 2, canvas.height / 2, 5, 0, 2 * Math.PI);
+        ctx.fill();
     }
 
     static renderResource(ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement, radarPosition: any, resource: any, zoom: number, displayedSettings: any) {
@@ -101,7 +140,7 @@ class RadarRendering {
 
         /* Render Iteam */
         const img = new Image();
-        img.src = `https://render.albiononline.com/v1/item/${resource.unique_name}`;
+        img.src = `/public/mapMarker/resources/${resource.unique_name}.png`;
         img.onload = () => {
             ctx.drawImage(img, canvas.width / 2 - rX - this.ResourceSize / 2, canvas.height / 2 - rY - this.ResourceSize / 2, this.ResourceSize, this.ResourceSize);
         };
@@ -111,6 +150,82 @@ class RadarRendering {
 
         /* Render stock value */
         this.renderValue(ctx, canvas, this.ResourceSize, rX, rY, resource.size);
+    }
+
+    static renderDungeon(ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement, radarPosition: any, dungeon: any, zoom: number, displayedSettings: any) {
+        const rX =  this.getRelativePositionX(radarPosition, dungeon.location, zoom);
+        const rY =  this.getRelativePositionY(radarPosition, dungeon.location, zoom);
+
+        
+        if(!displayedSettings.object_types.includes('DUNGEONS') && !dungeon.is_consumable) {
+            return;
+        }
+
+        if(!displayedSettings.dungeons.includes('ROAMING') && dungeon.is_consumable) {
+            return;
+        }
+
+        if(!displayedSettings.dungeons.includes(dungeon.dungeon_type)) {
+            return;
+        }
+        
+        
+        
+        /* Render Iteam */
+        const img = new Image();
+        img.src = `/public/mapMarker/dungeons/${dungeon.unique_name}.png`;
+        
+        img.onload = () => {
+            ctx.drawImage(img, canvas.width / 2 - rX - this.ResourceSize / 2, canvas.height / 2 - rY - this.ResourceSize / 2, this.ResourceSize, this.ResourceSize);
+        };
+
+
+        this.renderButterfly(ctx, canvas, this.ResourceSize, rX, rY, dungeon.enchant);
+
+        /* Render Distance */        
+        // this.renderDistance(ctx, canvas, radarPosition, resource.location, this.ResourceSize, rX, rY);
+
+        if(dungeon.is_consumable) {
+            this.renderEnemyObject(ctx, canvas, this.ResourceSize, rX, rY);
+        }
+
+        /* Render stock value */
+        if(displayedSettings.dungeons.includes('DISPLAY_NAME')) {
+            this.renderValue(ctx, canvas, this.ResourceSize, rX, rY, dungeon.name);
+        }
+    }
+
+    static renderChest(ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement, radarPosition: any, chest: any, zoom: number, displayedSettings: any) {
+        const rX =  this.getRelativePositionX(radarPosition, chest.location, zoom);
+        const rY =  this.getRelativePositionY(radarPosition, chest.location, zoom);
+
+        
+        const chest_map: { [key: number]: string } = {
+            0: 'chest_static',
+            1: 'chest_green',
+            2: 'chest_blue',
+            3: 'chest_rare',
+            4: 'chest_legendary',
+        }
+        
+        
+        
+        /* Render Iteam */
+        const img = new Image();
+        img.src = `/public/mapMarker/chest/${chest_map[chest.enchant]}.png`;
+        
+        img.onload = () => {
+            ctx.drawImage(img, canvas.width / 2 - rX - this.ResourceSize / 2, canvas.height / 2 - rY - this.ResourceSize / 2, this.ResourceSize, this.ResourceSize);
+        };
+
+        /* Render Distance */        
+        // this.renderDistance(ctx, canvas, radarPosition, resource.location, this.ResourceSize, rX, rY);
+
+        
+        /* Render Chest Name if is static chest */
+        if(chest.enchant === 0) {
+            this.renderValue(ctx, canvas, this.ResourceSize, rX, rY, chest.name2);
+        }
     }
 }
 

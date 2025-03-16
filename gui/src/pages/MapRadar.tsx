@@ -7,12 +7,13 @@ import RadarRendering from "../utils/rendering";
 const MapRadar = () => {
     const canvasRef = useRef<HTMLCanvasElement>(null);
 
-    const { radarWidget, radarPosition } = useContext(WorldContext);
+    // const { radarWidget, radarPosition } = useContext(WorldContext);
     // const { radarPosition } = useContext(WorldContext);
-    const [zoom, setZoom] = useState(5);
+    const [zoom, setZoom] = useState(3.5);
 
     const [displayedSettings, setDisplayedSettings] = useState({
-        object_types: ['RESOURCE', 'MOB', 'PLAYER'],
+        object_types: ['RESOURCE', 'DUNGEONS'],
+        dungeons: ['SOLO', 'AVALON', 'GROUP', 'CORRUPTED', 'HELLGATE', 'ROAMING', 'DISPLAY_NAME'],
         resources: ['FIBER', 'WOOD', 'ROCK', 'HIDE', 'ORE'],
         tiers: [3, 4, 5, 6, 7, 8],
         enchants: [0, 1, 2, 3]
@@ -20,38 +21,70 @@ const MapRadar = () => {
     
     const [activeTab, setActiveTab] = useState('map');
 
-    // const radarPosition = {
-    //     x: 180,
-    //     y: 100
-    // };
+    const radarPosition = {
+        x: 180,
+        y: 100
+    };
 
-    // const radarWidget = {
-    //     harvestable_list:[{
-    //         "id": 178765,
-    //         "type": 16,
-    //         "tier": 4,
-    //         "location": {
-    //             "x": 185.5,
-    //             "y": 115.0
-    //         },
-    //         "enchant": 3,
-    //         "size": 1,
-    //         "unique_name": "T4_HIDE_LEVEL3@3",
-    //         "item_type": "HIDE"
-    //     },{
-    //         "id": 178765,
-    //         "type": 16,
-    //         "tier": 4,
-    //         "location": {
-    //             "x": 180.0,
-    //             "y": 89.1
-    //         },
-    //         "enchant": 3,
-    //         "size": 1,
-    //         "unique_name": "T4_HIDE_LEVEL3@3",
-    //         "item_type": "HIDE"
-    //     }]
-    // };
+    const radarWidget = {
+        harvestable_list:[{
+            "id": 178765,
+            "type": 16,
+            "tier": 4,
+            "location": {
+                "x": 0,
+                "y": 0
+                // "x": 185.5,
+                // "y": 115.0
+            },
+            "enchant": 3,
+            "size": 1,
+            "unique_name": "hide_4_3",
+            "item_type": "HIDE"
+        }],
+        dungeon_list: [
+            {
+                "id": 178765,
+                "tier": 4,
+                "location": {
+                    "x": 185.5,
+                    "y": 115.0
+                },
+                "enchant": 3,
+                "dungeon_type": "GROUP",
+                "name": "Dungeon",
+                "unique_name": "group_dungeon",
+                "is_consumable": false
+            },
+            {
+                "id": 178765,
+                "tier": 4,
+                "location": {
+                    "x": 180.0,
+                    "y": 89.1
+                },
+                "enchant": 1,
+                "dungeon_type": "SOLO",
+                "name": "T4_PORTAL_ROYAL_CONSUMABLE_SOLO ",
+                "unique_name": "solo_dungeon",
+                "is_consumable": true
+            }
+        ],
+        chest_list: [
+            {
+                "id": 20,
+                "location": {
+                    "x": 150.5,
+                    "y": 115.0
+                },
+                "name1": "T4",
+                "name2": "CHEST",
+                "chest_name": "T4_CHEST",
+                "enchant": 3,
+                "debug": {}
+            },
+        ],
+    };
 
     useEffect(() => {
         const canvas = canvasRef.current;
@@ -61,6 +94,14 @@ const MapRadar = () => {
             ctx.save();
             radarWidget.harvestable_list.forEach(resource => {
                 RadarRendering.renderResource(ctx, canvas, radarPosition, resource, zoom, displayedSettings);
+            });
+
+            radarWidget.dungeon_list.forEach(dungeon => {
+                RadarRendering.renderDungeon(ctx, canvas, radarPosition, dungeon, zoom, displayedSettings);
+            });
+
+            radarWidget.chest_list.forEach(chest => {
+                RadarRendering.renderChest(ctx, canvas, radarPosition, chest, zoom, displayedSettings);
             });
 
             ctx.fillStyle = 'yellow';
@@ -93,7 +134,7 @@ const MapRadar = () => {
                                 <Box sx={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                                     <Box>
                                         <Typography variant="body1">Object Types</Typography>
-                                        {['RESOURCE', 'MOB', 'PLAYER'].map(type => (
+                                        {['RESOURCE', 'DUNGEONS'].map(type => (
                                             <Button
                                                 key={type}
                                                 variant={displayedSettings.object_types.includes(type) ? "contained" : "outlined"}
@@ -122,6 +163,24 @@ const MapRadar = () => {
                                                 }))}
                                             >
                                                 {resource}
+                                            </Button>
+                                        ))}
+                                    </Box>
+                                    <Box>
+                                        <Typography variant="body1">Dungeons</Typography>
+                                        {['SOLO', 'AVALON', 'GROUP', 'CORRUPTED', 'HELLGATE', 'ROAMING', 'DISPLAY_NAME'].map(dungeon => (
+                                            <Button
+                                                key={dungeon}
+                                                variant={displayedSettings.dungeons.includes(dungeon) ? "contained" : "outlined"}
+                                                sx={{ margin: '5px' }}
+                                                onClick={() => setDisplayedSettings(prev => ({
+                                                    ...prev,
+                                                    dungeons: prev.dungeons.includes(dungeon)
+                                                        ? prev.dungeons.filter(d => d !== dungeon)
+                                                        : [...prev.dungeons, dungeon]
+                                                }))}
+                                            >
+                                                {dungeon}
                                             </Button>
                                         ))}
                                     </Box>
@@ -181,12 +240,22 @@ const MapRadar = () => {
                     <canvas ref={canvasRef} width={500} height={500} style={{ border: '2px solid red', position: 'absolute', transform: `translate(-50%, 0%)` }} />
                 </Box>
                 <Box sx={{ flex: 1, textAlign: 'left', marginTop: '20px', marginLeft: '20px' }}>
-                    <Button variant="contained" onClick={() => setActiveTab('debug')}>Debug Resources</Button>
-                    {activeTab === 'debug' && (
+                    <Button variant="contained" onClick={() => setActiveTab('debugResources')}>Debug Resources</Button>
+                    {activeTab === 'debugResources' && (
                         <Paper sx={{ padding: '10px', maxHeight: '500px', overflowY: 'scroll' }}>
                             {radarWidget.harvestable_list.map((resource, index) => (
                                 <Typography key={index}>
                                     {`${index}) ID: ${resource.id}, Type: ${resource.type}, Tier: ${resource.tier}, Location: (${resource.location.x}, ${resource.location.y}), Enchant: ${resource.enchant}, Size: ${resource.size}, Unique Name: ${resource.unique_name}`}
+                                </Typography>
+                            ))}
+                        </Paper>
+                    )}
+                    <Button variant="contained" onClick={() => setActiveTab('debugDungeons')}>Debug Dungeons</Button>
+                    {activeTab === 'debugDungeons' && (
+                        <Paper sx={{ padding: '10px', maxHeight: '500px', overflowY: 'scroll' }}>
+                            {radarWidget.dungeon_list.map((dungeon, index) => (
+                                <Typography key={index}>
+                                    {`${index}) ID: ${dungeon.id}, Type: ${dungeon.dungeon_type}, Tier: ${dungeon.tier}, Location: (${dungeon.location.x}, ${dungeon.location.y}), Enchant: ${dungeon.enchant}, Name: ${dungeon.name}, Unique Name: ${dungeon.unique_name}`}
                                 </Typography>
                             ))}
                         </Paper>

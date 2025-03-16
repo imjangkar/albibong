@@ -63,6 +63,7 @@ class WorldDataUtils:
         if world_data.current_dungeon == None:
             new_dungeon = Dungeon(type=type, name=name)
             world_data.current_dungeon = new_dungeon
+            world_data.radar.change_location()
 
     @staticmethod
     def set_dungeon_status(
