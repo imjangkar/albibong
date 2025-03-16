@@ -1,6 +1,7 @@
 class RadarRendering {
     static rotation = 45;
     static ResourceSize = 45;
+    static mistSize = 35;
     static ScreenRenderSize = 28;
 
     static getDistance(radarPostion: any, itemPostion: any){
@@ -227,6 +228,57 @@ class RadarRendering {
             this.renderValue(ctx, canvas, this.ResourceSize, rX, rY, chest.name2);
         }
     }
+
+    static renderMist(ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement, radarPosition: any, mist: any, zoom: number, displayedSettings: any) {
+        const rX =  this.getRelativePositionX(radarPosition, mist.location, zoom);
+        const rY =  this.getRelativePositionY(radarPosition, mist.location, zoom);
+
+        /* Render Iteam */
+        const img = new Image();
+        img.src = `/public/mapMarker/mists/mist_${mist.enchant}.png`;
+        
+        img.onload = () => {
+            ctx.drawImage(img, canvas.width / 2 - rX - this.mistSize / 2, canvas.height / 2 - rY - this.mistSize / 2, this.mistSize, this.mistSize);
+        };
+
+        /* Render Distance */        
+        // this.renderDistance(ctx, canvas, radarPosition, resource.location, this.ResourceSize, rX, rY);
+    }
+
+    static renderMob(ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement, radarPosition: any, mob: any, zoom: number, displayedSettings: any) {
+        if (!displayedSettings.object_types.includes('MOBS')) {
+            return;
+        }
+        
+        const rX =  this.getRelativePositionX(radarPosition, mob.location, zoom);
+        const rY =  this.getRelativePositionY(radarPosition, mob.location, zoom);
+
+        /* Render Iteam */
+        // if(mob.mob_name !== "unknown12") {
+        //     const img = new Image();
+        //     img.src = `/public/mapMarker/mobs/${mob.mob_name}.png`;
+            
+        //     img.onload = () => {
+        //         ctx.drawImage(img, canvas.width / 2 - rX - this.ResourceSize / 2, canvas.height / 2 - rY - this.ResourceSize / 2, this.ResourceSize, this.ResourceSize);
+        //     };
+        // } else {
+            ctx.fillStyle = 'purple';
+            ctx.beginPath();
+            ctx.arc(canvas.width / 2 - rX, canvas.height / 2 - rY, 10, 0, 2 * Math.PI);
+            ctx.fill();
+        // }
+
+
+        /* Render Chest Name if is static chest */
+        const mobName = `${mob.id} || ${mob.type_id}`;
+        this.renderValue(ctx, canvas, this.ResourceSize, rX, rY, mobName);
+
+    }
+
+
+
+    
+    
 }
 
 export default RadarRendering;

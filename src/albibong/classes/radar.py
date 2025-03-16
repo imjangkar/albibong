@@ -1,5 +1,7 @@
 from albibong.models.models import BaseModel
 from albibong.threads.websocket_server import send_event
+from albibong.classes.mobs import MobInfo
+
 
 class Radar(BaseModel):
     def __init__(self) -> None:
@@ -7,6 +9,8 @@ class Radar(BaseModel):
         self.harvestable_list = []
         self.dungeon_list = []
         self.chest_list = []
+        self.mist_list = []
+        self.mob_list = []
     
     def update_position(self, x, y):
         self.position = {"x": x, "y": y}
@@ -22,9 +26,9 @@ class Radar(BaseModel):
     
     def add_harvestable(self, id, type, tier, posX, posY, enchant, size):
         FIBER_IDS = [14,15,16] # Standard, From Spotk lokation, dead mob
-        WOOD_IDS = [0]
-        ROCK_IDS = [7]
-        HIDE_IDS = [20]
+        WOOD_IDS = [0,3]
+        ROCK_IDS = [7,9]
+        HIDE_IDS = [20,23, 48]
         ORE_IDS = [27, 29]
         
         unique_name = ""
@@ -57,7 +61,8 @@ class Radar(BaseModel):
             "enchant": enchant,
             "size": size,
             "item_type": item_type,
-            "unique_name": unique_name
+            "unique_name": unique_name,
+            "debug": {}
         })
 
         self.__handle_update()
@@ -68,9 +73,6 @@ class Radar(BaseModel):
                 harvestable["size"] = count
         
         self.__handle_update()
-
-    def test(self):
-        return 6
 
     def add_dungeon(self, id, location, name, enchant, parameters):
         try:
@@ -153,17 +155,80 @@ class Radar(BaseModel):
 
         self.__handle_update()
 
+    def add_mist(self, id, location, name, enchant, parameters):
+        print("Mist")
+        print(parameters)
+        
+        if not any(mist["id"] == id for mist in self.mist_list):
+            self.mist_list.append({
+            "id": id,
+            "location": {
+                "x": location[0],
+                "y": location[1]
+            },
+            "name": name,
+            "enchant": enchant,
+            "debug": parameters,
+            })
+
+            self.__handle_update()
+
+
+    def add_mob(self, id, type_id, location, enchant, rarity, parameters):
+        # mobInfo = MobInfo.get_mob_from_code(str(type_id))
+        mobInfo = None
+        # 13 heath
+        # 21 tier
+        if not any(mob["id"] == id for mob in self.mob_list):
+            self.mob_list.append({
+                "id": id,
+                "type_id": type_id,
+                "location": {
+                    "x": location[0],
+                    "y": location[1]
+                },
+                "mob_name": mobInfo["unicname"] if mobInfo else "unknown",
+                "mob_type": mobInfo["type"] if mobInfo else 0,
+                "mob_tier": mobInfo["tier"] if mobInfo else 0,
+                "debug": parameters
+            })
+
+            self.__handle_update()
+
+    def handle_event_leave(self, id):
+        self.dungeon_list = [dungeon for dungeon in self.dungeon_list if dungeon["id"] != id]
+        self.chest_list = [chest for chest in self.chest_list if chest["id"] != id]
+        self.mist_list = [mist for mist in self.mist_list if mist["id"] != id]
+        self.mob_list = [mob for mob in self.mob_list if mob["id"] != id]
+
+        self.__handle_update()
+
+    def handle_event_move(self, id, posX, posY):
+        for mist in self.mist_list:
+            if mist["id"] == id:
+                mist["location"] = {"x": posX, "y": posY}
+
+        for mob in self.mob_list:
+            if mob["id"] == id:
+                mob["location"] = {"x": posX, "y": posY}
+
+        self.__handle_update()
+
     def serialize(self):
         return {
             "harvestable_list": self.harvestable_list,
             "dungeon_list": self.dungeon_list,
-            "chest_list": self.chest_list
+            "chest_list": self.chest_list,
+            "mist_list": self.mist_list,
+            "mob_list": self.mob_list,
         }
 
     def change_location(self):
         self.harvestable_list = []
         self.dungeon_list = []
         self.chest_list = []
+        self.mist_list = []
+        self.mob_list = []
         self.update_position(0, 0)
         self.__handle_update()
 

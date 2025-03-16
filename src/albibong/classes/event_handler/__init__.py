@@ -52,6 +52,18 @@ from albibong.classes.event_handler.radar_event_chest_object import (
     radar_event_new_match_loot_chest_object
 )
 
+from albibong.classes.event_handler.radar_event_leave import (
+    radar_event_leave
+)
+
+from albibong.classes.event_handler.radar_event_move import (
+    radar_event_move
+)
+
+from albibong.classes.event_handler.radar_event_mobs_object import (
+    radar_event_new_mob
+)
+
 
 from albibong.classes.event_handler.handle_operation_join import handle_operation_join
 from albibong.classes.event_handler.handle_operation_move import handle_operation_move
@@ -144,6 +156,13 @@ class EventHandler:
         self.event_handler[EventCode.NEW_TREASURE_CHEST.value] = (
             radar_event_new_treasure_chest
         )
+
+        ## Mobs
+        self.event_handler[EventCode.NEW_MOB.value] = radar_event_new_mob
+
+        ## Handle Action
+        self.event_handler[EventCode.LEAVE.value] = radar_event_leave
+        self.event_handler[EventCode.MOVE.value] = radar_event_move
 
 
         # Request Handler

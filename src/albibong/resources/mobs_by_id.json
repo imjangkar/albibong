@@ -1,0 +1,2510 @@
+{
+    "16": {
+      "id_type": 16,
+      "tier": 4,
+      "type": 3,
+      "unicname": "droneicon"
+    },
+    "17": {
+      "id_type": 17,
+      "tier": 5,
+      "type": 3,
+      "unicname": "droneicon"
+    },
+    "18": {
+      "id_type": 18,
+      "tier": 5,
+      "type": 3,
+      "unicname": "droneicon"
+    },
+    "19": {
+      "id_type": 19,
+      "tier": 7,
+      "type": 3,
+      "unicname": "droneicon"
+    },
+    "20": {
+      "id_type": 20,
+      "tier": 5,
+      "type": 3,
+      "unicname": "droneicon"
+    },
+    "22": {
+      "id_type": 22,
+      "tier": 5,
+      "type": 3,
+      "unicname": "droneicon"
+    },
+    "23": {
+      "id_type": 23,
+      "tier": 5,
+      "type": 3,
+      "unicname": "droneicon"
+    },
+    "24": {
+      "id_type": 24,
+      "tier": 5,
+      "type": 3,
+      "unicname": "droneicon"
+    },
+    "25": {
+      "id_type": 25,
+      "tier": 5,
+      "type": 3,
+      "unicname": "droneicon"
+    },
+    "26": {
+      "id_type": 26,
+      "tier": 5,
+      "type": 3,
+      "unicname": "droneicon"
+    },
+    "30": {
+      "id_type": 30,
+      "tier": 5,
+      "type": 3,
+      "unicname": "droneicon"
+    },
+    "34": {
+      "id_type": 34,
+      "tier": 5,
+      "type": 3,
+      "unicname": "droneicon"
+    },
+    "36": {
+      "id_type": 36,
+      "tier": 5,
+      "type": 3,
+      "unicname": "droneicon"
+    },
+    "38": {
+      "id_type": 38,
+      "tier": 5,
+      "type": 3,
+      "unicname": "droneicon"
+    },
+    "58": {
+      "id_type": 58,
+      "tier": 5,
+      "type": 3,
+      "unicname": "droneicon"
+    },
+    "60": {
+      "id_type": 60,
+      "tier": 5,
+      "type": 3,
+      "unicname": "droneicon"
+    },
+    "61": {
+      "id_type": 61,
+      "tier": 7,
+      "type": 3,
+      "unicname": "droneicon"
+    },
+    "64": {
+      "id_type": 64,
+      "tier": 5,
+      "type": 3,
+      "unicname": "droneicon"
+    },
+    "71": {
+      "id_type": 71,
+      "tier": 5,
+      "type": 3,
+      "unicname": "droneicon"
+    },
+    "74": {
+      "id_type": 74,
+      "tier": 5,
+      "type": 3,
+      "unicname": "droneicon"
+    },
+    "77": {
+      "id_type": 77,
+      "tier": 5,
+      "type": 3,
+      "unicname": "droneicon"
+    },
+    "111": {
+      "id_type": 111,
+      "tier": 3,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "112": {
+      "id_type": 112,
+      "tier": 4,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "113": {
+      "id_type": 113,
+      "tier": 5,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "114": {
+      "id_type": 114,
+      "tier": 6,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "115": {
+      "id_type": 115,
+      "tier": 7,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "116": {
+      "id_type": 116,
+      "tier": 8,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "145": {
+      "id_type": 145,
+      "tier": 2,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "146": {
+      "id_type": 146,
+      "tier": 3,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "147": {
+      "id_type": 147,
+      "tier": 3,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "148": {
+      "id_type": 148,
+      "tier": 4,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "149": {
+      "id_type": 149,
+      "tier": 5,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "150": {
+      "id_type": 150,
+      "tier": 6,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "151": {
+      "id_type": 151,
+      "tier": 6,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "152": {
+      "id_type": 152,
+      "tier": 7,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "153": {
+      "id_type": 153,
+      "tier": 8,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "154": {
+      "id_type": 154,
+      "tier": 8,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "162": {
+      "id_type": 162,
+      "tier": 3,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "163": {
+      "id_type": 163,
+      "tier": 3,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "164": {
+      "id_type": 164,
+      "tier": 4,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "165": {
+      "id_type": 165,
+      "tier": 5,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "166": {
+      "id_type": 166,
+      "tier": 7,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "167": {
+      "id_type": 167,
+      "tier": 8,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "173": {
+      "id_type": 173,
+      "tier": 3,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "174": {
+      "id_type": 174,
+      "tier": 3,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "175": {
+      "id_type": 175,
+      "tier": 4,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "176": {
+      "id_type": 176,
+      "tier": 5,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "177": {
+      "id_type": 177,
+      "tier": 6,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "178": {
+      "id_type": 178,
+      "tier": 7,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "180": {
+      "id_type": 180,
+      "tier": 8,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "201": {
+      "id_type": 201,
+      "tier": 4,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "209": {
+      "id_type": 209,
+      "tier": 1,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "212": {
+      "id_type": 212,
+      "tier": 4,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "213": {
+      "id_type": 213,
+      "tier": 5,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "215": {
+      "id_type": 215,
+      "tier": 7,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "257": {
+      "id_type": 257,
+      "tier": 3,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "258": {
+      "id_type": 258,
+      "tier": 3,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "259": {
+      "id_type": 259,
+      "tier": 5,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "260": {
+      "id_type": 260,
+      "tier": 7,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "261": {
+      "id_type": 261,
+      "tier": 1,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "262": {
+      "id_type": 262,
+      "tier": 5,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "263": {
+      "id_type": 263,
+      "tier": 7,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "264": {
+      "id_type": 264,
+      "tier": 4,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "265": {
+      "id_type": 265,
+      "tier": 5,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "266": {
+      "id_type": 266,
+      "tier": 6,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "267": {
+      "id_type": 267,
+      "tier": 7,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "268": {
+      "id_type": 268,
+      "tier": 8,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "269": {
+      "id_type": 269,
+      "tier": 3,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "270": {
+      "id_type": 270,
+      "tier": 3,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "271": {
+      "id_type": 271,
+      "tier": 5,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "272": {
+      "id_type": 272,
+      "tier": 5,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "273": {
+      "id_type": 273,
+      "tier": 7,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "274": {
+      "id_type": 274,
+      "tier": 3,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "275": {
+      "id_type": 275,
+      "tier": 3,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "276": {
+      "id_type": 276,
+      "tier": 5,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "277": {
+      "id_type": 277,
+      "tier": 5,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "278": {
+      "id_type": 278,
+      "tier": 4,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "279": {
+      "id_type": 279,
+      "tier": 5,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "280": {
+      "id_type": 280,
+      "tier": 5,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "281": {
+      "id_type": 281,
+      "tier": 6,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "282": {
+      "id_type": 282,
+      "tier": 7,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "283": {
+      "id_type": 283,
+      "tier": 8,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "289": {
+      "id_type": 289,
+      "tier": 4,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "290": {
+      "id_type": 290,
+      "tier": 5,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "291": {
+      "id_type": 291,
+      "tier": 6,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "292": {
+      "id_type": 292,
+      "tier": 7,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "293": {
+      "id_type": 293,
+      "tier": 8,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "294": {
+      "id_type": 294,
+      "tier": 4,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "295": {
+      "id_type": 295,
+      "tier": 5,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "296": {
+      "id_type": 296,
+      "tier": 1,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "297": {
+      "id_type": 297,
+      "tier": 2,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "298": {
+      "id_type": 298,
+      "tier": 4,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "299": {
+      "id_type": 299,
+      "tier": 3,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "300": {
+      "id_type": 300,
+      "tier": 5,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "301": {
+      "id_type": 301,
+      "tier": 5,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "302": {
+      "id_type": 302,
+      "tier": 6,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "303": {
+      "id_type": 303,
+      "tier": 6,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "304": {
+      "id_type": 304,
+      "tier": 7,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "308": {
+      "id_type": 308,
+      "tier": 3,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "309": {
+      "id_type": 309,
+      "tier": 4,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "310": {
+      "id_type": 310,
+      "tier": 5,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "311": {
+      "id_type": 311,
+      "tier": 6,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "312": {
+      "id_type": 312,
+      "tier": 8,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "313": {
+      "id_type": 313,
+      "tier": 1,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "314": {
+      "id_type": 314,
+      "tier": 2,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "315": {
+      "id_type": 315,
+      "tier": 3,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "316": {
+      "id_type": 316,
+      "tier": 4,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "317": {
+      "id_type": 317,
+      "tier": 5,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "318": {
+      "id_type": 318,
+      "tier": 6,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "323": {
+      "id_type": 323,
+      "tier": 6,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "324": {
+      "id_type": 324,
+      "tier": 1,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "325": {
+      "id_type": 325,
+      "tier": 4,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "326": {
+      "id_type": 326,
+      "tier": 5,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "327": {
+      "id_type": 327,
+      "tier": 6,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "328": {
+      "id_type": 328,
+      "tier": 6,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "329": {
+      "id_type": 329,
+      "tier": 7,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "330": {
+      "id_type": 330,
+      "tier": 7,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "331": {
+      "id_type": 331,
+      "tier": 7,
+      "type": 0,
+      "unicname": "ore"
+    },
+    "332": {
+      "id_type": 332,
+      "tier": 7,
+      "type": 0,
+      "unicname": "ore"
+    },
+    "333": {
+      "id_type": 333,
+      "tier": 4,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "334": {
+      "id_type": 334,
+      "tier": 5,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "335": {
+      "id_type": 335,
+      "tier": 6,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "336": {
+      "id_type": 336,
+      "tier": 7,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "337": {
+      "id_type": 337,
+      "tier": 8,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "338": {
+      "id_type": 338,
+      "tier": 3,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "339": {
+      "id_type": 339,
+      "tier": 1,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "340": {
+      "id_type": 340,
+      "tier": 1,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "341": {
+      "id_type": 341,
+      "tier": 4,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "342": {
+      "id_type": 342,
+      "tier": 5,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "343": {
+      "id_type": 343,
+      "tier": 6,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "352": {
+      "id_type": 352,
+      "tier": 4,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "353": {
+      "id_type": 353,
+      "tier": 5,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "354": {
+      "id_type": 354,
+      "tier": 6,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "355": {
+      "id_type": 355,
+      "tier": 7,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "356": {
+      "id_type": 356,
+      "tier": 5,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "359": {
+      "id_type": 359,
+      "tier": 3,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "360": {
+      "id_type": 360,
+      "tier": 3,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "361": {
+      "id_type": 361,
+      "tier": 4,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "362": {
+      "id_type": 362,
+      "tier": 5,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "363": {
+      "id_type": 363,
+      "tier": 6,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "365": {
+      "id_type": 365,
+      "tier": 3,
+      "type": 0,
+      "unicname": "ore"
+    },
+    "366": {
+      "id_type": 366,
+      "tier": 3,
+      "type": 0,
+      "unicname": "ore"
+    },
+    "367": {
+      "id_type": 367,
+      "tier": 4,
+      "type": 0,
+      "unicname": "ore"
+    },
+    "368": {
+      "id_type": 368,
+      "tier": 5,
+      "type": 0,
+      "unicname": "ore"
+    },
+    "369": {
+      "id_type": 369,
+      "tier": 6,
+      "type": 0,
+      "unicname": "ore"
+    },
+    "372": {
+      "id_type": 372,
+      "tier": 3,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "373": {
+      "id_type": 373,
+      "tier": 4,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "374": {
+      "id_type": 374,
+      "tier": 5,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "379": {
+      "id_type": 379,
+      "tier": 5,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "380": {
+      "id_type": 380,
+      "tier": 5,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "381": {
+      "id_type": 381,
+      "tier": 6,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "382": {
+      "id_type": 382,
+      "tier": 7,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "383": {
+      "id_type": 383,
+      "tier": 8,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "385": {
+      "id_type": 385,
+      "tier": 5,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "386": {
+      "id_type": 386,
+      "tier": 5,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "387": {
+      "id_type": 387,
+      "tier": 6,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "388": {
+      "id_type": 388,
+      "tier": 7,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "389": {
+      "id_type": 389,
+      "tier": 8,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "391": {
+      "id_type": 391,
+      "tier": 4,
+      "type": 0,
+      "unicname": "ore"
+    },
+    "392": {
+      "id_type": 392,
+      "tier": 5,
+      "type": 0,
+      "unicname": "ore"
+    },
+    "393": {
+      "id_type": 393,
+      "tier": 6,
+      "type": 0,
+      "unicname": "ore"
+    },
+    "394": {
+      "id_type": 394,
+      "tier": 7,
+      "type": 0,
+      "unicname": "ore"
+    },
+    "395": {
+      "id_type": 395,
+      "tier": 8,
+      "type": 0,
+      "unicname": "ore"
+    },
+    "397": {
+      "id_type": 397,
+      "tier": 5,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "398": {
+      "id_type": 398,
+      "tier": 5,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "399": {
+      "id_type": 399,
+      "tier": 6,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "400": {
+      "id_type": 400,
+      "tier": 7,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "401": {
+      "id_type": 401,
+      "tier": 3,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "402": {
+      "id_type": 402,
+      "tier": 5,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "403": {
+      "id_type": 403,
+      "tier": 4,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "404": {
+      "id_type": 404,
+      "tier": 5,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "405": {
+      "id_type": 405,
+      "tier": 6,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "406": {
+      "id_type": 406,
+      "tier": 7,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "407": {
+      "id_type": 407,
+      "tier": 8,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "408": {
+      "id_type": 408,
+      "tier": 3,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "409": {
+      "id_type": 409,
+      "tier": 4,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "410": {
+      "id_type": 410,
+      "tier": 3,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "411": {
+      "id_type": 411,
+      "tier": 5,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "412": {
+      "id_type": 412,
+      "tier": 7,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "413": {
+      "id_type": 413,
+      "tier": 3,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "414": {
+      "id_type": 414,
+      "tier": 5,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "415": {
+      "id_type": 415,
+      "tier": 4,
+      "type": 0,
+      "unicname": "ore"
+    },
+    "416": {
+      "id_type": 416,
+      "tier": 5,
+      "type": 0,
+      "unicname": "ore"
+    },
+    "417": {
+      "id_type": 417,
+      "tier": 3,
+      "type": 0,
+      "unicname": "ore"
+    },
+    "418": {
+      "id_type": 418,
+      "tier": 5,
+      "type": 0,
+      "unicname": "ore"
+    },
+    "419": {
+      "id_type": 419,
+      "tier": 5,
+      "type": 0,
+      "unicname": "ore"
+    },
+    "421": {
+      "id_type": 421,
+      "tier": 6,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "422": {
+      "id_type": 422,
+      "tier": 3,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "423": {
+      "id_type": 423,
+      "tier": 5,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "424": {
+      "id_type": 424,
+      "tier": 5,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "425": {
+      "id_type": 425,
+      "tier": 7,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "429": {
+      "id_type": 429,
+      "tier": 5,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "430": {
+      "id_type": 430,
+      "tier": 7,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "431": {
+      "id_type": 431,
+      "tier": 4,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "432": {
+      "id_type": 432,
+      "tier": 5,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "433": {
+      "id_type": 433,
+      "tier": 6,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "434": {
+      "id_type": 434,
+      "tier": 7,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "435": {
+      "id_type": 435,
+      "tier": 3,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "437": {
+      "id_type": 437,
+      "tier": 5,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "439": {
+      "id_type": 439,
+      "tier": 5,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "447": {
+      "id_type": 447,
+      "tier": 3,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "448": {
+      "id_type": 448,
+      "tier": 5,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "449": {
+      "id_type": 449,
+      "tier": 5,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "452": {
+      "id_type": 452,
+      "tier": 3,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "453": {
+      "id_type": 453,
+      "tier": 5,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "454": {
+      "id_type": 454,
+      "tier": 5,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "455": {
+      "id_type": 455,
+      "tier": 7,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "456": {
+      "id_type": 456,
+      "tier": 4,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "457": {
+      "id_type": 457,
+      "tier": 5,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "458": {
+      "id_type": 458,
+      "tier": 6,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "459": {
+      "id_type": 459,
+      "tier": 7,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "460": {
+      "id_type": 460,
+      "tier": 8,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "462": {
+      "id_type": 462,
+      "tier": 5,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "463": {
+      "id_type": 463,
+      "tier": 6,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "467": {
+      "id_type": 467,
+      "tier": 5,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "468": {
+      "id_type": 468,
+      "tier": 6,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "469": {
+      "id_type": 469,
+      "tier": 7,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "470": {
+      "id_type": 470,
+      "tier": 8,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "473": {
+      "id_type": 473,
+      "tier": 6,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "477": {
+      "id_type": 477,
+      "tier": 5,
+      "type": 0,
+      "unicname": "ore"
+    },
+    "478": {
+      "id_type": 478,
+      "tier": 6,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "482": {
+      "id_type": 482,
+      "tier": 5,
+      "type": 0,
+      "unicname": "WOOD"
+    },
+    "483": {
+      "id_type": 483,
+      "tier": 6,
+      "type": 0,
+      "unicname": "ore"
+    },
+    "484": {
+      "id_type": 484,
+      "tier": 7,
+      "type": 0,
+      "unicname": "ore"
+    },
+    "488": {
+      "id_type": 488,
+      "tier": 6,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "489": {
+      "id_type": 489,
+      "tier": 4,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "492": {
+      "id_type": 492,
+      "tier": 5,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "493": {
+      "id_type": 493,
+      "tier": 6,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "497": {
+      "id_type": 497,
+      "tier": 5,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "498": {
+      "id_type": 498,
+      "tier": 6,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "499": {
+      "id_type": 499,
+      "tier": 7,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "500": {
+      "id_type": 500,
+      "tier": 5,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "503": {
+      "id_type": 503,
+      "tier": 6,
+      "type": 0,
+      "unicname": "ore"
+    },
+    "508": {
+      "id_type": 508,
+      "tier": 5,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "509": {
+      "id_type": 509,
+      "tier": 6,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "514": {
+      "id_type": 514,
+      "tier": 5,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "515": {
+      "id_type": 515,
+      "tier": 6,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "518": {
+      "id_type": 518,
+      "tier": 6,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "519": {
+      "id_type": 519,
+      "tier": 4,
+      "type": 0,
+      "unicname": "ore"
+    },
+    "520": {
+      "id_type": 520,
+      "tier": 5,
+      "type": 0,
+      "unicname": "ore"
+    },
+    "521": {
+      "id_type": 521,
+      "tier": 4,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "526": {
+      "id_type": 526,
+      "tier": 5,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "527": {
+      "id_type": 527,
+      "tier": 6,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "532": {
+      "id_type": 532,
+      "tier": 4,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "533": {
+      "id_type": 533,
+      "tier": 5,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "534": {
+      "id_type": 534,
+      "tier": 6,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "538": {
+      "id_type": 538,
+      "tier": 4,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "539": {
+      "id_type": 539,
+      "tier": 5,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "540": {
+      "id_type": 540,
+      "tier": 6,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "544": {
+      "id_type": 544,
+      "tier": 4,
+      "type": 0,
+      "unicname": "ore"
+    },
+    "545": {
+      "id_type": 545,
+      "tier": 5,
+      "type": 0,
+      "unicname": "ore"
+    },
+    "546": {
+      "id_type": 546,
+      "tier": 6,
+      "type": 0,
+      "unicname": "ore"
+    },
+    "550": {
+      "id_type": 550,
+      "tier": 4,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "551": {
+      "id_type": 551,
+      "tier": 5,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "552": {
+      "id_type": 552,
+      "tier": 6,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "557": {
+      "id_type": 557,
+      "tier": 5,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "558": {
+      "id_type": 558,
+      "tier": 6,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "559": {
+      "id_type": 559,
+      "tier": 7,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "563": {
+      "id_type": 563,
+      "tier": 5,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "564": {
+      "id_type": 564,
+      "tier": 7,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "565": {
+      "id_type": 565,
+      "tier": 7,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "569": {
+      "id_type": 569,
+      "tier": 5,
+      "type": 0,
+      "unicname": "ore"
+    },
+    "570": {
+      "id_type": 570,
+      "tier": 6,
+      "type": 0,
+      "unicname": "ore"
+    },
+    "571": {
+      "id_type": 571,
+      "tier": 7,
+      "type": 0,
+      "unicname": "ore"
+    },
+    "575": {
+      "id_type": 575,
+      "tier": 5,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "576": {
+      "id_type": 576,
+      "tier": 6,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "577": {
+      "id_type": 577,
+      "tier": 7,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "582": {
+      "id_type": 582,
+      "tier": 6,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "583": {
+      "id_type": 583,
+      "tier": 7,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "584": {
+      "id_type": 584,
+      "tier": 8,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "587": {
+      "id_type": 587,
+      "tier": 7,
+      "type": 0,
+      "unicname": "wood"
+    },
+    "588": {
+      "id_type": 588,
+      "tier": 6,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "589": {
+      "id_type": 589,
+      "tier": 7,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "590": {
+      "id_type": 590,
+      "tier": 8,
+      "type": 0,
+      "unicname": "rock"
+    },
+    "594": {
+      "id_type": 594,
+      "tier": 6,
+      "type": 0,
+      "unicname": "ore"
+    },
+    "595": {
+      "id_type": 595,
+      "tier": 7,
+      "type": 0,
+      "unicname": "ore"
+    },
+    "596": {
+      "id_type": 596,
+      "tier": 8,
+      "type": 0,
+      "unicname": "ore"
+    },
+    "600": {
+      "id_type": 600,
+      "tier": 6,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "601": {
+      "id_type": 601,
+      "tier": 7,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "602": {
+      "id_type": 602,
+      "tier": 8,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "616": {
+      "id_type": 616,
+      "tier": 5,
+      "type": 4,
+      "unicname": "droneicon"
+    },
+    "617": {
+      "id_type": 617,
+      "tier": 6,
+      "type": 4,
+      "unicname": "droneicon"
+    },
+    "618": {
+      "id_type": 618,
+      "tier": 7,
+      "type": 4,
+      "unicname": "droneicon"
+    },
+    "619": {
+      "id_type": 619,
+      "tier": 3,
+      "type": 4,
+      "unicname": "droneicon"
+    },
+    "654": {
+      "id_type": 654,
+      "tier": 1,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "655": {
+      "id_type": 655,
+      "tier": 1,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "656": {
+      "id_type": 656,
+      "tier": 1,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "657": {
+      "id_type": 657,
+      "tier": 1,
+      "type": 0,
+      "unicname": "fiber"
+    },
+    "680": {
+      "id_type": 680,
+      "tier": 6,
+      "type": 3,
+      "unicname": "droneicon"
+    },
+    "681": {
+      "id_type": 681,
+      "tier": 5,
+      "type": 3,
+      "unicname": "droneicon"
+    },
+    "738": {
+      "id_type": 738,
+      "tier": 3,
+      "type": 3,
+      "unicname": "rabble"
+    },
+    "740": {
+      "id_type": 740,
+      "tier": 6,
+      "type": 3,
+      "unicname": "rabble"
+    },
+    "765": {
+      "id_type": 765,
+      "tier": 3,
+      "type": 3,
+      "unicname": "keen"
+    },
+    "767": {
+      "id_type": 767,
+      "tier": 6,
+      "type": 3,
+      "unicname": "keen"
+    },
+    "792": {
+      "id_type": 792,
+      "tier": 3,
+      "type": 3,
+      "unicname": "pyromaniac"
+    },
+    "794": {
+      "id_type": 794,
+      "tier": 6,
+      "type": 3,
+      "unicname": "pyromaniac"
+    },
+    "806": {
+      "id_type": 806,
+      "tier": 1,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "807": {
+      "id_type": 807,
+      "tier": 1,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "808": {
+      "id_type": 808,
+      "tier": 1,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "809": {
+      "id_type": 809,
+      "tier": 1,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "810": {
+      "id_type": 810,
+      "tier": 1,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "811": {
+      "id_type": 811,
+      "tier": 1,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "812": {
+      "id_type": 812,
+      "tier": 1,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "813": {
+      "id_type": 813,
+      "tier": 1,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "814": {
+      "id_type": 814,
+      "tier": 1,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "817": {
+      "id_type": 817,
+      "tier": 1,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "819": {
+      "id_type": 819,
+      "tier": 1,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "822": {
+      "id_type": 822,
+      "tier": 6,
+      "type": 3,
+      "unicname": "enforcer"
+    },
+    "824": {
+      "id_type": 824,
+      "tier": 1,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "825": {
+      "id_type": 825,
+      "tier": 1,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "826": {
+      "id_type": 826,
+      "tier": 1,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "828": {
+      "id_type": 828,
+      "tier": 1,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "829": {
+      "id_type": 829,
+      "tier": 1,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "832": {
+      "id_type": 832,
+      "tier": 6,
+      "type": 3,
+      "unicname": "dungeon_0"
+    },
+    "835": {
+      "id_type": 835,
+      "tier": 5,
+      "type": 3,
+      "unicname": "droneicon"
+    },
+    "836": {
+      "id_type": 836,
+      "tier": 1,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "837": {
+      "id_type": 837,
+      "tier": 1,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "838": {
+      "id_type": 838,
+      "tier": 6,
+      "type": 3,
+      "unicname": "droneicon"
+    },
+    "839": {
+      "id_type": 839,
+      "tier": 1,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "840": {
+      "id_type": 840,
+      "tier": 1,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "843": {
+      "id_type": 843,
+      "tier": 1,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "844": {
+      "id_type": 844,
+      "tier": 1,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "846": {
+      "id_type": 846,
+      "tier": 1,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "847": {
+      "id_type": 847,
+      "tier": 1,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "848": {
+      "id_type": 848,
+      "tier": 1,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "850": {
+      "id_type": 850,
+      "tier": 6,
+      "type": 3,
+      "unicname": "dungeon_0"
+    },
+    "856": {
+      "id_type": 856,
+      "tier": 6,
+      "type": 3,
+      "unicname": "droneicon"
+    },
+    "862": {
+      "id_type": 862,
+      "tier": 3,
+      "type": 3,
+      "unicname": "droneicon"
+    },
+    "868": {
+      "id_type": 868,
+      "tier": 6,
+      "type": 3,
+      "unicname": "droneicon"
+    },
+    "871": {
+      "id_type": 871,
+      "tier": 5,
+      "type": 3,
+      "unicname": "droneicon"
+    },
+    "969": {
+      "id_type": 969,
+      "tier": 3,
+      "type": 3,
+      "unicname": "lieutenant"
+    },
+    "971": {
+      "id_type": 971,
+      "tier": 3,
+      "type": 3,
+      "unicname": "lieutenant"
+    },
+    "974": {
+      "id_type": 974,
+      "tier": 3,
+      "type": 3,
+      "unicname": "lieutenant"
+    },
+    "975": {
+      "id_type": 975,
+      "tier": 3,
+      "type": 3,
+      "unicname": "lieutenant"
+    },
+    "977": {
+      "id_type": 977,
+      "tier": 6,
+      "type": 3,
+      "unicname": "commander"
+    },
+    "979": {
+      "id_type": 979,
+      "tier": 3,
+      "type": 3,
+      "unicname": "commander"
+    },
+    "1009": {
+      "id_type": 1009,
+      "tier": 3,
+      "type": 3,
+      "unicname": "suppression"
+    },
+    "1010": {
+      "id_type": 1010,
+      "tier": 3,
+      "type": 3,
+      "unicname": "suppression"
+    },
+    "1011": {
+      "id_type": 1011,
+      "tier": 3,
+      "type": 3,
+      "unicname": "suppression"
+    },
+    "1017": {
+      "id_type": 1017,
+      "tier": 3,
+      "type": 3,
+      "unicname": "masterof"
+    },
+    "1018": {
+      "id_type": 1018,
+      "tier": 3,
+      "type": 3,
+      "unicname": "masterof"
+    },
+    "1019": {
+      "id_type": 1019,
+      "tier": 3,
+      "type": 3,
+      "unicname": "masterof"
+    },
+    "1049": {
+      "id_type": 1049,
+      "tier": 3,
+      "type": 3,
+      "unicname": "ritual"
+    },
+    "1050": {
+      "id_type": 1050,
+      "tier": 3,
+      "type": 3,
+      "unicname": "ritual"
+    },
+    "1051": {
+      "id_type": 1051,
+      "tier": 3,
+      "type": 3,
+      "unicname": "ritual"
+    },
+    "1057": {
+      "id_type": 1057,
+      "tier": 3,
+      "type": 3,
+      "unicname": "mistress"
+    },
+    "1058": {
+      "id_type": 1058,
+      "tier": 3,
+      "type": 3,
+      "unicname": "mistress"
+    },
+    "1059": {
+      "id_type": 1059,
+      "tier": 3,
+      "type": 3,
+      "unicname": "mistress"
+    },
+    "1073": {
+      "id_type": 1073,
+      "tier": 3,
+      "type": 3,
+      "unicname": "chosenofmorgana"
+    },
+    "1074": {
+      "id_type": 1074,
+      "tier": 3,
+      "type": 3,
+      "unicname": "chosenofmorgana"
+    },
+    "1075": {
+      "id_type": 1075,
+      "tier": 3,
+      "type": 3,
+      "unicname": "chosenofmorgana"
+    },
+    "1129": {
+      "id_type": 1129,
+      "tier": 6,
+      "type": 3,
+      "unicname": "commander"
+    },
+    "1146": {
+      "id_type": 1146,
+      "tier": 6,
+      "type": 3,
+      "unicname": "lieutenant"
+    },
+    "1147": {
+      "id_type": 1147,
+      "tier": 5,
+      "type": 3,
+      "unicname": "commander"
+    },
+    "1148": {
+      "id_type": 1148,
+      "tier": 8,
+      "type": 3,
+      "unicname": "lieutenant"
+    },
+    "1161": {
+      "id_type": 1161,
+      "tier": 6,
+      "type": 3,
+      "unicname": "suppression"
+    },
+    "1169": {
+      "id_type": 1169,
+      "tier": 6,
+      "type": 3,
+      "unicname": "masterof"
+    },
+    "1186": {
+      "id_type": 1186,
+      "tier": 6,
+      "type": 3,
+      "unicname": "commander"
+    },
+    "1188": {
+      "id_type": 1188,
+      "tier": 8,
+      "type": 3,
+      "unicname": "commander"
+    },
+    "1196": {
+      "id_type": 1196,
+      "tier": 8,
+      "type": 3,
+      "unicname": "masterof"
+    },
+    "1209": {
+      "id_type": 1209,
+      "tier": 6,
+      "type": 3,
+      "unicname": "ritual"
+    },
+    "1225": {
+      "id_type": 1225,
+      "tier": 6,
+      "type": 3,
+      "unicname": "masterof"
+    },
+    "1226": {
+      "id_type": 1226,
+      "tier": 7,
+      "type": 3,
+      "unicname": "chosenofmorgana"
+    },
+    "1227": {
+      "id_type": 1227,
+      "tier": 7,
+      "type": 3,
+      "unicname": "ritual"
+    },
+    "1230": {
+      "id_type": 1230,
+      "tier": 7,
+      "type": 3,
+      "unicname": "chosenofmorgana"
+    },
+    "1308": {
+      "id_type": 1308,
+      "tier": 7,
+      "type": 3,
+      "unicname": "swordmaster"
+    },
+    "1335": {
+      "id_type": 1335,
+      "tier": 7,
+      "type": 3,
+      "unicname": "marksman "
+    },
+    "1336": {
+      "id_type": 1336,
+      "tier": 7,
+      "type": 3,
+      "unicname": "nameless"
+    },
+    "1371": {
+      "id_type": 1371,
+      "tier": 7,
+      "type": 3,
+      "unicname": "cryomancer"
+    },
+    "1389": {
+      "id_type": 1389,
+      "tier": 7,
+      "type": 3,
+      "unicname": "lord"
+    },
+    "1390": {
+      "id_type": 1390,
+      "tier": 8,
+      "type": 3,
+      "unicname": "lord"
+    },
+    "1406": {
+      "id_type": 1406,
+      "tier": 6,
+      "type": 0,
+      "unicname": "ore"
+    },
+    "1414": {
+      "id_type": 1414,
+      "tier": 1,
+      "type": 1,
+      "unicname": "hide"
+    },
+    "1460": {
+      "id_type": 1460,
+      "tier": 7,
+      "type": 3,
+      "unicname": "swordmaster"
+    },
+    "1484": {
+      "id_type": 1484,
+      "tier": 6,
+      "type": 3,
+      "unicname": "swordmaster"
+    },
+    "1485": {
+      "id_type": 1485,
+      "tier": 7,
+      "type": 3,
+      "unicname": "lord"
+    },
+    "1486": {
+      "id_type": 1486,
+      "tier": 6,
+      "type": 3,
+      "unicname": "marksman"
+    },
+    "1487": {
+      "id_type": 1487,
+      "tier": 7,
+      "type": 3,
+      "unicname": "marksman"
+    },
+    "1496": {
+      "id_type": 1496,
+      "tier": 7,
+      "type": 3,
+      "unicname": "marksman"
+    },
+    "1511": {
+      "id_type": 1511,
+      "tier": 6,
+      "type": 3,
+      "unicname": "marksman"
+    },
+    "1512": {
+      "id_type": 1512,
+      "tier": 7,
+      "type": 3,
+      "unicname": "lord"
+    },
+    "1521": {
+      "id_type": 1521,
+      "tier": 7,
+      "type": 3,
+      "unicname": "marksman"
+    },
+    "1522": {
+      "id_type": 1522,
+      "tier": 6,
+      "type": 3,
+      "unicname": "mastercryomancer"
+    },
+    "1523": {
+      "id_type": 1523,
+      "tier": 7,
+      "type": 3,
+      "unicname": "cryomancer"
+    },
+    "1524": {
+      "id_type": 1524,
+      "tier": 8,
+      "type": 3,
+      "unicname": "cryomancer"
+    },
+    "1526": {
+      "id_type": 1526,
+      "tier": 6,
+      "type": 3,
+      "unicname": "lord"
+    },
+    "1541": {
+      "id_type": 1541,
+      "tier": 7,
+      "type": 3,
+      "unicname": "lord"
+    },
+    "1545": {
+      "id_type": 1545,
+      "tier": 7,
+      "type": 3,
+      "unicname": "lord"
+    },
+    "1547": {
+      "id_type": 1547,
+      "tier": 6,
+      "type": 3,
+      "unicname": "mastercryomancer"
+    },
+    "1548": {
+      "id_type": 1548,
+      "tier": 7,
+      "type": 3,
+      "unicname": "lord"
+    },
+    "1549": {
+      "id_type": 1549,
+      "tier": 6,
+      "type": 3,
+      "unicname": "nameless"
+    },
+    "1550": {
+      "id_type": 1550,
+      "tier": 7,
+      "type": 3,
+      "unicname": "nameless"
+    },
+    "1555": {
+      "id_type": 1555,
+      "tier": 8,
+      "type": 3,
+      "unicname": "nameless"
+    },
+    "1559": {
+      "id_type": 1559,
+      "tier": 7,
+      "type": 3,
+      "unicname": "lord"
+    },
+    "1566": {
+      "id_type": 1566,
+      "tier": 7,
+      "type": 3,
+      "unicname": "lord"
+    },
+    "1574": {
+      "id_type": 1574,
+      "tier": 6,
+      "type": 3,
+      "unicname": "nameless"
+    },
+    "1575": {
+      "id_type": 1575,
+      "tier": 8,
+      "type": 3,
+      "unicname": "lord"
+    },
+    "1576": {
+      "id_type": 1576,
+      "tier": 8,
+      "type": 3,
+      "unicname": "nameless"
+    },
+    "1584": {
+      "id_type": 1584,
+      "tier": 7,
+      "type": 3,
+      "unicname": "mastercryomancer"
+    },
+    "1708": {
+      "id_type": 1708,
+      "tier": 5,
+      "type": 3,
+      "unicname": "warrior"
+    },
+    "1713": {
+      "id_type": 1713,
+      "tier": 5,
+      "type": 3,
+      "unicname": "leader"
+    },
+    "1714": {
+      "id_type": 1714,
+      "tier": 5,
+      "type": 3,
+      "unicname": "maiden"
+    },
+    "1716": {
+      "id_type": 1716,
+      "tier": 5,
+      "type": 3,
+      "unicname": "graybeard"
+    },
+    "1717": {
+      "id_type": 1717,
+      "tier": 5,
+      "type": 3,
+      "unicname": "grandfather"
+    },
+    "1720": {
+      "id_type": 1720,
+      "tier": 5,
+      "type": 3,
+      "unicname": "elder"
+    },
+    "1721": {
+      "id_type": 1721,
+      "tier": 5,
+      "type": 3,
+      "unicname": "druid"
+    },
+    "1860": {
+      "id_type": 1860,
+      "tier": 5,
+      "type": 3,
+      "unicname": "chief"
+    },
+    "1861": {
+      "id_type": 1861,
+      "tier": 5,
+      "type": 3,
+      "unicname": "warrior"
+    },
+    "1865": {
+      "id_type": 1865,
+      "tier": 5,
+      "type": 3,
+      "unicname": "leader"
+    },
+    "1866": {
+      "id_type": 1866,
+      "tier": 5,
+      "type": 3,
+      "unicname": "leader"
+    },
+    "1869": {
+      "id_type": 1869,
+      "tier": 5,
+      "type": 3,
+      "unicname": "druid"
+    },
+    "1872": {
+      "id_type": 1872,
+      "tier": 5,
+      "type": 3,
+      "unicname": "druid"
+    },
+    "1885": {
+      "id_type": 1885,
+      "tier": 5,
+      "type": 3,
+      "unicname": "chief"
+    },
+    "1890": {
+      "id_type": 1890,
+      "tier": 5,
+      "type": 3,
+      "unicname": "maiden"
+    },
+    "1891": {
+      "id_type": 1891,
+      "tier": 5,
+      "type": 3,
+      "unicname": "leader"
+    },
+    "1893": {
+      "id_type": 1893,
+      "tier": 5,
+      "type": 3,
+      "unicname": "chief"
+    },
+    "2646": {
+      "id_type": 2646,
+      "tier": 7,
+      "type": 3,
+      "unicname": "nameless"
+    },
+    "2653": {
+      "id_type": 2653,
+      "tier": 6,
+      "type": 3,
+      "unicname": "lord"
+    }
+  }
