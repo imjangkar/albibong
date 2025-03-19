@@ -1,27 +1,39 @@
+class Vector2 {
+    constructor(public x: number, public y: number) {}
+}
+
 class RadarRendering {
-    static rotation = 45;
+    static rotation = -45;
     static ResourceSize = 45;
     static mistSize = 35;
     static ScreenRenderSize = 28;
 
     static getDistance(radarPostion: any, itemPostion: any){
-        const rX = itemPostion.x - radarPostion.x; // 0 - 0 = 0
-        const rY = itemPostion.y - radarPostion.y; // 20 - 0 = 20
+        const rX = itemPostion.x - radarPostion.x;
+        const rY = itemPostion.y - radarPostion.y;
 
-        return Math.sqrt(rX * rX + rY * rY); // Math.sqrt(0 + 400) = 20
+        return Math.sqrt(rX * rX + rY * rY);
+    }
+
+    static Rotate(v: Vector2, angle: number): Vector2 {
+        return new Vector2(
+            v.x * Math.cos(angle) - v.y * Math.sin(angle),
+            v.x * Math.sin(angle) + v.y * Math.cos(angle)
+        );
     }
 
     static getRelativePositionX(radarPostion: any, itemPostion: any, zoom: number) {
         const angle = (Math.PI / 180) * this.rotation;
-        const relativeX = itemPostion.x - radarPostion.x;
-        const relativeY = itemPostion.y - radarPostion.y;
-        return (-1 * relativeX * Math.cos(angle) - relativeY * Math.sin(angle)) * zoom;
+        const relativePosition = new Vector2(itemPostion.x - radarPostion.x, itemPostion.y - radarPostion.y);
+        const rotatedPosition = this.Rotate(relativePosition, angle);
+        return -1 * rotatedPosition.x * zoom;
     }
 
     static getRelativePositionY(radarPostion: any, itemPostion: any, zoom: number) {
         const angle = (Math.PI / 180) * this.rotation;
-        const relativeY = itemPostion.y - radarPostion.y;
-        return (relativeY * Math.cos(angle) + relativeY * Math.sin(angle)) * zoom;
+        const relativePosition = new Vector2(itemPostion.x - radarPostion.x, itemPostion.y - radarPostion.y);
+        const rotatedPosition = this.Rotate(relativePosition, angle);
+        return rotatedPosition.y * zoom;
     }
 
     static renderDistance(ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement, radarPosition: any, location: any, itemSize: number, rX: number, rY: number) {
@@ -115,7 +127,7 @@ class RadarRendering {
             return;
         }
         
-        if (!resource.size && resource.item_type !== "unknown") {
+        if (!resource.size && resource.item_type !== "unknown" ) {
             return;
         }
 
@@ -129,7 +141,9 @@ class RadarRendering {
         
         /* Check if resource is displayed */
         if (!displayedSettings.resources.includes(resource.item_type)) {
-            return;
+            if(resource.enchant !== 2 && resource.enchant !== 3) {
+                return;
+            }
         }
         if (!displayedSettings.tiers.includes(resource.tier)) {
             return;

@@ -133,3 +133,4 @@ No, this is not possible. If Albion is blocked in your country, I suggest to add
 - Event and Operation Codes based on [AlbionOnline-StatisticsAnalysis](https://github.com/Triky313/AlbionOnline-StatisticsAnalysis) with modifications
 - Map and Item Codes based on [ao-bin-dumps](https://github.com/ao-data/ao-bin-dumps) with modifications
 - Use of [photon-packet-parser](https://github.com/santiac89/photon-packet-parser) with modifications
+- Use of [radar](https://github.com/pxlbit228/albion-radar-deatheye-2pc/blob/master/Radar/Packets/Handlers/MoveEvent.cs)

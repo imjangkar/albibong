@@ -1,16 +1,28 @@
 from albibong.models.models import BaseModel
+import struct
+import time
+import threading
 from albibong.threads.websocket_server import send_event
 from albibong.classes.mobs import MobInfo
 
 
 class Radar(BaseModel):
     def __init__(self) -> None:
+        self.settings = {
+            "expiration_time": 180, # 3 minutes
+            "sync_time": 0.25, # 250 ms
+            "clenaing_time": 60 # 1 minute
+        }
         self.position = {"x": 0, "y": 0}
-        self.harvestable_list = []
-        self.dungeon_list = []
-        self.chest_list = []
-        self.mist_list = []
-        self.mob_list = []
+        self.harvestable_list = {}
+        self.dungeon_list = {}
+        self.chest_list = {}
+        self.mist_list = {}
+        self.mob_list = {}
+        self.update_triggered = False
+        
+        # Call the clening job
+        self.start_cleaning_job()
     
     def update_position(self, x, y):
         self.position = {"x": x, "y": y}
@@ -25,6 +37,7 @@ class Radar(BaseModel):
         send_event(event)
     
     def add_harvestable(self, id, type, tier, posX, posY, enchant, size):
+        time_stamp = time.time() + self.settings["expiration_time"]
         FIBER_IDS = [14,15,16] # Standard, From Spotk lokation, dead mob
         WOOD_IDS = [0,3]
         ROCK_IDS = [7,9]
@@ -50,7 +63,8 @@ class Radar(BaseModel):
             item_type = "ORE"
             unique_name = f"ore_{tier}_{enchant}"
 
-        self.harvestable_list.append({
+
+        self.harvestable_list[id] = {
             "id": id,
             "type": type,
             "tier": tier,
@@ -62,17 +76,18 @@ class Radar(BaseModel):
             "size": size,
             "item_type": item_type,
             "unique_name": unique_name,
+            "expiration_time": time_stamp,
             "debug": {}
-        })
+        }
 
-        self.__handle_update()
+        self.debounce_handle_update()
     
     def update_harvestable(self, id, count):
-        for harvestable in self.harvestable_list:
-            if harvestable["id"] == id:
-                harvestable["size"] = count
-        
-        self.__handle_update()
+        time_stamp = time.time() + self.settings["expiration_time"]
+        if id in self.harvestable_list:
+            self.harvestable_list[id]["size"] = count
+            self.harvestable_list[id]["expiration_time"] = time_stamp
+            self.debounce_handle_update()
 
     def add_dungeon(self, id, location, name, enchant, parameters):
         try:
@@ -107,7 +122,7 @@ class Radar(BaseModel):
             else:
                 unique_name = f"unknown_dungeon"
             
-            self.dungeon_list.append({
+            self.dungeon_list[id] = {
                 "id": id,
                 "dungeon_type": dungeon_type,
                 "tier": tier,
@@ -120,9 +135,9 @@ class Radar(BaseModel):
                 "unique_name": unique_name,
                 "is_consumable": is_consumable,
                 "debug": parameters,
-            })
+            }
 
-            self.__handle_update()
+            self.debounce_handle_update()
         except Exception as e:
             print(e)
             print(parameters)
@@ -140,7 +155,7 @@ class Radar(BaseModel):
         elif "YELLOW" in chest_name or "LEGENDARY" in chest_name:
             enchant = 4
 
-        self.chest_list.append({
+        self.chest_list[id] = {
             "id": id,
             "location": {
             "x": location[0],
@@ -151,16 +166,12 @@ class Radar(BaseModel):
             "chest_name": chest_name,
             "enchant": enchant,
             "debug": parameters,
-        })
+        }
 
-        self.__handle_update()
+        self.debounce_handle_update()
 
     def add_mist(self, id, location, name, enchant, parameters):
-        print("Mist")
-        print(parameters)
-        
-        if not any(mist["id"] == id for mist in self.mist_list):
-            self.mist_list.append({
+        self.mist_list[id] = {
             "id": id,
             "location": {
                 "x": location[0],
@@ -169,68 +180,85 @@ class Radar(BaseModel):
             "name": name,
             "enchant": enchant,
             "debug": parameters,
-            })
-
-            self.__handle_update()
-
+        }
 
     def add_mob(self, id, type_id, location, enchant, rarity, parameters):
         # mobInfo = MobInfo.get_mob_from_code(str(type_id))
         mobInfo = None
-        # 13 heath
+        # 13 heath 14 healt
         # 21 tier
-        if not any(mob["id"] == id for mob in self.mob_list):
-            self.mob_list.append({
-                "id": id,
-                "type_id": type_id,
-                "location": {
-                    "x": location[0],
-                    "y": location[1]
-                },
-                "mob_name": mobInfo["unicname"] if mobInfo else "unknown",
-                "mob_type": mobInfo["type"] if mobInfo else 0,
-                "mob_tier": mobInfo["tier"] if mobInfo else 0,
-                "debug": parameters
-            })
+        self.mob_list[id] = {
+            "id": id,
+            "type_id": type_id,
+            "location": {
+                "x": location[0],
+                "y": location[1]
+            },
+            "mob_name": mobInfo["unicname"] if mobInfo else "unknown",
+            "mob_type": mobInfo["type"] if mobInfo else 0,
+            "mob_tier": mobInfo["tier"] if mobInfo else 0,
+            "debug": parameters
+        }
 
-            self.__handle_update()
+        self.debounce_handle_update()
 
     def handle_event_leave(self, id):
-        self.dungeon_list = [dungeon for dungeon in self.dungeon_list if dungeon["id"] != id]
-        self.chest_list = [chest for chest in self.chest_list if chest["id"] != id]
-        self.mist_list = [mist for mist in self.mist_list if mist["id"] != id]
-        self.mob_list = [mob for mob in self.mob_list if mob["id"] != id]
+        founded = False
 
-        self.__handle_update()
+        if id in self.harvestable_list:
+            del self.harvestable_list[id]
+            founded = True
+        if id in self.dungeon_list:
+            del self.dungeon_list[id]
+            founded = True
+        if id in self.chest_list:
+            del self.chest_list[id]
+            founded = True
+        if id in self.mist_list:
+            del self.mist_list[id]
+            founded = True
+        if id in self.mob_list:
+            del self.mob_list[id]
+            founded = True
 
-    def handle_event_move(self, id, posX, posY):
-        for mist in self.mist_list:
-            if mist["id"] == id:
-                mist["location"] = {"x": posX, "y": posY}
+        if founded:
+            self.debounce_handle_update()
 
-        for mob in self.mob_list:
-            if mob["id"] == id:
-                mob["location"] = {"x": posX, "y": posY}
+    def handle_event_move(self, id, parameters):
+        founded = False
 
-        self.__handle_update()
+        # Extract position bytes from parameters
+        position_bytes = parameters[1][9:17]
+        posX, posY = struct.unpack('ff', bytes(position_bytes))
+
+        if id in self.mist_list:
+            self.mist_list[id]["location"] = {"x": posX, "y": posY}
+            founded = True
+
+        if id in self.mob_list:
+            self.mob_list[id]["location"] = {"x": posX, "y": posY}
+            founded = True
+
+        if founded:
+            self.debounce_handle_update()
 
     def serialize(self):
         return {
-            "harvestable_list": self.harvestable_list,
-            "dungeon_list": self.dungeon_list,
-            "chest_list": self.chest_list,
-            "mist_list": self.mist_list,
-            "mob_list": self.mob_list,
+            "harvestable_list": list(self.harvestable_list.values()),
+            "dungeon_list": list(self.dungeon_list.values()),
+            "chest_list": list(self.chest_list.values()),
+            "mist_list": list(self.mist_list.values()),
+            "mob_list": list(self.mob_list.values()),
         }
 
     def change_location(self):
-        self.harvestable_list = []
-        self.dungeon_list = []
-        self.chest_list = []
-        self.mist_list = []
-        self.mob_list = []
+        self.harvestable_list = {}
+        self.dungeon_list = {}
+        self.chest_list = {}
+        self.mist_list = {}
+        self.mob_list = {}
         self.update_position(0, 0)
-        self.__handle_update()
+        self.debounce_handle_update()
 
     def __handle_update(self):
         payload = self.serialize()
@@ -240,3 +268,26 @@ class Radar(BaseModel):
         }
 
         send_event(event)
+
+    def debounce_handle_update(self):
+        if not self.update_triggered:
+            self.update_triggered = True
+            threading.Timer(self.settings["sync_time"], self.__debounced_update).start()
+
+    def __debounced_update(self):
+        self.update_triggered = False
+        self.__handle_update()
+
+    def clean_expired_harvestables(self):
+        current_time = time.time()
+        self.harvestable_list = {id: harvestable for id, harvestable in self.harvestable_list.items() if harvestable["expiration_time"] > current_time}
+        self.debounce_handle_update()
+
+    def start_cleaning_job(self):
+        def job():
+            while True:
+                self.clean_expired_harvestables()
+                time.sleep(self.settings["clenaing_time"])  # Run every 1 minute
+
+        thread = threading.Thread(target=job, daemon=True)
+        thread.start()

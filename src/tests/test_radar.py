@@ -1,4 +1,5 @@
 import unittest
+import time
 from albibong.classes.radar import Radar
 
 class TestRadar(unittest.TestCase):
@@ -65,6 +66,22 @@ class TestRadar(unittest.TestCase):
 
         self.radar.add_dungeon(id, location, name, enchant, parameters)
         self.assertEqual(self.radar.dungeon_list[0]["id"], id)
+
+    def test_clean_expired_harvestables(self):
+        id = 1
+        type = 16
+        tier = 4
+        posX = 100
+        posY = 100
+        enchant = 1
+        size = 10
+        self.radar.add_harvestable(id, type, tier, posX, posY, enchant, size)
+        self.assertIn(id, self.radar.harvestable_list)
+
+        # Simulate expiration
+        time.sleep(self.radar.expiration_time + 1)
+        self.radar.clean_expired_harvestables()
+        self.assertNotIn(id, self.radar.harvestable_list)
 
 if __name__ == '__main__':
     unittest.main()

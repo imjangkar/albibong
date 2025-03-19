@@ -56,10 +56,6 @@ from albibong.classes.event_handler.radar_event_leave import (
     radar_event_leave
 )
 
-from albibong.classes.event_handler.radar_event_move import (
-    radar_event_move
-)
-
 from albibong.classes.event_handler.radar_event_mobs_object import (
     radar_event_new_mob
 )
@@ -162,8 +158,6 @@ class EventHandler:
 
         ## Handle Action
         self.event_handler[EventCode.LEAVE.value] = radar_event_leave
-        self.event_handler[EventCode.MOVE.value] = radar_event_move
-
 
         # Request Handler
         self.request_handler[OperationCode.MOVE.value] = handle_operation_move
@@ -201,11 +195,22 @@ class EventHandler:
         return handler(world_data, parameters)
 
     def on_event(self, world_data: WorldData, parameters):
-        if EVENT_TYPE_PARAMETER not in parameters:
-            return None
+        handle_event = False
+        call_type = None
+        
+        if EVENT_TYPE_PARAMETER in parameters:
+            if parameters[EVENT_TYPE_PARAMETER] in self.event_handler:
+                handle_event = True
+                call_type = parameters[EVENT_TYPE_PARAMETER]
+        else:
+            if len(parameters) == 2 and 1 in parameters and parameters[1][0] == EventCode.MOVE.value:
+                handle_event = True
+                call_type = EventCode.MOVE.value
 
-        if parameters[EVENT_TYPE_PARAMETER] not in self.event_handler:
-            return None
-
-        handler = self.event_handler[parameters[EVENT_TYPE_PARAMETER]]
-        return handler(world_data, parameters)
+        if handle_event:
+            if call_type == EventCode.MOVE.value:
+                id = parameters[0]
+                world_data.radar.handle_event_move(id, parameters)
+            else:
+                handler = self.event_handler[call_type]
+                return handler(world_data, parameters)
