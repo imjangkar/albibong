@@ -3,7 +3,7 @@ import struct
 import time
 import threading
 from albibong.threads.websocket_server import send_event
-from albibong.classes.mobs import MobInfo
+from albibong.classes.object_into.harvestables_info import HarvestablesInfo
 
 
 class Radar(BaseModel):
@@ -38,31 +38,21 @@ class Radar(BaseModel):
     
     def add_harvestable(self, id, type, tier, posX, posY, enchant, size):
         time_stamp = time.time() + self.settings["expiration_time"]
-        FIBER_IDS = [14,15,16] # Standard, From Spotk lokation, dead mob
-        WOOD_IDS = [0,3]
-        ROCK_IDS = [7,9]
-        HIDE_IDS = [20,23, 48]
-        ORE_IDS = [27, 29]
+
+        # Remove old list of ids if this will work fine
+        # FIBER_IDS = [14,15,16]
+        # WOOD_IDS = [0,3]
+        # ROCK_IDS = [7,9]
+        # HIDE_IDS = [20,23, 48]
+        # ORE_IDS = [27, 29]
         
         unique_name = ""
         item_type = "unknown"
-        
-        if(type in FIBER_IDS):
-            item_type = "FIBER"
-            unique_name = f"fiber_{tier}_{enchant}"
-        elif(type in WOOD_IDS):
-            item_type = "WOOD"
-            unique_name = f"Logs_{tier}_{enchant}"
-        elif(type in ROCK_IDS):
-            item_type = "ROCK"
-            unique_name = f"rock_{tier}_{enchant}"
-        elif(type in HIDE_IDS):
-            item_type = "HIDE"
-            unique_name = f"hide_{tier}_{enchant}"
-        elif(type in ORE_IDS):
-            item_type = "ORE"
-            unique_name = f"ore_{tier}_{enchant}"
 
+        resource_type = HarvestablesInfo.get_harvestables_id(type)
+        if resource_type:
+            item_type = resource_type["@resource"]
+            unique_name = f"{item_type.toLowerCase()}_{tier}_{enchant}"
 
         self.harvestable_list[id] = {
             "id": id,
@@ -287,7 +277,7 @@ class Radar(BaseModel):
         def job():
             while True:
                 self.clean_expired_harvestables()
-                time.sleep(self.settings["clenaing_time"])  # Run every 1 minute
+                time.sleep(self.settings["clenaing_time"])
 
         thread = threading.Thread(target=job, daemon=True)
         thread.start()
