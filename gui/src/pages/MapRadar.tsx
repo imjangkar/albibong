@@ -305,7 +305,7 @@ const MapRadar = () => {
                         <Paper sx={{ padding: '10px', maxHeight: '500px', overflowY: 'scroll' }}>
                             {radarWidget.mob_list.map((mob, index) => (
                                 <Typography key={index} onClick={() => setActiveTab(`mob_${index}`)}>
-                                    {`${index}) ID: ${mob.id}, Type ID: ${mob.type_id}, Location: (${mob.location.x}, ${mob.location.y}), Mob Name: ${mob.mob_name}, Mob Type: ${mob.mob_type}, Mob Tier: ${mob.mob_tier}`}
+                                    {`${index}) ID: ${mob.id}, Type ID: ${mob.type_id}, Location: (${mob.location.x}, ${mob.location.y}), Health: ${mob.health.value}/${mob.health.max}, Unique Name: ${mob.unique_name}, Enchant: ${mob.enchant}, Tier: ${mob.tier}, Mob Type: ${mob.mob_type}, Harvestable Type: ${mob.harvestable_type}, Rarity: ${mob.rarity}, Mob Name: ${mob.mob_name}`}
                                 </Typography>
                             ))}
                         </Paper>

@@ -57,7 +57,8 @@ from albibong.classes.event_handler.radar_event_leave import (
 )
 
 from albibong.classes.event_handler.radar_event_mobs_object import (
-    radar_event_new_mob
+    radar_event_new_mob,
+    radar_event_mob_change_state
 )
 
 
@@ -155,6 +156,8 @@ class EventHandler:
 
         ## Mobs
         self.event_handler[EventCode.NEW_MOB.value] = radar_event_new_mob
+        self.event_handler[EventCode.MOB_CHANGE_STATE.value] = radar_event_mob_change_state
+        
 
         ## Handle Action
         self.event_handler[EventCode.LEAVE.value] = radar_event_leave

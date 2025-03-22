@@ -71,9 +71,18 @@ export type MobObject = {
     x: number;
     y: number;
   };
+  health: {
+    max: number;
+    value: number;
+  };
+  unique_name: string;
+  enchant: number;
+  tier: string;
+  mob_type: string;
+  harvestable_type: string;
+  rarity: number;
   mob_name: string;
-  mob_type: number;
-  mob_tier: number;
+  avatar: string;
   debug: any;
 };
 

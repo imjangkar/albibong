@@ -263,9 +263,41 @@ class RadarRendering {
         if (!displayedSettings.object_types.includes('MOBS')) {
             return;
         }
+
+        const renderStatic = () => {
+            const mobName = `${mob.health.value} / ${mob.health.max}`;
+            this.renderValue(ctx, canvas, this.ResourceSize, rX, rY, mobName);
+
+            ctx.fillStyle = 'purple';
+            ctx.beginPath();
+            ctx.arc(canvas.width / 2 - rX, canvas.height / 2 - rY, 10, 0, 2 * Math.PI);
+            ctx.fill();
+        }
         
         const rX =  this.getRelativePositionX(radarPosition, mob.location, zoom);
         const rY =  this.getRelativePositionY(radarPosition, mob.location, zoom);
+
+        if(mob.mob_type === 'HARVESTABLE' && displayedSettings.object_types.includes('RESOURCE')) {
+            /* Check if resource is displayed */
+            if (!displayedSettings.resources.includes(mob.harvestable_type)) {
+                renderStatic();
+            }else if (!displayedSettings.enchants.includes(mob.enchant)) {
+                renderStatic();
+            } else {
+                const mobName = `${mob.id}`;
+                this.renderValue(ctx, canvas, this.ResourceSize, rX, rY, mobName);
+                /* Render Iteam */
+                const img = new Image();
+                img.src = `/public/mapMarker/resources/${mob.avatar}.png`;
+                img.onload = () => {
+                    ctx.drawImage(img, canvas.width / 2 - rX - this.ResourceSize / 2, canvas.height / 2 - rY - this.ResourceSize / 2, this.ResourceSize, this.ResourceSize);
+                };
+            }
+
+             
+        } else {
+            renderStatic();
+        }
 
         /* Render Iteam */
         // if(mob.mob_name !== "unknown12") {
@@ -276,16 +308,11 @@ class RadarRendering {
         //         ctx.drawImage(img, canvas.width / 2 - rX - this.ResourceSize / 2, canvas.height / 2 - rY - this.ResourceSize / 2, this.ResourceSize, this.ResourceSize);
         //     };
         // } else {
-            ctx.fillStyle = 'purple';
-            ctx.beginPath();
-            ctx.arc(canvas.width / 2 - rX, canvas.height / 2 - rY, 10, 0, 2 * Math.PI);
-            ctx.fill();
+           
         // }
 
-
         /* Render Chest Name if is static chest */
-        const mobName = `${mob.id} || ${mob.type_id}`;
-        this.renderValue(ctx, canvas, this.ResourceSize, rX, rY, mobName);
+        
 
     }
 

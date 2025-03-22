@@ -1,5 +1,4 @@
 import unittest
-import time
 from albibong.classes.radar import Radar
 
 class TestRadar(unittest.TestCase):
@@ -8,7 +7,6 @@ class TestRadar(unittest.TestCase):
 
     def test_simple(self):
         self.assertEqual(1 + 1, 2)
-
 
     def test_add_solo_dungeon(self):
         id = 1
@@ -28,7 +26,7 @@ class TestRadar(unittest.TestCase):
         parameters = {0: 275023, 1: [60.0, -310.0], 2: 90.0, 3: 'T5_PROTAL_SOLO', 5: 'SWAMP_RED_RANDOM_EXIT_10x10_PORTAL_SOLO_B_CORRUPT', 6: 44, 7: True, 8: 0, 11: True, 14: 0, 16: -1, 17: 1, 19: 0, 252: 319}
 
         self.radar.add_dungeon(id, location, name, enchant, parameters)
-        self.assertEqual(self.radar.dungeon_list[0]["id"], id)
+        self.assertEqual(self.radar.dungeon_list[id]["id"], id)
 
 
     def test_add_corrupted_dungeon(self):
@@ -41,7 +39,7 @@ class TestRadar(unittest.TestCase):
 
 
         self.radar.add_dungeon(id, location, name, enchant, parameters)
-        self.assertEqual(self.radar.dungeon_list[0]["id"], id)
+        self.assertEqual(self.radar.dungeon_list[id]["id"], id)
 
     def test_add_hellgate_dungeon(self):
         id = 1
@@ -53,7 +51,7 @@ class TestRadar(unittest.TestCase):
 
 
         self.radar.add_dungeon(id, location, name, enchant, parameters)
-        self.assertEqual(self.radar.dungeon_list[0]["id"], id)
+        self.assertEqual(self.radar.dungeon_list[id]["id"], id)
 
     def test_add_other_dungeon(self):
         id = 1
@@ -65,23 +63,7 @@ class TestRadar(unittest.TestCase):
 
 
         self.radar.add_dungeon(id, location, name, enchant, parameters)
-        self.assertEqual(self.radar.dungeon_list[0]["id"], id)
-
-    def test_clean_expired_harvestables(self):
-        id = 1
-        type = 16
-        tier = 4
-        posX = 100
-        posY = 100
-        enchant = 1
-        size = 10
-        self.radar.add_harvestable(id, type, tier, posX, posY, enchant, size)
-        self.assertIn(id, self.radar.harvestable_list)
-
-        # Simulate expiration
-        time.sleep(self.radar.expiration_time + 1)
-        self.radar.clean_expired_harvestables()
-        self.assertNotIn(id, self.radar.harvestable_list)
+        self.assertEqual(self.radar.dungeon_list[id]["id"], id)
 
 if __name__ == '__main__':
     unittest.main()

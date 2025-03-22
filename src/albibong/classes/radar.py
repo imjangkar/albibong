@@ -4,6 +4,7 @@ import time
 import threading
 from albibong.threads.websocket_server import send_event
 from albibong.classes.object_into.harvestables_info import HarvestablesInfo
+from albibong.classes.object_into.mob_info import MobInfo
 
 
 class Radar(BaseModel):
@@ -52,7 +53,7 @@ class Radar(BaseModel):
         resource_type = HarvestablesInfo.get_harvestables_id(type)
         if resource_type:
             item_type = resource_type["@resource"]
-            unique_name = f"{item_type.toLowerCase()}_{tier}_{enchant}"
+            unique_name = f"{item_type.lower()}_{tier}_{enchant}"
 
         self.harvestable_list[id] = {
             "id": id,
@@ -172,11 +173,35 @@ class Radar(BaseModel):
             "debug": parameters,
         }
 
-    def add_mob(self, id, type_id, location, enchant, rarity, parameters):
-        # mobInfo = MobInfo.get_mob_from_code(str(type_id))
-        mobInfo = None
-        # 13 heath 14 healt
-        # 21 tier
+    def updateMobEnchant(self, id, enchant):
+        print("Update enchant")
+        if id in self.mob_list:
+            self.mob_list[id]["enchant"] = enchant
+            self.mob_list[id]["avatar"] = MobInfo.convert_avater(self.mob_list[id]["mob_type"], self.mob_list[id]["harvestable_type"], self.mob_list[id]["tier"], enchant)
+            self.debounce_handle_update()
+
+    def add_mob(self, id, type_id, location, enchant, parameters):
+        tier = 0
+        mob_type = None
+        avatar = None
+        harvestable_type = None
+        rarity = 0
+        mob_name = "unknown"
+        unique_name = "unknown"
+        mob_max_health = parameters[14]
+        mob_current_health = parameters[13] if 13 in parameters else parameters[14]
+        mobInfo = MobInfo.get_mob_id(type_id)
+
+        if mobInfo:
+            mob_info_data = MobInfo.deserialize(mobInfo, enchant, HarvestablesInfo)
+            unique_name = mob_info_data["unique_name"]
+            tier = mob_info_data["tier"]
+            mob_type = mob_info_data["type"]
+            harvestable_type = mob_info_data["harvestable_type"]
+            rarity = mob_info_data["rarity"]
+            mob_name = mob_info_data["mob_name"]
+            avatar = mob_info_data["avatar"]
+
         self.mob_list[id] = {
             "id": id,
             "type_id": type_id,
@@ -184,9 +209,18 @@ class Radar(BaseModel):
                 "x": location[0],
                 "y": location[1]
             },
-            "mob_name": mobInfo["unicname"] if mobInfo else "unknown",
-            "mob_type": mobInfo["type"] if mobInfo else 0,
-            "mob_tier": mobInfo["tier"] if mobInfo else 0,
+            "health": {
+                "max": mob_max_health,
+                "value": mob_current_health
+            },
+            "unique_name": unique_name,
+            "enchant": enchant,
+            "tier": tier,
+            "mob_type": mob_type,
+            "harvestable_type": harvestable_type,
+            "rarity": rarity,
+            "mob_name": mob_name,
+            "avatar": avatar,
             "debug": parameters
         }
 

@@ -18,4 +18,14 @@ class HarvestablesInfo:
         except Exception as e:
             print(e)
             return None
+        
+    def get_harvestables_by_name(cls, name: str):
+        try:
+            for item in harvestables_by_id["AO-Harvestables"]["Harvestable"]:
+                if item.get("@name") == name:
+                    return item
+            return None
+        except Exception as e:
+            print(e)
+            return None
 
