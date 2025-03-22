@@ -20,7 +20,9 @@ class Radar(BaseModel):
         self.chest_list = {}
         self.mist_list = {}
         self.mob_list = {}
+        self.players_list = {}
         self.update_triggered = False
+        self.XOR_CODE = None
         
         # Call the clening job
         self.start_cleaning_job()
@@ -226,6 +228,48 @@ class Radar(BaseModel):
 
         self.debounce_handle_update()
 
+    def add_player(self, id, parameters):
+        offset = [0, 1, 8, 51, 53, 16, 20, 22, 23, 40, 43]
+        posX, posY = 0, 0
+
+        username = parameters[offset[1]]
+        guild = parameters[offset[2]] if offset[2] in parameters else ""
+        alliance = parameters[offset[3]] if offset[3] in parameters else ""
+        faction = parameters[offset[4]] if offset[4] in parameters else None
+        encrypted_position = parameters[offset[5]] if offset[5] in parameters else None
+        if encrypted_position:
+            posX, posY = self._decrypt_position(encrypted_position, self.XOR_CODE)
+        speed = parameters[offset[6]] if offset[6] in parameters else 5.5
+        player_max_health = parameters[offset[7]]
+        player_current_health = parameters[offset[8]] if offset[8] in parameters else parameters[offset[7]]
+       
+
+        equipments = parameters[offset[9]] if offset[9] in parameters else []
+        spells = parameters[offset[10]] if offset[10] in parameters else [] #
+
+
+
+        self.players_list[id] = {
+            "id": id,
+            "username": username,
+            "guild": guild,
+            "alliance": alliance,
+            "faction": faction,
+            "speed": speed,
+            "health": {
+                "max": player_max_health,
+                "value": player_current_health
+            },
+            "position": encrypted_position,
+            "equipments": equipments,
+            "spells": spells,
+            "location": {
+                "x": posX,
+                "y": posY
+            }
+        }
+        # self.debounce_handle_update()
+
     def handle_event_leave(self, id):
         founded = False
 
@@ -250,21 +294,27 @@ class Radar(BaseModel):
 
     def handle_event_move(self, id, parameters):
         founded = False
-
-        # Extract position bytes from parameters
         position_bytes = parameters[1][9:17]
-        posX, posY = struct.unpack('ff', bytes(position_bytes))
+
+        if id in self.players_list:
+            posX, posY = self._decrypt_position(position_bytes, self.XOR_CODE)
+            founded = True
 
         if id in self.mist_list:
+            posX, posY = self._decrypt_position(position_bytes)
             self.mist_list[id]["location"] = {"x": posX, "y": posY}
             founded = True
 
         if id in self.mob_list:
+            posX, posY = self._decrypt_position(position_bytes)
             self.mob_list[id]["location"] = {"x": posX, "y": posY}
             founded = True
 
         if founded:
             self.debounce_handle_update()
+
+    def handle_event_key_sync(self, XOR_CODE):
+        self.XOR_CODE = XOR_CODE
 
     def serialize(self):
         return {
@@ -274,6 +324,24 @@ class Radar(BaseModel):
             "mist_list": list(self.mist_list.values()),
             "mob_list": list(self.mob_list.values()),
         }
+
+    def _decrypt_position(self, encrypted_position, xor_code=None):
+        # TODO handle KEY_SYNC
+        # xor_code = b'\x01\x02\x03\x04\x05\x06\x07\x08'
+        if xor_code is None:
+            return struct.unpack('ff', bytes(encrypted_position))
+
+        x = bytearray(encrypted_position[:4])
+        y = bytearray(encrypted_position[4:8])
+
+        self._decrypt_bytes(x, xor_code, 0)
+        self._decrypt_bytes(y, xor_code, 4)
+
+        return struct.unpack('ff', x + y)
+
+    def _decrypt_bytes(self, data, xor_code, offset):
+        for i in range(len(data)):
+            data[i] ^= xor_code[(i + offset) % len(xor_code)]
 
     def change_location(self):
         self.harvestable_list = {}

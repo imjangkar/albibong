@@ -61,16 +61,25 @@ from albibong.classes.event_handler.radar_event_mobs_object import (
     radar_event_mob_change_state
 )
 
+from albibong.classes.event_handler.radar_event_key_sync import (
+    radar_event_key_sync
+)
+
 
 from albibong.classes.event_handler.handle_operation_join import handle_operation_join
 from albibong.classes.event_handler.handle_operation_move import handle_operation_move
 from albibong.classes.world_data import WorldData
 from albibong.resources.EventCode import EventCode
 from albibong.resources.OperationCode import OperationCode
+import json
 
 EVENT_TYPE_PARAMETER = 252
 REQUEST_TYPE_PARAMETER = 253
 RESPONSE_TYPE_PARAMETER = 253
+
+# TODO handle KEY_SYNC
+# with open('/Users/lukaszkomur/Documents/Projects/albibong/src/albibong/resources/event_code.json') as f:
+#     event_code_data = json.load(f)
 
 
 class EventHandler:
@@ -158,6 +167,8 @@ class EventHandler:
         self.event_handler[EventCode.NEW_MOB.value] = radar_event_new_mob
         self.event_handler[EventCode.MOB_CHANGE_STATE.value] = radar_event_mob_change_state
         
+        ## Sync
+        self.event_handler[EventCode.KEY_SYNC.value] = radar_event_key_sync
 
         ## Handle Action
         self.event_handler[EventCode.LEAVE.value] = radar_event_leave
@@ -217,3 +228,13 @@ class EventHandler:
             else:
                 handler = self.event_handler[call_type]
                 return handler(world_data, parameters)
+        else:
+            # TODO handle KEY_SYNC
+            # if EVENT_TYPE_PARAMETER in parameters:
+            #     if str(parameters[EVENT_TYPE_PARAMETER]) in event_code_data:
+            #         print(f"Not Handled Event {event_code_data[str(parameters[EVENT_TYPE_PARAMETER])]}: {parameters}")
+            #         pass
+            #     else:
+            #         print(f"Unknown event: {parameters}")
+            #         pass
+            return None

@@ -104,9 +104,21 @@ class PhotonPacketParser:
             self.on_response(response_data)
         elif message_type == MessageType.Event.value:
             event_data = Protocol16Deserializer.deserialize_event_data(payload)
+            # TODO handle KEY_SYNC
+            # print(repr(payload.getvalue()))
             self.on_event(event_data)
-        # else:
-        #     print("Unknown message type: ", message_type)
+        else:
+            pass
+            # TODO handle KEY_SYNC
+            # print("!!!!!!!!!!!!!!!!!!!!!!!!!!", message_type)
+            # print(repr(payload.getvalue()))
+            # print(repr(source.getvalue()))
+            # print(repr(source.getvalue()))
+            # byte_data = source.getvalue()
+            # binary_array = bytearray(byte_data)
+            # print(binary_array)
+            # for byte in binary_array:
+            #     print(f'{byte:08b}')
 
     def handle_send_fragment(self, source: io.BytesIO, command_length: int):
         start_sequence_number = NumberSerializer.deserialize_int(source)

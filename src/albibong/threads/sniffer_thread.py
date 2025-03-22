@@ -20,6 +20,8 @@ class SnifferThread(threading.Thread):
         self.out_queue = out_queue
         self.sentinel = sentinel
         self.is_debug = is_debug
+        # TODO handle KEY_SYNC
+        # self.sniffer = AsyncSniffer(filter="udp and (port 5056 or port 5055)", prn=self.push_packet)
         self.sniffer = AsyncSniffer(filter="udp and port 5056", prn=self.push_packet)
         self.packet_counter = 0
         self.timer_exit = threading.Event()
