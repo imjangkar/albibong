@@ -124,6 +124,53 @@ If you encounter this problem
 
 Add PIP package to path by following this guide https://youtu.be/9_WyyV_66rU?si=0shXXv59MBeQBHiH
 
+
+
+For WARNING: No libpcap provider available ! pcap won't be used
+Thread sniffer started
+
+```
+WARNING: No libpcap provider available ! pcap won't be used
+Thread sniffer started
+Exception in thread AsyncSniffer:
+Traceback (most recent call last):
+Thread packet_handler started
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python39\lib\threading.py", line 973, in _bootstrap_inner
+Thread ws_server started
+    self.run()
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python39\lib\threading.py", line 910, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python39\lib\site-packages\scapy\sendrecv.py", line 1171, in _run
+    sniff_sockets[_RL2(iface)(type=ETH_P_ALL, iface=iface,
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python39\lib\site-packages\scapy\arch\windows__init.py", line 1019, in init__
+    raise RuntimeError(
+RuntimeError: Sniffing and sending packets is not available at layer 2: winpcap is not installed. You may use conf.L3socket orconf.L3socket6 to access layer 3
+```
+
+Install (NPCAP)[https://npcap.com/#download)
+
+## Working version
+```
+python3 --version
+Python 3.9.6
+```
+
+```
+node --version
+v23.6.1
+```
+
+In case you are on windows and by mistake you will install to many version of python check it ->
+```
+py -3.9 --version
+```
+
+If this will works you need to install and run backend with this commands
+```
+py -3.9 -m albibong
+py -3.9 -m pip install -r albibong/requirements.txt
+```
+
 ### _"Can I use the tool with ExitLag, 1.1.1.1 or VPN?"_
 
 No, this is not possible. If Albion is blocked in your country, I suggest to add Albion's servers to your hosts file.
@@ -133,4 +180,4 @@ No, this is not possible. If Albion is blocked in your country, I suggest to add
 - Event and Operation Codes based on [AlbionOnline-StatisticsAnalysis](https://github.com/Triky313/AlbionOnline-StatisticsAnalysis) with modifications
 - Map and Item Codes based on [ao-bin-dumps](https://github.com/ao-data/ao-bin-dumps) with modifications
 - Use of [photon-packet-parser](https://github.com/santiac89/photon-packet-parser) with modifications
-- Use of [radar](https://github.com/pxlbit228/albion-radar-deatheye-2pc/blob/master/Radar/Packets/Handlers/MoveEvent.cs)
+- Use of [deatheye](https://github.com/pxlbit228/albion-radar-deatheye-2pc/blob/master/Radar/Packets/Handlers/MoveEvent.cs)

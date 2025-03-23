@@ -3,6 +3,7 @@ import threading
 from time import sleep
 
 from scapy.all import AsyncSniffer, wrpcapng
+from scapy.config import conf
 
 from albibong.classes.logger import Logger
 from albibong.threads.websocket_server import send_event
@@ -12,6 +13,8 @@ pcap_file = home_dir + "/Albibong/Debug/debug.pcapng"
 
 logger = Logger(__name__, stdout=True, log_to_file=False)
 
+# Update Scapy configuration for Windows
+conf.use_pcap = True
 
 class SnifferThread(threading.Thread):
     def __init__(self, name, out_queue, sentinel, is_debug=False):
@@ -36,7 +39,7 @@ class SnifferThread(threading.Thread):
         logger.info(f"Thread {self.name} started")
         self.sniffer.start()
         timer = threading.Thread(target=self.start_timer, args=[5], daemon=True)
-        timer.run()
+        timer.start()  # Corrected from timer.run() to timer.start()
 
     def stop(self):
         logger.info(f"Thread {self.name} stopped")
