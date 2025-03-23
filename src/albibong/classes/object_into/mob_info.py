@@ -9,7 +9,6 @@ with open(jonPath) as json_file:
     mob_by_id = json.load(json_file)
 
 
-
 class MobInfo:
     offset = 14
     @classmethod
@@ -33,7 +32,7 @@ class MobInfo:
         unique_name = data["@uniquename"]
         harvestable_type = cls._convert_harvestable_type(data, HarvestablesInfo)
         type = cls._convert_mob_type(data, harvestable_type)
-        rarity = cls._convert_rarity(data)
+        # rarity = cls._convert_rarity(data)
         mob_name = cls._convert_mob_name(data)
         avatar = cls.convert_avater(type, harvestable_type, tier, enchant)
 
@@ -42,7 +41,7 @@ class MobInfo:
             "unique_name": unique_name,
             "type": type,
             "harvestable_type": harvestable_type,
-            "rarity": rarity,
+            # "rarity": rarity,
             "mob_name": mob_name,
             "avatar": avatar
         }
@@ -72,10 +71,10 @@ class MobInfo:
             return "EVENT"
 
         if "_MOB_MISTS_" in data["@uniquename"]:
-            return "MIST_BOSS"
-
-        if "AVALON_TREASURE_MINION" in data["@uniquename"]:
-            return "DRONE"
+            return "BOSS"
+        
+        if "_BOSS" in data["@uniquename"]:
+            return "BOSS"
 
         if "_CHAMPION" in data["@uniquename"] or "_MINIBOSS" in data["@uniquename"] or "_MINIBOSS" in data["@uniquename"]:
             return "WORLD_PROCKED"
@@ -83,18 +82,18 @@ class MobInfo:
         return None
     
 
-    @staticmethod
-    def _convert_rarity(mob_metadata):
-        if mob_metadata["@uniquename"].endswith("_STANDARD"):
-            return 1
-        if mob_metadata["@uniquename"].endswith("_UNCOMMON"):
-            return 2
-        if mob_metadata["@uniquename"].endswith("_RARE"):
-            return 3
-        if mob_metadata["@uniquename"].endswith("_LEGENDARY"):
-            return 4
+    # @staticmethod
+    # def _convert_rarity(mob_metadata):
+    #     if mob_metadata["@uniquename"].endswith("_STANDARD"):
+    #         return 1
+    #     if mob_metadata["@uniquename"].endswith("_UNCOMMON"):
+    #         return 2
+    #     if mob_metadata["@uniquename"].endswith("_RARE"):
+    #         return 3
+    #     if mob_metadata["@uniquename"].endswith("_LEGENDARY"):
+    #         return 4
 
-        return 0
+    #     return 0
     
     @staticmethod
     def _convert_mob_name(mob_metadata):
@@ -106,8 +105,9 @@ class MobInfo:
             return "DRAGON"
         if "_MISTS_GRIFFIN" in mob_metadata["@uniquename"]:
             return "GRIFFIN"
-        if "_DEMON_HOOK" in mob_metadata["@uniquename"]:
-            return "HOOKER"
+        if "AVALON_TREASURE_MINION" in mob_metadata["@uniquename"]:
+            return "DRONE"
+        
 
         return None
 

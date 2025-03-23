@@ -22,7 +22,6 @@ export type HarvestableObject = {
   size: number;
   unique_name: string;
   item_type: string;
-  debug: any;
 }
 
 export type DungeonObject = {
@@ -37,7 +36,6 @@ export type DungeonObject = {
   name: string;
   unique_name: string;
   is_consumable: boolean;
-  debug: any;
 };
 
 export type ChestObject = {
@@ -61,7 +59,6 @@ export type MistObject = {
   };
   name: string;
   enchant: number;
-  debug: any;
 };
 
 export type MobObject = {
@@ -83,7 +80,26 @@ export type MobObject = {
   rarity: number;
   mob_name: string;
   avatar: string;
-  debug: any;
+};
+
+export type Player = {
+  id: number;
+  username: string;
+  guild: string;
+  alliance: string;
+  faction: string;
+  speed: number;
+  health: {
+    max: number;
+    value: number;
+  };
+  position: string;
+  equipments: string[];
+  spells: any[];
+  location: {
+    x: number;
+    y: number;
+  };
 };
 
 export type RadarWidget = {
@@ -92,6 +108,7 @@ export type RadarWidget = {
   chest_list: ChestObject[];
   mist_list: MistObject[];
   mob_list: MobObject[];
+  players_list: Player[];
 }
 
 export type RadarPosition = {
@@ -235,6 +252,7 @@ export const WorldContext = React.createContext<WorldContextData>({
     chest_list: [],
     mist_list: [],
     mob_list: [],
+    players_list: [],
   },
   setWorld: () => {},
   initWorld: () => {},
@@ -280,6 +298,7 @@ const WorldProvider = ({ children }: WorldProviderProps) => {
     chest_list: [],
     mist_list: [],
     mob_list: [],
+    players_list: [],
   });
 
   const [world, setWorld] = useState<World>({

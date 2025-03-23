@@ -119,7 +119,7 @@ const Navigation = () => {
     },
     {
       pageName: "Map Radar",
-      url: "/map-radar",
+      url: "/dps-marker",
       icon: <Map />,
     }
   ];

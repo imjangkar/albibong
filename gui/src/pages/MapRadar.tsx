@@ -97,19 +97,54 @@ const MapRadar = () => {
     //         "enchant": 4,
     //         "debug": {}
     //     }],
-    //     mob_list: [{
+    //     mob_list: [],
+    //     players_list: [{
     //         "id": 178765,
-    //         "type_id": 16,
-    //         "location": {
-    //             "x": 200.5,
-    //             "y": 90.0
-    //         },
-    //         "mob_name": "unknown",
-    //         "mob_type": 4,
-    //         "mob_tier": 4,
-    //         "debug": {"test": "test"}
-    //     }]
+    //         "faction": 0,
+    //         "username": "Username",
+    //         "guild": "Guild",
+    //         "alliance": "Alliance",
+    //         "equipments": ["None", "None", "None", "None", "None", "T8_BAG", "T4_CAPEITEM_FW_MARTLOCK@3", "T8_MOUNT_DIREBOAR_FW_LYMHURST_ELITE", "None", "None"],
+    //         // "equipments": ["T6_MAIN_DAGGER", "T6_OFF_TORCH", "T6_HEAD_LEATHER_SET3", "T6_ARMOR_LEATHER_SET2", "T6_SHOES_LEATHER_SE", "T8_BAG", "T4_CAPEITEM_FW_MARTLOCK@3", "T8_MOUNT_DIREBOAR_FW_LYMHURST_ELITE", "None", "None"],
+    //     },
+    //     {
+    //         "id": 178765,
+    //         "faction": 255,
+    //         "username": "Username",
+    //         "guild": "Guild",
+    //         "alliance": "Alliance",
+    //         "equipments": ["None", "None", "None", "None", "None", "T8_BAG", "T4_CAPEITEM_FW_MARTLOCK@3", "T8_MOUNT_DIREBOAR_FW_LYMHURST_ELITE", "None", "None"],
+    //         // "equipments": ["T6_MAIN_DAGGER", "T6_OFF_TORCH", "T6_HEAD_LEATHER_SET3", "T6_ARMOR_LEATHER_SET2", "T6_SHOES_LEATHER_SE", "T8_BAG", "T4_CAPEITEM_FW_MARTLOCK@3", "T8_MOUNT_DIREBOAR_FW_LYMHURST_ELITE", "None", "None"],
+    //     },
+    //     {
+    //         "id": 178765,
+    //         "faction": 0,
+    //         "username": "Username",
+    //         "guild": "Guild",
+    //         "alliance": "Alliance",
+    //         "equipments": ["None", "None", "None", "None", "None", "T8_BAG", "T4_CAPEITEM_FW_MARTLOCK@3", "T8_MOUNT_DIREBOAR_FW_LYMHURST_ELITE", "None", "None"],
+    //         // "equipments": ["T6_MAIN_DAGGER", "T6_OFF_TORCH", "T6_HEAD_LEATHER_SET3", "T6_ARMOR_LEATHER_SET2", "T6_SHOES_LEATHER_SE", "T8_BAG", "T4_CAPEITEM_FW_MARTLOCK@3", "T8_MOUNT_DIREBOAR_FW_LYMHURST_ELITE", "None", "None"],
+    //     },
+    //     {
+    //         "id": 178765,
+    //         "faction": 0,
+    //         "username": "Username",
+    //         "guild": "Guild",
+    //         "alliance": "Alliance",
+    //         "equipments": ["None", "None", "None", "None", "None", "T8_BAG", "T4_CAPEITEM_FW_MARTLOCK@3", "T8_MOUNT_DIREBOAR_FW_LYMHURST_ELITE", "None", "None"],
+    //         // "equipments": ["T6_MAIN_DAGGER", "T6_OFF_TORCH", "T6_HEAD_LEATHER_SET3", "T6_ARMOR_LEATHER_SET2", "T6_SHOES_LEATHER_SE", "T8_BAG", "T4_CAPEITEM_FW_MARTLOCK@3", "T8_MOUNT_DIREBOAR_FW_LYMHURST_ELITE", "None", "None"],
+    //     },
+    //     {
+    //         "id": 178765,
+    //         "faction": 0,
+    //         "username": "Username",
+    //         "guild": "Guild",
+    //         "alliance": "Alliance",
+    //         "equipments": ["None", "None", "None", "None", "None", "T8_BAG", "T4_CAPEITEM_FW_MARTLOCK@3", "T8_MOUNT_DIREBOAR_FW_LYMHURST_ELITE", "None", "None"],
+    //         // "equipments": ["T6_MAIN_DAGGER", "T6_OFF_TORCH", "T6_HEAD_LEATHER_SET3", "T6_ARMOR_LEATHER_SET2", "T6_SHOES_LEATHER_SE", "T8_BAG", "T4_CAPEITEM_FW_MARTLOCK@3", "T8_MOUNT_DIREBOAR_FW_LYMHURST_ELITE", "None", "None"],
+    //     }],
     // };
+
 
     useEffect(() => {
         const canvas = canvasRef.current;
@@ -273,87 +308,40 @@ const MapRadar = () => {
                     <canvas ref={canvasRef} width={500} height={500} style={{ border: '2px solid red', position: 'absolute', transform: `translate(-50%, 0%)` }} />
                 </Box>
                 <Box sx={{ flex: 1, textAlign: 'left', marginTop: '20px', marginLeft: '20px' }}>
-                    <Button variant="contained" onClick={() => setActiveTab('debugResources')}>Debug Resources</Button>
-                    {activeTab === 'debugResources' && (
-                        <Paper sx={{ padding: '10px', maxHeight: '500px', overflowY: 'scroll' }}>
-                            {radarWidget.harvestable_list.map((resource, index) => (
-                                <Typography key={index} onClick={() => setActiveTab(`resource_${index}`)}>
-                                    {`${index}) ID: ${resource.id}, Type: ${resource.type}, Tier: ${resource.tier}, Location: (${resource.location.x}, ${resource.location.y}), Enchant: ${resource.enchant}, Size: ${resource.size}, Unique Name: ${resource.unique_name}`}
-                                </Typography>
+                    <Box sx={{ maxHeight: '500px', overflowY: 'auto' }}>
+                        {radarWidget.players_list.length > 0 && radarWidget.players_list
+                            .sort((a, b) => Number(b.faction) - Number(a.faction))
+                            .map((player) => (
+                                <Paper key={player.id} sx={{ padding: '10px', marginBottom: '10px', border: '1px solid black' }}>
+                                    <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                                        <img
+                                            src={`/public/mapMarker/faction/faction_${player.faction}.png`}
+                                            alt={`Faction ${player.faction}`}
+                                            style={{ width: '34px', height: '34px' }}
+                                        />
+                                        <Typography variant="body1">{player.username}, ID: {player.id}</Typography>
+                                    </Box>
+                                    <Typography variant="body1">Guild: {player.guild}, Alliance: {player.alliance}</Typography>
+                                    <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
+                                        {player.equipments.map((equipment, index) => (
+                                            equipment === "None" ? (
+                                                <Box
+                                                    key={index}
+                                                    sx={{ width: '40px', height: '40px', backgroundColor: '#333', border: '2px solid orange' }}
+                                                />
+                                            ) : (
+                                                <img
+                                                    key={index}
+                                                    src={`https://render.albiononline.com/v1/item/${equipment}`}
+                                                    alt={equipment}
+                                                    style={{ width: '40px', height: '40px', border: '2px solid orange' }}
+                                                />
+                                            )
+                                        ))}
+                                    </Box>
+                                </Paper>
                             ))}
-                        </Paper>
-                    )}
-                    {radarWidget.harvestable_list.map((resource, index) => (
-                        <Modal
-                            key={index}
-                            open={activeTab === `resource_${index}`}
-                            onClose={() => setActiveTab('')}
-                            aria-labelledby={`resource-modal-title-${index}`}
-                            aria-describedby={`resource-modal-description-${index}`}
-                        >
-                            <Paper sx={{ padding: '10px', maxHeight: '500px', overflowY: 'scroll', margin: 'auto', marginTop: '10%', width: '50%' }}>
-                                <Typography id={`resource-modal-title-${index}`} variant="h6">Resource Debug Information</Typography>
-                                <Typography id={`resource-modal-description-${index}`}>
-                                    {JSON.stringify(resource.debug, null, 2)}
-                                </Typography>
-                                <Button variant="contained" onClick={() => setActiveTab('')}>Close</Button>
-                            </Paper>
-                        </Modal>
-                    ))}
-                    <Button variant="contained" onClick={() => setActiveTab('debugMobs')}>Debug Mobs</Button>
-                    {activeTab === 'debugMobs' && (
-                        <Paper sx={{ padding: '10px', maxHeight: '500px', overflowY: 'scroll' }}>
-                            {radarWidget.mob_list.map((mob, index) => (
-                                <Typography key={index} onClick={() => setActiveTab(`mob_${index}`)}>
-                                    {`${index}) ID: ${mob.id}, Type ID: ${mob.type_id}, Location: (${mob.location.x}, ${mob.location.y}), Health: ${mob.health.value}/${mob.health.max}, Unique Name: ${mob.unique_name}, Enchant: ${mob.enchant}, Tier: ${mob.tier}, Mob Type: ${mob.mob_type}, Harvestable Type: ${mob.harvestable_type}, Rarity: ${mob.rarity}, Mob Name: ${mob.mob_name}`}
-                                </Typography>
-                            ))}
-                        </Paper>
-                    )}
-                    {radarWidget.mob_list.map((mob, index) => (
-                        <Modal
-                            key={index}
-                            open={activeTab === `mob_${index}`}
-                            onClose={() => setActiveTab('')}
-                            aria-labelledby={`mob-modal-title-${index}`}
-                            aria-describedby={`mob-modal-description-${index}`}
-                        >
-                            <Paper sx={{ padding: '10px', maxHeight: '500px', overflowY: 'scroll', margin: 'auto', marginTop: '10%', width: '50%' }}>
-                                <Typography id={`mob-modal-title-${index}`} variant="h6">Mob Debug Information</Typography>
-                                <Typography id={`mob-modal-description-${index}`}>
-                                    {JSON.stringify(mob.debug, null, 2)}
-                                </Typography>
-                                <Button variant="contained" onClick={() => setActiveTab('')}>Close</Button>
-                            </Paper>
-                        </Modal>
-                    ))}
-                    <Button variant="contained" onClick={() => setActiveTab('debugDungeons')}>Debug Dungeons</Button>
-                    {activeTab === 'debugDungeons' && (
-                        <Paper sx={{ padding: '10px', maxHeight: '500px', overflowY: 'scroll' }}>
-                            {radarWidget.dungeon_list.map((dungeon, index) => (
-                                <Typography key={index} onClick={() => setActiveTab(`dungeon_${index}`)}>
-                                    {`${index}) ID: ${dungeon.id}, Type: ${dungeon.dungeon_type}, Tier: ${dungeon.tier}, Location: (${dungeon.location.x}, ${dungeon.location.y}), Enchant: ${dungeon.enchant}, Name: ${dungeon.name}, Unique Name: ${dungeon.unique_name}`}
-                                </Typography>
-                            ))}
-                        </Paper>
-                    )}
-                    {radarWidget.dungeon_list.map((dungeon, index) => (
-                        <Modal
-                            key={index}
-                            open={activeTab === `dungeon_${index}`}
-                            onClose={() => setActiveTab('')}
-                            aria-labelledby={`dungeon-modal-title-${index}`}
-                            aria-describedby={`dungeon-modal-description-${index}`}
-                        >
-                            <Paper sx={{ padding: '10px', maxHeight: '500px', overflowY: 'scroll', margin: 'auto', marginTop: '10%', width: '50%' }}>
-                                <Typography id={`dungeon-modal-title-${index}`} variant="h6">Dungeon Debug Information</Typography>
-                                <Typography id={`dungeon-modal-description-${index}`}>
-                                    {JSON.stringify(dungeon.debug, null, 2)}
-                                </Typography>
-                                <Button variant="contained" onClick={() => setActiveTab('')}>Close</Button>
-                            </Paper>
-                        </Modal>
-                    ))}
+                    </Box>
                 </Box>
             </Box>
             <Box sx={{ textAlign: 'center' }}>

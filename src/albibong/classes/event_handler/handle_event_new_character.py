@@ -9,7 +9,7 @@ def handle_event_new_character(world_data: WorldData, parameters):
     id = parameters[0]
 
     # TODO handle KEY_SYNC
-    # world_data.radar.add_player(id, parameters)
+    world_data.radar.add_player(id, parameters)
     
     uuid = parameters[7]
     username = parameters[1]

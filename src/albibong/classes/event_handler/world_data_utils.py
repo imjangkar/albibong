@@ -60,11 +60,12 @@ class WorldDataUtils:
 
     @staticmethod
     def start_current_dungeon(world_data: WorldData, type: str, name: str):
-        world_data.radar.change_location()
-        print(f"Start dungeon {name}")
         if world_data.current_dungeon == None:
+            world_data.radar.change_location("start_current_dungeon NONE")
             new_dungeon = Dungeon(type=type, name=name)
             world_data.current_dungeon = new_dungeon
+        if world_data.current_dungeon == "Mist":
+            world_data.radar.change_location("start_current_dungeon MIST")
             
 
     @staticmethod

@@ -5,6 +5,8 @@ import threading
 from albibong.threads.websocket_server import send_event
 from albibong.classes.object_into.harvestables_info import HarvestablesInfo
 from albibong.classes.object_into.mob_info import MobInfo
+from albibong.classes.item import Item
+import math
 
 
 class Radar(BaseModel):
@@ -127,7 +129,6 @@ class Radar(BaseModel):
                 "name": name,
                 "unique_name": unique_name,
                 "is_consumable": is_consumable,
-                "debug": parameters,
             }
 
             self.debounce_handle_update()
@@ -172,11 +173,9 @@ class Radar(BaseModel):
             },
             "name": name,
             "enchant": enchant,
-            "debug": parameters,
         }
 
     def updateMobEnchant(self, id, enchant):
-        print("Update enchant")
         if id in self.mob_list:
             self.mob_list[id]["enchant"] = enchant
             self.mob_list[id]["avatar"] = MobInfo.convert_avater(self.mob_list[id]["mob_type"], self.mob_list[id]["harvestable_type"], self.mob_list[id]["tier"], enchant)
@@ -200,7 +199,7 @@ class Radar(BaseModel):
             tier = mob_info_data["tier"]
             mob_type = mob_info_data["type"]
             harvestable_type = mob_info_data["harvestable_type"]
-            rarity = mob_info_data["rarity"]
+            # rarity = mob_info_data["rarity"]
             mob_name = mob_info_data["mob_name"]
             avatar = mob_info_data["avatar"]
 
@@ -220,10 +219,8 @@ class Radar(BaseModel):
             "tier": tier,
             "mob_type": mob_type,
             "harvestable_type": harvestable_type,
-            "rarity": rarity,
             "mob_name": mob_name,
             "avatar": avatar,
-            "debug": parameters
         }
 
         self.debounce_handle_update()
@@ -239,15 +236,22 @@ class Radar(BaseModel):
         encrypted_position = parameters[offset[5]] if offset[5] in parameters else None
         if encrypted_position:
             posX, posY = self._decrypt_position(encrypted_position, self.XOR_CODE)
+        
+        value = float('nan')
+        if math.isnan(posX) or math.isnan(posY):
+            print(f"Invalid position for {username} {posX} {posY}")
+            posX, posY = 0, 0
+
         speed = parameters[offset[6]] if offset[6] in parameters else 5.5
         player_max_health = parameters[offset[7]]
         player_current_health = parameters[offset[8]] if offset[8] in parameters else parameters[offset[7]]
-       
 
         equipments = parameters[offset[9]] if offset[9] in parameters else []
-        spells = parameters[offset[10]] if offset[10] in parameters else [] #
-
-
+        named_equipments = []
+        for eq in equipments:
+            named_equipments.append(Item.get_item_from_code(str(eq)).unique_name)
+                                    
+        spells = parameters[offset[10]] if offset[10] in parameters else []
 
         self.players_list[id] = {
             "id": id,
@@ -260,15 +264,14 @@ class Radar(BaseModel):
                 "max": player_max_health,
                 "value": player_current_health
             },
-            "position": encrypted_position,
-            "equipments": equipments,
+            "equipments": named_equipments,
             "spells": spells,
             "location": {
                 "x": posX,
                 "y": posY
             }
         }
-        # self.debounce_handle_update()
+        self.debounce_handle_update()
 
     def handle_event_leave(self, id):
         founded = False
@@ -288,6 +291,9 @@ class Radar(BaseModel):
         if id in self.mob_list:
             del self.mob_list[id]
             founded = True
+        if id in self.players_list:
+            del self.players_list[id]
+            founded = True
 
         if founded:
             self.debounce_handle_update()
@@ -296,9 +302,10 @@ class Radar(BaseModel):
         founded = False
         position_bytes = parameters[1][9:17]
 
-        if id in self.players_list:
-            posX, posY = self._decrypt_position(position_bytes, self.XOR_CODE)
-            founded = True
+        # TODO handle KEY_SYNC
+        # if id in self.players_list:
+        #     posX, posY = self._decrypt_position(position_bytes, self.XOR_CODE)
+        #     founded = True
 
         if id in self.mist_list:
             posX, posY = self._decrypt_position(position_bytes)
@@ -323,6 +330,7 @@ class Radar(BaseModel):
             "chest_list": list(self.chest_list.values()),
             "mist_list": list(self.mist_list.values()),
             "mob_list": list(self.mob_list.values()),
+            "players_list": list(self.players_list.values()),
         }
 
     def _decrypt_position(self, encrypted_position, xor_code=None):
@@ -343,12 +351,14 @@ class Radar(BaseModel):
         for i in range(len(data)):
             data[i] ^= xor_code[(i + offset) % len(xor_code)]
 
-    def change_location(self):
+    def change_location(self, who_call = "unknown"):
+        print(f"Change location called by {who_call}")
         self.harvestable_list = {}
         self.dungeon_list = {}
         self.chest_list = {}
         self.mist_list = {}
         self.mob_list = {}
+        self.players_list = {}
         self.update_position(0, 0)
         self.debounce_handle_update()
 

@@ -60,7 +60,7 @@ const Router = () => {
           element: <FarmingTracker />,
         },
         {
-          path: "/map-radar",
+          path: "/dps-marker",
           element: <MapRadar />,
         }
       ],

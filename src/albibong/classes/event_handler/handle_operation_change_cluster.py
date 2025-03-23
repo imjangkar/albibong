@@ -6,7 +6,7 @@ from albibong.threads.websocket_server import send_event
 
 def handle_operation_change_cluster(world_data: WorldData, parameters):
     world_data.change_equipment_log = {}
-    world_data.radar.change_location()
+    world_data.radar.change_location("handle_operation_change_cluster")
 
     if type(world_data.current_map).__name__ == "Island":
         WorldDataUtils.set_island_status(

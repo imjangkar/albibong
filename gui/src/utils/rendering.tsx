@@ -259,67 +259,89 @@ class RadarRendering {
         // this.renderDistance(ctx, canvas, radarPosition, resource.location, this.ResourceSize, rX, rY);
     }
 
-    static renderMob(ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement, radarPosition: any, mob: any, zoom: number, displayedSettings: any) {
+    static renderMob(ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement, radarPosition: any, mob: { mob_type: string; health: { value: number; max: number }; avatar?: string; enchant?: number; harvestable_type?: string; location: { x: number; y: number } }, zoom: number, displayedSettings: any) {
         if (!displayedSettings.object_types.includes('MOBS')) {
             return;
         }
 
-        const renderStatic = () => {
-            const mobName = `${mob.health.value} / ${mob.health.max}`;
-            this.renderValue(ctx, canvas, this.ResourceSize, rX, rY, mobName);
+        let renderResource = false
 
-            ctx.fillStyle = 'purple';
-            ctx.beginPath();
-            ctx.arc(canvas.width / 2 - rX, canvas.height / 2 - rY, 10, 0, 2 * Math.PI);
-            ctx.fill();
+        if (mob.mob_type === 'HARVESTABLE' && displayedSettings.object_types.includes('RESOURCE')) {
+            renderResource = true;
+            
+            if (!displayedSettings.resources.includes(mob.harvestable_type)) {
+                if(mob.enchant !== 2 && mob.enchant !== 3) {
+                    renderResource = false;
+                }
+            }
+            if (!displayedSettings.enchants.includes(mob.enchant)) {
+                renderResource = false;
+            }
         }
-        
+
         const rX =  this.getRelativePositionX(radarPosition, mob.location, zoom);
         const rY =  this.getRelativePositionY(radarPosition, mob.location, zoom);
+        
+        if(renderResource){
+            /* Render Iteam */
+            const img = new Image();
+            img.src = `/public/mapMarker/resources/${mob.avatar}.png`;
+            img.onload = () => {
+                ctx.drawImage(img, canvas.width / 2 - rX - this.ResourceSize / 2, canvas.height / 2 - rY - this.ResourceSize / 2, this.ResourceSize, this.ResourceSize);
+            };
+        } else {
+            const mobHp = `${mob.health.value} / ${mob.health.max}`;
+            
 
-        if(mob.mob_type === 'HARVESTABLE' && displayedSettings.object_types.includes('RESOURCE')) {
-            /* Check if resource is displayed */
-            if (!displayedSettings.resources.includes(mob.harvestable_type)) {
-                renderStatic();
-            }else if (!displayedSettings.enchants.includes(mob.enchant)) {
-                renderStatic();
-            } else {
-                const mobName = `${mob.id}`;
-                this.renderValue(ctx, canvas, this.ResourceSize, rX, rY, mobName);
+            if(mob.avatar && mob.mob_type !== 'HARVESTABLE'){
+                this.renderValue(ctx, canvas, this.ResourceSize, rX, rY, mobHp);
+
                 /* Render Iteam */
                 const img = new Image();
-                img.src = `/public/mapMarker/resources/${mob.avatar}.png`;
+                img.src = `/public/mapMarker/mobs/${mob.avatar}.png`;
                 img.onload = () => {
                     ctx.drawImage(img, canvas.width / 2 - rX - this.ResourceSize / 2, canvas.height / 2 - rY - this.ResourceSize / 2, this.ResourceSize, this.ResourceSize);
                 };
+            } else {
+                const mobInfo = {
+                    'EVENT': {
+                        color: 'yellow',
+                        size: 10
+                    },
+                    'BOSS': {
+                        color: 'red',
+                        size: 10
+                    },
+                    'WORLD_PROCKED': {
+                        color: 'blue',
+                        size: 10
+                    },
+                    'DEFAULT': {
+                        color: 'purple',
+                        size: 5
+                    }
+                }
+                
+
+                const size = mobInfo[mob.mob_type as keyof typeof mobInfo]?.size || mobInfo['DEFAULT'].size;
+                this.renderValue(ctx, canvas, size+7, rX, rY, mobHp);
+
+                ctx.fillStyle = 'purple'
+                ctx.beginPath();
+                ctx.arc(canvas.width / 2 - rX, canvas.height / 2 - rY, size, 0, 2 * Math.PI);
+                ctx.fill();
+                
+                if (mob.mob_type && mob.mob_type !== 'HARVESTABLE') {
+                    ctx.strokeStyle = mobInfo[mob.mob_type as keyof typeof mobInfo]?.color || mobInfo['DEFAULT'].color;
+                    ctx.lineWidth = 2;
+                    ctx.beginPath();
+                    ctx.arc(canvas.width / 2 - rX, canvas.height / 2 - rY, size + 10, 0, 2 * Math.PI);
+                    ctx.stroke();
+                }
             }
-
-             
-        } else {
-            renderStatic();
         }
-
-        /* Render Iteam */
-        // if(mob.mob_name !== "unknown12") {
-        //     const img = new Image();
-        //     img.src = `/public/mapMarker/mobs/${mob.mob_name}.png`;
-            
-        //     img.onload = () => {
-        //         ctx.drawImage(img, canvas.width / 2 - rX - this.ResourceSize / 2, canvas.height / 2 - rY - this.ResourceSize / 2, this.ResourceSize, this.ResourceSize);
-        //     };
-        // } else {
-           
-        // }
-
-        /* Render Chest Name if is static chest */
         
-
     }
-
-
-
-    
-    
 }
 
 export default RadarRendering;
