@@ -14,9 +14,187 @@ const MapRadar = () => {
     const [displayedSettings, setDisplayedSettings] = useState({
         object_types: ['RESOURCE', 'DUNGEONS', 'MOBS'],
         dungeons: ['SOLO', 'AVALON', 'GROUP', 'CORRUPTED', 'HELLGATE', 'ROAMING', 'DISPLAY_NAME'],
-        resources: ['FIBER', 'WOOD', 'ROCK', 'HIDE', 'ORE'],
-        tiers: [3, 4, 5, 6, 7, 8],
-        enchants: [0, 1, 2, 3]
+        players_factions: {
+            0: {
+                label: "NonPvP",
+                value: true,
+            },
+            1: {
+                label: "Martlock",
+                value: true,
+            },
+            2: {
+                label: "Lymhurst",
+                value: true,
+            },
+            3: {
+                label: "Bridgewatch",
+                value: true,
+            },
+            4: {
+                label: "Fort Sterling",
+                value: true,
+            },
+            5: {
+                label: "Thetford",
+                value: true,
+            },
+            6: {
+                label: "Caerleon",
+                value: true,
+            },
+            255: {
+                label: "PvP",
+                value: true,
+            }
+        },
+        resources: {
+            FIBER: [
+                {label: "fiber_2_0", value: true, tier: 2, enchant: 0},
+                {label: "fiber_3_0", value: true, tier: 3, enchant: 0},
+                {label: "fiber_4_0", value: true, tier: 4, enchant: 0},
+                {label: "fiber_4_1", value: true, tier: 4, enchant: 1},
+                {label: "fiber_4_2", value: true, tier: 4, enchant: 2},
+                {label: "fiber_4_3", value: true, tier: 4, enchant: 3},
+                {label: "fiber_4_4", value: true, tier: 4, enchant: 3},
+                {label: "fiber_5_0", value: true, tier: 5, enchant: 0},
+                {label: "fiber_5_1", value: true, tier: 5, enchant: 1},
+                {label: "fiber_5_2", value: true, tier: 5, enchant: 2},
+                {label: "fiber_5_3", value: true, tier: 5, enchant: 3},
+                {label: "fiber_5_4", value: true, tier: 5, enchant: 3},
+                {label: "fiber_6_0", value: true, tier: 6, enchant: 0},
+                {label: "fiber_6_1", value: true, tier: 6, enchant: 1},
+                {label: "fiber_6_2", value: true, tier: 6, enchant: 2},
+                {label: "fiber_6_3", value: true, tier: 6, enchant: 3},
+                {label: "fiber_6_4", value: true, tier: 6, enchant: 3},
+                {label: "fiber_7_0", value: true, tier: 7, enchant: 0},
+                {label: "fiber_7_1", value: true, tier: 7, enchant: 1},
+                {label: "fiber_7_2", value: true, tier: 7, enchant: 2},
+                {label: "fiber_7_3", value: true, tier: 7, enchant: 3},
+                {label: "fiber_7_4", value: true, tier: 7, enchant: 3},
+                {label: "fiber_8_0", value: true, tier: 8, enchant: 0},
+                {label: "fiber_8_1", value: true, tier: 8, enchant: 1},
+                {label: "fiber_8_2", value: true, tier: 8, enchant: 2},
+                {label: "fiber_8_3", value: true, tier: 8, enchant: 3},
+                {label: "fiber_8_4", value: true, tier: 8, enchant: 3},                
+            ],
+            WOOD: [
+                {label: "wood_2_0", value: true, tier: 2, enchant: 0},
+                {label: "wood_3_0", value: true, tier: 3, enchant: 0},
+                {label: "wood_4_0", value: true, tier: 4, enchant: 0},
+                {label: "wood_4_1", value: true, tier: 4, enchant: 1},
+                {label: "wood_4_2", value: true, tier: 4, enchant: 2},
+                {label: "wood_4_3", value: true, tier: 4, enchant: 3},
+                {label: "wood_4_4", value: true, tier: 4, enchant: 3},
+                {label: "wood_5_0", value: true, tier: 5, enchant: 0},
+                {label: "wood_5_1", value: true, tier: 5, enchant: 1},
+                {label: "wood_5_2", value: true, tier: 5, enchant: 2},
+                {label: "wood_5_3", value: true, tier: 5, enchant: 3},
+                {label: "wood_5_4", value: true, tier: 5, enchant: 3},
+                {label: "wood_6_0", value: true, tier: 6, enchant: 0},
+                {label: "wood_6_1", value: true, tier: 6, enchant: 1},
+                {label: "wood_6_2", value: true, tier: 6, enchant: 2},
+                {label: "wood_6_3", value: true, tier: 6, enchant: 3},
+                {label: "wood_6_4", value: true, tier: 6, enchant: 3},
+                {label: "wood_7_0", value: true, tier: 7, enchant: 0},
+                {label: "wood_7_1", value: true, tier: 7, enchant: 1},
+                {label: "wood_7_2", value: true, tier: 7, enchant: 2},
+                {label: "wood_7_3", value: true, tier: 7, enchant: 3},
+                {label: "wood_7_4", value: true, tier: 7, enchant: 3},
+                {label: "wood_8_0", value: true, tier: 8, enchant: 0},
+                {label: "wood_8_1", value: true, tier: 8, enchant: 1},
+                {label: "wood_8_2", value: true, tier: 8, enchant: 2},
+                {label: "wood_8_3", value: true, tier: 8, enchant: 3},
+                {label: "wood_8_4", value: true, tier: 8, enchant: 3},
+            ],
+            ROCK: [
+                {label: "rock_2_0", value: true, tier: 2, enchant: 0},
+                {label: "rock_3_0", value: true, tier: 3, enchant: 0},
+                {label: "rock_4_0", value: true, tier: 4, enchant: 0},
+                {label: "rock_4_1", value: true, tier: 4, enchant: 1},
+                {label: "rock_4_2", value: true, tier: 4, enchant: 2},
+                {label: "rock_4_3", value: true, tier: 4, enchant: 3},
+                {label: "rock_4_4", value: true, tier: 4, enchant: 3},
+                {label: "rock_5_0", value: true, tier: 5, enchant: 0},
+                {label: "rock_5_1", value: true, tier: 5, enchant: 1},
+                {label: "rock_5_2", value: true, tier: 5, enchant: 2},
+                {label: "rock_5_3", value: true, tier: 5, enchant: 3},
+                {label: "rock_5_4", value: true, tier: 5, enchant: 3},
+                {label: "rock_6_0", value: true, tier: 6, enchant: 0},
+                {label: "rock_6_1", value: true, tier: 6, enchant: 1},
+                {label: "rock_6_2", value: true, tier: 6, enchant: 2},
+                {label: "rock_6_3", value: true, tier: 6, enchant: 3},
+                {label: "rock_6_4", value: true, tier: 6, enchant: 3},
+                {label: "rock_7_0", value: true, tier: 7, enchant: 0},
+                {label: "rock_7_1", value: true, tier: 7, enchant: 1},
+                {label: "rock_7_2", value: true, tier: 7, enchant: 2},
+                {label: "rock_7_3", value: true, tier: 7, enchant: 3},
+                {label: "rock_7_4", value: true, tier: 7, enchant: 3},
+                {label: "rock_8_0", value: true, tier: 8, enchant: 0},
+                {label: "rock_8_1", value: true, tier: 8, enchant: 1},
+                {label: "rock_8_2", value: true, tier: 8, enchant: 2},
+                {label: "rock_8_3", value: true, tier: 8, enchant: 3},
+                {label: "rock_8_4", value: true, tier: 8, enchant: 3},
+            ],
+            HIDE: [
+                {label: "hide_2_0", value: true, tier: 2, enchant: 0},
+                {label: "hide_3_0", value: true, tier: 3, enchant: 0},
+                {label: "hide_4_0", value: true, tier: 4, enchant: 0},
+                {label: "hide_4_1", value: true, tier: 4, enchant: 1},
+                {label: "hide_4_2", value: true, tier: 4, enchant: 2},
+                {label: "hide_4_3", value: true, tier: 4, enchant: 3},
+                {label: "hide_4_4", value: true, tier: 4, enchant: 3},
+                {label: "hide_5_0", value: true, tier: 5, enchant: 0},
+                {label: "hide_5_1", value: true, tier: 5, enchant: 1},
+                {label: "hide_5_2", value: true, tier: 5, enchant: 2},
+                {label: "hide_5_3", value: true, tier: 5, enchant: 3},
+                {label: "hide_5_4", value: true, tier: 5, enchant: 3},
+                {label: "hide_6_0", value: true, tier: 6, enchant: 0},
+                {label: "hide_6_1", value: true, tier: 6, enchant: 1},
+                {label: "hide_6_2", value: true, tier: 6, enchant: 2},
+                {label: "hide_6_3", value: true, tier: 6, enchant: 3},
+                {label: "hide_6_4", value: true, tier: 6, enchant: 3},
+                {label: "hide_7_0", value: true, tier: 7, enchant: 0},
+                {label: "hide_7_1", value: true, tier: 7, enchant: 1},
+                {label: "hide_7_2", value: true, tier: 7, enchant: 2},
+                {label: "hide_7_3", value: true, tier: 7, enchant: 3},
+                {label: "hide_7_4", value: true, tier: 7, enchant: 3},
+                {label: "hide_8_0", value: true, tier: 8, enchant: 0},
+                {label: "hide_8_1", value: true, tier: 8, enchant: 1},
+                {label: "hide_8_2", value: true, tier: 8, enchant: 2},
+                {label: "hide_8_3", value: true, tier: 8, enchant: 3},
+                {label: "hide_8_4", value: true, tier: 8, enchant: 3},
+            ],
+            ORE: [
+                {label: "ore_2_0", value: true, tier: 2, enchant: 0},
+                {label: "ore_3_0", value: true, tier: 3, enchant: 0},
+                {label: "ore_4_0", value: true, tier: 4, enchant: 0},
+                {label: "ore_4_1", value: true, tier: 4, enchant: 1},
+                {label: "ore_4_2", value: true, tier: 4, enchant: 2},
+                {label: "ore_4_3", value: true, tier: 4, enchant: 3},
+                {label: "ore_4_4", value: true, tier: 4, enchant: 3},
+                {label: "ore_5_0", value: true, tier: 5, enchant: 0},
+                {label: "ore_5_1", value: true, tier: 5, enchant: 1},
+                {label: "ore_5_2", value: true, tier: 5, enchant: 2},
+                {label: "ore_5_3", value: true, tier: 5, enchant: 3},
+                {label: "ore_5_4", value: true, tier: 5, enchant: 3},
+                {label: "ore_6_0", value: true, tier: 6, enchant: 0},
+                {label: "ore_6_1", value: true, tier: 6, enchant: 1},
+                {label: "ore_6_2", value: true, tier: 6, enchant: 2},
+                {label: "ore_6_3", value: true, tier: 6, enchant: 3},
+                {label: "ore_6_4", value: true, tier: 6, enchant: 3},
+                {label: "ore_7_0", value: true, tier: 7, enchant: 0},
+                {label: "ore_7_1", value: true, tier: 7, enchant: 1},
+                {label: "ore_7_2", value: true, tier: 7, enchant: 2},
+                {label: "ore_7_3", value: true, tier: 7, enchant: 3},
+                {label: "ore_7_4", value: true, tier: 7, enchant: 3},
+                {label: "ore_8_0", value: true, tier: 8, enchant: 0},
+                {label: "ore_8_1", value: true, tier: 8, enchant: 1},
+                {label: "ore_8_2", value: true, tier: 8, enchant: 2},
+                {label: "ore_8_3", value: true, tier: 8, enchant: 3},
+                {label: "ore_8_4", value: true, tier: 8, enchant: 3},
+            ],
+        }
     });
     
     const [activeTab, setActiveTab] = useState('map');
@@ -32,10 +210,10 @@ const MapRadar = () => {
     //         "type": 16,
     //         "tier": 4,
     //         "location": {
-    //             "x": 0,
-    //             "y": 0
-    //             // "x": 185.5,
-    //             // "y": 115.0
+    //             // "x": 0,
+    //             // "y": 0
+    //             "x": 185.5,
+    //             "y": 155.0
     //         },
     //         "enchant": 3,
     //         "size": 1,
@@ -169,7 +347,7 @@ const MapRadar = () => {
             });
 
             radarWidget.mob_list.forEach(mob => {
-                RadarRendering.renderMob(ctx, canvas, radarPosition, mob, zoom, displayedSettings);
+                RadarRendering.renderMob(ctx, canvas, radarPosition, { ...mob, tier: Number(mob.tier) }, zoom, displayedSettings);
             });
 
             ctx.fillStyle = 'yellow';
@@ -217,22 +395,31 @@ const MapRadar = () => {
                                                 {type}
                                             </Button>
                                         ))}
-                                        <Typography variant="body1">Resources</Typography>
-                                        {['FIBER', 'WOOD', 'ROCK', 'HIDE', 'ORE'].map(resource => (
-                                            <Button
-                                                key={resource}
-                                                variant={displayedSettings.resources.includes(resource) ? "contained" : "outlined"}
-                                                sx={{ margin: '5px' }}
-                                                onClick={() => setDisplayedSettings(prev => ({
-                                                    ...prev,
-                                                    resources: prev.resources.includes(resource)
-                                                        ? prev.resources.filter(r => r !== resource)
-                                                        : [...prev.resources, resource]
-                                                }))}
-                                            >
-                                                {resource}
-                                            </Button>
-                                        ))}
+                                    </Box>
+                                    <Box>
+                                        <Typography variant="body1">Players Factions</Typography>
+                                        {Object.keys(displayedSettings.players_factions).map(factionKey => {
+                                            const faction = factionKey as unknown as keyof typeof displayedSettings.players_factions;
+                                            return (
+                                                <Button
+                                                    key={faction}
+                                                    variant={displayedSettings.players_factions[faction].value ? "contained" : "outlined"}
+                                                    sx={{ margin: '5px' }}
+                                                    onClick={() => setDisplayedSettings(prev => ({
+                                                        ...prev,
+                                                        players_factions: {
+                                                            ...prev.players_factions,
+                                                            [faction]: {
+                                                                ...prev.players_factions[faction],
+                                                                value: !prev.players_factions[faction].value
+                                                            }
+                                                        }
+                                                    }))}
+                                                >
+                                                    {displayedSettings.players_factions[faction].label}
+                                                </Button>
+                                            );
+                                        })}
                                     </Box>
                                     <Box>
                                         <Typography variant="body1">Dungeons</Typography>
@@ -253,39 +440,31 @@ const MapRadar = () => {
                                         ))}
                                     </Box>
                                     <Box>
-                                        <Typography variant="body1">Tiers</Typography>
-                                        {[3, 4, 5, 6, 7, 8].map(tier => (
-                                            <Button
-                                                key={tier}
-                                                variant={displayedSettings.tiers.includes(tier) ? "contained" : "outlined"}
-                                                sx={{ margin: '5px' }}
-                                                onClick={() => setDisplayedSettings(prev => ({
-                                                    ...prev,
-                                                    tiers: prev.tiers.includes(tier)
-                                                        ? prev.tiers.filter(t => t !== tier)
-                                                        : [...prev.tiers, tier]
-                                                }))}
-                                            >
-                                                Tier {tier}
-                                            </Button>
-                                        ))}
-                                    </Box>
-                                    <Box>
-                                        <Typography variant="body1">Enchant Levels</Typography>
-                                        {[0, 1, 2, 3].map(level => (
-                                            <Button
-                                                key={level}
-                                                variant={displayedSettings.enchants.includes(level) ? "contained" : "outlined"}
-                                                sx={{ margin: '5px' }}
-                                                onClick={() => setDisplayedSettings(prev => ({
-                                                    ...prev,
-                                                    enchants: prev.enchants.includes(level)
-                                                        ? prev.enchants.filter(e => e !== level)
-                                                        : [...prev.enchants, level]
-                                                }))}
-                                            >
-                                                Enchant {level}
-                                            </Button>
+                                        <Typography variant="body1">Resources</Typography>
+                                        {Object.keys(displayedSettings.resources).map(resource => (
+                                            <Box key={resource}>
+                                                <Typography variant="body2">{resource}</Typography>
+                                                <Box sx={{ display: 'flex', flexWrap: 'wrap' }}>
+                                                    {(displayedSettings.resources[resource as keyof typeof displayedSettings.resources] as any[]).map((res, index) => (
+                                                        <Button
+                                                            key={index}
+                                                            variant={res.value ? "contained" : "outlined"}
+                                                            sx={{ margin: '5px', flex: index < 2 ? '1 1 calc(50% - 10px)' : '1 1 calc(20% - 10px)' }}
+                                                            onClick={() => setDisplayedSettings(prev => {
+                                                                const newResources = { ...prev.resources };
+                                                                (newResources[resource as keyof typeof displayedSettings.resources] as any[])[index].value = !(newResources[resource as keyof typeof displayedSettings.resources] as any[])[index].value;
+                                                                return { ...prev, resources: newResources };
+                                                            })}
+                                                        >
+                                                            <img
+                                                                src={`/public/mapMarker/resources/${res.label}.png`}
+                                                                alt={res.label}
+                                                                style={{ width: '40px', height: '40px' }}
+                                                            />
+                                                        </Button>
+                                                    ))}
+                                                </Box>
+                                            </Box>
                                         ))}
                                     </Box>
                                 </Box>
@@ -311,6 +490,7 @@ const MapRadar = () => {
                     <Box sx={{ maxHeight: '500px', overflowY: 'auto' }}>
                         {radarWidget.players_list.length > 0 && radarWidget.players_list
                             .sort((a, b) => Number(b.faction) - Number(a.faction))
+                            .filter(player => displayedSettings.players_factions[player.faction as unknown as keyof typeof displayedSettings.players_factions].value)
                             .map((player) => (
                                 <Paper key={player.id} sx={{ padding: '10px', marginBottom: '10px', border: '1px solid black' }}>
                                     <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>

@@ -126,10 +126,6 @@ class RadarRendering {
         if (!displayedSettings.object_types.includes('RESOURCE')) {
             return;
         }
-        
-        if (!resource.size && resource.item_type !== "unknown" ) {
-            return;
-        }
 
         if (resource.item_type === "unknown") {
             this.renderUnknowResource(ctx, canvas, radarPosition, resource, zoom);
@@ -140,18 +136,25 @@ class RadarRendering {
         const rY =  this.getRelativePositionY(radarPosition, resource.location, zoom);
         
         /* Check if resource is displayed */
-        if (!displayedSettings.resources.includes(resource.item_type)) {
-            if(resource.enchant !== 2 && resource.enchant !== 3) {
-                return;
-            }
-        }
-        if (!displayedSettings.tiers.includes(resource.tier)) {
-            return;
-        }
-        if (!displayedSettings.enchants.includes(resource.enchant)) {
+        const settings = displayedSettings.resources[resource.item_type].find(
+            (res: { label: string; value: boolean; tier: number; enchant: number }) =>
+            res.tier === resource.tier && res.enchant === resource.enchant
+        );
+
+        if (!settings || !settings.value) {
             return;
         }
 
+        if (!resource.size ) {
+            if(resource.item_type !== "unknown" && resource.enchant === 3){
+                ctx.fillStyle = 'gold';
+                ctx.beginPath();
+                ctx.arc(canvas.width / 2 - rX, canvas.height / 2 - rY, 5, 0, 2 * Math.PI);
+                ctx.fill();
+            }
+            return;
+        }
+       
 
         /* Render Iteam */
         const img = new Image();
@@ -259,7 +262,7 @@ class RadarRendering {
         // this.renderDistance(ctx, canvas, radarPosition, resource.location, this.ResourceSize, rX, rY);
     }
 
-    static renderMob(ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement, radarPosition: any, mob: { mob_type: string; health: { value: number; max: number }; avatar?: string; enchant?: number; harvestable_type?: string; location: { x: number; y: number } }, zoom: number, displayedSettings: any) {
+    static renderMob(ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement, radarPosition: any, mob: { mob_type: string; health: { value: number; max: number }; avatar?: string; enchant?: number; harvestable_type?: string; location: { x: number; y: number }; tier?: number }, zoom: number, displayedSettings: any) {
         if (!displayedSettings.object_types.includes('MOBS')) {
             return;
         }
@@ -269,12 +272,13 @@ class RadarRendering {
         if (mob.mob_type === 'HARVESTABLE' && displayedSettings.object_types.includes('RESOURCE')) {
             renderResource = true;
             
-            if (!displayedSettings.resources.includes(mob.harvestable_type)) {
-                if(mob.enchant !== 2 && mob.enchant !== 3) {
-                    renderResource = false;
-                }
-            }
-            if (!displayedSettings.enchants.includes(mob.enchant)) {
+            /* Check if resource is displayed */
+            const settings = mob.harvestable_type ? displayedSettings.resources[mob.harvestable_type].find(
+                (res: { label: string; value: boolean; tier: number; enchant: number }) =>
+                res.tier === mob.tier && res.enchant === mob.enchant
+            ) : null;
+
+            if (!settings || !settings.value) {
                 renderResource = false;
             }
         }
