@@ -1,4 +1,5 @@
 from albibong.classes.world_data import WorldData
+from albibong.resources.Offset import Offsets
 
 def radar_event_new_simple_harvestable_object(world_data: WorldData, parameters):
     if len(parameters[0]) == 0:
@@ -23,18 +24,19 @@ def radar_event_new_simple_harvestable_object(world_data: WorldData, parameters)
         world_data.radar.add_harvestable(id, type, tier, posX, posY, 0, count)
 
 def radar_event_new_harvestable_object(world_data: WorldData, parameters):
-    id = parameters[0]
-    type = parameters[5]
-    tier = parameters[7]
-    location = parameters[8]
-
-    enchant = parameters[11] if 11 in parameters else 0
-    size = parameters[10] if 10 in parameters else 0
+    id = parameters[Offsets.NEW_HARVESTABLE_OBJECT[0]]
+    type = parameters[Offsets.NEW_HARVESTABLE_OBJECT[1]]
+    tier = parameters[Offsets.NEW_HARVESTABLE_OBJECT[2]]
+    location = parameters[Offsets.NEW_HARVESTABLE_OBJECT[3]]
+    size = parameters[Offsets.NEW_HARVESTABLE_OBJECT[4]] if Offsets.NEW_HARVESTABLE_OBJECT[4] in parameters else 0
+    enchant = parameters[Offsets.NEW_HARVESTABLE_OBJECT[5]] if Offsets.NEW_HARVESTABLE_OBJECT[5] in parameters else 0
 
     world_data.radar.add_harvestable(id, type, tier, location[0], location[1], enchant, size)
 
-def radar_event_harvest_finished(world_data: WorldData, parameters):
-    id = parameters[0]
-    size = parameters[1] if 1 in parameters else 0
+def radar_event_harvest_change_state(world_data: WorldData, parameters):
+    id = parameters[Offsets.NEW_HARVESTABLE_OBJECT[0]]
+    size = parameters[Offsets.NEW_HARVESTABLE_OBJECT[1]] if Offsets.NEW_HARVESTABLE_OBJECT[1] in parameters else 0
+    enchant = parameters[Offsets.NEW_HARVESTABLE_OBJECT[2]] if Offsets.NEW_HARVESTABLE_OBJECT[2] in parameters else 0
 
-    world_data.radar.update_harvestable(id, size)
+    world_data.radar.update_harvestable(id, size, enchant)
+

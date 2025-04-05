@@ -32,7 +32,6 @@ class MobInfo:
         unique_name = data["@uniquename"]
         harvestable_type = cls._convert_harvestable_type(data, HarvestablesInfo)
         type = cls._convert_mob_type(data, harvestable_type)
-        # rarity = cls._convert_rarity(data)
         mob_name = cls._convert_mob_name(data)
         avatar = cls.convert_avater(type, harvestable_type, tier, enchant)
 
@@ -41,7 +40,6 @@ class MobInfo:
             "unique_name": unique_name,
             "type": type,
             "harvestable_type": harvestable_type,
-            # "rarity": rarity,
             "mob_name": mob_name,
             "avatar": avatar
         }
@@ -51,8 +49,8 @@ class MobInfo:
         if type == "HARVESTABLE":
             if tier != '2' or tier != '1':
                 return f"{harvestable_type.lower()}_{tier}_{enchant}"
-        return None
-    
+        elif type == "MIST_PORTAL":
+            return f"mist_{enchant}"
 
     @staticmethod
     def _convert_harvestable_type(data, HarvestablesInfo):
@@ -66,6 +64,9 @@ class MobInfo:
     def _convert_mob_type(data, harvestable_type):
         if harvestable_type != None:
             return "HARVESTABLE"
+        
+        if "PORTAL_WISP" in data["@uniquename"]:
+            return "MIST_PORTAL"
 
         if "EVENT" in data["@uniquename"]:
             return "EVENT"

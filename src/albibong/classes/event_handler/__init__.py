@@ -39,7 +39,7 @@ from albibong.classes.event_handler.handle_operation_farmable_harvest import (
 from albibong.classes.event_handler.radar_event_harvestable_object import (
     radar_event_new_harvestable_object,
     radar_event_new_simple_harvestable_object,
-    radar_event_harvest_finished,
+    radar_event_harvest_change_state,
 )
 from albibong.classes.event_handler.radar_event_dungeon_object import (
     radar_event_random_dungeon_position_info,
@@ -129,7 +129,7 @@ class EventHandler:
         )
 
         self.event_handler[EventCode.HARVESTABLE_CHANGE_STATE.value] = (
-            radar_event_harvest_finished
+            radar_event_harvest_change_state
         )
 
         self.event_handler[EventCode.NEW_SIMPLE_HARVESTABLE_OBJECT.value] = (

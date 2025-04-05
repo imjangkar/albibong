@@ -77,11 +77,12 @@ class Radar(BaseModel):
 
         self.debounce_handle_update()
     
-    def update_harvestable(self, id, count):
+    def update_harvestable(self, id, count, enchant):
         time_stamp = time.time() + self.settings["expiration_time"]
         if id in self.harvestable_list:
             self.harvestable_list[id]["size"] = count
             self.harvestable_list[id]["expiration_time"] = time_stamp
+            self.harvestable_list[id]["enchant"] = enchant
             self.debounce_handle_update()
 
     def add_dungeon(self, id, location, name, enchant, parameters):
@@ -164,33 +165,19 @@ class Radar(BaseModel):
 
         self.debounce_handle_update()
 
-    def add_mist(self, id, location, name, enchant, parameters):
-        self.mist_list[id] = {
-            "id": id,
-            "location": {
-                "x": location[0],
-                "y": location[1]
-            },
-            "name": name,
-            "enchant": enchant,
-        }
-
     def updateMobEnchant(self, id, enchant):
         if id in self.mob_list:
             self.mob_list[id]["enchant"] = enchant
             self.mob_list[id]["avatar"] = MobInfo.convert_avater(self.mob_list[id]["mob_type"], self.mob_list[id]["harvestable_type"], self.mob_list[id]["tier"], enchant)
             self.debounce_handle_update()
 
-    def add_mob(self, id, type_id, location, enchant, parameters):
+    def add_new_mob(self, id, type_id, location, mob_current_health, mob_max_health, enchant):
         tier = 0
         mob_type = None
         avatar = None
         harvestable_type = None
-        rarity = 0
         mob_name = "unknown"
         unique_name = "unknown"
-        mob_max_health = parameters[14]
-        mob_current_health = parameters[13] if 13 in parameters else parameters[14]
         mobInfo = MobInfo.get_mob_id(type_id)
 
         if mobInfo:
@@ -203,25 +190,36 @@ class Radar(BaseModel):
             mob_name = mob_info_data["mob_name"]
             avatar = mob_info_data["avatar"]
 
-        self.mob_list[id] = {
-            "id": id,
-            "type_id": type_id,
-            "location": {
-                "x": location[0],
-                "y": location[1]
-            },
-            "health": {
-                "max": mob_max_health,
-                "value": mob_current_health
-            },
-            "unique_name": unique_name,
-            "enchant": enchant,
-            "tier": tier,
-            "mob_type": mob_type,
-            "harvestable_type": harvestable_type,
-            "mob_name": mob_name,
-            "avatar": avatar,
-        }
+        if mob_type == "MIST_PORTAL":
+            self.mist_list[id] = {
+                "id": id,
+                "location": {
+                    "x": location[0],
+                    "y": location[1]
+                },
+                "name": unique_name,
+                "enchant": enchant,
+            }
+        else:
+            self.mob_list[id] = {
+                "id": id,
+                "type_id": type_id,
+                "location": {
+                    "x": location[0],
+                    "y": location[1]
+                },
+                "health": {
+                    "max": mob_max_health,
+                    "value": mob_current_health
+                },
+                "unique_name": unique_name,
+                "enchant": enchant,
+                "tier": tier,
+                "mob_type": mob_type,
+                "harvestable_type": harvestable_type,
+                "mob_name": mob_name,
+                "avatar": avatar,
+            }
 
         self.debounce_handle_update()
 
