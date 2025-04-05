@@ -150,7 +150,7 @@ RuntimeError: Sniffing and sending packets is not available at layer 2: winpcap 
 Install (NPCAP)[https://npcap.com/#download)
 
 ## Working version
-```
+```https://discord.com/channels/@me/1347885343638159401
 python3 --version
 Python 3.9.6
 ```
