@@ -181,3 +181,46 @@ No, this is not possible. If Albion is blocked in your country, I suggest to add
 - Map and Item Codes based on [ao-bin-dumps](https://github.com/ao-data/ao-bin-dumps) with modifications
 - Use of [photon-packet-parser](https://github.com/santiac89/photon-packet-parser) with modifications
 - Use of [deatheye](https://github.com/pxlbit228/albion-radar-deatheye-2pc/blob/master/Radar/Packets/Handlers/MoveEvent.cs)
+
+
+## Updates Data Used by Radr->
+
+The `ao-bin-dumps` directory contains the following files:
+you can find the orginals on (ao-bin-dupms)[https://github.com/ao-data/ao-bin-dumps/tree/master]
+```
+src/albibong/resources/ao-bin-dumps-json/
+├── harvestables.json  # Contains data about harvestable resources
+├── mobs.json          # Contains data about mobs
+```
+
+
+The items maps you can generate by pulling this data (ao-bin-dupms-formatted)[https://github.com/ao-data/ao-bin-dumps/blob/master/formatted/items.txt] into myscripts/items and calling the convert.py
+
+```
+src/albibong/resources/
+├── items_by_id.json  
+├── items_by_unique_name.json
+```
+
+
+The list of event codes you can pull from (AlbionOnline-StatisticsAnalysis)[https://github.com/Triky313/AlbionOnline-StatisticsAnalysis/blob/bc4140880e25052d3359a529957a214556a06451/src/StatisticsAnalysisTool/Network/EventCodes.cs]
+
+The list fo operationCodes (AlbionOnline-StatisticsAnalysis)[https://github.com/Triky313/AlbionOnline-StatisticsAnalysis/blob/bc4140880e25052d3359a529957a214556a06451/src/StatisticsAnalysisTool/Network/OperationCodes.cs]
+
+Next you have to put this data into scripts myscripts/eventcodes and call convert.py or operationcodes folder
+
+```
+src/albibong/resources/
+├── event_code.json 
+├── EventCode.py
+├── operation_code.json
+├── OperationCode.py
+```
+
+The offset you can take from (albion-radar-deatheye-2pc)[https://github.com/pxlbit228/albion-radar-deatheye-2pc/blob/master/jsons/offsets.json]
+```
+src/albibong/resources/
+├── offset.json
+├── Offset.py
+```
+
