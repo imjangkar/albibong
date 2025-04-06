@@ -56,6 +56,10 @@ from albibong.classes.event_handler.radar_event_leave import (
     radar_event_leave
 )
 
+from albibong.classes.event_handler.radar_event_mounted import (
+    radar_event_mounted
+)
+
 from albibong.classes.event_handler.radar_event_mobs_object import (
     radar_event_new_mob,
     radar_event_mob_change_state
@@ -166,6 +170,9 @@ class EventHandler:
         ## Mobs
         self.event_handler[EventCode.NEW_MOB.value] = radar_event_new_mob
         self.event_handler[EventCode.MOB_CHANGE_STATE.value] = radar_event_mob_change_state
+
+        ## Players
+        self.event_handler[EventCode.MOUNTED.value] = radar_event_mounted
         
         ## Sync
         self.event_handler[EventCode.KEY_SYNC.value] = radar_event_key_sync

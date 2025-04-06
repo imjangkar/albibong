@@ -6,6 +6,7 @@ from albibong.threads.websocket_server import send_event
 from albibong.classes.object_into.harvestables_info import HarvestablesInfo
 from albibong.classes.object_into.mob_info import MobInfo
 from albibong.classes.item import Item
+from albibong.resources.Offset import Offsets
 import math
 
 
@@ -224,7 +225,7 @@ class Radar(BaseModel):
         self.debounce_handle_update()
 
     def add_player(self, id, parameters):
-        offset = [0, 1, 8, 51, 53, 16, 20, 22, 23, 40, 43]
+        offset = Offsets.NEW_CHARACTER
         posX, posY = 0, 0
 
         username = parameters[offset[1]]
@@ -235,7 +236,6 @@ class Radar(BaseModel):
         if encrypted_position:
             posX, posY = self._decrypt_position(encrypted_position, self.XOR_CODE)
         
-        value = float('nan')
         if math.isnan(posX) or math.isnan(posY):
             print(f"Invalid position for {username} {posX} {posY}")
             posX, posY = 0, 0
@@ -267,10 +267,16 @@ class Radar(BaseModel):
             "location": {
                 "x": posX,
                 "y": posY
-            }
+            },
+            "isMounted": False,
         }
         self.debounce_handle_update()
 
+    def player_mounted(self, id, is_mounted):
+        if id in self.players_list:
+            self.players_list[id]["isMounted"] = is_mounted
+            self.debounce_handle_update()
+            
     def handle_event_leave(self, id):
         founded = False
 

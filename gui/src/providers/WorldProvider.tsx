@@ -100,6 +100,7 @@ export type Player = {
     x: number;
     y: number;
   };
+  isMounted: boolean;
 };
 
 export type RadarWidget = {

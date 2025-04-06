@@ -499,6 +499,12 @@ const MapRadar = () => {
                                             alt={`Faction ${player.faction}`}
                                             style={{ width: '34px', height: '34px' }}
                                         />
+                                        <Typography 
+                                            variant="body1" 
+                                            sx={{ color: player.isMounted ? "blue" : "red" }}
+                                        >
+                                            {player.isMounted ? "M" : "D"}
+                                        </Typography>
                                         <Typography variant="body1">{player.username}, ID: {player.id}</Typography>
                                     </Box>
                                     <Typography variant="body1">Guild: {player.guild}, Alliance: {player.alliance}</Typography>
