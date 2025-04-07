@@ -34,9 +34,9 @@ def radar_event_new_harvestable_object(world_data: WorldData, parameters):
     world_data.radar.add_harvestable(id, type, tier, location[0], location[1], enchant, size)
 
 def radar_event_harvest_change_state(world_data: WorldData, parameters):
-    id = parameters[Offsets.NEW_HARVESTABLE_OBJECT[0]]
-    size = parameters[Offsets.NEW_HARVESTABLE_OBJECT[1]] if Offsets.NEW_HARVESTABLE_OBJECT[1] in parameters else 0
-    enchant = parameters[Offsets.NEW_HARVESTABLE_OBJECT[2]] if Offsets.NEW_HARVESTABLE_OBJECT[2] in parameters else 0
+    id = parameters[Offsets.HARVESTABLE_CHANGE_STATE[0]]
+    size = parameters[Offsets.HARVESTABLE_CHANGE_STATE[1]] if Offsets.HARVESTABLE_CHANGE_STATE[1] in parameters else 0
+    enchant = parameters[Offsets.HARVESTABLE_CHANGE_STATE[2]] if Offsets.HARVESTABLE_CHANGE_STATE[2] in parameters else 0
 
     world_data.radar.update_harvestable(id, size, enchant)
 

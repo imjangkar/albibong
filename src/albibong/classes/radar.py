@@ -237,12 +237,13 @@ class Radar(BaseModel):
             posX, posY = self._decrypt_position(encrypted_position, self.XOR_CODE)
         
         if math.isnan(posX) or math.isnan(posY):
-            print(f"Invalid position for {username} {posX} {posY}")
+            # TODO XOR_CODE
+            # print(f"Invalid position for {username} {posX} {posY}")
             posX, posY = 0, 0
 
         speed = parameters[offset[6]] if offset[6] in parameters else 5.5
-        player_max_health = parameters[offset[7]]
-        player_current_health = parameters[offset[8]] if offset[8] in parameters else parameters[offset[7]]
+        player_max_health = parameters[offset[7]] if offset[7] in parameters else 0
+        player_current_health = parameters[offset[8]] if offset[8] in parameters else player_max_health
 
         equipments = parameters[offset[9]] if offset[9] in parameters else []
         named_equipments = []
