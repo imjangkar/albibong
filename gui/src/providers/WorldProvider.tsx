@@ -80,6 +80,7 @@ export type MobObject = {
   rarity: number;
   mob_name: string;
   avatar: string;
+  aggroradius: string;
 };
 
 export type Player = {

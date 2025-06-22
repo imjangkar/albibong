@@ -262,7 +262,7 @@ class RadarRendering {
         // this.renderDistance(ctx, canvas, radarPosition, resource.location, this.ResourceSize, rX, rY);
     }
 
-    static renderMob(ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement, radarPosition: any, mob: { mob_type: string; health: { value: number; max: number }; avatar?: string; enchant?: number; harvestable_type?: string; location: { x: number; y: number }; tier?: number }, zoom: number, displayedSettings: any) {
+    static renderMob(ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement, radarPosition: any, mob: { mob_type: string; health: { value: number; max: number }; avatar?: string; enchant?: number; harvestable_type?: string; location: { x: number; y: number }; tier?: number, aggroradius: string }, zoom: number, displayedSettings: any ) {
         if (!displayedSettings.object_types.includes('MOBS')) {
             return;
         }
@@ -321,7 +321,7 @@ class RadarRendering {
                         size: 10
                     },
                     'DEFAULT': {
-                        color: 'purple',
+                        color: 'purpure',
                         size: 5
                     }
                 }
@@ -330,7 +330,9 @@ class RadarRendering {
                 const size = mobInfo[mob.mob_type as keyof typeof mobInfo]?.size || mobInfo['DEFAULT'].size;
                 this.renderValue(ctx, canvas, size+7, rX, rY, mobHp);
 
-                ctx.fillStyle = 'purple'
+                const defaultColor = mob.aggroradius === '0' ? 'navy' :'purple';
+                
+                ctx.fillStyle = defaultColor;
                 ctx.beginPath();
                 ctx.arc(canvas.width / 2 - rX, canvas.height / 2 - rY, size, 0, 2 * Math.PI);
                 ctx.fill();

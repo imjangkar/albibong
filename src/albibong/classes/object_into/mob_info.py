@@ -34,6 +34,7 @@ class MobInfo:
         type = cls._convert_mob_type(data, harvestable_type)
         mob_name = cls._convert_mob_name(data)
         avatar = cls.convert_avater(type, harvestable_type, tier, enchant)
+        aggroradius = data["@aggroradius"]
 
         return {
             "tier": tier,
@@ -41,7 +42,8 @@ class MobInfo:
             "type": type,
             "harvestable_type": harvestable_type,
             "mob_name": mob_name,
-            "avatar": avatar
+            "avatar": avatar,
+            "aggroradius": aggroradius,
         }
     
     @staticmethod

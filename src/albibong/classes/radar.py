@@ -174,6 +174,8 @@ class Radar(BaseModel):
 
     def add_new_mob(self, id, type_id, location, mob_current_health, mob_max_health, enchant):
         tier = 0
+        aggroradius = 0
+
         mob_type = None
         avatar = None
         harvestable_type = None
@@ -190,6 +192,7 @@ class Radar(BaseModel):
             # rarity = mob_info_data["rarity"]
             mob_name = mob_info_data["mob_name"]
             avatar = mob_info_data["avatar"]
+            aggroradius = mob_info_data["aggroradius"]
 
         if mob_type == "MIST_PORTAL":
             self.mist_list[id] = {
@@ -220,6 +223,7 @@ class Radar(BaseModel):
                 "harvestable_type": harvestable_type,
                 "mob_name": mob_name,
                 "avatar": avatar,
+                "aggroradius": aggroradius,
             }
 
         self.debounce_handle_update()
