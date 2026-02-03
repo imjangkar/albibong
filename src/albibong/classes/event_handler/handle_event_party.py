@@ -5,7 +5,7 @@ from albibong.classes.world_data import WorldData
 
 
 def handle_event_party_joined(world_data: WorldData, parameters):
-    world_data.party_members = set(parameters[5])
+    world_data.party_members = set(parameters[6])
     WorldDataUtils.ws_update_damage_meter(world_data)
 
 
