@@ -2,7 +2,7 @@ import os
 import threading
 from time import sleep
 
-from scapy.all import AsyncSniffer, wrpcapng
+from scapy.all import AsyncSniffer, wrpcapng, get_if_list, conf
 
 from albibong.classes.logger import Logger
 from albibong.threads.websocket_server import send_event
@@ -13,6 +13,24 @@ pcap_file = home_dir + "/Albibong/Debug/debug.pcapng"
 logger = Logger(__name__, stdout=True, log_to_file=False)
 
 
+def get_best_interface():
+
+    skip_prefixes = ("lo", "gif", "stf", "anpi", "awdl", "llw", "utun", "bridge", "ap", "en5", "en6", "en7", "en8")
+    for iface in get_if_list():
+        if any(iface.startswith(p) for p in skip_prefixes):
+            continue
+        try:
+            from scapy.arch import get_if_addr
+            addr = get_if_addr(iface)
+            if addr:
+                logger.info(f"Picked interface: {iface} ({addr})")
+                return iface
+        except Exception:
+            continue
+    logger.warning("Could not find suitable interface, using scapy default")
+    return conf.iface
+
+
 class SnifferThread(threading.Thread):
     def __init__(self, name, out_queue, sentinel, is_debug=False):
         super().__init__()
@@ -20,7 +38,7 @@ class SnifferThread(threading.Thread):
         self.out_queue = out_queue
         self.sentinel = sentinel
         self.is_debug = is_debug
-        self.sniffer = AsyncSniffer(filter="udp and port 5056", prn=self.push_packet)
+        self.sniffer = AsyncSniffer(filter="udp and port 5056", prn=self.push_packet, iface=get_best_interface())
         self.packet_counter = 0
         self.timer_exit = threading.Event()
         self.all_packets = []
