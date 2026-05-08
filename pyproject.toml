@@ -9,7 +9,6 @@ exclude = [
   "/log",
   "/pcap",
   "/tests",
-  "/gui",
   "/readme_screenshots",
   "/README.md",
   "/*.db"
