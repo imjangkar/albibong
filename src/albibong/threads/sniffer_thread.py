@@ -15,7 +15,7 @@ logger = Logger(__name__, stdout=True, log_to_file=False)
 
 def get_best_interface():
 
-    skip_prefixes = ("lo", "gif", "stf", "anpi", "awdl", "llw", "utun", "bridge", "ap", "en5", "en6", "en7", "en8")
+    skip_prefixes = ("lo", "gif", "stf", "awdl", "llw", "bridge", "ap", "en5", "en6", "en7", "en8", "en10")
     for iface in get_if_list():
         if any(iface.startswith(p) for p in skip_prefixes):
             continue
@@ -38,7 +38,7 @@ class SnifferThread(threading.Thread):
         self.out_queue = out_queue
         self.sentinel = sentinel
         self.is_debug = is_debug
-        self.sniffer = AsyncSniffer(filter="udp and port 5056", prn=self.push_packet, iface=get_best_interface())
+        self.sniffer = AsyncSniffer(filter="udp and port 5056", prn=self.push_packet)
         self.packet_counter = 0
         self.timer_exit = threading.Event()
         self.all_packets = []
