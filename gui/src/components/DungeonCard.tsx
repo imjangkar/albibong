@@ -16,12 +16,14 @@ import styles from "../pages/DungeonTracker.module.css";
 import { WebsocketContext } from "../providers/WebsocketProvider";
 import { Dungeon } from "../providers/WorldProvider";
 import { theme } from "../theme";
+import { useI18n } from "../providers/I18nProvider";
 
 type DungeonCardProps = {
   dungeon: Dungeon;
 };
 
 const DungeonCard = ({ dungeon }: DungeonCardProps) => {
+  const { t } = useI18n();
   const { sendMessage } = useContext(WebsocketContext);
 
   const updateDungeonName = () => {
@@ -71,7 +73,7 @@ const DungeonCard = ({ dungeon }: DungeonCardProps) => {
           onBlur={updateDungeonName}
           onChange={(e) => setName(e.target.value)}
         />
-        <Typography variant="h2"> • Tier</Typography>
+        <Typography variant="h2"> • {t("dungeon.tier")}</Typography>
         <TextField
           type="number"
           inputMode="numeric"
@@ -91,7 +93,7 @@ const DungeonCard = ({ dungeon }: DungeonCardProps) => {
               {formatter(Math.round(dungeon.fame))}
             </Typography>
             <Typography variant="body2">
-              {formatter(Math.round(dungeon.fame_per_hour))}/hr
+              {formatter(Math.round(dungeon.fame_per_hour))}{t("dungeon.perHour")}
             </Typography>
           </div>
         </div>
@@ -102,9 +104,9 @@ const DungeonCard = ({ dungeon }: DungeonCardProps) => {
               {formatter(Math.round(dungeon.silver))}
             </Typography>
             <Typography variant="body2">
-              {formatter(Math.round(dungeon.silver_per_hour))}/hr
+              {formatter(Math.round(dungeon.silver_per_hour))}{t("dungeon.perHour")}
             </Typography>
-          </div>{" "}
+          </div>
         </div>
         <div className={styles.stats}>
           <img src="re_spec.png" width={"24px"} />
@@ -113,9 +115,9 @@ const DungeonCard = ({ dungeon }: DungeonCardProps) => {
               {formatter(Math.round(dungeon.re_spec))}
             </Typography>
             <Typography variant="body2">
-              {formatter(Math.round(dungeon.re_spec_per_hour))}/hr
+              {formatter(Math.round(dungeon.re_spec_per_hour))}{t("dungeon.perHour")}
             </Typography>
-          </div>{" "}
+          </div>
         </div>
         <div className={styles.stats}>
           <img src="might.png" width={"24px"} />
@@ -124,9 +126,9 @@ const DungeonCard = ({ dungeon }: DungeonCardProps) => {
               {formatter(Math.round(dungeon.might))}
             </Typography>
             <Typography variant="body2">
-              {formatter(Math.round(dungeon.might_per_hour))}/hr
+              {formatter(Math.round(dungeon.might_per_hour))}{t("dungeon.perHour")}
             </Typography>
-          </div>{" "}
+          </div>
         </div>
         <div className={styles.stats}>
           <img src="favor.png" width={"24px"} />
@@ -135,9 +137,9 @@ const DungeonCard = ({ dungeon }: DungeonCardProps) => {
               {formatter(Math.round(dungeon.favor))}
             </Typography>
             <Typography variant="body2">
-              {formatter(Math.round(dungeon.favor_per_hour))}/hr
+              {formatter(Math.round(dungeon.favor_per_hour))}{t("dungeon.perHour")}
             </Typography>
-          </div>{" "}
+          </div>
         </div>
         <div className={styles.stats}>
           <AccessTimeIcon />
@@ -150,27 +152,27 @@ const DungeonCard = ({ dungeon }: DungeonCardProps) => {
           aria-controls="content"
           id="header"
         >
-          <Typography variant="h4">Damage Meter Snapshot</Typography>
+          <Typography variant="h4">{t("dungeon.snapshotTitle")}</Typography>
         </AccordionSummary>
         <AccordionDetails>
           {dungeon.meter.length > 0 ? (
             <>
               <Typography variant="h5">
-                This is only a snapshot taken from <a href="/">Damage Meter</a>{" "}
-                when the player left the dungeon. Results might be inaccurate if
-                the meter didn't get reset after entering a new dungeon.
+                {t("dungeon.snapshotWarning", {
+                  link: <a href="/">{t("dungeon.damageMeterLink")}</a>,
+                })}
               </Typography>
               <br />
               <div className={dps.dpsRow}>
-                <Typography className={dps.player}>Member</Typography>
-                <Typography className={dps.dpsNumber}>Damage</Typography>
-                <Typography className={dps.dpsNumber}>Damage%</Typography>
-                <Typography className={dps.dpsNumber}>Duration</Typography>
+                <Typography className={dps.player}>{t("dungeon.member")}</Typography>
+                <Typography className={dps.dpsNumber}>{t("dps.damage")}</Typography>
+                <Typography className={dps.dpsNumber}>{t("dps.damagePercent")}</Typography>
+                <Typography className={dps.dpsNumber}>{t("dps.duration")}</Typography>
                 <Typography
                   className={dps.dpsNumber}
                   sx={{ fontWeight: "bold" }}
                 >
-                  DPS
+                  {t("dps.dps")}
                 </Typography>
               </div>
             </>
@@ -194,7 +196,7 @@ const DungeonCard = ({ dungeon }: DungeonCardProps) => {
                   <div className={dps.dpsRow}>
                     <Typography style={{ marginRight: 16 }}>
                       {index + 1}.
-                    </Typography>{" "}
+                    </Typography>
                     <Typography className={dps.player}>
                       {member.username}
                     </Typography>
@@ -221,7 +223,7 @@ const DungeonCard = ({ dungeon }: DungeonCardProps) => {
               );
             })
           ) : (
-            <Typography>No snapshot taken</Typography>
+            <Typography>{t("dungeon.noSnapshot")}</Typography>
           )}
         </AccordionDetails>
       </Accordion>

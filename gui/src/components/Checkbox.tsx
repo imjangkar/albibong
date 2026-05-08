@@ -3,6 +3,7 @@ import { DisplayedColumn } from "../pages/DPSMeter";
 import { Typography } from "@mui/material";
 import app from "../App.module.css";
 import { theme } from "../theme";
+import { useI18n } from "../providers/I18nProvider";
 
 type CheckboxProps = {
   label: keyof DisplayedColumn;
@@ -19,6 +20,9 @@ const Checkbox = ({
   checked,
   onclick,
 }: CheckboxProps) => {
+  const { t } = useI18n();
+  const labelKey = label === "Damage" ? "dps.damage" : "dps.heal";
+
   return (
     <label className={app.stats}>
       <input
@@ -29,7 +33,7 @@ const Checkbox = ({
         style={{ accentColor: theme.palette.primary.main }}
         onChange={() => onclick((prev) => ({ ...prev, [label]: !prev[label] }))}
       ></input>
-      <Typography>{label}</Typography>
+      <Typography>{t(labelKey)}</Typography>
     </label>
   );
 };

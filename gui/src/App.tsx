@@ -8,17 +8,29 @@ import WebsocketProvider, {
   WebsocketContext,
 } from "./providers/WebsocketProvider";
 import WorldProvider, { WorldContext } from "./providers/WorldProvider";
+import { I18nProvider, useI18n } from "./providers/I18nProvider";
 import { theme } from "./theme";
+import {
+  Menu,
+  MenuItem,
+  IconButton,
+  Tooltip,
+} from "@mui/material";
+import TranslateIcon from "@mui/icons-material/Translate";
+import { useState } from "react";
+import type { Locale } from "./providers/I18nProvider";
 
 const App = () => {
   return (
-    <WebsocketProvider>
-      <WorldProvider>
-        <Init>
-          <Router />
-        </Init>
-      </WorldProvider>
-    </WebsocketProvider>
+    <I18nProvider>
+      <WebsocketProvider>
+        <WorldProvider>
+          <Init>
+            <Router />
+          </Init>
+        </WorldProvider>
+      </WebsocketProvider>
+    </I18nProvider>
   );
 };
 
@@ -29,10 +41,69 @@ const container = {
   minHeight: "100vh",
 };
 
+const LanguageSwitcher = () => {
+  const { locale, setLocale } = useI18n();
+  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+  const open = Boolean(anchorEl);
+
+  const handleClick = (event: React.MouseEvent<HTMLElement>) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  const handleSelect = (newLocale: Locale) => {
+    setLocale(newLocale);
+    handleClose();
+  };
+
+  return (
+    <>
+      <Tooltip title="Switch Language">
+        <IconButton
+          onClick={handleClick}
+          size="small"
+          sx={{ ml: 1 }}
+          aria-controls={open ? "language-menu" : undefined}
+          aria-haspopup="true"
+          aria-expanded={open ? "true" : undefined}
+        >
+          <TranslateIcon />
+        </IconButton>
+      </Tooltip>
+      <Menu
+        id="language-menu"
+        anchorEl={anchorEl}
+        open={open}
+        onClose={handleClose}
+        MenuListProps={{
+          "aria-labelledby": "language-button",
+        }}
+      >
+        <MenuItem
+          selected={locale === "en"}
+          onClick={() => handleSelect("en")}
+        >
+          English
+        </MenuItem>
+        <MenuItem
+          selected={locale === "zh"}
+          onClick={() => handleSelect("zh")}
+        >
+          中文
+        </MenuItem>
+      </Menu>
+    </>
+  );
+};
+
 const Layout = () => {
   return (
     <>
       <Navigation />
+      <LanguageSwitcher />
       <div style={container}>
         <Outlet />
       </div>

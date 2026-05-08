@@ -5,12 +5,15 @@ import styles from "../pages/FarmingTracker.module.css";
 import { Island } from "../providers/WorldProvider";
 import { theme } from "../theme";
 import HarvestRow from "./HarvestRow";
+import { useI18n } from "../providers/I18nProvider";
 
 type IslandCardProps = {
   island: Island;
 };
 
 const IslandCard = ({ island }: IslandCardProps) => {
+  const { t } = useI18n();
+
   return (
     <div
       className={dungeon.dungeonContainer}
@@ -22,11 +25,11 @@ const IslandCard = ({ island }: IslandCardProps) => {
       </div>
       <div className={styles.row}>
         <div className={styles.column}>
-          <Typography variant="h3">Crops</Typography>
+          <Typography variant="h3">{t("farming.crops")}</Typography>
           <HarvestRow harvestables={island.crops} type="crop" />
         </div>
         <div className={styles.column}>
-          <Typography variant="h3">Animals</Typography>
+          <Typography variant="h3">{t("farming.animals")}</Typography>
           <HarvestRow harvestables={island.animals} type="animal" />
         </div>
       </div>
