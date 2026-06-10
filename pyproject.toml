@@ -20,11 +20,11 @@ albibong = "albibong:main"
 
 [project]
 name = "albibong"
-version = "1.1.10"
+version = "1.2.0"
 authors = [
   { name="imjangkar", email="imjangkar@gmail.com" },
 ]
-description = "A cross-platform Albion Online damage, fame, and dungeon tracker"
+description = "A cross-platform Albion Online damage, fame, dungeon, and farming tracker"
 requires-python = ">=3.10"
 classifiers = [
     "Programming Language :: Python :: 3",
