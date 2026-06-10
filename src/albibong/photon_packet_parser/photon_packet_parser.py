@@ -2,7 +2,7 @@ import io
 from albibong.photon_packet_parser.message_type import MessageType
 from albibong.photon_packet_parser.command_type import CommandType
 from albibong.photon_packet_parser.segmented_packet import SegmentedPacket
-from albibong.photon_packet_parser.protocol16_deserializer import Protocol16Deserializer
+from albibong.photon_packet_parser.protocol18_deserializer import Protocol18Deserializer
 from albibong.photon_packet_parser.crc_calculator import CrcCalculator
 from albibong.photon_packet_parser.number_serializer import NumberSerializer
 
@@ -95,15 +95,15 @@ class PhotonPacketParser:
         payload = io.BytesIO(source.read(operation_length))
 
         if message_type == MessageType.OperationRequest.value:
-            request_data = Protocol16Deserializer.deserialize_operation_request(payload)
+            request_data = Protocol18Deserializer.deserialize_operation_request(payload)
             self.on_request(request_data)
         elif message_type == MessageType.OperationResponse.value:
-            response_data = Protocol16Deserializer.deserialize_operation_response(
+            response_data = Protocol18Deserializer.deserialize_operation_response(
                 payload
             )
             self.on_response(response_data)
         elif message_type == MessageType.Event.value:
-            event_data = Protocol16Deserializer.deserialize_event_data(payload)
+            event_data = Protocol18Deserializer.deserialize_event_data(payload)
             self.on_event(event_data)
         # else:
         #     print("Unknown message type: ", message_type)
