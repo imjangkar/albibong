@@ -1,0 +1,69 @@
+{
+  "app": {
+    "username": "USERNAME",
+    "currentMap": "CURRENT MAP",
+    "currentDungeon": "CURRENT DUNGEON",
+    "healthCheckFailed": "Health Check Failed"
+  },
+  "nav": {
+    "dpsMeter": "DPS Meter",
+    "dungeonTracker": "Dungeon Tracker",
+    "farmingTracker": "Farming Tracker"
+  },
+  "dps": {
+    "damageMeter": "Damage Meter",
+    "damageMeterStatus": "Damage Meter is currently {status}",
+    "recording": "recording damage",
+    "paused": "paused",
+    "resetStats": "Reset Stats",
+    "resetDamage": "Reset Damage Meter",
+    "damage": "Damage",
+    "heal": "Heal",
+    "damagePercent": "Damage%",
+    "healPercent": "Heal%",
+    "dps": "DPS",
+    "duration": "Duration",
+    "record": "Record",
+    "pause": "Pause",
+    "copyDamage": "Copy Damage",
+    "damageCopied": "Damage copied to clipboard.",
+    "damageReset": "Damage has been reset.",
+    "statsReset": "Stats has been reset.",
+    "fame": "Fame",
+    "silver": "Silver",
+    "reSpec": "Re Spec",
+    "might": "Might",
+    "favor": "Favor"
+  },
+  "dungeon": {
+    "title": "Dungeon Tracker",
+    "filterLabel": "Filter by Dungeon Type",
+    "noDungeon": "No dungeon",
+    "fameGained": "Fame Gained",
+    "silverGained": "Silver Gained",
+    "respecGained": "Respec Gained",
+    "duration": "Duration",
+    "dpsSnapshot": "DPS Snapshot",
+    "tier": "Tier",
+    "dungeonType": "Dungeon Type",
+    "startTime": "Start Time",
+    "snapshotTitle": "Damage Meter Snapshot",
+    "snapshotWarning": "This is only a snapshot taken from {link} when the player left the dungeon. Results might be inaccurate if the meter didn't get reset after entering a new dungeon.",
+    "damageMeterLink": "Damage Meter",
+    "noSnapshot": "No snapshot taken",
+    "member": "Member",
+    "perHour": "/hr"
+  },
+  "farming": {
+    "title": "Farming Tracker",
+    "totalHarvested": "Total Harvested {date}",
+    "crops": "Crops",
+    "animals": "Animals",
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "island": "Island",
+    "dateRange": "Date Range",
+    "noCropHarvested": "No crops harvested",
+    "noAnimalHarvested": "No animals harvested"
+  }
+}

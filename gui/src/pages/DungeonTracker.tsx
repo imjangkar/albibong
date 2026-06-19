@@ -11,8 +11,10 @@ import { Dungeon, WorldContext } from "../providers/WorldProvider";
 import DungeonCard from "../components/DungeonCard";
 import style from "./DungeonTracker.module.css";
 import { theme } from "../theme";
+import { useI18n } from "../providers/I18nProvider";
 
 const DungeonTracker = () => {
+  const { t } = useI18n();
   const { world, dungeonFilter } = useContext(WorldContext);
 
   const [filteredDungeon, setFilteredDungeon] = useState<Dungeon[]>([]);
@@ -40,18 +42,18 @@ const DungeonTracker = () => {
 
   return (
     <div className={app.container}>
-      <Typography variant="h2">Dungeon Tracker</Typography>
+      <Typography variant="h2">{t("dungeon.title")}</Typography>
       <div
         className={style.stickToTop}
         style={{ backgroundColor: theme.palette.background.default }}
       >
         <FormControl fullWidth>
           <InputLabel id="demo-simple-select-label">
-            Filter by Dungeon Type
+            {t("dungeon.filterLabel")}
           </InputLabel>
           <Select
             value={selectedFilter}
-            label="Filter by Dungeon Type"
+            label={t("dungeon.filterLabel")}
             onChange={(e) => setSelectedFilter(e.target.value)}
           >
             {dungeonFilter.map((filter, index) => (
@@ -68,7 +70,7 @@ const DungeonTracker = () => {
           return <DungeonCard key={dungeon.id} dungeon={dungeon}></DungeonCard>;
         })
       ) : (
-        <p>No dungeon</p>
+        <p>{t("dungeon.noDungeon")}</p>
       )}
     </div>
   );

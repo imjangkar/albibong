@@ -13,8 +13,10 @@ import IslandCard from "../components/IslandCard";
 import { WebsocketContext } from "../providers/WebsocketProvider";
 import { theme } from "../theme";
 import styles from "./FarmingTracker.module.css";
+import { useI18n } from "../providers/I18nProvider";
 
 const FarmingTracker = () => {
+  const { t } = useI18n();
   const { world, islandWidget } = useContext(WorldContext);
   const [dateRange, setDateRange] = useState<Dayjs>(dayjs(islandWidget.date));
   const { sendMessage } = useContext(WebsocketContext);
@@ -35,26 +37,27 @@ const FarmingTracker = () => {
 
   const date_to_string = () => {
     if (dateRange.isSame(dayjs(), "day") == true) {
-      return "Today";
+      return t("farming.today");
     } else if (dateRange.isSame(dayjs().subtract(1, "day"), "day")) {
-      return "Yesterday";
+      return t("farming.yesterday");
     } else {
       return dateRange.format("dddd, D MMM").toString();
     }
   };
+
   return (
     <div className={app.container}>
-      <Typography variant="h2">Farming Tracker</Typography>
+      <Typography variant="h2">{t("farming.title")}</Typography>
       <div className={styles.statsContainer}>
         <div className={app.row}>
-          <h2>Total Harvested {date_to_string()}</h2>
+          <h2>{t("farming.totalHarvested", { date: date_to_string() })}</h2>
           <LocalizationProvider
             dateAdapter={AdapterDayjs}
             adapterLocale="en-gb"
           >
             <DatePicker
               slotProps={{ textField: { size: "small" } }}
-              label="Date Range"
+              label={t("farming.dateRange")}
               value={dateRange}
               onChange={(newValue) => setDateForTotalHarvest(newValue)}
             />
@@ -62,11 +65,11 @@ const FarmingTracker = () => {
         </div>
         <div className={styles.row}>
           <div className={styles.column}>
-            <Typography variant="h3">Crops</Typography>
+            <Typography variant="h3">{t("farming.crops")}</Typography>
             <HarvestRow harvestables={islandWidget.crops} type="crop" />
           </div>
           <div className={styles.column}>
-            <Typography variant="h3">Animals</Typography>
+            <Typography variant="h3">{t("farming.animals")}</Typography>
             <HarvestRow harvestables={islandWidget.animals} type="animal" />
           </div>
         </div>

@@ -26,6 +26,7 @@ import {
 } from "@mui/icons-material";
 import classNames from "classnames";
 import { WorldContext } from "../providers/WorldProvider";
+import { useI18n } from "../providers/I18nProvider";
 
 import styles from "./Navigation.module.css";
 
@@ -47,9 +48,6 @@ const closedMixin = (theme: Theme): CSSObject => ({
   }),
   overflowX: "hidden",
   width: `calc(${theme.spacing(8)} + 1px)`,
-  // [theme.breakpoints.up("sm")]: {
-  //   width: `calc(${theme.spacing(8)} + 1px)`,
-  // },
 });
 
 const DrawerHeader = styled("div")(({ theme }) => ({
@@ -57,7 +55,6 @@ const DrawerHeader = styled("div")(({ theme }) => ({
   alignItems: "center",
   justifyContent: "flex-end",
   padding: theme.spacing(0, 1),
-  // necessary for content to be below app bar
   ...theme.mixins.toolbar,
 }));
 
@@ -104,15 +101,16 @@ const Drawer = styled(MuiDrawer, {
 });
 
 const Navigation = () => {
+  const { t } = useI18n();
   const links = [
-    { pageName: "DPS Meter", url: "/", icon: <Speed /> },
+    { pageName: t("nav.dpsMeter"), url: "/", icon: <Speed /> },
     {
-      pageName: "Dungeon Tracker",
+      pageName: t("nav.dungeonTracker"),
       url: "/dungeon-tracker",
       icon: <Assessment />,
     },
     {
-      pageName: "Farming Tracker",
+      pageName: t("nav.farmingTracker"),
       url: "/farming-tracker",
       icon: <Agriculture />,
     },
@@ -142,13 +140,13 @@ const Navigation = () => {
         <Toolbar className={styles.toolbar}>
           <div className={styles.data}>
             <Typography>
-              USERNAME: <b>{me.username}</b>
+              {t("app.username")}: <b>{me.username}</b>
             </Typography>
             <Typography>
-              CURRENT MAP: <b>{world.map}</b>
+              {t("app.currentMap")}: <b>{world.map}</b>
             </Typography>
             <Typography>
-              CURRENT DUNGEON: <b>{world.dungeon}</b>
+              {t("app.currentDungeon")}: <b>{world.dungeon}</b>
             </Typography>
           </div>
           <div className={styles.data}>

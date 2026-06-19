@@ -14,6 +14,7 @@ import app from "../App.module.css";
 import Checkbox from "../components/Checkbox";
 import { WebsocketContext } from "../providers/WebsocketProvider";
 import { WorldContext } from "../providers/WorldProvider";
+import { useI18n } from "../providers/I18nProvider";
 
 import { theme } from "../theme";
 
@@ -27,6 +28,7 @@ export const formatter = (num: number) => {
 };
 
 const DPSMeter = () => {
+  const { t } = useI18n();
   const [displayedCol, setDisplayedCol] = useState<DisplayedColumn>({
     Heal: false,
     Damage: true,
@@ -108,23 +110,24 @@ const DPSMeter = () => {
     }, 1000);
   };
 
+  const statusText = world.isDPSMeterRunning ? t("dps.recording") : t("dps.paused");
+
   return (
     <div className={app.container}>
       <div className={app.snackbar}>
         <Collapse in={alert.copyDamage}>
-          <Alert severity="success">Damage copied to clipboard.</Alert>
+          <Alert severity="success">{t("dps.damageCopied")}</Alert>
         </Collapse>
         <Collapse in={alert.resetDamage}>
-          <Alert severity="success">Damage has been reset.</Alert>
+          <Alert severity="success">{t("dps.damageReset")}</Alert>
         </Collapse>
         <Collapse in={alert.resetStats}>
-          <Alert severity="success">Stats has been reset.</Alert>
+          <Alert severity="success">{t("dps.statsReset")}</Alert>
         </Collapse>
       </div>
-      <Typography variant="h2">Damage Meter</Typography>
+      <Typography variant="h2">{t("dps.damageMeter")}</Typography>
       <Typography>
-        Damage Meter is currently{" "}
-        <b>{world.isDPSMeterRunning ? "recording damage" : "paused"}</b>
+        {t("dps.damageMeterStatus", { status: statusText })}
       </Typography>
       <div className={app.row}>
         <div className={app.options}>
@@ -154,7 +157,7 @@ const DPSMeter = () => {
           startIcon={<RestartAlt />}
           onClick={() => resetStats()}
         >
-          Reset Stats
+          {t("dps.resetStats")}
         </Button>
       </div>
       <div className={app.row}>
@@ -175,7 +178,7 @@ const DPSMeter = () => {
           startIcon={<RestartAlt />}
           onClick={() => resetDamage()}
         >
-          Reset Damage Meter
+          {t("dps.resetDamage")}
         </Button>
       </div>
 
@@ -195,7 +198,7 @@ const DPSMeter = () => {
                 startIcon={<FiberManualRecord />}
                 onClick={() => toggleRecord(true)}
               >
-                Record
+                {t("dps.record")}
               </Button>
             ) : (
               <Button
@@ -203,7 +206,7 @@ const DPSMeter = () => {
                 startIcon={<Pause />}
                 onClick={() => toggleRecord(false)}
               >
-                Pause
+                {t("dps.pause")}
               </Button>
             )}
             <Button
@@ -211,17 +214,17 @@ const DPSMeter = () => {
               startIcon={<ContentCopy />}
               onClick={() => formatDamageToText()}
             >
-              Copy Damage
+              {t("dps.copyDamage")}
             </Button>
           </div>
 
-          <Typography className={show("Heal")}>Heal</Typography>
-          <Typography className={show("Heal")}>Heal%</Typography>
-          <Typography className={show("Damage")}>Damage</Typography>
-          <Typography className={show("Damage")}>Damage%</Typography>
-          <Typography className={styles.dpsNumber}>Duration</Typography>
+          <Typography className={show("Heal")}>{t("dps.heal")}</Typography>
+          <Typography className={show("Heal")}>{t("dps.healPercent")}</Typography>
+          <Typography className={show("Damage")}>{t("dps.damage")}</Typography>
+          <Typography className={show("Damage")}>{t("dps.damagePercent")}</Typography>
+          <Typography className={styles.dpsNumber}>{t("dps.duration")}</Typography>
           <Typography className={show("Damage")} sx={{ fontWeight: "bold" }}>
-            DPS
+            {t("dps.dps")}
           </Typography>
         </div>
         {world.party.map((member, index) => {
@@ -240,7 +243,7 @@ const DPSMeter = () => {
               <div className={styles.dpsRow}>
                 <Typography style={{ marginRight: 16 }}>
                   {index + 1}.
-                </Typography>{" "}
+                </Typography>
                 <Typography className={styles.player}>
                   {member.username}
                 </Typography>

@@ -1,0 +1,69 @@
+{
+  "app": {
+    "username": "用户名",
+    "currentMap": "当前地图",
+    "currentDungeon": "当前副本",
+    "healthCheckFailed": "健康检查失败"
+  },
+  "nav": {
+    "dpsMeter": "DPS 面板",
+    "dungeonTracker": "副本追踪",
+    "farmingTracker": "农场追踪"
+  },
+  "dps": {
+    "damageMeter": "伤害统计",
+    "damageMeterStatus": "伤害统计当前正在 {status}",
+    "recording": "记录伤害",
+    "paused": "已暂停",
+    "resetStats": "重置属性",
+    "resetDamage": "重置伤害统计",
+    "damage": "伤害",
+    "heal": "治疗",
+    "damagePercent": "伤害%",
+    "healPercent": "治疗%",
+    "dps": "DPS",
+    "duration": "持续时间",
+    "record": "记录",
+    "pause": "暂停",
+    "copyDamage": "复制伤害",
+    "damageCopied": "伤害已复制到剪贴板",
+    "damageReset": "伤害统计已重置",
+    "statsReset": "属性已重置",
+    "fame": "声望",
+    "silver": "银币",
+    "reSpec": "重置点",
+    "might": "力量",
+    "favor": "恩惠"
+  },
+  "dungeon": {
+    "title": "副本追踪",
+    "filterLabel": "按副本类型筛选",
+    "noDungeon": "暂无副本记录",
+    "fameGained": "获得声望",
+    "silverGained": "获得银币",
+    "respecGained": "获得重置点",
+    "duration": "持续时间",
+    "dpsSnapshot": "DPS 快照",
+    "tier": "层数",
+    "dungeonType": "副本类型",
+    "startTime": "开始时间",
+    "snapshotTitle": "伤害统计快照",
+    "snapshotWarning": "此快照取自离开副本时的 {link} 记录。如果进入新副本后未重置统计，数据可能不准确。",
+    "damageMeterLink": "伤害统计",
+    "noSnapshot": "无快照记录",
+    "member": "成员",
+    "perHour": "/小时"
+  },
+  "farming": {
+    "title": "农场追踪",
+    "totalHarvested": "总收获 ({date})",
+    "crops": "作物",
+    "animals": "动物",
+    "today": "今天",
+    "yesterday": "昨天",
+    "island": "岛屿",
+    "dateRange": "日期范围",
+    "noCropHarvested": "暂无作物收获",
+    "noAnimalHarvested": "暂无动物收获"
+  }
+}

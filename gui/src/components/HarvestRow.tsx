@@ -2,6 +2,7 @@ import { Typography } from "@mui/material";
 import { formatter } from "../pages/DPSMeter";
 import styles from "../pages/FarmingTracker.module.css";
 import { Item } from "../providers/WorldProvider";
+import { useI18n } from "../providers/I18nProvider";
 
 type HarvestRowProps = {
   harvestables: Item[];
@@ -9,6 +10,9 @@ type HarvestRowProps = {
 };
 
 const HarvestRow = ({ harvestables, type }: HarvestRowProps) => {
+  const { t } = useI18n();
+  const noText = type === "crop" ? t("farming.noCropHarvested") : t("farming.noAnimalHarvested");
+
   return (
     <>
       {harvestables.length > 0 ? (
@@ -24,7 +28,7 @@ const HarvestRow = ({ harvestables, type }: HarvestRowProps) => {
           </div>
         ))
       ) : (
-        <Typography>No {type} harvested</Typography>
+        <Typography>{noText}</Typography>
       )}
     </>
   );
